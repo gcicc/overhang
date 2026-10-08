@@ -21,3 +21,6 @@ ARC, Manifold) + `overhang/quotecheck.py` → `overhang/curated.py` (validation)
 - Dependencies are `requests` and `jinja2` only. Ask Greg before adding one.
 - Run `python -m pytest -q` and `python -m ruff check overhang tests run.py` before committing.
   Open `docs/index.html` in a browser before saying any change is done.
+- The refresh bot commits `docs/` and `data/` every 6 hours. `git pull --rebase` before
+  editing. If `docs/index.html` conflicts, it is generated: run `python run.py --render`,
+  `git add docs/index.html`, then continue the rebase. Never hand-merge it.
