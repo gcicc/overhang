@@ -4,7 +4,8 @@ type: maintain
 category: building
 tier: 02-Maintain
 updated: 2026-10-08
-note: started directly in 02-Maintain per Greg 2026-10-08; local git only, not yet published
+note: started directly in 02-Maintain per Greg 2026-10-08
+url: https://gcicc.github.io/overhang/
 ---
 
 # OVERHANG — next steps
@@ -30,13 +31,16 @@ ADR 0001: a Python pipeline renders one self-contained HTML page, the same appro
 
 ## Next task
 
-Publish. Create the `gcicc/overhang` GitHub repo, push, and turn on Pages from `/docs` on `main`
-(PUBLISHING-PROTOCOL.md). This is outward-facing, so it waits for Greg's go-ahead. Then build
-slice 2: SPEC Sections 3 to 5 (frontier news and arXiv ranked by buzz; AI in the sciences; history).
+Slice 2: SPEC Sections 3 to 5 (frontier news and arXiv ranked by buzz; AI in the sciences;
+history), on the same pipeline.
+
+Published 2026-10-08 at https://gcicc.github.io/overhang/ (repo `gcicc/overhang`, Pages from
+`/docs` on `main`, branch build). Greg approved going straight to Tier 2, skipping the
+Tier 1 hold-up period in PUBLISHING-PROTOCOL.md. The refresh workflow was verified green on a
+manual dispatch, and the site is in the liveness check (60 of 60 live).
 
 ## Blockers
 
-- Publishing (repo plus Pages) is Greg's call.
 - Held claims need a primary source: Hassabis 2026 (cu16), Kurzweil 2005 (gr15), and
   Hinton's 2023 tweet (cu22).
 - Six graveyard quotes (gr04 to gr07, gr09, gr10) rest on Wikipedia. The originals were not
