@@ -42,7 +42,8 @@ history of milestones in academia and industry.
 - [ ] D3. No claim row is authored from recollection. Curated rows are separated from auto-detected
       rows, and the separation is visible on the page.
 - [ ] D4. Each measured series shows its value, `fetched_at`, and a fitted doubling time with the
-      fit window stated.
+      fit window stated. *Amended 2026-10-08 (Greg approved): bounded scores in [0, 1] show
+      their best to date instead of a doubling time, because a score saturates.*
 - [ ] D5. A claim whose deadline has passed renders as "deadline passed: outcome unverified" unless
       a measured metric resolves it. It is never shown as "missed" without evidence.
 - [ ] D6. The buzz score is deterministic: the same inputs give the same ranking. Weights are read

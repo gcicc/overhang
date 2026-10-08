@@ -37,9 +37,6 @@ slice 2: SPEC Sections 3 to 5 (frontier news and arXiv ranked by buzz; AI in the
 ## Blockers
 
 - Publishing (repo plus Pages) is Greg's call.
-- Spec deviation to confirm: D4 says "each measured series shows a fitted doubling time".
-  Bounded benchmark scores show their best to date, not a doubling time, because a score
-  in [0, 1] saturates.
 - Held claims need a primary source: Hassabis 2026 (cu16), Kurzweil 2005 (gr15), and
   Hinton's 2023 tweet (cu22).
 - Six graveyard quotes (gr04 to gr07, gr09, gr10) rest on Wikipedia. The originals were not
