@@ -1,0 +1,176 @@
+{
+ "data": {
+  "checked_at": "2026-10-08T22:49:09+00:00",
+  "results": {
+   "cu01": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "cu02": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "cu03": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "cu04": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "cu05": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "cu06": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "cu07": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "cu08": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "cu09": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "cu10": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "cu11": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "cu12": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "cu13": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "cu14": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "cu15": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "cu16": {
+    "detail": "HTTPError",
+    "status": "fetch_failed"
+   },
+   "cu17": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "cu18": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "cu19": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "cu20": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "cu21": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "cu22": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "cu23": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "gr01": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "gr02": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "gr03": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "gr04": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "gr05": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "gr06": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "gr07": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "gr08": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "gr09": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "gr10": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "gr11": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "gr12": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "gr13": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "gr14": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "gr15": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "gr16": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "gr17": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "gr18": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "gr19": {
+    "detail": "",
+    "status": "verbatim"
+   }
+  }
+ },
+ "fetched_at": "2026-10-08T22:49:09.758091+00:00"
+}

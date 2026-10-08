@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OVERHANG</title>
+<meta name="description" content="What has been claimed about AI, against what has been measured. Refreshed on a schedule.">
+<style>{{ styles|safe }}</style>
+</head>
+<body>
+<main>
+<header class="mast">
+  <h1>OVERHANG</h1>
+  <p class="dek">What has been claimed about AI, against what has been measured.</p>
+  <div class="meta">Built {{ p.meta.generated }} UTC · {{ p.counts.claims }} sourced claims · {{ p.counts.superhuman }} superhuman-ledger events · no LLM anywhere in the pipeline</div>
+  <nav class="toc">
+    <a href="#ledger">The Ledger</a>
+    <a href="#measured">Measured</a>
+    <a href="#crowd">Crowd vs. CEOs</a>
+    <a href="#superhuman">Superhuman Ledger</a>
+    <a href="#claims">All claims</a>
+    <a href="#sources">Sources</a>
+  </nav>
+</header>
+
+<section id="ledger">
+  <h2>The Ledger</h2>
+  <p class="lede">Every dated prediction about AI: when it was made (dot) and the window it pointed to (bar). The status comes from the data alone. A passed deadline reads "outcome unverified" unless dated evidence resolves it; nothing is marked missed without evidence.</p>
+  <div class="tiles">
+    {% for k, v in p.status_counts.items() %}
+    <div class="tile"><div class="k">{{ p.status_labels[k] }}</div><div class="v">{{ v }}</div></div>
+    {% endfor %}
+  </div>
+  <div class="panel">
+    <div class="legend">
+      <span><i style="background:var(--ink);border-radius:50%"></i>said</span>
+      <span><i style="background:var(--open)"></i>open</span>
+      <span><i style="background:var(--window)"></i>window open</span>
+      <span><i class="passed"></i>deadline passed, outcome unverified</span>
+      <span><i style="background:var(--achieved)"></i>achieved (◆ evidence date)</span>
+    </div>
+    {{ p.charts.promise|safe }}
+    <p class="cap">The time axis changes scale at 2015 (dotted line): 1945–2015 is compressed so the crowded recent claims stay legible. Undated claims show the dot only. Hover for the claim; click a name for the quote and source.</p>
+  </div>
+</section>
+
+<section id="measured">
+  <h2>Measured</h2>
+  <p class="lede">What the claims are measured against. Unbounded series (task length, training compute) get a log-linear fit over frontier points with the window stated; bounded benchmark scores get their best result to date.</p>
+
+  <h3>How long a task can an AI agent finish? (METR, 50% time horizon)</h3>
+  {% set m = p.measured.metr %}
+  {% if m %}
+  <div class="tiles">
+    <div class="tile"><div class="k">Frontier now</div><div class="v">{{ m.best_label }}</div><div class="s">{{ m.best.model }} · {{ m.best.date }}</div></div>
+    <div class="tile"><div class="k">Doubling time (our fit)</div><div class="v">{{ m.fit.doubling_days|days }}</div><div class="s">n={{ m.fit.n }} frontier points, {{ m.fit.window_start }} → {{ m.fit.window_end }}, R²={{ '%.2f'|format(m.fit.r2) }}</div></div>
+    <div class="tile"><div class="k">METR's published</div><div class="v">{{ m.published|days }}</div><div class="s">METR fit, 2023 onward</div></div>
+    {% for t in m.crossings %}
+    <div class="tile"><div class="k">If this continues: {{ t.label }}</div><div class="v">{{ t.date[:7] if t.date else 'n/a' }}</div><div class="s">fitted line reaches {{ t.label }}</div></div>
+    {% endfor %}
+  </div>
+  <div class="panel">{{ m.chart|safe }}
+    <p class="cap">Blue: models that set a new record when released. Grey: other models. Solid line: OLS fit of log₂(minutes) on date over the stated window; dashed line: the same fit projected. Following METR, points with a central estimate above 16 hours are left out of the fit; they are still plotted. Source: <a href="{{ m.source_url }}">METR</a>, latest model in file dated {{ m.latest }}.</p>
+  </div>
+  {% else %}<p class="stale">METR data unavailable this build.</p>{% endif %}
+
+  <h3>Training compute of frontier models (Epoch AI)</h3>
+  {% set c = p.measured.compute %}
+  {% if c %}
+  <div class="tiles">
+    <div class="tile"><div class="k">Largest reported</div><div class="v">{{ c.best_label }}</div><div class="s">{{ c.best.model }} · {{ c.best.date }}</div></div>
+    <div class="tile"><div class="k">Growth (our fit)</div><div class="v">{{ '%.1f'|format(c.fit.growth_per_year) }}× / yr</div><div class="s">doubling {{ c.fit.doubling_days|days }}; n={{ c.fit.n }}, {{ c.fit.window_start }} → {{ c.fit.window_end }}</div></div>
+    <div class="tile"><div class="k">Rows without compute</div><div class="v">{{ c.missing }} / {{ c.total }}</div><div class="s">newest models often undisclosed; not imputed</div></div>
+  </div>
+  <div class="panel">{{ c.chart|safe }}
+    <p class="cap">FLOP, log scale. Fit over frontier (record-setting) points from {{ c.fit_start }}. Source: <a href="{{ c.source_url }}">Epoch AI, Frontier AI Models</a>, CC BY 4.0.</p>
+  </div>
+  {% else %}<p class="stale">Epoch compute data unavailable this build.</p>{% endif %}
+
+  <h3>Hard benchmarks: best score to date</h3>
+  {% set b = p.measured.bounded %}
+  <div class="tiles">
+    {% for name, s in b.series.items() %}
+    <div class="tile"><div class="k">{{ name }}</div><div class="v">{{ s.best.value|pct if s.best else 'n/a' }}</div><div class="s">{% if s.best %}{{ s.best.model }} · {{ s.best.date }}{% endif %}</div></div>
+    {% endfor %}
+  </div>
+  {% if b.chart %}<div class="panel">{{ b.chart|safe }}
+    <p class="cap">Stepped line: best score to date. Points: every reported result. FrontierMath (tiers 1–3) from <a href="https://epoch.ai/benchmarks/frontiermath">Epoch AI</a>; ARC-AGI semi-private set from <a href="https://arcprize.org/leaderboard">ARC Prize</a> (undocumented endpoint), plotted by model release date. ARC's own human-panel row is drawn as a reference line, as ARC Prize lists it.</p>
+  </div>{% endif %}
+</section>
+
+<section id="crowd">
+  <h2>Crowd vs. CEOs</h2>
+  <p class="lede">Prediction-market odds that AGI arrives before each year (Manifold), set against the windows lab leaders have given. These are separate markets with their own resolution criteria, and none uses a CEO's definition of AGI. Read the line as the crowd's rough timing, not as a calibrated distribution.</p>
+  {% if p.crowd %}
+  <div class="panel">{{ p.crowd.chart|safe }}
+    <p class="cap">Observed {{ p.crowd.observed_at }}. Below the line: every dated horizon from the current-claims set, sorted by when it opens and coloured by status.</p>
+  </div>
+  <div class="tbl-wrap"><table>
+    <tr><th>Market</th><th>Probability</th><th class="hide-sm">Volume</th></tr>
+    {% for mk in p.crowd.markets %}
+    <tr><td><a href="{{ mk.url }}">{{ mk.question }}</a></td><td>{{ mk.probability|pct }}</td><td class="hide-sm">{{ '{:,.0f}'.format(mk.volume or 0) }}</td></tr>
+    {% endfor %}
+  </table></div>
+  {% else %}<p class="stale">Manifold data unavailable this build.</p>{% endif %}
+</section>
+
+<section id="superhuman">
+  <h2>Superhuman Ledger</h2>
+  <p class="lede">The first time an AI system matched or beat the best humans, or expert humans, at something. "Superhuman" is often contested, so every row states its criterion and a confidence grade. {{ p.org_split }}</p>
+  <div class="panel">
+    <div class="legend">
+      <span><i style="background:var(--achieved)"></i>exceeded best humans</span>
+      <span><i style="background:var(--open)"></i>matched best</span>
+      <span><i style="background:var(--window)"></i>exceeded expert median</span>
+      <span><i style="background:var(--contested)"></i>contested</span>
+      <span><i style="border:2px solid var(--muted)"></i>hollow = low confidence</span>
+    </div>
+    {{ p.charts.superhuman|safe }}
+  </div>
+  <div class="tbl-wrap"><table>
+    <tr><th>Date</th><th>Achievement</th><th class="hide-sm">Criterion</th><th>Level</th></tr>
+    {% for e in p.superhuman|reverse %}
+    <tr id="{{ e.id }}">
+      <td class="when">{{ e.date[:7] if e.date_precision == 'month' else e.date }}</td>
+      <td><a href="{{ e.source_url }}">{{ e.achievement }}</a><div class="note">{{ e.system }} · {{ e.org }}</div></td>
+      <td class="hide-sm note">{{ e.criterion }}</td>
+      <td><span class="badge {{ 'contested' if e.level == 'contested' else 'achieved' if e.level == 'exceeded_best' else 'open' if e.level == 'matched_best' else 'window_open' }}">{{ e.level.replace('_', ' ') }}</span><div class="note">{{ e.confidence }} confidence</div></td>
+    </tr>
+    {% endfor %}
+  </table></div>
+</section>
+
+<section id="claims">
+  <h2>All claims</h2>
+  <p class="lede">Quotes are verbatim from the linked source. Every quote is re-checked weekly against the live page{% if p.quotecheck_at %} (last check {{ p.quotecheck_at }}){% endif %}; a quote that can no longer be found there is flagged, not hidden.{% if p.counts.held %} {{ p.counts.held }} further claim{{ 's are' if p.counts.held != 1 else ' is' }} held off the page until the quote is confirmed at its source.{% endif %}</p>
+  {% for set_name, title in [('current', 'Current: 2020 onward'), ('graveyard', 'Graveyard: historical forecasts')] %}
+  <h3>{{ title }}</h3>
+  <div class="tbl-wrap"><table>
+    <tr><th>Said</th><th>Claim</th><th>Horizon</th><th>Status</th></tr>
+    {% for c in p.claims if c.set == set_name %}
+    <tr id="{{ c.id }}">
+      <td class="when">{{ c.date_said }}</td>
+      <td><strong>{{ c.speaker }}</strong>{% if c.role_org %} <span class="note">{{ c.role_org }}</span>{% endif %}
+        <div>{{ c.claim_summary }}</div>
+        <blockquote>“{{ c.quote }}”</blockquote>
+        <div class="note"><a href="{{ c.source_url }}">source</a> ({{ c.source_type }})
+          {% set q = c.quotecheck %}
+          {% if q %} · <span class="qc {{ 'bad' if q.status in ('not_found', 'partial') else '' }}">quote check: {{ q.status.replace('_', ' ') }}</span>{% endif %}
+          {% if c.public_note %} · {{ c.public_note }}{% endif %}</div>
+      </td>
+      <td class="when">{{ c.horizon or '—' }}</td>
+      <td><span class="badge {{ c.status.status }}">{{ c.status.label }}</span>
+        {% if c.status.evidence %}<div class="note"><a href="#{{ c.status.evidence.id }}">{{ c.status.evidence.date[:4] }}</a>{% if c.status.lag_years is not none %}, {{ '%+.0f'|format(c.status.lag_years) }} yr vs. horizon{% endif %}</div>{% endif %}
+      </td>
+    </tr>
+    {% endfor %}
+  </table></div>
+  {% endfor %}
+</section>
+
+<footer id="sources">
+  <h2 style="font-size:20px;color:var(--ink)">Sources and freshness</h2>
+  <p>Data is fetched on a schedule and committed; the page itself makes no data requests. A failed fetch keeps the last good copy and is flagged here.</p>
+  <div class="tbl-wrap"><table>
+    <tr><th>Source</th><th>Fetched</th><th>Age</th><th>Last error</th></tr>
+    {% for name, s in p.status.items() %}
+    <tr><td>{{ name }}</td><td>{{ (s.fetched_at or 'never')[:16].replace('T', ' ') }}</td><td class="{{ 'stale' if s.stale else '' }}">{{ s.age }}{% if s.stale %} · STALE{% endif %}</td><td>{{ s.last_error or '' }}</td></tr>
+    {% endfor %}
+  </table></div>
+  <p>Credits: METR; Epoch AI (CC BY 4.0); ARC Prize; Manifold Markets. Claims and the Superhuman Ledger are hand-curated with a source for every row; the build fails on a row without one.</p>
+</footer>
+</main>
+</body>
+</html>

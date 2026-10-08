@@ -1,0 +1,615 @@
+{
+ "data": {
+  "points": [
+   {
+    "date": "2024-06-20",
+    "model": "claude-3-5-sonnet-20240620",
+    "org": "Anthropic",
+    "value": 0.010344827586206896
+   },
+   {
+    "date": "2024-08-06",
+    "model": "gpt-4o-2024-08-06",
+    "org": "OpenAI",
+    "value": 0.0034482758620689655
+   },
+   {
+    "date": "2024-09-12",
+    "model": "o1-mini-2024-09-12_medium",
+    "org": "OpenAI",
+    "value": 0.017241379310344827
+   },
+   {
+    "date": "2024-09-12",
+    "model": "o1-mini-2024-09-12_high",
+    "org": "OpenAI",
+    "value": 0.013793103448275862
+   },
+   {
+    "date": "2024-09-24",
+    "model": "gemini-1.5-flash-002",
+    "org": "Google DeepMind",
+    "value": 0.0
+   },
+   {
+    "date": "2024-10-22",
+    "model": "claude-3-5-haiku-20241022",
+    "org": "Anthropic",
+    "value": 0.0034482758620689655
+   },
+   {
+    "date": "2024-10-22",
+    "model": "claude-3-5-sonnet-20241022",
+    "org": "Anthropic",
+    "value": 0.020689655172413793
+   },
+   {
+    "date": "2024-11-18",
+    "model": "mistral-large-2411",
+    "org": "Mistral AI",
+    "value": 0.0034482758620689655
+   },
+   {
+    "date": "2024-11-20",
+    "model": "gpt-4o-2024-11-20",
+    "org": "OpenAI",
+    "value": 0.0034482758620689655
+   },
+   {
+    "date": "2024-12-12",
+    "model": "grok-2-1212",
+    "org": "xAI",
+    "value": 0.006896551724137931
+   },
+   {
+    "date": "2024-12-17",
+    "model": "o1-2024-12-17_high",
+    "org": "OpenAI",
+    "value": 0.09310344827586207
+   },
+   {
+    "date": "2024-12-26",
+    "model": "DeepSeek-V3",
+    "org": "DeepSeek",
+    "value": 0.017241379310344827
+   },
+   {
+    "date": "2025-01-25",
+    "model": "qwen-max-2025-01-25",
+    "org": "Alibaba",
+    "value": 0.010344827586206896
+   },
+   {
+    "date": "2025-01-31",
+    "model": "o3-mini-2025-01-31_high",
+    "org": "OpenAI",
+    "value": 0.12413793103448276
+   },
+   {
+    "date": "2025-01-31",
+    "model": "o3-mini-2025-01-31_medium",
+    "org": "OpenAI",
+    "value": 0.08081896551724138
+   },
+   {
+    "date": "2025-02-05",
+    "model": "gemini-2.0-flash-001",
+    "org": "Google DeepMind,Google",
+    "value": 0.017241379310344827
+   },
+   {
+    "date": "2025-02-24",
+    "model": "claude-3-7-sonnet-20250219_64K",
+    "org": "Anthropic",
+    "value": 0.03103448275862069
+   },
+   {
+    "date": "2025-02-24",
+    "model": "claude-3-7-sonnet-20250219_32K",
+    "org": "Anthropic",
+    "value": 0.034482758620689655
+   },
+   {
+    "date": "2025-02-24",
+    "model": "claude-3-7-sonnet-20250219_16K",
+    "org": "Anthropic",
+    "value": 0.041379310344827586
+   },
+   {
+    "date": "2025-02-24",
+    "model": "claude-3-7-sonnet-20250219",
+    "org": "Anthropic",
+    "value": 0.03103448275862069
+   },
+   {
+    "date": "2025-04-05",
+    "model": "Llama-4-Maverick-17B-128E-Instruct-FP8",
+    "org": "Meta AI",
+    "value": 0.006896551724137931
+   },
+   {
+    "date": "2025-04-05",
+    "model": "Llama-4-Scout-17B-16E-Instruct",
+    "org": "Meta AI",
+    "value": 0.0
+   },
+   {
+    "date": "2025-04-09",
+    "model": "grok-3-mini-beta_low",
+    "org": "xAI",
+    "value": 0.027586206896551724
+   },
+   {
+    "date": "2025-04-09",
+    "model": "grok-3-mini-beta_high",
+    "org": "xAI",
+    "value": 0.05862068965517241
+   },
+   {
+    "date": "2025-04-09",
+    "model": "grok-3-beta",
+    "org": "xAI",
+    "value": 0.03793103448275862
+   },
+   {
+    "date": "2025-04-14",
+    "model": "gpt-4.1-nano-2025-04-14",
+    "org": "OpenAI",
+    "value": 0.010344827586206896
+   },
+   {
+    "date": "2025-04-14",
+    "model": "gpt-4.1-mini-2025-04-14",
+    "org": "OpenAI",
+    "value": 0.04482758620689655
+   },
+   {
+    "date": "2025-04-14",
+    "model": "gpt-4.1-2025-04-14",
+    "org": "OpenAI",
+    "value": 0.05517241379310345
+   },
+   {
+    "date": "2025-04-16",
+    "model": "o3-2025-04-16_low",
+    "org": "OpenAI",
+    "value": 0.09722222222222222
+   },
+   {
+    "date": "2025-04-16",
+    "model": "o3-2025-04-16_high",
+    "org": "OpenAI",
+    "value": 0.18685121107266436
+   },
+   {
+    "date": "2025-04-16",
+    "model": "o3-2025-04-16_medium",
+    "org": "OpenAI",
+    "value": 0.16896551724137931
+   },
+   {
+    "date": "2025-04-16",
+    "model": "o4-mini-2025-04-16_low",
+    "org": "OpenAI",
+    "value": 0.10689655172413794
+   },
+   {
+    "date": "2025-04-16",
+    "model": "o4-mini-2025-04-16_medium",
+    "org": "OpenAI",
+    "value": 0.1896551724137931
+   },
+   {
+    "date": "2025-04-16",
+    "model": "o4-mini-2025-04-16_high",
+    "org": "OpenAI",
+    "value": 0.2482758620689655
+   },
+   {
+    "date": "2025-04-28",
+    "model": "qwen-plus-2025-04-28",
+    "org": "Alibaba",
+    "value": 0.017241379310344827
+   },
+   {
+    "date": "2025-05-07",
+    "model": "mistral-medium-2505",
+    "org": "Mistral AI",
+    "value": 0.0034602076124567475
+   },
+   {
+    "date": "2025-05-22",
+    "model": "claude-opus-4-20250514_27K",
+    "org": "Anthropic",
+    "value": 0.041379310344827586
+   },
+   {
+    "date": "2025-05-22",
+    "model": "claude-opus-4-20250514",
+    "org": "Anthropic",
+    "value": 0.04482758620689655
+   },
+   {
+    "date": "2025-05-22",
+    "model": "claude-sonnet-4-20250514",
+    "org": "Anthropic",
+    "value": 0.041379310344827586
+   },
+   {
+    "date": "2025-06-05",
+    "model": "gemini-2.5-pro-preview-06-05",
+    "org": "Google DeepMind",
+    "value": 0.10344827586206896
+   },
+   {
+    "date": "2025-06-17",
+    "model": "gemini-2.5-flash",
+    "org": "Google DeepMind",
+    "value": 0.04844290657439446
+   },
+   {
+    "date": "2025-06-17",
+    "model": "gemini-2.5-pro",
+    "org": "Google DeepMind",
+    "value": 0.1413793103448276
+   },
+   {
+    "date": "2025-07-09",
+    "model": "grok-4-0709",
+    "org": "xAI",
+    "value": 0.19655172413793104
+   },
+   {
+    "date": "2025-07-25",
+    "model": "Qwen/Qwen3-235B-A22B-Thinking-2507",
+    "org": "Alibaba",
+    "value": 0.08480565371024736
+   },
+   {
+    "date": "2025-08-01",
+    "model": "gemini-2.5-deep-think-2025-08-01-webapp",
+    "org": "Google,Google DeepMind",
+    "value": 0.29
+   },
+   {
+    "date": "2025-08-05",
+    "model": "claude-opus-4-1-20250805_27K",
+    "org": "Anthropic",
+    "value": 0.07241379310344828
+   },
+   {
+    "date": "2025-08-05",
+    "model": "claude-opus-4-1-20250805",
+    "org": "Anthropic",
+    "value": 0.05862068965517241
+   },
+   {
+    "date": "2025-08-07",
+    "model": "gpt-5-2025-08-07_high",
+    "org": "OpenAI",
+    "value": 0.32413793103448274
+   },
+   {
+    "date": "2025-08-07",
+    "model": "gpt-5-mini-2025-08-07_high",
+    "org": "OpenAI",
+    "value": 0.27241379310344827
+   },
+   {
+    "date": "2025-08-07",
+    "model": "gpt-5-mini-2025-08-07_medium",
+    "org": "OpenAI",
+    "value": 0.20344827586206896
+   },
+   {
+    "date": "2025-08-07",
+    "model": "gpt-5-2025-08-07_medium",
+    "org": "OpenAI",
+    "value": 0.27241379310344827
+   },
+   {
+    "date": "2025-08-07",
+    "model": "gpt-5-nano-2025-08-07_high",
+    "org": "OpenAI",
+    "value": 0.08275862068965517
+   },
+   {
+    "date": "2025-08-07",
+    "model": "gpt-5-nano-2025-08-07_medium",
+    "org": "OpenAI",
+    "value": 0.07241379310344828
+   },
+   {
+    "date": "2025-09-29",
+    "model": "claude-sonnet-4-5-20250929",
+    "org": "Anthropic",
+    "value": 0.09310344827586207
+   },
+   {
+    "date": "2025-09-29",
+    "model": "claude-sonnet-4-5-20250929_32K",
+    "org": "Anthropic",
+    "value": 0.1522491349480969
+   },
+   {
+    "date": "2025-09-29",
+    "model": "claude-sonnet-4-5-20250929_59K",
+    "org": "Anthropic",
+    "value": 0.13494809688581316
+   },
+   {
+    "date": "2025-09-30",
+    "model": "zai-org/GLM-4.6",
+    "org": "Z.ai (Zhipu AI),Tsinghua University",
+    "value": 0.03819444444444445
+   },
+   {
+    "date": "2025-10-15",
+    "model": "claude-haiku-4-5-20251001_32K",
+    "org": "Anthropic",
+    "value": 0.059027777777777776
+   },
+   {
+    "date": "2025-10-15",
+    "model": "claude-haiku-4-5-20251001",
+    "org": "Anthropic",
+    "value": 0.041379310344827586
+   },
+   {
+    "date": "2025-11-06",
+    "model": "moonshotai/Kimi-K2-Thinking",
+    "org": "Moonshot",
+    "value": 0.21403508771929824
+   },
+   {
+    "date": "2025-11-13",
+    "model": "gpt-5.1-2025-11-13_none",
+    "org": "OpenAI",
+    "value": 0.02097902097902098
+   },
+   {
+    "date": "2025-11-13",
+    "model": "gpt-5.1-2025-11-13_low",
+    "org": "OpenAI",
+    "value": 0.17301038062283736
+   },
+   {
+    "date": "2025-11-13",
+    "model": "gpt-5.1-2025-11-13_medium",
+    "org": "OpenAI",
+    "value": 0.2689655172413793
+   },
+   {
+    "date": "2025-11-13",
+    "model": "gpt-5.1-2025-11-13_high",
+    "org": "OpenAI",
+    "value": 0.3103448275862069
+   },
+   {
+    "date": "2025-11-18",
+    "model": "gemini-3-pro-preview",
+    "org": "Google DeepMind",
+    "value": 0.376
+   },
+   {
+    "date": "2025-11-24",
+    "model": "claude-opus-4-5-20251101",
+    "org": "Anthropic",
+    "value": 0.20689655172413793
+   },
+   {
+    "date": "2025-11-24",
+    "model": "claude-opus-4-5-20251101_32K",
+    "org": "Anthropic",
+    "value": 0.20689655172413793
+   },
+   {
+    "date": "2025-11-24",
+    "model": "claude-opus-4-5-20251101_16K",
+    "org": "Anthropic",
+    "value": 0.20344827586206896
+   },
+   {
+    "date": "2025-12-01",
+    "model": "fireworks/deepseek-v3p2",
+    "org": "DeepSeek",
+    "value": 0.221
+   },
+   {
+    "date": "2025-12-11",
+    "model": "gpt-5.2-2025-12-11_xhigh",
+    "org": "OpenAI",
+    "value": 0.407
+   },
+   {
+    "date": "2025-12-11",
+    "model": "gpt-5.2-2025-12-11_high",
+    "org": "OpenAI",
+    "value": 0.40344827586206894
+   },
+   {
+    "date": "2025-12-11",
+    "model": "gpt-5.2-2025-12-11_medium",
+    "org": "OpenAI",
+    "value": 0.3689655172413793
+   },
+   {
+    "date": "2025-12-11",
+    "model": "gpt-5.2-2025-12-11_low",
+    "org": "OpenAI",
+    "value": 0.2655172413793103
+   },
+   {
+    "date": "2025-12-17",
+    "model": "gemini-3-flash-preview",
+    "org": "Google DeepMind",
+    "value": 0.356401384083045
+   },
+   {
+    "date": "2025-12-22",
+    "model": "zai-org/GLM-4.7",
+    "org": "Z.ai (Zhipu AI)",
+    "value": 0.024390243902439025
+   },
+   {
+    "date": "2026-01-27",
+    "model": "fireworks/kimi-k2p5",
+    "org": "Moonshot",
+    "value": 0.279
+   },
+   {
+    "date": "2026-02-05",
+    "model": "claude-opus-4-6_max",
+    "org": "Anthropic",
+    "value": 0.407
+   },
+   {
+    "date": "2026-02-05",
+    "model": "claude-opus-4-6_64K",
+    "org": "Anthropic",
+    "value": 0.39655172413793105
+   },
+   {
+    "date": "2026-02-05",
+    "model": "claude-opus-4-6_32K",
+    "org": "Anthropic",
+    "value": 0.4
+   },
+   {
+    "date": "2026-02-05",
+    "model": "claude-opus-4-6",
+    "org": "Anthropic",
+    "value": 0.38275862068965516
+   },
+   {
+    "date": "2026-02-11",
+    "model": "glm-5",
+    "org": "Z.ai (Zhipu AI)",
+    "value": 0.16433566433566432
+   },
+   {
+    "date": "2026-02-16",
+    "model": "qwen3.5-plus",
+    "org": "Alibaba",
+    "value": 0.2103448275862069
+   },
+   {
+    "date": "2026-02-17",
+    "model": "claude-sonnet-4-6_16K",
+    "org": "Anthropic",
+    "value": 0.324
+   },
+   {
+    "date": "2026-02-19",
+    "model": "gemini-3.1-pro-preview",
+    "org": "Google DeepMind",
+    "value": 0.369
+   },
+   {
+    "date": "2026-02-25",
+    "model": "qwen3.5-flash",
+    "org": "Alibaba",
+    "value": 0.06206896551724138
+   },
+   {
+    "date": "2026-03-05",
+    "model": "gpt-5.4-2026-03-05_xhigh",
+    "org": "OpenAI",
+    "value": 0.476
+   },
+   {
+    "date": "2026-03-05",
+    "model": "gpt-5.4-pro-2026-03-05_xhigh",
+    "org": "OpenAI",
+    "value": 0.5
+   },
+   {
+    "date": "2026-03-17",
+    "model": "gpt-5.4-mini-2026-03-17_high",
+    "org": "OpenAI",
+    "value": 0.2828
+   },
+   {
+    "date": "2026-03-17",
+    "model": "gpt-5.4-nano-2026-03-17_high",
+    "org": "OpenAI",
+    "value": 0.2586
+   },
+   {
+    "date": "2026-03-31",
+    "model": "qwen3.6-plus",
+    "org": "Alibaba",
+    "value": 0.2620689655172414
+   },
+   {
+    "date": "2026-04-07",
+    "model": "glm-5.1",
+    "org": "Z.ai (Zhipu AI)",
+    "value": 0.33448275862068966
+   },
+   {
+    "date": "2026-04-08",
+    "model": "muse-spark",
+    "org": "Meta AI",
+    "value": 0.39
+   },
+   {
+    "date": "2026-04-16",
+    "model": "claude-opus-4-7_xhigh",
+    "org": "Anthropic",
+    "value": 0.4379310344827586
+   },
+   {
+    "date": "2026-04-20",
+    "model": "qwen3.6-max-preview",
+    "org": "Alibaba",
+    "value": 0.23103448275862068
+   },
+   {
+    "date": "2026-04-20",
+    "model": "kimi-k2.6",
+    "org": "Moonshot",
+    "value": 0.3896551724137931
+   },
+   {
+    "date": "2026-04-23",
+    "model": "gpt-5.5-pro-pre-release_xhigh",
+    "org": "OpenAI",
+    "value": 0.51
+   },
+   {
+    "date": "2026-04-23",
+    "model": "gpt-5.5-pro-pre-release_high",
+    "org": "OpenAI",
+    "value": 0.524
+   },
+   {
+    "date": "2026-04-23",
+    "model": "gpt-5.5-pre-release_xhigh",
+    "org": "OpenAI",
+    "value": 0.517
+   },
+   {
+    "date": "2026-04-27",
+    "model": "qwen3.6-flash",
+    "org": "Alibaba",
+    "value": 0.10344827586206896
+   },
+   {
+    "date": "2026-05-19",
+    "model": "gemini-3.5-flash_high",
+    "org": "Google DeepMind",
+    "value": 0.3896551724137931
+   },
+   {
+    "date": "2026-05-28",
+    "model": "claude-opus-4-8_max",
+    "org": "Anthropic",
+    "value": 0.4724137931034483
+   }
+  ],
+  "source_url": "https://epoch.ai/benchmarks/frontiermath",
+  "unit": "fraction solved"
+ },
+ "fetched_at": "2026-10-08T22:48:10.352016+00:00"
+}

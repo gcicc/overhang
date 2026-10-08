@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OVERHANG</title>
+<meta name="description" content="What has been claimed about AI, against what has been measured. Refreshed on a schedule.">
+<style>:root {
+  --bg: #f7f6f2;
+  --panel: #ffffff;
+  --ink: #1d1d1b;
+  --muted: #6b6a64;
+  --rule: #dddad2;
+  --grid: #e9e6de;
+  --accent: #b4462d;
+  --s0: #2f6db5;
+  --s1: #b4462d;
+  --achieved: #2f8a4f;
+  --open: #2f6db5;
+  --window: #c58a12;
+  --passed: #b4462d;
+  --undated: #8d8b84;
+  --contested: #8a5cb5;
+  --stale: #b4462d;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #131416;
+    --panel: #1b1c1f;
+    --ink: #e8e6df;
+    --muted: #9b998f;
+    --rule: #2e2f33;
+    --grid: #26272b;
+    --accent: #e0775c;
+    --s0: #6fa3e0;
+    --s1: #e0775c;
+    --achieved: #5cbf7e;
+    --open: #6fa3e0;
+    --window: #e0b04a;
+    --passed: #e0775c;
+    --undated: #85837b;
+    --contested: #b48ae0;
+    --stale: #e0775c;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #131416; --panel: #1b1c1f; --ink: #e8e6df; --muted: #9b998f; --rule: #2e2f33;
+  --grid: #26272b; --accent: #e0775c; --s0: #6fa3e0; --s1: #e0775c; --achieved: #5cbf7e;
+  --open: #6fa3e0; --window: #e0b04a; --passed: #e0775c; --undated: #85837b;
+  --contested: #b48ae0; --stale: #e0775c;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font: 16px/1.5 "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+a { color: inherit; text-decoration-color: var(--rule); text-underline-offset: 2px; }
+a:hover { text-decoration-color: var(--accent); }
+main { max-width: 1040px; margin: 0 auto; padding: 0 16px 64px; }
+
+header.mast { border-bottom: 2px solid var(--ink); padding: 28px 0 14px; margin-bottom: 8px; }
+.mast h1 { font: 800 clamp(34px, 7vw, 56px)/1 "Inter", system-ui, sans-serif; letter-spacing: -0.03em; margin: 0; }
+.mast .dek { font-size: 18px; color: var(--muted); margin: 8px 0 0; max-width: 60ch; }
+.mast .meta { font-size: 13px; color: var(--muted); margin-top: 10px; }
+
+nav.toc { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 14px; padding: 10px 0 0; }
+nav.toc a { text-decoration: none; color: var(--muted); }
+nav.toc a:hover { color: var(--ink); }
+
+section { padding: 34px 0 6px; border-bottom: 1px solid var(--rule); }
+section h2 { font-size: 26px; letter-spacing: -0.01em; margin: 0 0 4px; }
+section .lede { color: var(--muted); margin: 0 0 18px; max-width: 70ch; }
+h3 { font-size: 17px; margin: 22px 0 6px; }
+
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 10px; margin: 12px 0 18px; }
+.tile { background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; padding: 10px 12px; }
+.tile .k { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+.tile .v { font-size: 24px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.tile .s { font-size: 12px; color: var(--muted); overflow-wrap: anywhere; }
+
+.panel { background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; padding: 12px 12px 6px; margin: 10px 0 14px; }
+.panel .cap { font-size: 13px; color: var(--muted); margin: 6px 4px 6px; }
+.chart { width: 100%; height: auto; display: block; }
+.chart text { font-family: inherit; }
+.chart .grid, .chart .lane { stroke: var(--grid); stroke-width: 1; }
+.chart .tick { fill: var(--muted); font-size: 11px; }
+.chart .row-label { fill: var(--ink); font-size: 11px; }
+.chart .axis-break { stroke: var(--muted); stroke-width: 1; stroke-dasharray: 1 3; }
+.chart .now { stroke: var(--accent); stroke-width: 1.5; stroke-dasharray: 3 3; }
+.chart .now-label { fill: var(--accent); font-size: 11px; font-weight: 600; }
+.chart .pt { fill: var(--muted); opacity: 0.45; }
+.chart .pt-front { fill: var(--s0); }
+.chart .fit { stroke: var(--s0); stroke-width: 2; }
+.chart .projection { stroke: var(--s0); stroke-width: 2; stroke-dasharray: 6 4; opacity: 0.8; }
+.chart .threshold { stroke: var(--muted); stroke-width: 1; stroke-dasharray: 2 3; }
+.chart .threshold-label { fill: var(--muted); font-size: 11px; }
+.chart .step { fill: none; stroke-width: 2; }
+.chart .step.s0, .chart .series-label.s0 { stroke: var(--s0); }
+.chart .step.s1, .chart .series-label.s1 { stroke: var(--s1); }
+.chart .series-label { font-size: 11px; stroke: none !important; }
+.chart .series-label.s0 { fill: var(--s0); }
+.chart .series-label.s1 { fill: var(--s1); }
+.chart .pt.s0 { fill: var(--s0); }
+.chart .pt.s1 { fill: var(--s1); }
+.chart .crowd { fill: none; stroke: var(--s0); stroke-width: 2; }
+.chart .said { fill: var(--ink); }
+.chart .said-link { stroke: var(--rule); stroke-width: 1; }
+.chart .window.st-achieved, .chart .evidence { fill: var(--achieved); }
+.chart .window.st-open { fill: var(--open); }
+.chart .window.st-window { fill: var(--window); }
+.chart .window.st-passed { fill: none; stroke: var(--passed); stroke-width: 1.5; }
+.chart .window.st-undated { fill: var(--undated); }
+.chart .st-passed-text { fill: var(--passed); }
+.chart .st-achieved-text { fill: var(--achieved); }
+.chart .sh { stroke-width: 2; }
+.chart .sh.lv-exceeded { fill: var(--achieved); stroke: var(--achieved); }
+.chart .sh.lv-matched { fill: var(--open); stroke: var(--open); }
+.chart .sh.lv-expert { fill: var(--window); stroke: var(--window); }
+.chart .sh.lv-contested { fill: var(--contested); stroke: var(--contested); }
+.chart .sh.low { fill: var(--panel); }
+
+.legend { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 12px; color: var(--muted); margin: 0 4px 6px; }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
+.legend .passed { border: 1.5px solid var(--passed); }
+
+.tbl-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th { text-align: left; font-size: 12px; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; border-bottom: 1px solid var(--rule); padding: 6px 8px; }
+td { border-bottom: 1px solid var(--rule); padding: 8px; vertical-align: top; }
+tr:target td { background: color-mix(in srgb, var(--accent) 12%, transparent); }
+td.when { white-space: nowrap; font-variant-numeric: tabular-nums; color: var(--muted); }
+blockquote { margin: 4px 0 0; padding-left: 10px; border-left: 2px solid var(--rule); color: var(--muted); font-size: 13px; }
+.badge { display: inline-block; font-size: 11px; font-weight: 600; padding: 1px 7px; border-radius: 10px; white-space: nowrap; border: 1px solid currentColor; }
+.badge.achieved { color: var(--achieved); }
+.badge.open { color: var(--open); }
+.badge.window_open { color: var(--window); }
+.badge.passed_unverified { color: var(--passed); }
+.badge.undated { color: var(--undated); }
+.badge.contested { color: var(--contested); }
+.qc { font-size: 11px; color: var(--muted); }
+.qc.bad { color: var(--stale); font-weight: 600; }
+.note { font-size: 12px; color: var(--muted); }
+
+footer { padding: 24px 0; font-size: 13px; color: var(--muted); }
+footer table { font-size: 13px; }
+.stale { color: var(--stale); font-weight: 600; }
+
+@media (max-width: 640px) {
+  td, th { padding: 6px 4px; }
+  .hide-sm { display: none; }
+}
+
+/* Phones: charts keep a legible minimum width and scroll sideways inside their panel. */
+@media (max-width: 640px) {
+  .panel { overflow-x: auto; }
+  .panel .chart { min-width: 620px; }
+  .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .tile .v { font-size: 20px; }
+}
+</style>
+</head>
+<body>
+<main>
+<header class="mast">
+  <h1>OVERHANG</h1>
+  <p class="dek">What has been claimed about AI, against what has been measured.</p>
+  <div class="meta">Built 2026-10-08 22:50 UTC · 39 sourced claims · 31 superhuman-ledger events · no LLM anywhere in the pipeline</div>
+  <nav class="toc">
+    <a href="#ledger">The Ledger</a>
+    <a href="#measured">Measured</a>
+    <a href="#crowd">Crowd vs. CEOs</a>
+    <a href="#superhuman">Superhuman Ledger</a>
+    <a href="#claims">All claims</a>
+    <a href="#sources">Sources</a>
+  </nav>
+</header>
+
+<section id="ledger">
+  <h2>The Ledger</h2>
+  <p class="lede">Every dated prediction about AI: when it was made (dot) and the window it pointed to (bar). The status comes from the data alone. A passed deadline reads "outcome unverified" unless dated evidence resolves it; nothing is marked missed without evidence.</p>
+  <div class="tiles">
+    <div class="tile"><div class="k">achieved</div><div class="v">1</div></div>
+    <div class="tile"><div class="k">window open</div><div class="v">4</div></div>
+    <div class="tile"><div class="k">open</div><div class="v">16</div></div>
+    <div class="tile"><div class="k">deadline passed: outcome unverified</div><div class="v">9</div></div>
+    <div class="tile"><div class="k">undated</div><div class="v">9</div></div>
+  </div>
+  <div class="panel">
+    <div class="legend">
+      <span><i style="background:var(--ink);border-radius:50%"></i>said</span>
+      <span><i style="background:var(--open)"></i>open</span>
+      <span><i style="background:var(--window)"></i>window open</span>
+      <span><i class="passed"></i>deadline passed, outcome unverified</span>
+      <span><i style="background:var(--achieved)"></i>achieved (◆ evidence date)</span>
+    </div>
+    <svg class="chart" viewBox="0 0 760 653" role="img" aria-label="Claims: when said and horizon" preserveAspectRatio="xMidYMid meet"><line class="grid" x1="223.2" x2="223.2" y1="30" y2="619"/><text class="tick" x="223.2" y="635" text-anchor="middle">1950</text><text class="tick" x="223.2" y="26" text-anchor="middle">1950</text><line class="grid" x1="276.2" x2="276.2" y1="30" y2="619"/><text class="tick" x="276.2" y="635" text-anchor="middle">1970</text><text class="tick" x="276.2" y="26" text-anchor="middle">1970</text><line class="grid" x1="329.2" x2="329.2" y1="30" y2="619"/><text class="tick" x="329.2" y="635" text-anchor="middle">1990</text><text class="tick" x="329.2" y="26" text-anchor="middle">1990</text><line class="grid" x1="382.2" x2="382.2" y1="30" y2="619"/><text class="tick" x="382.2" y="635" text-anchor="middle">2010</text><text class="tick" x="382.2" y="26" text-anchor="middle">2010</text><line class="grid" x1="429.9" x2="429.9" y1="30" y2="619"/><text class="tick" x="429.9" y="635" text-anchor="middle">2020</text><text class="tick" x="429.9" y="26" text-anchor="middle">2020</text><line class="grid" x1="498.8" x2="498.8" y1="30" y2="619"/><text class="tick" x="498.8" y="635" text-anchor="middle">2030</text><text class="tick" x="498.8" y="26" text-anchor="middle">2030</text><line class="grid" x1="567.8" x2="567.8" y1="30" y2="619"/><text class="tick" x="567.8" y="635" text-anchor="middle">2040</text><text class="tick" x="567.8" y="26" text-anchor="middle">2040</text><line class="grid" x1="636.6" x2="636.6" y1="30" y2="619"/><text class="tick" x="636.6" y="635" text-anchor="middle">2050</text><text class="tick" x="636.6" y="26" text-anchor="middle">2050</text><line class="grid" x1="705.5" x2="705.5" y1="30" y2="619"/><text class="tick" x="705.5" y="635" text-anchor="middle">2060</text><text class="tick" x="705.5" y="26" text-anchor="middle">2060</text><line class="axis-break" x1="395.5" x2="395.5" y1="30" y2="619"/><line class="now" x1="476.6" x2="476.6" y1="30" y2="619"/><text class="now-label" x="480.6" y="615">now</text><a href="#gr02"><text class="row-label" x="202" y="45.5" text-anchor="end">Alan Turing · 1950</text></a><line class="said-link" x1="223.2" x2="355.8" y1="41.5" y2="41.5"/><rect class="window st-passed" x="355.8" y="37.5" width="3.0" height="8" rx="2"><title>Alan Turing (1950): By ~2000 a computer will hold an average interrogator to &lt;=70% correct identification after 5 minutes — deadline passed: outcome unverified</title></rect><circle class="said" cx="223.2" cy="41.5" r="3"><title>Alan Turing (1950): By ~2000 a computer will hold an average interrogator to &lt;=70% correct identification after 5 minutes — deadline passed: outcome unverified</title></circle><a href="#gr03"><text class="row-label" x="202" y="60.5" text-anchor="end">Alan Turing · 1950</text></a><line class="said-link" x1="223.2" x2="355.8" y1="56.5" y2="56.5"/><rect class="window st-passed" x="355.8" y="52.5" width="3.0" height="8" rx="2"><title>Alan Turing (1950): By ~2000 educated opinion will accept the phrase &#x27;machines thinking&#x27; — deadline passed: outcome unverified</title></rect><circle class="said" cx="223.2" cy="56.5" r="3"><title>Alan Turing (1950): By ~2000 educated opinion will accept the phrase &#x27;machines thinking&#x27; — deadline passed: outcome unverified</title></circle><a href="#gr01"><text class="row-label" x="202" y="75.5" text-anchor="end">John McCarthy et al. · 1955</text></a><circle class="said" cx="238.3" cy="71.5" r="3"><title>John McCarthy et al. (1955-08-31): A carefully chosen group working together for a summer could make significant advances on machine intelligence problems — undated</title></circle><a href="#gr04"><text class="row-label" x="202" y="90.5" text-anchor="end">Herbert A. Simon and Allen Ne… · 1958</text></a><line class="said-link" x1="244.4" x2="270.9" y1="86.5" y2="86.5"/><rect class="window st-achieved" x="270.9" y="82.5" width="3.0" height="8" rx="2"><title>Herbert A. Simon and Allen Newell (1958): A computer will be world chess champion within ten years — achieved</title></rect><circle class="said" cx="244.4" cy="86.5" r="3"><title>Herbert A. Simon and Allen Newell (1958): A computer will be world chess champion within ten years — achieved</title></circle><path class="evidence" d="M348.7,81.5 l5,5 l-5,5 l-5,-5 z"><title>Defeated reigning world chess champion in a standard-time match (1997-05-01)</title></path><a href="#gr05"><text class="row-label" x="202" y="105.5" text-anchor="end">Herbert A. Simon and Allen Ne… · 1958</text></a><line class="said-link" x1="244.4" x2="270.9" y1="101.5" y2="101.5"/><rect class="window st-passed" x="270.9" y="97.5" width="3.0" height="8" rx="2"><title>Herbert A. Simon and Allen Newell (1958): A computer will discover and prove an important new theorem within ten years — deadline passed: outcome unverified</title></rect><circle class="said" cx="244.4" cy="101.5" r="3"><title>Herbert A. Simon and Allen Newell (1958): A computer will discover and prove an important new theorem within ten years — deadline passed: outcome unverified</title></circle><a href="#gr06"><text class="row-label" x="202" y="120.5" text-anchor="end">Herbert A. Simon · 1965</text></a><line class="said-link" x1="263.0" x2="316.0" y1="116.5" y2="116.5"/><rect class="window st-passed" x="316.0" y="112.5" width="3.0" height="8" rx="2"><title>Herbert A. Simon (1965): Machines will do any work a man can do within twenty years — deadline passed: outcome unverified</title></rect><circle class="said" cx="263.0" cy="116.5" r="3"><title>Herbert A. Simon (1965): Machines will do any work a man can do within twenty years — deadline passed: outcome unverified</title></circle><a href="#gr09"><text class="row-label" x="202" y="135.5" text-anchor="end">I. J. Good · 1965</text></a><circle class="said" cx="263.0" cy="131.5" r="3"><title>I. J. Good (1965): The first ultraintelligent machine would trigger an intelligence explosion and be humanity&#x27;s last necessary invention — undated</title></circle><a href="#gr07"><text class="row-label" x="202" y="150.5" text-anchor="end">Marvin Minsky · 1967</text></a><circle class="said" cx="268.3" cy="146.5" r="3"><title>Marvin Minsky (1967): AI will be substantially solved within a generation — undated</title></circle><a href="#gr08"><text class="row-label" x="202" y="165.5" text-anchor="end">Marvin Minsky (as reported by… · 1970</text></a><line class="said-link" x1="276.2" x2="297.4" y1="161.5" y2="161.5"/><rect class="window st-passed" x="297.4" y="157.5" width="3.0" height="8" rx="2"><title>Marvin Minsky (as reported by Life magazine) (1970): General-intelligence machine within 3-8 years — deadline passed: outcome unverified</title></rect><circle class="said" cx="276.2" cy="161.5" r="3"><title>Marvin Minsky (as reported by Life magazine) (1970): General-intelligence machine within 3-8 years — deadline passed: outcome unverified</title></circle><a href="#gr10"><text class="row-label" x="202" y="180.5" text-anchor="end">Sir James Lighthill · 1973</text></a><circle class="said" cx="284.2" cy="176.5" r="3"><title>Sir James Lighthill (1973): Retrospective: AI had not delivered the promised impact (the Lighthill report preceding the first AI winter) — undated</title></circle><a href="#gr12"><text class="row-label" x="202" y="195.5" text-anchor="end">Vernor Vinge · 1993</text></a><line class="said-link" x1="337.6" x2="450.6" y1="191.5" y2="191.5"/><rect class="window st-passed" x="450.6" y="187.5" width="6.9" height="8" rx="2"><title>Vernor Vinge (1993-03): Technological means for superhuman intelligence within 30 years — deadline passed: outcome unverified</title></rect><circle class="said" cx="337.6" cy="191.5" r="3"><title>Vernor Vinge (1993-03): Technological means for superhuman intelligence within 30 years — deadline passed: outcome unverified</title></circle><a href="#gr13"><text class="row-label" x="202" y="210.5" text-anchor="end">Vernor Vinge · 1993</text></a><line class="said-link" x1="337.6" x2="369.0" y1="206.5" y2="206.5"/><rect class="window st-window" x="369.0" y="202.5" width="136.7" height="8" rx="2"><title>Vernor Vinge (1993-03): The singularity will occur between 2005 and 2030 — window open</title></rect><circle class="said" cx="337.6" cy="206.5" r="3"><title>Vernor Vinge (1993-03): The singularity will occur between 2005 and 2030 — window open</title></circle><a href="#gr11"><text class="row-label" x="202" y="225.5" text-anchor="end">Hans Moravec · 1998</text></a><line class="said-link" x1="350.4" x2="429.9" y1="221.5" y2="221.5"/><rect class="window st-window" x="429.9" y="217.5" width="68.9" height="8" rx="2"><title>Hans Moravec (1998): Hardware matching the human brain available in cheap machines by the 2020s — window open</title></rect><circle class="said" cx="350.4" cy="221.5" r="3"><title>Hans Moravec (1998): Hardware matching the human brain available in cheap machines by the 2020s — window open</title></circle><a href="#gr14"><text class="row-label" x="202" y="240.5" text-anchor="end">Ray Kurzweil (Long Bets wager… · 2002</text></a><line class="said-link" x1="361.0" x2="492.0" y1="236.5" y2="236.5"/><rect class="window st-open" x="492.0" y="232.5" width="6.9" height="8" rx="2"><title>Ray Kurzweil (Long Bets wager vs Mitchell Kapor) (2002): A machine will pass the Turing test by 2029 — open</title></rect><circle class="said" cx="361.0" cy="236.5" r="3"><title>Ray Kurzweil (Long Bets wager vs Mitchell Kapor) (2002): A machine will pass the Turing test by 2029 — open</title></circle><a href="#gr16"><text class="row-label" x="202" y="255.5" text-anchor="end">Vincent C. Muller and Nick Bo… · 2014</text></a><line class="said-link" x1="392.9" x2="567.8" y1="251.5" y2="251.5"/><rect class="window st-open" x="567.8" y="247.5" width="75.8" height="8" rx="2"><title>Vincent C. Muller and Nick Bostrom (2014): Expert survey (2012/13): 50% chance of HLMI around 2040-2050; 90% by 2075 — open</title></rect><circle class="said" cx="392.9" cy="251.5" r="3"><title>Vincent C. Muller and Nick Bostrom (2014): Expert survey (2012/13): 50% chance of HLMI around 2040-2050; 90% by 2075 — open</title></circle><a href="#gr17"><text class="row-label" x="202" y="270.5" text-anchor="end">Katja Grace et al. · 2017</text></a><line class="said-link" x1="411.5" x2="712.4" y1="266.5" y2="266.5"/><rect class="window st-open" x="712.4" y="262.5" width="6.9" height="8" rx="2"><title>Katja Grace et al. (2017-05): Expert survey: 50% chance AI outperforms humans in all tasks in 45 years; all jobs automated in 120 years — open</title></rect><circle class="said" cx="411.5" cy="266.5" r="3"><title>Katja Grace et al. (2017-05): Expert survey: 50% chance AI outperforms humans in all tasks in 45 years; all jobs automated in 120 years — open</title></circle><a href="#gr18"><text class="row-label" x="202" y="285.5" text-anchor="end">Zach Stein-Perlman, Katja Gra… · 2022</text></a><line class="said-link" x1="447.7" x2="698.7" y1="281.5" y2="281.5"/><rect class="window st-open" x="698.7" y="277.5" width="6.9" height="8" rx="2"><title>Zach Stein-Perlman, Katja Grace et al. (2022-08): 2022 survey: 50% chance of HLMI by 2059 — open</title></rect><circle class="said" cx="447.7" cy="281.5" r="3"><title>Zach Stein-Perlman, Katja Grace et al. (2022-08): 2022 survey: 50% chance of HLMI by 2059 — open</title></circle><a href="#cu21"><text class="row-label" x="202" y="300.5" text-anchor="end">Geoffrey Hinton · 2023</text></a><line class="said-link" x1="455.9" x2="485.1" y1="296.5" y2="296.5"/><rect class="window st-open" x="485.1" y="292.5" width="6.9" height="8" rx="2"><title>Geoffrey Hinton (2023-10-08): AI may reason better than humans in five years — open</title></rect><circle class="said" cx="455.9" cy="296.5" r="3"><title>Geoffrey Hinton (2023-10-08): AI may reason better than humans in five years — open</title></circle><a href="#gr19"><text class="row-label" x="202" y="315.5" text-anchor="end">Katja Grace et al. · 2024</text></a><line class="said-link" x1="457.5" x2="616.0" y1="311.5" y2="311.5"/><rect class="window st-open" x="616.0" y="307.5" width="6.9" height="8" rx="2"><title>Katja Grace et al. (2024-01): 2023 survey: 10% by 2027, 50% by 2047 for machines outperforming humans on every task — open</title></rect><circle class="said" cx="457.5" cy="311.5" r="3"><title>Katja Grace et al. (2024-01): 2023 survey: 10% by 2027, 50% by 2047 for machines outperforming humans on every task — open</title></circle><a href="#cu20"><text class="row-label" x="202" y="330.5" text-anchor="end">Jensen Huang · 2024</text></a><line class="said-link" x1="458.6" x2="492.0" y1="326.5" y2="326.5"/><rect class="window st-open" x="492.0" y="322.5" width="6.9" height="8" rx="2"><title>Jensen Huang (2024-03): AI performs well on every test within five years — open</title></rect><circle class="said" cx="458.6" cy="326.5" r="3"><title>Jensen Huang (2024-03): AI performs well on every test within five years — open</title></circle><a href="#cu23"><text class="row-label" x="202" y="345.5" text-anchor="end">Yann LeCun · 2024</text></a><circle class="said" cx="458.8" cy="341.5" r="3"><title>Yann LeCun (2024-03-07): Skeptic: generative/LLM approach will not reach human-level AI — undated</title></circle><a href="#cu17"><text class="row-label" x="202" y="360.5" text-anchor="end">Elon Musk · 2024</text></a><line class="said-link" x1="459.4" x2="464.4" y1="356.5" y2="356.5"/><rect class="window st-passed" x="464.4" y="352.5" width="6.9" height="8" rx="2"><title>Elon Musk (2024-04-09): AI smarter than any one human around end of 2025 — deadline passed: outcome unverified</title></rect><circle class="said" cx="459.4" cy="356.5" r="3"><title>Elon Musk (2024-04-09): AI smarter than any one human around end of 2025 — deadline passed: outcome unverified</title></circle><a href="#cu13"><text class="row-label" x="202" y="375.5" text-anchor="end">Leopold Aschenbrenner · 2024</text></a><line class="said-link" x1="460.4" x2="478.2" y1="371.5" y2="371.5"/><rect class="window st-open" x="478.2" y="367.5" width="6.9" height="8" rx="2"><title>Leopold Aschenbrenner (2024-06): AGI by 2027 is strikingly plausible — open</title></rect><circle class="said" cx="460.4" cy="371.5" r="3"><title>Leopold Aschenbrenner (2024-06): AGI by 2027 is strikingly plausible — open</title></circle><a href="#cu01"><text class="row-label" x="202" y="390.5" text-anchor="end">Sam Altman · 2024</text></a><circle class="said" cx="462.5" cy="386.5" r="3"><title>Sam Altman (2024-09-23): Superintelligence in &#x27;a few thousand days&#x27; — undated</title></circle><a href="#cu07"><text class="row-label" x="202" y="405.5" text-anchor="end">Dario Amodei · 2024</text></a><line class="said-link" x1="462.7" x2="471.3" y1="401.5" y2="401.5"/><rect class="window st-window" x="471.3" y="397.5" width="6.9" height="8" rx="2"><title>Dario Amodei (2024-10): Powerful AI could arrive as early as 2026 — window open</title></rect><circle class="said" cx="462.7" cy="401.5" r="3"><title>Dario Amodei (2024-10): Powerful AI could arrive as early as 2026 — window open</title></circle><a href="#cu08"><text class="row-label" x="202" y="420.5" text-anchor="end">Dario Amodei · 2024</text></a><circle class="said" cx="462.7" cy="416.5" r="3"><title>Dario Amodei (2024-10): Powerful AI compresses 50-100 years of biology progress into 5-10 years — undated</title></circle><a href="#cu02"><text class="row-label" x="202" y="435.5" text-anchor="end">Sam Altman · 2025</text></a><circle class="said" cx="464.4" cy="431.5" r="3"><title>Sam Altman (2025): OpenAI knows how to build AGI; aiming beyond it to superintelligence — undated</title></circle><a href="#cu03"><text class="row-label" x="202" y="450.5" text-anchor="end">Sam Altman · 2025</text></a><line class="said-link" x1="464.4" x2="533.3" y1="446.5" y2="446.5"/><rect class="window st-open" x="533.3" y="442.5" width="6.9" height="8" rx="2"><title>Sam Altman (2025): By 2035 one person can command the intellectual capacity of all of 2025 — open</title></rect><circle class="said" cx="464.4" cy="446.5" r="3"><title>Sam Altman (2025): By 2035 one person can command the intellectual capacity of all of 2025 — open</title></circle><a href="#cu04"><text class="row-label" x="202" y="465.5" text-anchor="end">Sam Altman · 2025</text></a><line class="said-link" x1="464.4" x2="471.3" y1="461.5" y2="461.5"/><rect class="window st-window" x="471.3" y="457.5" width="6.9" height="8" rx="2"><title>Sam Altman (2025): Novel-insight systems in 2026 — window open</title></rect><circle class="said" cx="464.4" cy="461.5" r="3"><title>Sam Altman (2025): Novel-insight systems in 2026 — window open</title></circle><a href="#cu09"><text class="row-label" x="202" y="480.5" text-anchor="end">Anthropic · 2025</text></a><line class="said-link" x1="465.6" x2="478.2" y1="476.5" y2="476.5"/><rect class="window st-open" x="478.2" y="472.5" width="6.9" height="8" rx="2"><title>Anthropic (2025-03-06): Powerful AI systems (Nobel-level across most disciplines) by late 2026 / early 2027 — open</title></rect><circle class="said" cx="465.6" cy="476.5" r="3"><title>Anthropic (2025-03-06): Powerful AI systems (Nobel-level across most disciplines) by late 2026 / early 2027 — open</title></circle><a href="#cu10"><text class="row-label" x="202" y="495.5" text-anchor="end">Dario Amodei · 2025</text></a><line class="said-link" x1="465.7" x2="469.0" y1="491.5" y2="491.5"/><rect class="window st-passed" x="469.0" y="487.5" width="3.0" height="8" rx="2"><title>Dario Amodei (2025-03-10): AI writes 90% of code within 3-6 months — deadline passed: outcome unverified</title></rect><circle class="said" cx="465.7" cy="491.5" r="3"><title>Dario Amodei (2025-03-10): AI writes 90% of code within 3-6 months — deadline passed: outcome unverified</title></circle><a href="#cu12"><text class="row-label" x="202" y="510.5" text-anchor="end">Daniel Kokotajlo et al. · 2025</text></a><line class="said-link" x1="466.1" x2="533.3" y1="506.5" y2="506.5"/><rect class="window st-open" x="533.3" y="502.5" width="6.9" height="8" rx="2"><title>Daniel Kokotajlo et al. (2025-04-03): AI 2027 scenario: superhuman AI impact over the next decade exceeds the Industrial Revolution — open</title></rect><circle class="said" cx="466.1" cy="506.5" r="3"><title>Daniel Kokotajlo et al. (2025-04-03): AI 2027 scenario: superhuman AI impact over the next decade exceeds the Industrial Revolution — open</title></circle><a href="#cu14"><text class="row-label" x="202" y="525.5" text-anchor="end">Demis Hassabis · 2025</text></a><line class="said-link" x1="466.5" x2="498.8" y1="521.5" y2="521.5"/><rect class="window st-open" x="498.8" y="517.5" width="41.3" height="8" rx="2"><title>Demis Hassabis (2025-04-20): AGI within five to ten years — open</title></rect><circle class="said" cx="466.5" cy="521.5" r="3"><title>Demis Hassabis (2025-04-20): AGI within five to ten years — open</title></circle><a href="#cu15"><text class="row-label" x="202" y="540.5" text-anchor="end">Demis Hassabis · 2025</text></a><line class="said-link" x1="466.5" x2="533.3" y1="536.5" y2="536.5"/><rect class="window st-open" x="533.3" y="532.5" width="6.9" height="8" rx="2"><title>Demis Hassabis (2025-04-20): AI could end disease within about a decade — open</title></rect><circle class="said" cx="466.5" cy="536.5" r="3"><title>Demis Hassabis (2025-04-20): AI could end disease within about a decade — open</title></circle><a href="#cu18"><text class="row-label" x="202" y="555.5" text-anchor="end">Mark Zuckerberg · 2025</text></a><circle class="said" cx="468.4" cy="551.5" r="3"><title>Mark Zuckerberg (2025-07-30): Superintelligence development is &#x27;now in sight&#x27; — undated</title></circle><a href="#cu19"><text class="row-label" x="202" y="570.5" text-anchor="end">Mark Zuckerberg · 2025</text></a><line class="said-link" x1="468.4" x2="498.8" y1="566.5" y2="566.5"/><rect class="window st-open" x="498.8" y="562.5" width="6.9" height="8" rx="2"><title>Mark Zuckerberg (2025-07-30): The rest of this decade is decisive for superintelligence&#x27;s path — open</title></rect><circle class="said" cx="468.4" cy="566.5" r="3"><title>Mark Zuckerberg (2025-07-30): The rest of this decade is decisive for superintelligence&#x27;s path — open</title></circle><a href="#cu05"><text class="row-label" x="202" y="585.5" text-anchor="end">Sam Altman · 2025</text></a><line class="said-link" x1="470.1" x2="475.9" y1="581.5" y2="581.5"/><rect class="window st-passed" x="475.9" y="577.5" width="3.0" height="8" rx="2"><title>Sam Altman (2025-10-28): OpenAI target: intern-level AI research assistant by Sept 2026 — deadline passed: outcome unverified</title></rect><circle class="said" cx="470.1" cy="581.5" r="3"><title>Sam Altman (2025-10-28): OpenAI target: intern-level AI research assistant by Sept 2026 — deadline passed: outcome unverified</title></circle><a href="#cu06"><text class="row-label" x="202" y="600.5" text-anchor="end">Sam Altman · 2025</text></a><line class="said-link" x1="470.1" x2="485.1" y1="596.5" y2="596.5"/><rect class="window st-open" x="485.1" y="592.5" width="6.9" height="8" rx="2"><title>Sam Altman (2025-10-28): OpenAI target: fully automated AI researcher by 2028 — open</title></rect><circle class="said" cx="470.1" cy="596.5" r="3"><title>Sam Altman (2025-10-28): OpenAI target: fully automated AI researcher by 2028 — open</title></circle><a href="#cu11"><text class="row-label" x="202" y="615.5" text-anchor="end">Dario Amodei · 2026</text></a><line class="said-link" x1="471.3" x2="478.2" y1="611.5" y2="611.5"/><rect class="window st-open" x="478.2" y="607.5" width="13.8" height="8" rx="2"><title>Dario Amodei (2026-01): Powerful AI could be 1-2 years away — open</title></rect><circle class="said" cx="471.3" cy="611.5" r="3"><title>Dario Amodei (2026-01): Powerful AI could be 1-2 years away — open</title></circle></svg>
+    <p class="cap">The time axis changes scale at 2015 (dotted line): 1945–2015 is compressed so the crowded recent claims stay legible. Undated claims show the dot only. Hover for the claim; click a name for the quote and source.</p>
+  </div>
+</section>
+
+<section id="measured">
+  <h2>Measured</h2>
+  <p class="lede">What the claims are measured against. Unbounded series (task length, training compute) get a log-linear fit over frontier points with the window stated; bounded benchmark scores get their best result to date.</p>
+
+  <h3>How long a task can an AI agent finish? (METR, 50% time horizon)</h3>
+  <div class="tiles">
+    <div class="tile"><div class="k">Frontier now</div><div class="v">17 h</div><div class="s">claude_mythos_preview_early_inspect · 2026-04-07</div></div>
+    <div class="tile"><div class="k">Doubling time (our fit)</div><div class="v">129 days</div><div class="s">n=14 frontier points, 2023-03-14 → 2026-02-05, R²=0.93</div></div>
+    <div class="tile"><div class="k">METR's published</div><div class="v">129 days</div><div class="s">METR fit, 2023 onward</div></div>
+    <div class="tile"><div class="k">If this continues: 1 work-week (40 h)</div><div class="v">2026-12</div><div class="s">fitted line reaches 1 work-week (40 h)</div></div>
+    <div class="tile"><div class="k">If this continues: 1 work-month (167 h)</div><div class="v">2027-09</div><div class="s">fitted line reaches 1 work-month (167 h)</div></div>
+  </div>
+  <div class="panel"><svg class="chart" viewBox="0 0 760 300" role="img" aria-label="METR 50% time horizon by model release date" preserveAspectRatio="xMidYMid meet"><line class="grid" x1="129.8" x2="129.8" y1="18" y2="266"/><text class="tick" x="129.8" y="282" text-anchor="middle">2020</text><line class="grid" x1="261.5" x2="261.5" y1="18" y2="266"/><text class="tick" x="261.5" y="282" text-anchor="middle">2022</text><line class="grid" x1="393.2" x2="393.2" y1="18" y2="266"/><text class="tick" x="393.2" y="282" text-anchor="middle">2024</text><line class="grid" x1="524.9" x2="524.9" y1="18" y2="266"/><text class="tick" x="524.9" y="282" text-anchor="middle">2026</text><line class="grid" x1="656.6" x2="656.6" y1="18" y2="266"/><text class="tick" x="656.6" y="282" text-anchor="middle">2028</text><line class="grid" x1="64" x2="740" y1="266.0" y2="266.0"/><text class="tick" x="58" y="270.0" text-anchor="end">1 s</text><line class="grid" x1="64" x2="740" y1="230.6" y2="230.6"/><text class="tick" x="58" y="234.6" text-anchor="end">6 s</text><line class="grid" x1="64" x2="740" y1="195.1" y2="195.1"/><text class="tick" x="58" y="199.1" text-anchor="end">1 min</text><line class="grid" x1="64" x2="740" y1="159.7" y2="159.7"/><text class="tick" x="58" y="163.7" text-anchor="end">10 min</text><line class="grid" x1="64" x2="740" y1="124.3" y2="124.3"/><text class="tick" x="58" y="128.3" text-anchor="end">2 h</text><line class="grid" x1="64" x2="740" y1="88.9" y2="88.9"/><text class="tick" x="58" y="92.9" text-anchor="end">17 h</text><line class="grid" x1="64" x2="740" y1="53.4" y2="53.4"/><text class="tick" x="58" y="57.4" text-anchor="end">4 wk</text><line class="grid" x1="64" x2="740" y1="18.0" y2="18.0"/><text class="tick" x="58" y="22.0" text-anchor="end">42 wk</text><line class="threshold" x1="64" x2="740" y1="100.2" y2="100.2"/><text class="threshold-label" x="736" y="96.2" text-anchor="end">1 work-day (8 h)</text><line class="threshold" x1="64" x2="740" y1="75.4" y2="75.4"/><text class="threshold-label" x="736" y="71.4" text-anchor="end">1 work-week (40 h)</text><line class="threshold" x1="64" x2="740" y1="53.4" y2="53.4"/><text class="threshold-label" x="736" y="49.4" text-anchor="end">1 work-month (167 h)</text><line class="fit" x1="340.4" y1="190.0" x2="531.2" y2="102.3"/><line class="projection" x1="531.2" y1="102.3" x2="714.6" y2="18.0"/><line class="now" x1="575.4" x2="575.4" y1="18" y2="266"/><text class="now-label" x="579.4" y="28">now</text><circle class="pt-front" cx="71.9" cy="240.1" r="4"><title>gpt2 · 2019-02-14 · 3 s</title></circle><circle class="pt-front" cx="156.5" cy="225.0" r="4"><title>davinci_002 · 2020-05-28 · 9 s</title></circle><circle class="pt-front" cx="274.7" cy="203.0" r="4"><title>gpt_3_5_turbo_instruct · 2022-03-15 · 36 s</title></circle><circle class="pt-front" cx="340.4" cy="173.9" r="4"><title>gpt_4 · 2023-03-14 · 4 min</title></circle><circle class="pt-front" cx="383.1" cy="173.6" r="4"><title>gpt_4_1106_inspect · 2023-11-06 · 4 min</title></circle><circle class="pt" cx="404.5" cy="174.0" r="2.5"><title>claude_3_opus_inspect · 2024-03-04 · 4 min</title></circle><circle class="pt" cx="411.0" cy="174.9" r="2.5"><title>gpt_4_turbo_inspect · 2024-04-09 · 4 min</title></circle><circle class="pt-front" cx="417.1" cy="165.2" r="4"><title>gpt_4o_inspect · 2024-05-13 · 7 min</title></circle><circle class="pt-front" cx="424.0" cy="157.7" r="4"><title>claude_3_5_sonnet_20240620_inspect · 2024-06-20 · 11 min</title></circle><circle class="pt-front" cx="439.1" cy="148.8" r="4"><title>o1_preview · 2024-09-12 · 20 min</title></circle><circle class="pt-front" cx="446.3" cy="148.7" r="4"><title>claude_3_5_sonnet_20241022_inspect · 2024-10-22 · 21 min</title></circle><circle class="pt-front" cx="454.2" cy="138.8" r="4"><title>o1_inspect · 2024-12-05 · 39 min</title></circle><circle class="pt-front" cx="468.8" cy="132.0" r="4"><title>claude_3_7_sonnet_inspect · 2025-02-24 · 1 h</title></circle><circle class="pt-front" cx="478.0" cy="121.5" r="4"><title>o3_inspect · 2025-04-16 · 2 h</title></circle><circle class="pt" cx="484.5" cy="124.2" r="2.5"><title>claude_4_opus_inspect · 2025-05-22 · 2 h</title></circle><circle class="pt" cx="498.0" cy="124.2" r="2.5"><title>claude_4_1_opus_inspect · 2025-08-05 · 2 h</title></circle><circle class="pt-front" cx="498.4" cy="113.4" r="4"><title>gpt_5_2025_08_07_inspect · 2025-08-07 · 3 h</title></circle><circle class="pt-front" cx="517.0" cy="111.9" r="4"><title>gemini_3_pro · 2025-11-18 · 4 h</title></circle><circle class="pt" cx="517.1" cy="111.9" r="2.5"><title>gpt_5_1_codex_max_inspect · 2025-11-19 · 4 h</title></circle><circle class="pt-front" cx="518.0" cy="107.7" r="4"><title>claude_opus_4_5_inspect · 2025-11-24 · 5 h</title></circle><circle class="pt-front" cx="521.1" cy="104.9" r="4"><title>gpt_5_2 · 2025-12-11 · 6 h</title></circle><circle class="pt-front" cx="531.2" cy="93.9" r="4"><title>claude_opus_4_6_inspect · 2026-02-05 · 12 h</title></circle><circle class="pt" cx="531.2" cy="105.0" r="2.5"><title>gpt_5_3_codex · 2026-02-05 · 6 h</title></circle><circle class="pt" cx="533.7" cy="103.6" r="2.5"><title>gemini_3_1_pro · 2026-02-19 · 6 h</title></circle><circle class="pt" cx="536.3" cy="105.4" r="2.5"><title>gpt_5_4 · 2026-03-05 · 6 h</title></circle><circle class="pt-front" cx="542.2" cy="88.2" r="4"><title>claude_mythos_preview_early_inspect · 2026-04-07 · 17 h</title></circle></svg>
+    <p class="cap">Blue: models that set a new record when released. Grey: other models. Solid line: OLS fit of log₂(minutes) on date over the stated window; dashed line: the same fit projected. Following METR, points with a central estimate above 16 hours are left out of the fit; they are still plotted. Source: <a href="https://metr.org/">METR</a>, latest model in file dated 2026-04-07.</p>
+  </div>
+
+  <h3>Training compute of frontier models (Epoch AI)</h3>
+  <div class="tiles">
+    <div class="tile"><div class="k">Largest reported</div><div class="v">1.0e+27 FLOP</div><div class="s">GPT-6 Astra · 2026-09-03</div></div>
+    <div class="tile"><div class="k">Growth (our fit)</div><div class="v">4.6× / yr</div><div class="s">doubling 165 days; n=16, 2018-05-02 → 2026-09-03</div></div>
+    <div class="tile"><div class="k">Rows without compute</div><div class="v">11 / 138</div><div class="s">newest models often undisclosed; not imputed</div></div>
+  </div>
+  <div class="panel"><svg class="chart" viewBox="0 0 760 300" role="img" aria-label="Training compute of frontier AI models by publication date" preserveAspectRatio="xMidYMid meet"><line class="grid" x1="64.0" x2="64.0" y1="18" y2="266"/><text class="tick" x="64.0" y="282" text-anchor="middle">2010</text><line class="grid" x1="138.0" x2="138.0" y1="18" y2="266"/><text class="tick" x="138.0" y="282" text-anchor="middle">2012</text><line class="grid" x1="212.0" x2="212.0" y1="18" y2="266"/><text class="tick" x="212.0" y="282" text-anchor="middle">2014</text><line class="grid" x1="286.0" x2="286.0" y1="18" y2="266"/><text class="tick" x="286.0" y="282" text-anchor="middle">2016</text><line class="grid" x1="360.1" x2="360.1" y1="18" y2="266"/><text class="tick" x="360.1" y="282" text-anchor="middle">2018</text><line class="grid" x1="434.1" x2="434.1" y1="18" y2="266"/><text class="tick" x="434.1" y="282" text-anchor="middle">2020</text><line class="grid" x1="508.1" x2="508.1" y1="18" y2="266"/><text class="tick" x="508.1" y="282" text-anchor="middle">2022</text><line class="grid" x1="582.1" x2="582.1" y1="18" y2="266"/><text class="tick" x="582.1" y="282" text-anchor="middle">2024</text><line class="grid" x1="656.1" x2="656.1" y1="18" y2="266"/><text class="tick" x="656.1" y="282" text-anchor="middle">2026</text><line class="grid" x1="730.1" x2="730.1" y1="18" y2="266"/><text class="tick" x="730.1" y="282" text-anchor="middle">2028</text><line class="grid" x1="64" x2="740" y1="266.0" y2="266.0"/><text class="tick" x="58" y="270.0" text-anchor="end">1e16</text><line class="grid" x1="64" x2="740" y1="224.7" y2="224.7"/><text class="tick" x="58" y="228.7" text-anchor="end">1e18</text><line class="grid" x1="64" x2="740" y1="183.3" y2="183.3"/><text class="tick" x="58" y="187.3" text-anchor="end">1e20</text><line class="grid" x1="64" x2="740" y1="142.0" y2="142.0"/><text class="tick" x="58" y="146.0" text-anchor="end">1e22</text><line class="grid" x1="64" x2="740" y1="100.7" y2="100.7"/><text class="tick" x="58" y="104.7" text-anchor="end">1e24</text><line class="grid" x1="64" x2="740" y1="59.3" y2="59.3"/><text class="tick" x="58" y="63.3" text-anchor="end">1e26</text><line class="grid" x1="64" x2="740" y1="18.0" y2="18.0"/><text class="tick" x="58" y="22.0" text-anchor="end">1e28</text><line class="fit" x1="372.3" y1="144.3" x2="680.9" y2="29.7"/><line class="projection" x1="680.9" y1="29.7" x2="712.5" y2="18.0"/><line class="now" x1="684.5" x2="684.5" y1="18" y2="266"/><text class="now-label" x="688.5" y="28">now</text><circle class="pt" cx="91.2" cy="261.2" r="2.5"><title>KN5 LM + RNN 400/10 (WSJ) · 2010-09-26 · 1e16</title></circle><circle class="pt" cx="91.2" cy="250.9" r="2.5"><title>RNN LM · 2010-09-26 · 1e17</title></circle><circle class="pt" cx="91.2" cy="251.6" r="2.5"><title>RNN 1000/5 + RT09 LM (NIST RT05) · 2010-09-26 · 1e17</title></circle><circle class="pt" cx="113.0" cy="254.3" r="2.5"><title>Deep Autoencoders · 2011-04-29 · 1e17</title></circle><circle class="pt" cx="127.4" cy="251.2" r="2.5"><title>CNN Committee (MNIST) · 2011-09-18 · 1e17</title></circle><circle class="pt" cx="153.6" cy="236.3" r="2.5"><title>Dropout (ImageNet) · 2012-06-03 · 1e17</title></circle><circle class="pt" cx="157.5" cy="229.3" r="2.5"><title>Unsupervised High-level Feature Learner · 2012-07-12 · 1e18</title></circle><circle class="pt" cx="165.6" cy="231.4" r="2.5"><title>AlexNet · 2012-09-30 · 1e18</title></circle><circle class="pt" cx="172.1" cy="231.3" r="2.5"><title>DNN EM segmentation · 2012-12-03 · 1e18</title></circle><circle class="pt-front" cx="176.5" cy="216.0" r="4"><title>DistBelief NNLM · 2013-01-16 · 1e18</title></circle><circle class="pt" cx="207.0" cy="230.3" r="2.5"><title>Visualizing CNNs · 2013-11-12 · 1e18</title></circle><circle class="pt" cx="209.3" cy="222.0" r="2.5"><title>TransE · 2013-12-05 · 1e18</title></circle><circle class="pt-front" cx="229.1" cy="213.7" r="4"><title>SPPNet · 2014-06-18 · 1e19</title></circle><circle class="pt" cx="236.7" cy="220.7" r="2.5"><title>RNNsearch-50* · 2014-09-01 · 1e18</title></circle><circle class="pt-front" cx="237.0" cy="202.1" r="4"><title>VGG16 · 2014-09-04 · 1e19</title></circle><circle class="pt" cx="237.0" cy="203.1" r="2.5"><title>VGG19 · 2014-09-04 · 1e19</title></circle><circle class="pt-front" cx="237.6" cy="188.5" r="4"><title>Seq2Seq LSTM · 2014-09-10 · 1e20</title></circle><circle class="pt-front" cx="246.1" cy="173.5" r="4"><title>SNM-skip · 2014-12-03 · 1e20</title></circle><circle class="pt" cx="252.7" cy="196.2" r="2.5"><title>MSRA (C, PReLU) · 2015-02-06 · 1e19</title></circle><circle class="pt-front" cx="276.7" cy="171.4" r="4"><title>AlphaGo Fan · 2015-10-01 · 1e21</title></circle><circle class="pt" cx="279.4" cy="202.1" r="2.5"><title>SAF R-CNN · 2015-10-28 · 1e19</title></circle><circle class="pt" cx="283.0" cy="183.3" r="2.5"><title>Inception v3 · 2015-12-02 · 1e20</title></circle><circle class="pt" cx="283.6" cy="195.4" r="2.5"><title>DeepSpeech2 (English) · 2015-12-08 · 1e19</title></circle><circle class="pt-front" cx="288.7" cy="156.9" r="4"><title>AlphaGo Lee · 2016-01-27 · 1e21</title></circle><circle class="pt" cx="290.2" cy="183.1" r="2.5"><title>BIG LSTM+CNN INPUTS · 2016-02-11 · 1e20</title></circle><circle class="pt-front" cx="313.2" cy="145.7" r="4"><title>GNMT · 2016-09-26 · 1e22</title></circle><circle class="pt" cx="314.3" cy="170.1" r="2.5"><title>Xception · 2016-10-07 · 1e21</title></circle><circle class="pt" cx="317.3" cy="155.6" r="2.5"><title>NASv3 (CIFAR-10) · 2016-11-05 · 1e21</title></circle><circle class="pt" cx="342.3" cy="164.2" r="2.5"><title>JFT · 2017-07-10 · 1e21</title></circle><circle class="pt" cx="345.6" cy="167.2" r="2.5"><title>OpenAI TI7 DOTA 1v1 · 2017-08-11 · 1e21</title></circle><circle class="pt" cx="352.4" cy="166.5" r="2.5"><title>AlphaGo Zero · 2017-10-18 · 1e21</title></circle><circle class="pt-front" cx="372.3" cy="143.2" r="4"><title>ResNeXt-101 32x48d · 2018-05-02 · 1e22</title></circle><circle class="pt" cx="387.4" cy="157.4" r="2.5"><title>BigGAN-deep 512x512 · 2018-09-28 · 1e21</title></circle><circle class="pt" cx="401.5" cy="148.3" r="2.5"><title>GPT-2 (774M) · 2019-02-14 · 1e22</title></circle><circle class="pt" cx="401.5" cy="155.3" r="2.5"><title>GPT-2 (355M) · 2019-02-14 · 1e21</title></circle><circle class="pt" cx="412.1" cy="148.9" r="2.5"><title>Grover-Mega · 2019-05-29 · 1e22</title></circle><circle class="pt" cx="412.4" cy="146.3" r="2.5"><title>XLNet · 2019-06-01 · 1e22</title></circle><circle class="pt" cx="415.4" cy="143.5" r="2.5"><title>RoBERTa Large · 2019-07-01 · 1e22</title></circle><circle class="pt-front" cx="423.3" cy="134.9" r="4"><title>Megatron-BERT · 2019-09-17 · 1e22</title></circle><circle class="pt" cx="423.3" cy="142.8" r="2.5"><title>Megatron-LM (8.3B) · 2019-09-17 · 1e22</title></circle><circle class="pt" cx="427.0" cy="142.9" r="2.5"><title>T5-3B · 2019-10-23 · 1e22</title></circle><circle class="pt-front" cx="427.0" cy="131.3" r="4"><title>T5-11B · 2019-10-23 · 1e23</title></circle><circle class="pt-front" cx="427.7" cy="120.7" r="4"><title>AlphaStar · 2019-10-30 · 1e23</title></circle><circle class="pt" cx="428.3" cy="135.4" r="2.5"><title>XLM-RoBERTa · 2019-11-05 · 1e22</title></circle><circle class="pt" cx="428.9" cy="133.4" r="2.5"><title>Noisy Student (L2) · 2019-11-11 · 1e22</title></circle><circle class="pt" cx="432.1" cy="124.9" r="2.5"><title>OpenAI Five · 2019-12-13 · 1e23</title></circle><circle class="pt-front" cx="436.8" cy="120.3" r="4"><title>Meena · 2020-01-28 · 1e23</title></circle><circle class="pt-front" cx="449.0" cy="111.1" r="4"><title>GPT-3 175B (davinci) · 2020-05-28 · 1e23</title></circle><circle class="pt" cx="451.1" cy="131.3" r="2.5"><title>iGPT-XL · 2020-06-17 · 1e23</title></circle><circle class="pt" cx="452.4" cy="128.0" r="2.5"><title>GShard (dense) · 2020-06-30 · 1e23</title></circle><circle class="pt" cx="463.7" cy="123.1" r="2.5"><title>mT5-XXL · 2020-10-20 · 1e23</title></circle><circle class="pt" cx="472.1" cy="123.1" r="2.5"><title>Switch · 2021-01-11 · 1e23</title></circle><circle class="pt-front" cx="486.3" cy="96.8" r="4"><title>Wu Dao 2.0 · 2021-05-31 · 1e24</title></circle><circle class="pt" cx="493.6" cy="109.6" r="2.5"><title>Jurassic-1-Jumbo · 2021-08-11 · 1e24</title></circle><circle class="pt-front" cx="495.9" cy="94.2" r="4"><title>FLAN 137B · 2021-09-03 · 1e24</title></circle><circle class="pt" cx="496.6" cy="115.1" r="2.5"><title>HyperCLOVA 204B · 2021-09-10 · 1e23</title></circle><circle class="pt" cx="499.8" cy="102.0" r="2.5"><title>Megatron-Turing NLG 530B · 2021-10-11 · 1e24</title></circle><circle class="pt" cx="499.9" cy="110.0" r="2.5"><title>Yuan 1.0 · 2021-10-12 · 1e24</title></circle><circle class="pt" cx="505.6" cy="104.8" r="2.5"><title>Gopher (280B) · 2021-12-08 · 1e24</title></circle><circle class="pt" cx="506.3" cy="95.9" r="2.5"><title>EXAONE 1.0 · 2021-12-14 · 1e24</title></circle><circle class="pt" cx="507.2" cy="100.3" r="2.5"><title>ERNIE 3.0 Titan · 2021-12-23 · 1e24</title></circle><circle class="pt-front" cx="515.5" cy="92.2" r="4"><title>GPT-3.5 (davinci-002) · 2022-03-15 · 1e24</title></circle><circle class="pt" cx="517.5" cy="92.3" r="2.5"><title>PaLM (540B) · 2022-04-04 · 1e24</title></circle><circle class="pt-front" cx="526.2" cy="91.6" r="4"><title>Minerva (540B) · 2022-06-29 · 1e24</title></circle><circle class="pt" cx="537.7" cy="92.3" r="2.5"><title>U-PaLM (540B) · 2022-10-20 · 1e24</title></circle><circle class="pt" cx="537.7" cy="92.3" r="2.5"><title>Flan-PaLM 540B · 2022-10-20 · 1e24</title></circle><circle class="pt-front" cx="552.5" cy="73.3" r="4"><title>GPT-4 (Mar 2023) · 2023-03-15 · 1e25</title></circle><circle class="pt" cx="555.1" cy="88.5" r="2.5"><title>SenseChat · 2023-04-10 · 1e25</title></circle><circle class="pt" cx="558.2" cy="82.8" r="2.5"><title>PaLM 2 · 2023-05-10 · 1e25</title></circle><circle class="pt" cx="561.6" cy="73.3" r="2.5"><title>GPT-4 (Jun 2023) · 2023-06-13 · 1e25</title></circle><circle class="pt" cx="564.4" cy="88.5" r="2.5"><title>Claude 2 · 2023-07-11 · 1e25</title></circle><circle class="pt" cx="570.2" cy="88.8" r="2.5"><title>Falcon-180B · 2023-09-06 · 1e25</title></circle><circle class="pt" cx="572.5" cy="86.6" r="2.5"><title>Amazon Titan · 2023-09-28 · 1e25</title></circle><circle class="pt" cx="578.0" cy="80.0" r="2.5"><title>Inflection-2 · 2023-11-22 · 1e25</title></circle><circle class="pt-front" cx="579.5" cy="65.6" r="4"><title>Gemini 1.0 Ultra · 2023-12-06 · 1e26</title></circle><circle class="pt" cx="598.8" cy="74.7" r="2.5"><title>Nemotron-4 340B · 2024-06-14 · 1e25</title></circle><circle class="pt" cx="599.4" cy="71.1" r="2.5"><title>Claude 3.5 Sonnet · 2024-06-20 · 1e25</title></circle><circle class="pt" cx="602.7" cy="68.0" r="2.5"><title>Llama 3.1-405B · 2024-07-23 · 1e26</title></circle><circle class="pt" cx="604.8" cy="70.3" r="2.5"><title>Grok-2 · 2024-08-13 · 1e25</title></circle><circle class="pt-front" cx="623.9" cy="48.1" r="4"><title>Grok 3 · 2025-02-17 · 1e27</title></circle><circle class="pt-front" cx="624.9" cy="47.4" r="4"><title>GPT-4.5 · 2025-02-27 · 1e27</title></circle><circle class="pt" cx="626.8" cy="67.8" r="2.5"><title>Llama Nemotron Ultra 253B · 2025-03-18 · 1e26</title></circle><circle class="pt" cx="628.6" cy="65.2" r="2.5"><title>Llama 4 Behemoth (preview) · 2025-04-05 · 1e26</title></circle><circle class="pt-front" cx="638.3" cy="44.9" r="4"><title>Grok 4 · 2025-07-09 · 1e27</title></circle><circle class="pt-front" cx="680.9" cy="38.7" r="4"><title>GPT-6 Astra · 2026-09-03 · 1e27</title></circle></svg>
+    <p class="cap">FLOP, log scale. Fit over frontier (record-setting) points from 2018-01-01. Source: <a href="https://epoch.ai/data/frontier-ai-models">Epoch AI, Frontier AI Models</a>, CC BY 4.0.</p>
+  </div>
+
+  <h3>Hard benchmarks: best score to date</h3>
+  <div class="tiles">
+    <div class="tile"><div class="k">FrontierMath T1–3</div><div class="v">52%</div><div class="s">gpt-5.5-pro-pre-release_high · 2026-04-23</div></div>
+    <div class="tile"><div class="k">ARC-AGI-1</div><div class="v">98%</div><div class="s">Claude Fable 5 (Max) · 2026-06-09</div></div>
+    <div class="tile"><div class="k">ARC-AGI-2</div><div class="v">95%</div><div class="s">GPT-6 Astra (Max) · 2026-09-02</div></div>
+  </div>
+<div class="panel"><svg class="chart" viewBox="0 0 760 260" role="img" aria-label="Best score to date" preserveAspectRatio="xMidYMid meet"><line class="grid" x1="64.0" x2="64.0" y1="18" y2="226"/><text class="tick" x="64.0" y="242" text-anchor="middle">2023</text><line class="grid" x1="223.1" x2="223.1" y1="18" y2="226"/><text class="tick" x="223.1" y="242" text-anchor="middle">2024</text><line class="grid" x1="382.1" x2="382.1" y1="18" y2="226"/><text class="tick" x="382.1" y="242" text-anchor="middle">2025</text><line class="grid" x1="541.2" x2="541.2" y1="18" y2="226"/><text class="tick" x="541.2" y="242" text-anchor="middle">2026</text><line class="grid" x1="700.2" x2="700.2" y1="18" y2="226"/><text class="tick" x="700.2" y="242" text-anchor="middle">2027</text><line class="grid" x1="64" x2="740" y1="226.0" y2="226.0"/><text class="tick" x="58" y="230.0" text-anchor="end">0%</text><line class="grid" x1="64" x2="740" y1="174.0" y2="174.0"/><text class="tick" x="58" y="178.0" text-anchor="end">25%</text><line class="grid" x1="64" x2="740" y1="122.0" y2="122.0"/><text class="tick" x="58" y="126.0" text-anchor="end">50%</text><line class="grid" x1="64" x2="740" y1="70.0" y2="70.0"/><text class="tick" x="58" y="74.0" text-anchor="end">75%</text><line class="grid" x1="64" x2="740" y1="18.0" y2="18.0"/><text class="tick" x="58" y="22.0" text-anchor="end">100%</text><circle class="pt s0" cx="297.4" cy="223.8" r="2.5"><title>FrontierMath T1–3 · claude-3-5-sonnet-20240620 · 2024-06-20 · 1%</title></circle><circle class="pt s0" cx="317.8" cy="225.3" r="2.5"><title>FrontierMath T1–3 · gpt-4o-2024-08-06 · 2024-08-06 · 0%</title></circle><circle class="pt s0" cx="333.9" cy="222.4" r="2.5"><title>FrontierMath T1–3 · o1-mini-2024-09-12_medium · 2024-09-12 · 2%</title></circle><circle class="pt s0" cx="333.9" cy="223.1" r="2.5"><title>FrontierMath T1–3 · o1-mini-2024-09-12_high · 2024-09-12 · 1%</title></circle><circle class="pt s0" cx="339.1" cy="226.0" r="2.5"><title>FrontierMath T1–3 · gemini-1.5-flash-002 · 2024-09-24 · 0%</title></circle><circle class="pt s0" cx="351.3" cy="225.3" r="2.5"><title>FrontierMath T1–3 · claude-3-5-haiku-20241022 · 2024-10-22 · 0%</title></circle><circle class="pt s0" cx="351.3" cy="221.7" r="2.5"><title>FrontierMath T1–3 · claude-3-5-sonnet-20241022 · 2024-10-22 · 2%</title></circle><circle class="pt s0" cx="363.0" cy="225.3" r="2.5"><title>FrontierMath T1–3 · mistral-large-2411 · 2024-11-18 · 0%</title></circle><circle class="pt s0" cx="363.9" cy="225.3" r="2.5"><title>FrontierMath T1–3 · gpt-4o-2024-11-20 · 2024-11-20 · 0%</title></circle><circle class="pt s0" cx="373.4" cy="224.6" r="2.5"><title>FrontierMath T1–3 · grok-2-1212 · 2024-12-12 · 1%</title></circle><circle class="pt s0" cx="375.6" cy="206.6" r="2.5"><title>FrontierMath T1–3 · o1-2024-12-17_high · 2024-12-17 · 9%</title></circle><circle class="pt s0" cx="379.5" cy="222.4" r="2.5"><title>FrontierMath T1–3 · DeepSeek-V3 · 2024-12-26 · 2%</title></circle><circle class="pt s0" cx="392.6" cy="223.8" r="2.5"><title>FrontierMath T1–3 · qwen-max-2025-01-25 · 2025-01-25 · 1%</title></circle><circle class="pt s0" cx="395.2" cy="200.2" r="2.5"><title>FrontierMath T1–3 · o3-mini-2025-01-31_high · 2025-01-31 · 12%</title></circle><circle class="pt s0" cx="395.2" cy="209.2" r="2.5"><title>FrontierMath T1–3 · o3-mini-2025-01-31_medium · 2025-01-31 · 8%</title></circle><circle class="pt s0" cx="397.4" cy="222.4" r="2.5"><title>FrontierMath T1–3 · gemini-2.0-flash-001 · 2025-02-05 · 2%</title></circle><circle class="pt s0" cx="405.6" cy="219.5" r="2.5"><title>FrontierMath T1–3 · claude-3-7-sonnet-20250219_64K · 2025-02-24 · 3%</title></circle><circle class="pt s0" cx="405.6" cy="218.8" r="2.5"><title>FrontierMath T1–3 · claude-3-7-sonnet-20250219_32K · 2025-02-24 · 3%</title></circle><circle class="pt s0" cx="405.6" cy="217.4" r="2.5"><title>FrontierMath T1–3 · claude-3-7-sonnet-20250219_16K · 2025-02-24 · 4%</title></circle><circle class="pt s0" cx="405.6" cy="219.5" r="2.5"><title>FrontierMath T1–3 · claude-3-7-sonnet-20250219 · 2025-02-24 · 3%</title></circle><circle class="pt s0" cx="423.1" cy="224.6" r="2.5"><title>FrontierMath T1–3 · Llama-4-Maverick-17B-128E-Instruct-FP8 · 2025-04-05 · 1%</title></circle><circle class="pt s0" cx="423.1" cy="226.0" r="2.5"><title>FrontierMath T1–3 · Llama-4-Scout-17B-16E-Instruct · 2025-04-05 · 0%</title></circle><circle class="pt s0" cx="424.8" cy="220.3" r="2.5"><title>FrontierMath T1–3 · grok-3-mini-beta_low · 2025-04-09 · 3%</title></circle><circle class="pt s0" cx="424.8" cy="213.8" r="2.5"><title>FrontierMath T1–3 · grok-3-mini-beta_high · 2025-04-09 · 6%</title></circle><circle class="pt s0" cx="424.8" cy="218.1" r="2.5"><title>FrontierMath T1–3 · grok-3-beta · 2025-04-09 · 4%</title></circle><circle class="pt s0" cx="427.0" cy="223.8" r="2.5"><title>FrontierMath T1–3 · gpt-4.1-nano-2025-04-14 · 2025-04-14 · 1%</title></circle><circle class="pt s0" cx="427.0" cy="216.7" r="2.5"><title>FrontierMath T1–3 · gpt-4.1-mini-2025-04-14 · 2025-04-14 · 4%</title></circle><circle class="pt s0" cx="427.0" cy="214.5" r="2.5"><title>FrontierMath T1–3 · gpt-4.1-2025-04-14 · 2025-04-14 · 6%</title></circle><circle class="pt s0" cx="427.9" cy="205.8" r="2.5"><title>FrontierMath T1–3 · o3-2025-04-16_low · 2025-04-16 · 10%</title></circle><circle class="pt s0" cx="427.9" cy="187.1" r="2.5"><title>FrontierMath T1–3 · o3-2025-04-16_high · 2025-04-16 · 19%</title></circle><circle class="pt s0" cx="427.9" cy="190.9" r="2.5"><title>FrontierMath T1–3 · o3-2025-04-16_medium · 2025-04-16 · 17%</title></circle><circle class="pt s0" cx="427.9" cy="203.8" r="2.5"><title>FrontierMath T1–3 · o4-mini-2025-04-16_low · 2025-04-16 · 11%</title></circle><circle class="pt s0" cx="427.9" cy="186.6" r="2.5"><title>FrontierMath T1–3 · o4-mini-2025-04-16_medium · 2025-04-16 · 19%</title></circle><circle class="pt s0" cx="427.9" cy="174.4" r="2.5"><title>FrontierMath T1–3 · o4-mini-2025-04-16_high · 2025-04-16 · 25%</title></circle><circle class="pt s0" cx="433.1" cy="222.4" r="2.5"><title>FrontierMath T1–3 · qwen-plus-2025-04-28 · 2025-04-28 · 2%</title></circle><circle class="pt s0" cx="437.0" cy="225.3" r="2.5"><title>FrontierMath T1–3 · mistral-medium-2505 · 2025-05-07 · 0%</title></circle><circle class="pt s0" cx="443.6" cy="217.4" r="2.5"><title>FrontierMath T1–3 · claude-opus-4-20250514_27K · 2025-05-22 · 4%</title></circle><circle class="pt s0" cx="443.6" cy="216.7" r="2.5"><title>FrontierMath T1–3 · claude-opus-4-20250514 · 2025-05-22 · 4%</title></circle><circle class="pt s0" cx="443.6" cy="217.4" r="2.5"><title>FrontierMath T1–3 · claude-sonnet-4-20250514 · 2025-05-22 · 4%</title></circle><circle class="pt s0" cx="449.7" cy="204.5" r="2.5"><title>FrontierMath T1–3 · gemini-2.5-pro-preview-06-05 · 2025-06-05 · 10%</title></circle><circle class="pt s0" cx="454.9" cy="215.9" r="2.5"><title>FrontierMath T1–3 · gemini-2.5-flash · 2025-06-17 · 5%</title></circle><circle class="pt s0" cx="454.9" cy="196.6" r="2.5"><title>FrontierMath T1–3 · gemini-2.5-pro · 2025-06-17 · 14%</title></circle><circle class="pt s0" cx="464.5" cy="185.1" r="2.5"><title>FrontierMath T1–3 · grok-4-0709 · 2025-07-09 · 20%</title></circle><circle class="pt s0" cx="471.5" cy="208.4" r="2.5"><title>FrontierMath T1–3 · Qwen/Qwen3-235B-A22B-Thinking-2507 · 2025-07-25 · 8%</title></circle><circle class="pt s0" cx="474.5" cy="165.7" r="2.5"><title>FrontierMath T1–3 · gemini-2.5-deep-think-2025-08-01-webapp · 2025-08-01 · 29%</title></circle><circle class="pt s0" cx="476.2" cy="210.9" r="2.5"><title>FrontierMath T1–3 · claude-opus-4-1-20250805_27K · 2025-08-05 · 7%</title></circle><circle class="pt s0" cx="476.2" cy="213.8" r="2.5"><title>FrontierMath T1–3 · claude-opus-4-1-20250805 · 2025-08-05 · 6%</title></circle><circle class="pt s0" cx="477.1" cy="158.6" r="2.5"><title>FrontierMath T1–3 · gpt-5-2025-08-07_high · 2025-08-07 · 32%</title></circle><circle class="pt s0" cx="477.1" cy="169.3" r="2.5"><title>FrontierMath T1–3 · gpt-5-mini-2025-08-07_high · 2025-08-07 · 27%</title></circle><circle class="pt s0" cx="477.1" cy="183.7" r="2.5"><title>FrontierMath T1–3 · gpt-5-mini-2025-08-07_medium · 2025-08-07 · 20%</title></circle><circle class="pt s0" cx="477.1" cy="169.3" r="2.5"><title>FrontierMath T1–3 · gpt-5-2025-08-07_medium · 2025-08-07 · 27%</title></circle><circle class="pt s0" cx="477.1" cy="208.8" r="2.5"><title>FrontierMath T1–3 · gpt-5-nano-2025-08-07_high · 2025-08-07 · 8%</title></circle><circle class="pt s0" cx="477.1" cy="210.9" r="2.5"><title>FrontierMath T1–3 · gpt-5-nano-2025-08-07_medium · 2025-08-07 · 7%</title></circle><circle class="pt s0" cx="500.2" cy="206.6" r="2.5"><title>FrontierMath T1–3 · claude-sonnet-4-5-20250929 · 2025-09-29 · 9%</title></circle><circle class="pt s0" cx="500.2" cy="194.3" r="2.5"><title>FrontierMath T1–3 · claude-sonnet-4-5-20250929_32K · 2025-09-29 · 15%</title></circle><circle class="pt s0" cx="500.2" cy="197.9" r="2.5"><title>FrontierMath T1–3 · claude-sonnet-4-5-20250929_59K · 2025-09-29 · 13%</title></circle><circle class="pt s0" cx="500.6" cy="218.1" r="2.5"><title>FrontierMath T1–3 · zai-org/GLM-4.6 · 2025-09-30 · 4%</title></circle><circle class="pt s0" cx="507.2" cy="213.7" r="2.5"><title>FrontierMath T1–3 · claude-haiku-4-5-20251001_32K · 2025-10-15 · 6%</title></circle><circle class="pt s0" cx="507.2" cy="217.4" r="2.5"><title>FrontierMath T1–3 · claude-haiku-4-5-20251001 · 2025-10-15 · 4%</title></circle><circle class="pt s0" cx="516.8" cy="181.5" r="2.5"><title>FrontierMath T1–3 · moonshotai/Kimi-K2-Thinking · 2025-11-06 · 21%</title></circle><circle class="pt s0" cx="519.8" cy="221.6" r="2.5"><title>FrontierMath T1–3 · gpt-5.1-2025-11-13_none · 2025-11-13 · 2%</title></circle><circle class="pt s0" cx="519.8" cy="190.0" r="2.5"><title>FrontierMath T1–3 · gpt-5.1-2025-11-13_low · 2025-11-13 · 17%</title></circle><circle class="pt s0" cx="519.8" cy="170.1" r="2.5"><title>FrontierMath T1–3 · gpt-5.1-2025-11-13_medium · 2025-11-13 · 27%</title></circle><circle class="pt s0" cx="519.8" cy="161.4" r="2.5"><title>FrontierMath T1–3 · gpt-5.1-2025-11-13_high · 2025-11-13 · 31%</title></circle><circle class="pt s0" cx="522.0" cy="147.8" r="2.5"><title>FrontierMath T1–3 · gemini-3-pro-preview · 2025-11-18 · 38%</title></circle><circle class="pt s0" cx="524.6" cy="183.0" r="2.5"><title>FrontierMath T1–3 · claude-opus-4-5-20251101 · 2025-11-24 · 21%</title></circle><circle class="pt s0" cx="524.6" cy="183.0" r="2.5"><title>FrontierMath T1–3 · claude-opus-4-5-20251101_32K · 2025-11-24 · 21%</title></circle><circle class="pt s0" cx="524.6" cy="183.7" r="2.5"><title>FrontierMath T1–3 · claude-opus-4-5-20251101_16K · 2025-11-24 · 20%</title></circle><circle class="pt s0" cx="527.7" cy="180.0" r="2.5"><title>FrontierMath T1–3 · fireworks/deepseek-v3p2 · 2025-12-01 · 22%</title></circle><circle class="pt s0" cx="532.0" cy="141.3" r="2.5"><title>FrontierMath T1–3 · gpt-5.2-2025-12-11_xhigh · 2025-12-11 · 41%</title></circle><circle class="pt s0" cx="532.0" cy="142.1" r="2.5"><title>FrontierMath T1–3 · gpt-5.2-2025-12-11_high · 2025-12-11 · 40%</title></circle><circle class="pt s0" cx="532.0" cy="149.3" r="2.5"><title>FrontierMath T1–3 · gpt-5.2-2025-12-11_medium · 2025-12-11 · 37%</title></circle><circle class="pt s0" cx="532.0" cy="170.8" r="2.5"><title>FrontierMath T1–3 · gpt-5.2-2025-12-11_low · 2025-12-11 · 27%</title></circle><circle class="pt s0" cx="534.6" cy="151.9" r="2.5"><title>FrontierMath T1–3 · gemini-3-flash-preview · 2025-12-17 · 36%</title></circle><circle class="pt s0" cx="536.8" cy="220.9" r="2.5"><title>FrontierMath T1–3 · zai-org/GLM-4.7 · 2025-12-22 · 2%</title></circle><circle class="pt s0" cx="552.5" cy="168.0" r="2.5"><title>FrontierMath T1–3 · fireworks/kimi-k2p5 · 2026-01-27 · 28%</title></circle><circle class="pt s0" cx="556.4" cy="141.3" r="2.5"><title>FrontierMath T1–3 · claude-opus-4-6_max · 2026-02-05 · 41%</title></circle><circle class="pt s0" cx="556.4" cy="143.5" r="2.5"><title>FrontierMath T1–3 · claude-opus-4-6_64K · 2026-02-05 · 40%</title></circle><circle class="pt s0" cx="556.4" cy="142.8" r="2.5"><title>FrontierMath T1–3 · claude-opus-4-6_32K · 2026-02-05 · 40%</title></circle><circle class="pt s0" cx="556.4" cy="146.4" r="2.5"><title>FrontierMath T1–3 · claude-opus-4-6 · 2026-02-05 · 38%</title></circle><circle class="pt s0" cx="559.0" cy="191.8" r="2.5"><title>FrontierMath T1–3 · glm-5 · 2026-02-11 · 16%</title></circle><circle class="pt s0" cx="561.2" cy="182.2" r="2.5"><title>FrontierMath T1–3 · qwen3.5-plus · 2026-02-16 · 21%</title></circle><circle class="pt s0" cx="561.7" cy="158.6" r="2.5"><title>FrontierMath T1–3 · claude-sonnet-4-6_16K · 2026-02-17 · 32%</title></circle><circle class="pt s0" cx="562.5" cy="149.2" r="2.5"><title>FrontierMath T1–3 · gemini-3.1-pro-preview · 2026-02-19 · 37%</title></circle><circle class="pt s0" cx="565.1" cy="213.1" r="2.5"><title>FrontierMath T1–3 · qwen3.5-flash · 2026-02-25 · 6%</title></circle><circle class="pt s0" cx="568.6" cy="127.0" r="2.5"><title>FrontierMath T1–3 · gpt-5.4-2026-03-05_xhigh · 2026-03-05 · 48%</title></circle><circle class="pt s0" cx="568.6" cy="122.0" r="2.5"><title>FrontierMath T1–3 · gpt-5.4-pro-2026-03-05_xhigh · 2026-03-05 · 50%</title></circle><circle class="pt s0" cx="573.9" cy="167.2" r="2.5"><title>FrontierMath T1–3 · gpt-5.4-mini-2026-03-17_high · 2026-03-17 · 28%</title></circle><circle class="pt s0" cx="573.9" cy="172.2" r="2.5"><title>FrontierMath T1–3 · gpt-5.4-nano-2026-03-17_high · 2026-03-17 · 26%</title></circle><circle class="pt s0" cx="580.0" cy="171.5" r="2.5"><title>FrontierMath T1–3 · qwen3.6-plus · 2026-03-31 · 26%</title></circle><circle class="pt s0" cx="583.0" cy="156.4" r="2.5"><title>FrontierMath T1–3 · glm-5.1 · 2026-04-07 · 33%</title></circle><circle class="pt s0" cx="583.4" cy="144.9" r="2.5"><title>FrontierMath T1–3 · muse-spark · 2026-04-08 · 39%</title></circle><circle class="pt s0" cx="586.9" cy="134.9" r="2.5"><title>FrontierMath T1–3 · claude-opus-4-7_xhigh · 2026-04-16 · 44%</title></circle><circle class="pt s0" cx="588.7" cy="177.9" r="2.5"><title>FrontierMath T1–3 · qwen3.6-max-preview · 2026-04-20 · 23%</title></circle><circle class="pt s0" cx="588.7" cy="145.0" r="2.5"><title>FrontierMath T1–3 · kimi-k2.6 · 2026-04-20 · 39%</title></circle><circle class="pt s0" cx="590.0" cy="119.9" r="2.5"><title>FrontierMath T1–3 · gpt-5.5-pro-pre-release_xhigh · 2026-04-23 · 51%</title></circle><circle class="pt s0" cx="590.0" cy="117.0" r="2.5"><title>FrontierMath T1–3 · gpt-5.5-pro-pre-release_high · 2026-04-23 · 52%</title></circle><circle class="pt s0" cx="590.0" cy="118.5" r="2.5"><title>FrontierMath T1–3 · gpt-5.5-pre-release_xhigh · 2026-04-23 · 52%</title></circle><circle class="pt s0" cx="591.7" cy="204.5" r="2.5"><title>FrontierMath T1–3 · qwen3.6-flash · 2026-04-27 · 10%</title></circle><circle class="pt s0" cx="601.3" cy="145.0" r="2.5"><title>FrontierMath T1–3 · gemini-3.5-flash_high · 2026-05-19 · 39%</title></circle><circle class="pt s0" cx="605.2" cy="127.7" r="2.5"><title>FrontierMath T1–3 · claude-opus-4-8_max · 2026-05-28 · 47%</title></circle><path class="step s0" d="M297.4,223.8 L333.9,223.8 L333.9,222.4 L351.3,222.4 L351.3,221.7 L375.6,221.7 L375.6,206.6 L395.2,206.6 L395.2,200.2 L427.9,200.2 L427.9,187.1 L427.9,187.1 L427.9,186.6 L427.9,186.6 L427.9,174.4 L474.5,174.4 L474.5,165.7 L477.1,165.7 L477.1,158.6 L522.0,158.6 L522.0,147.8 L532.0,147.8 L532.0,141.3 L568.6,141.3 L568.6,127.0 L568.6,127.0 L568.6,122.0 L590.0,122.0 L590.0,119.9 L590.0,119.9 L590.0,117.0 L663.2,117.0"/><text class="series-label s0" x="667.2" y="121.0">FrontierMath T1–3</text><line class="threshold" x1="64" x2="740" y1="18.0" y2="18.0"/><text class="threshold-label" x="68" y="14.0">ARC-AGI-2: Human Panel 100%</text><circle class="pt s1" cx="197.3" cy="222.7" r="2.5"><title>ARC-AGI-2 · Icecuber · 2023-11-03 · 2%</title></circle><circle class="pt s1" cx="309.5" cy="226.0" r="2.5"><title>ARC-AGI-2 · GPT-4o-mini · 2024-07-18 · 0%</title></circle><circle class="pt s1" cx="333.9" cy="224.3" r="2.5"><title>ARC-AGI-2 · o1-mini · 2024-09-12 · 1%</title></circle><circle class="pt s1" cx="356.5" cy="168.5" r="2.5"><title>ARC-AGI-2 · NVARC · 2024-11-03 · 28%</title></circle><circle class="pt s1" cx="356.5" cy="220.8" r="2.5"><title>ARC-AGI-2 · ARChitects · 2024-11-03 · 2%</title></circle><circle class="pt s1" cx="363.9" cy="226.0" r="2.5"><title>ARC-AGI-2 · GPT-4o · 2024-11-20 · 0%</title></circle><circle class="pt s1" cx="376.9" cy="217.7" r="2.5"><title>ARC-AGI-2 · o3 (Preview, Low) ¹ · 2024-12-20 · 4%</title></circle><circle class="pt s1" cx="391.3" cy="223.3" r="2.5"><title>ARC-AGI-2 · Deepseek R1 · 2025-01-22 · 1%</title></circle><circle class="pt s1" cx="395.2" cy="226.0" r="2.5"><title>ARC-AGI-2 · o3-mini (Low) · 2025-01-31 · 0%</title></circle><circle class="pt s1" cx="395.2" cy="221.7" r="2.5"><title>ARC-AGI-2 · o3-mini (Medium) · 2025-01-31 · 2%</title></circle><circle class="pt s1" cx="395.2" cy="219.8" r="2.5"><title>ARC-AGI-2 · o3-mini (High) · 2025-01-31 · 3%</title></circle><circle class="pt s1" cx="396.1" cy="223.3" r="2.5"><title>ARC-AGI-2 · Gemini 2.0 Flash · 2025-02-02 · 1%</title></circle><circle class="pt s1" cx="401.7" cy="224.3" r="2.5"><title>ARC-AGI-2 · Gemini 1.5 Pro · 2025-02-15 · 1%</title></circle><circle class="pt s1" cx="403.5" cy="226.0" r="2.5"><title>ARC-AGI-2 · Grok 3 · 2025-02-19 · 0%</title></circle><circle class="pt s1" cx="403.5" cy="225.1" r="2.5"><title>ARC-AGI-2 · Grok 3 Mini (Low) · 2025-02-19 · 0%</title></circle><circle class="pt s1" cx="403.5" cy="218.2" r="2.5"><title>ARC-AGI-2 · Gemini 2.5 Pro (Preview) · 2025-02-19 · 4%</title></circle><circle class="pt s1" cx="403.5" cy="218.8" r="2.5"><title>ARC-AGI-2 · Gemini 2.5 Pro (Preview, Thinking 1K) · 2025-02-19 · 3%</title></circle><circle class="pt s1" cx="405.6" cy="226.0" r="2.5"><title>ARC-AGI-2 · Claude 3.7 · 2025-02-24 · 0%</title></circle><circle class="pt s1" cx="405.6" cy="224.5" r="2.5"><title>ARC-AGI-2 · Claude 3.7 (16K) · 2025-02-24 · 1%</title></circle><circle class="pt s1" cx="405.6" cy="225.2" r="2.5"><title>ARC-AGI-2 · Claude 3.7 (1K) · 2025-02-24 · 0%</title></circle><circle class="pt s1" cx="405.6" cy="224.1" r="2.5"><title>ARC-AGI-2 · Claude 3.7 (8K) · 2025-02-24 · 1%</title></circle><circle class="pt s1" cx="407.0" cy="224.3" r="2.5"><title>ARC-AGI-2 · GPT-4.5 · 2025-02-27 · 1%</title></circle><circle class="pt s1" cx="423.1" cy="226.0" r="2.5"><title>ARC-AGI-2 · Llama 4 Maverick · 2025-04-05 · 0%</title></circle><circle class="pt s1" cx="423.1" cy="226.0" r="2.5"><title>ARC-AGI-2 · Llama 4 Scout · 2025-04-05 · 0%</title></circle><circle class="pt s1" cx="427.0" cy="226.0" r="2.5"><title>ARC-AGI-2 · GPT-4.1-Nano · 2025-04-14 · 0%</title></circle><circle class="pt s1" cx="427.0" cy="226.0" r="2.5"><title>ARC-AGI-2 · GPT-4.1-Mini · 2025-04-14 · 0%</title></circle><circle class="pt s1" cx="427.0" cy="225.1" r="2.5"><title>ARC-AGI-2 · GPT-4.1 · 2025-04-14 · 0%</title></circle><circle class="pt s1" cx="427.9" cy="221.9" r="2.5"><title>ARC-AGI-2 · o3 (Low) · 2025-04-16 · 2%</title></circle><circle class="pt s1" cx="427.9" cy="219.8" r="2.5"><title>ARC-AGI-2 · o3 (Medium) · 2025-04-16 · 3%</title></circle><circle class="pt s1" cx="427.9" cy="212.4" r="2.5"><title>ARC-AGI-2 · o3 (High) · 2025-04-16 · 7%</title></circle><circle class="pt s1" cx="427.9" cy="222.5" r="2.5"><title>ARC-AGI-2 · o4-mini (Low) · 2025-04-16 · 2%</title></circle><circle class="pt s1" cx="427.9" cy="221.1" r="2.5"><title>ARC-AGI-2 · o4-mini (Medium) · 2025-04-16 · 2%</title></circle><circle class="pt s1" cx="427.9" cy="213.3" r="2.5"><title>ARC-AGI-2 · o4-mini (High) · 2025-04-16 · 6%</title></circle><circle class="pt s1" cx="440.1" cy="223.4" r="2.5"><title>ARC-AGI-2 · Claude Sonnet 4 · 2025-05-14 · 1%</title></circle><circle class="pt s1" cx="440.1" cy="224.2" r="2.5"><title>ARC-AGI-2 · Claude Sonnet 4 (Thinking 1K) · 2025-05-14 · 1%</title></circle><circle class="pt s1" cx="440.1" cy="221.6" r="2.5"><title>ARC-AGI-2 · Claude Sonnet 4 (Thinking 8K) · 2025-05-14 · 2%</title></circle><circle class="pt s1" cx="440.1" cy="213.7" r="2.5"><title>ARC-AGI-2 · Claude Sonnet 4 (Thinking 16K) · 2025-05-14 · 6%</title></circle><circle class="pt s1" cx="440.1" cy="208.1" r="2.5"><title>ARC-AGI-2 · Claude Opus 4 (Thinking 16K) · 2025-05-14 · 9%</title></circle><circle class="pt s1" cx="440.1" cy="216.6" r="2.5"><title>ARC-AGI-2 · Claude Opus 4 (Thinking 8K) · 2025-05-14 · 5%</title></circle><circle class="pt s1" cx="440.1" cy="226.0" r="2.5"><title>ARC-AGI-2 · Claude Opus 4 (Thinking 1K) · 2025-05-14 · 0%</title></circle><circle class="pt s1" cx="440.1" cy="223.4" r="2.5"><title>ARC-AGI-2 · Claude Opus 4 · 2025-05-14 · 1%</title></circle><circle class="pt s1" cx="442.7" cy="222.5" r="2.5"><title>ARC-AGI-2 · Gemini 2.5 Flash (Preview) · 2025-05-20 · 2%</title></circle><circle class="pt s1" cx="442.7" cy="221.5" r="2.5"><title>ARC-AGI-2 · Gemini 2.5 Flash (Preview) (Thinking 1K) · 2025-05-20 · 2%</title></circle><circle class="pt s1" cx="442.7" cy="221.6" r="2.5"><title>ARC-AGI-2 · Gemini 2.5 Flash (Preview) (Thinking 8K) · 2025-05-20 · 2%</title></circle><circle class="pt s1" cx="442.7" cy="221.9" r="2.5"><title>ARC-AGI-2 · Gemini 2.5 Flash (Preview) (Thinking 16K) · 2025-05-20 · 2%</title></circle><circle class="pt s1" cx="442.7" cy="220.7" r="2.5"><title>ARC-AGI-2 · Gemini 2.5 Flash (Preview) (Thinking 24K) · 2025-05-20 · 3%</title></circle><circle class="pt s1" cx="444.0" cy="223.4" r="2.5"><title>ARC-AGI-2 · Codex Mini (Latest) · 2025-05-23 · 1%</title></circle><circle class="pt s1" cx="446.2" cy="223.7" r="2.5"><title>ARC-AGI-2 · Deepseek R1 (05/28) · 2025-05-28 · 1%</title></circle><circle class="pt s1" cx="451.8" cy="221.7" r="2.5"><title>ARC-AGI-2 · o3-Pro (Low) · 2025-06-10 · 2%</title></circle><circle class="pt s1" cx="451.8" cy="222.0" r="2.5"><title>ARC-AGI-2 · o3-Pro (Medium) · 2025-06-10 · 2%</title></circle><circle class="pt s1" cx="451.8" cy="215.9" r="2.5"><title>ARC-AGI-2 · o3-Pro (High) · 2025-06-10 · 5%</title></circle><circle class="pt s1" cx="451.8" cy="226.0" r="2.5"><title>ARC-AGI-2 · Magistral Small · 2025-06-10 · 0%</title></circle><circle class="pt s1" cx="451.8" cy="226.0" r="2.5"><title>ARC-AGI-2 · Magistral Medium · 2025-06-10 · 0%</title></circle><circle class="pt s1" cx="451.8" cy="226.0" r="2.5"><title>ARC-AGI-2 · Magistral Medium (Thinking) · 2025-06-10 · 0%</title></circle><circle class="pt s1" cx="454.9" cy="226.0" r="2.5"><title>ARC-AGI-2 · Gemini 2.5 Pro (Thinking 1K) · 2025-06-17 · 0%</title></circle><circle class="pt s1" cx="454.9" cy="219.9" r="2.5"><title>ARC-AGI-2 · Gemini 2.5 Pro (Thinking 8K) · 2025-06-17 · 3%</title></circle><circle class="pt s1" cx="454.9" cy="217.6" r="2.5"><title>ARC-AGI-2 · Gemini 2.5 Pro (Thinking 16K) · 2025-06-17 · 4%</title></circle><circle class="pt s1" cx="454.9" cy="215.9" r="2.5"><title>ARC-AGI-2 · Gemini 2.5 Pro (Thinking 32K) · 2025-06-17 · 5%</title></circle><circle class="pt s1" cx="464.5" cy="192.8" r="2.5"><title>ARC-AGI-2 · Grok 4 (Thinking) · 2025-07-09 · 16%</title></circle><circle class="pt s1" cx="471.5" cy="223.4" r="2.5"><title>ARC-AGI-2 · Qwen3-235b-a22b Instruct (25/07) · 2025-07-25 · 1%</title></circle><circle class="pt s1" cx="477.1" cy="205.5" r="2.5"><title>ARC-AGI-2 · GPT-5 (High) · 2025-08-07 · 10%</title></circle><circle class="pt s1" cx="477.1" cy="210.4" r="2.5"><title>ARC-AGI-2 · GPT-5 (Medium) · 2025-08-07 · 7%</title></circle><circle class="pt s1" cx="477.1" cy="222.0" r="2.5"><title>ARC-AGI-2 · GPT-5 (Low) · 2025-08-07 · 2%</title></circle><circle class="pt s1" cx="477.1" cy="222.0" r="2.5"><title>ARC-AGI-2 · GPT-5 (Low) · 2025-08-07 · 2%</title></circle><circle class="pt s1" cx="477.1" cy="226.0" r="2.5"><title>ARC-AGI-2 · GPT-5 (Minimal) · 2025-08-07 · 0%</title></circle><circle class="pt s1" cx="477.1" cy="216.8" r="2.5"><title>ARC-AGI-2 · GPT-5 Mini (High) · 2025-08-07 · 4%</title></circle><circle class="pt s1" cx="477.1" cy="217.6" r="2.5"><title>ARC-AGI-2 · GPT-5 Mini (Medium) · 2025-08-07 · 4%</title></circle><circle class="pt s1" cx="477.1" cy="224.3" r="2.5"><title>ARC-AGI-2 · GPT-5 Mini (Low) · 2025-08-07 · 1%</title></circle><circle class="pt s1" cx="477.1" cy="222.5" r="2.5"><title>ARC-AGI-2 · GPT-5 Mini (Minimal) · 2025-08-07 · 2%</title></circle><circle class="pt s1" cx="477.1" cy="220.6" r="2.5"><title>ARC-AGI-2 · GPT-5 Nano (High) · 2025-08-07 · 3%</title></circle><circle class="pt s1" cx="477.1" cy="224.2" r="2.5"><title>ARC-AGI-2 · GPT-5 Nano (Medium) · 2025-08-07 · 1%</title></circle><circle class="pt s1" cx="477.1" cy="226.0" r="2.5"><title>ARC-AGI-2 · GPT-5 Nano (Low) · 2025-08-07 · 0%</title></circle><circle class="pt s1" cx="477.1" cy="226.0" r="2.5"><title>ARC-AGI-2 · GPT-5 Nano (Minimal) · 2025-08-07 · 0%</title></circle><circle class="pt s1" cx="477.1" cy="221.8" r="2.5"><title>ARC-AGI-2 · Hierarchical Reasoning Model (HRM) · 2025-08-07 · 2%</title></circle><circle class="pt s1" cx="477.1" cy="164.8" r="2.5"><title>ARC-AGI-2 · Grok 4 (Refine.) · 2025-08-07 · 29%</title></circle><circle class="pt s1" cx="477.1" cy="171.9" r="2.5"><title>ARC-AGI-2 · Grok 4 (Refine.) · 2025-08-07 · 26%</title></circle><circle class="pt s1" cx="500.2" cy="218.2" r="2.5"><title>ARC-AGI-2 · Claude Sonnet 4.5 · 2025-09-29 · 4%</title></circle><circle class="pt s1" cx="500.2" cy="213.9" r="2.5"><title>ARC-AGI-2 · Claude Sonnet 4.5 (Thinking 1K) · 2025-09-29 · 6%</title></circle><circle class="pt s1" cx="500.2" cy="211.6" r="2.5"><title>ARC-AGI-2 · Claude Sonnet 4.5 (Thinking 8K) · 2025-09-29 · 7%</title></circle><circle class="pt s1" cx="500.2" cy="211.6" r="2.5"><title>ARC-AGI-2 · Claude Sonnet 4.5 (Thinking 16K) · 2025-09-29 · 7%</title></circle><circle class="pt s1" cx="500.2" cy="197.7" r="2.5"><title>ARC-AGI-2 · Claude Sonnet 4.5 (Thinking 32K) · 2025-09-29 · 14%</title></circle><circle class="pt s1" cx="501.1" cy="223.4" r="2.5"><title>ARC-AGI-2 · Claude Haiku 4.5 · 2025-10-01 · 1%</title></circle><circle class="pt s1" cx="501.1" cy="223.4" r="2.5"><title>ARC-AGI-2 · Claude Haiku 4.5 (Thinking 1K) · 2025-10-01 · 1%</title></circle><circle class="pt s1" cx="501.1" cy="222.5" r="2.5"><title>ARC-AGI-2 · Claude Haiku 4.5 (Thinking 8K) · 2025-10-01 · 2%</title></circle><circle class="pt s1" cx="501.1" cy="220.2" r="2.5"><title>ARC-AGI-2 · Claude Haiku 4.5 (Thinking 16K) · 2025-10-01 · 3%</title></circle><circle class="pt s1" cx="501.1" cy="217.6" r="2.5"><title>ARC-AGI-2 · Claude Haiku 4.5 (Thinking 32K) · 2025-10-01 · 4%</title></circle><circle class="pt s1" cx="503.3" cy="187.9" r="2.5"><title>ARC-AGI-2 · GPT-5 Pro · 2025-10-06 · 18%</title></circle><circle class="pt s1" cx="503.7" cy="213.0" r="2.5"><title>ARC-AGI-2 · Tiny Recursion Model (TRM) · 2025-10-07 · 6%</title></circle><circle class="pt s1" cx="509.8" cy="215.0" r="2.5"><title>ARC-AGI-2 · Grok 4 (Fast Reasoning) · 2025-10-21 · 5%</title></circle><circle class="pt s1" cx="519.8" cy="225.1" r="2.5"><title>ARC-AGI-2 · GPT-5.1 (Thinking, None) · 2025-11-13 · 0%</title></circle><circle class="pt s1" cx="519.8" cy="222.0" r="2.5"><title>ARC-AGI-2 · GPT-5.1 (Thinking, Low) · 2025-11-13 · 2%</title></circle><circle class="pt s1" cx="519.8" cy="212.4" r="2.5"><title>ARC-AGI-2 · GPT-5.1 (Thinking, Medium) · 2025-11-13 · 7%</title></circle><circle class="pt s1" cx="519.8" cy="189.3" r="2.5"><title>ARC-AGI-2 · GPT-5.1 (Thinking, High) · 2025-11-13 · 18%</title></circle><circle class="pt s1" cx="522.0" cy="161.3" r="2.5"><title>ARC-AGI-2 · Gemini 3 Pro · 2025-11-18 · 31%</title></circle><circle class="pt s1" cx="524.6" cy="209.8" r="2.5"><title>ARC-AGI-2 · Opus 4.5 (Thinking, None) · 2025-11-24 · 8%</title></circle><circle class="pt s1" cx="524.6" cy="206.4" r="2.5"><title>ARC-AGI-2 · Opus 4.5 (Thinking, 1K) · 2025-11-24 · 9%</title></circle><circle class="pt s1" cx="524.6" cy="197.1" r="2.5"><title>ARC-AGI-2 · Opus 4.5 (Thinking, 8K) · 2025-11-24 · 14%</title></circle><circle class="pt s1" cx="524.6" cy="178.6" r="2.5"><title>ARC-AGI-2 · Opus 4.5 (Thinking, 16K) · 2025-11-24 · 23%</title></circle><circle class="pt s1" cx="524.6" cy="162.4" r="2.5"><title>ARC-AGI-2 · Opus 4.5 (Thinking, 32K) · 2025-11-24 · 31%</title></circle><circle class="pt s1" cx="524.6" cy="147.7" r="2.5"><title>ARC-AGI-2 · Opus 4.5 (Thinking, 64K) · 2025-11-24 · 38%</title></circle><circle class="pt s1" cx="527.7" cy="217.6" r="2.5"><title>ARC-AGI-2 · Deepseek V3.2 · 2025-12-01 · 4%</title></circle><circle class="pt s1" cx="529.0" cy="113.7" r="2.5"><title>ARC-AGI-2 · Gemini 3 Pro (Refine.) · 2025-12-04 · 54%</title></circle><circle class="pt s1" cx="532.0" cy="224.3" r="2.5"><title>ARC-AGI-2 · GPT-5.2 · 2025-12-11 · 1%</title></circle><circle class="pt s1" cx="532.0" cy="205.8" r="2.5"><title>ARC-AGI-2 · GPT-5.2 (Low) · 2025-12-11 · 10%</title></circle><circle class="pt s1" cx="532.0" cy="170.5" r="2.5"><title>ARC-AGI-2 · GPT-5.2 (Medium) · 2025-12-11 · 27%</title></circle><circle class="pt s1" cx="532.0" cy="135.9" r="2.5"><title>ARC-AGI-2 · GPT-5.2 (High) · 2025-12-11 · 43%</title></circle><circle class="pt s1" cx="532.0" cy="115.9" r="2.5"><title>ARC-AGI-2 · GPT-5.2 (XHigh) · 2025-12-11 · 53%</title></circle><circle class="pt s1" cx="532.0" cy="146.0" r="2.5"><title>ARC-AGI-2 · GPT-5.2 Pro (Medium) · 2025-12-11 · 38%</title></circle><circle class="pt s1" cx="532.0" cy="113.3" r="2.5"><title>ARC-AGI-2 · GPT-5.2 Pro (High) · 2025-12-11 · 54%</title></circle><circle class="pt s1" cx="534.6" cy="219.1" r="2.5"><title>ARC-AGI-2 · Gemini 3 Flash Preview (Minimal) · 2025-12-17 · 3%</title></circle><circle class="pt s1" cx="534.6" cy="223.4" r="2.5"><title>ARC-AGI-2 · Gemini 3 Flash Preview (Low) · 2025-12-17 · 1%</title></circle><circle class="pt s1" cx="534.6" cy="199.4" r="2.5"><title>ARC-AGI-2 · Gemini 3 Flash Preview (Medium) · 2025-12-17 · 13%</title></circle><circle class="pt s1" cx="534.6" cy="156.1" r="2.5"><title>ARC-AGI-2 · Gemini 3 Flash Preview (High) · 2025-12-17 · 34%</title></circle><circle class="pt s1" cx="552.5" cy="201.4" r="2.5"><title>ARC-AGI-2 · Kimi K2.5 · 2026-01-27 · 12%</title></circle><circle class="pt s1" cx="555.6" cy="74.4" r="2.5"><title>ARC-AGI-2 · GPT-5.2 (Refine.) · 2026-02-03 · 73%</title></circle><circle class="pt s1" cx="556.4" cy="91.7" r="2.5"><title>ARC-AGI-2 · Claude Opus 4.6 (120K, Low) · 2026-02-05 · 65%</title></circle><circle class="pt s1" cx="556.4" cy="88.2" r="2.5"><title>ARC-AGI-2 · Claude Opus 4.6 (120K, Medium) · 2026-02-05 · 66%</title></circle><circle class="pt s1" cx="556.4" cy="82.1" r="2.5"><title>ARC-AGI-2 · Claude Opus 4.6 (120K, High) · 2026-02-05 · 69%</title></circle><circle class="pt s1" cx="556.4" cy="83.0" r="2.5"><title>ARC-AGI-2 · Claude Opus 4.6 (120K, Max) · 2026-02-05 · 69%</title></circle><circle class="pt s1" cx="559.5" cy="132.1" r="2.5"><title>ARC-AGI-2 · Gemini 3 Deep Think (Preview) ² · 2026-02-12 · 45%</title></circle><circle class="pt s1" cx="559.5" cy="50.1" r="2.5"><title>ARC-AGI-2 · Gemini 3 Deep Think (2/26) · 2026-02-12 · 85%</title></circle><circle class="pt s1" cx="559.5" cy="215.9" r="2.5"><title>ARC-AGI-2 · Minimax M2.5 · 2026-02-12 · 5%</title></circle><circle class="pt s1" cx="561.7" cy="104.7" r="2.5"><title>ARC-AGI-2 · Claude Sonnet 4.6 (Max) · 2026-02-17 · 58%</title></circle><circle class="pt s1" cx="561.7" cy="100.3" r="2.5"><title>ARC-AGI-2 · Claude Sonnet 4.6 (High) · 2026-02-17 · 60%</title></circle><circle class="pt s1" cx="562.5" cy="65.7" r="2.5"><title>ARC-AGI-2 · Gemini 3.1 Pro (Preview) · 2026-02-19 · 77%</title></circle><circle class="pt s1" cx="563.0" cy="215.9" r="2.5"><title>ARC-AGI-2 · GLM-5 · 2026-02-20 · 5%</title></circle><circle class="pt s1" cx="568.2" cy="165.3" r="2.5"><title>ARC-AGI-2 · GPT-5.4 (Low) · 2026-03-04 · 29%</title></circle><circle class="pt s1" cx="568.2" cy="110.7" r="2.5"><title>ARC-AGI-2 · GPT-5.4 (Medium) · 2026-03-04 · 55%</title></circle><circle class="pt s1" cx="568.2" cy="85.6" r="2.5"><title>ARC-AGI-2 · GPT-5.4 (High) · 2026-03-04 · 68%</title></circle><circle class="pt s1" cx="568.2" cy="72.2" r="2.5"><title>ARC-AGI-2 · GPT-5.4 (XHigh) · 2026-03-04 · 74%</title></circle><circle class="pt s1" cx="568.2" cy="52.7" r="2.5"><title>ARC-AGI-2 · GPT-5.4 Pro (XHigh) · 2026-03-04 · 83%</title></circle><circle class="pt s1" cx="570.4" cy="90.5" r="2.5"><title>ARC-AGI-2 · Grok 4.20 (Reasoning) · 2026-03-09 · 65%</title></circle><circle class="pt s1" cx="573.9" cy="186.7" r="2.5"><title>ARC-AGI-2 · GPT-5.4 Mini (XHigh) · 2026-03-17 · 19%</title></circle><circle class="pt s1" cx="573.9" cy="198.6" r="2.5"><title>ARC-AGI-2 · GPT-5.4 Mini (High) · 2026-03-17 · 13%</title></circle><circle class="pt s1" cx="573.9" cy="216.8" r="2.5"><title>ARC-AGI-2 · GPT-5.4 Mini (Medium) · 2026-03-17 · 4%</title></circle><circle class="pt s1" cx="573.9" cy="223.7" r="2.5"><title>ARC-AGI-2 · GPT-5.4 Mini (Low) · 2026-03-17 · 1%</title></circle><circle class="pt s1" cx="573.9" cy="214.2" r="2.5"><title>ARC-AGI-2 · GPT-5.4 Nano (XHigh) · 2026-03-17 · 6%</title></circle><circle class="pt s1" cx="573.9" cy="218.5" r="2.5"><title>ARC-AGI-2 · GPT-5.4 Nano (High) · 2026-03-17 · 4%</title></circle><circle class="pt s1" cx="573.9" cy="222.0" r="2.5"><title>ARC-AGI-2 · GPT-5.4 Nano (Medium) · 2026-03-17 · 2%</title></circle><circle class="pt s1" cx="573.9" cy="222.8" r="2.5"><title>ARC-AGI-2 · GPT-5.4 Nano (Low) · 2026-03-17 · 2%</title></circle><circle class="pt s1" cx="586.9" cy="96.9" r="2.5"><title>ARC-AGI-2 · Claude 4.7 (Low) · 2026-04-16 · 62%</title></circle><circle class="pt s1" cx="586.9" cy="85.6" r="2.5"><title>ARC-AGI-2 · Claude 4.7 (Medium) · 2026-04-16 · 68%</title></circle><circle class="pt s1" cx="586.9" cy="83.9" r="2.5"><title>ARC-AGI-2 · Claude 4.7 (High) · 2026-04-16 · 68%</title></circle><circle class="pt s1" cx="586.9" cy="68.3" r="2.5"><title>ARC-AGI-2 · Claude 4.7 (Max) · 2026-04-16 · 76%</title></circle><circle class="pt s1" cx="589.5" cy="156.7" r="2.5"><title>ARC-AGI-2 · GPT-5.5 (Low) · 2026-04-22 · 33%</title></circle><circle class="pt s1" cx="589.5" cy="79.5" r="2.5"><title>ARC-AGI-2 · GPT-5.5 (Medium) · 2026-04-22 · 70%</title></circle><circle class="pt s1" cx="589.5" cy="52.7" r="2.5"><title>ARC-AGI-2 · GPT-5.5 (High) · 2026-04-22 · 83%</title></circle><circle class="pt s1" cx="589.5" cy="49.2" r="2.5"><title>ARC-AGI-2 · GPT-5.5 (XHigh) · 2026-04-22 · 85%</title></circle><circle class="pt s1" cx="590.0" cy="50.1" r="2.5"><title>ARC-AGI-2 · GPT-5.5 Pro (High) · 2026-04-23 · 85%</title></circle><circle class="pt s1" cx="590.0" cy="50.9" r="2.5"><title>ARC-AGI-2 · GPT-5.5 Pro (XHigh) · 2026-04-23 · 84%</title></circle><circle class="pt s1" cx="601.3" cy="207.5" r="2.5"><title>ARC-AGI-2 · Gemini 3.5 Flash (Minimal) · 2026-05-19 · 9%</title></circle><circle class="pt s1" cx="601.3" cy="76.1" r="2.5"><title>ARC-AGI-2 · Gemini 3.5 Flash (High) · 2026-05-19 · 72%</title></circle><circle class="pt s1" cx="607.0" cy="96.6" r="2.5"><title>ARC-AGI-2 · Claude Opus 4.8 (Low) · 2026-06-01 · 62%</title></circle><circle class="pt s1" cx="607.0" cy="76.9" r="2.5"><title>ARC-AGI-2 · Claude Opus 4.8 (Medium) · 2026-06-01 · 72%</title></circle><circle class="pt s1" cx="607.0" cy="76.1" r="2.5"><title>ARC-AGI-2 · Claude Opus 4.8 (High) · 2026-06-01 · 72%</title></circle><circle class="pt s1" cx="610.5" cy="40.5" r="2.5"><title>ARC-AGI-2 · Claude Fable 5 (Max) · 2026-06-09 · 89%</title></circle><circle class="pt s1" cx="610.5" cy="42.3" r="2.5"><title>ARC-AGI-2 · Claude Fable 5 (XHigh) · 2026-06-09 · 88%</title></circle><circle class="pt s1" cx="610.5" cy="44.0" r="2.5"><title>ARC-AGI-2 · Claude Fable 5 (High) · 2026-06-09 · 88%</title></circle><circle class="pt s1" cx="610.5" cy="54.4" r="2.5"><title>ARC-AGI-2 · Claude Fable 5 (Medium) · 2026-06-09 · 82%</title></circle><circle class="pt s1" cx="610.5" cy="66.2" r="2.5"><title>ARC-AGI-2 · Claude Fable 5 (Low) · 2026-06-09 · 77%</title></circle><circle class="pt s1" cx="612.2" cy="178.6" r="2.5"><title>ARC-AGI-2 · GLM-5.2 · 2026-06-13 · 23%</title></circle><circle class="pt s1" cx="623.5" cy="137.6" r="2.5"><title>ARC-AGI-2 · GPT-5.6 Sol (Low) · 2026-07-09 · 42%</title></circle><circle class="pt s1" cx="623.5" cy="86.5" r="2.5"><title>ARC-AGI-2 · GPT-5.6 Sol (Medium) · 2026-07-09 · 67%</title></circle><circle class="pt s1" cx="623.5" cy="48.3" r="2.5"><title>ARC-AGI-2 · GPT-5.6 Sol (High) · 2026-07-09 · 85%</title></circle><circle class="pt s1" cx="623.5" cy="38.8" r="2.5"><title>ARC-AGI-2 · GPT-5.6 Sol (XHigh) · 2026-07-09 · 90%</title></circle><circle class="pt s1" cx="623.5" cy="33.6" r="2.5"><title>ARC-AGI-2 · GPT-5.6 Sol (Max) · 2026-07-09 · 92%</title></circle><circle class="pt s1" cx="623.5" cy="187.0" r="2.5"><title>ARC-AGI-2 · GPT-5.6 Terra (Low) · 2026-07-09 · 19%</title></circle><circle class="pt s1" cx="623.5" cy="148.0" r="2.5"><title>ARC-AGI-2 · GPT-5.6 Terra (Medium) · 2026-07-09 · 38%</title></circle><circle class="pt s1" cx="623.5" cy="86.5" r="2.5"><title>ARC-AGI-2 · GPT-5.6 Terra (High) · 2026-07-09 · 67%</title></circle><circle class="pt s1" cx="623.5" cy="71.7" r="2.5"><title>ARC-AGI-2 · GPT-5.6 Terra (XHigh) · 2026-07-09 · 74%</title></circle><circle class="pt s1" cx="623.5" cy="51.5" r="2.5"><title>ARC-AGI-2 · GPT-5.6 Terra (Max) · 2026-07-09 · 84%</title></circle><circle class="pt s1" cx="623.5" cy="215.3" r="2.5"><title>ARC-AGI-2 · GPT-5.6 Luna (Low) · 2026-07-09 · 5%</title></circle><circle class="pt s1" cx="623.5" cy="210.7" r="2.5"><title>ARC-AGI-2 · GPT-5.6 Luna (Medium) · 2026-07-09 · 7%</title></circle><circle class="pt s1" cx="623.5" cy="165.0" r="2.5"><title>ARC-AGI-2 · GPT-5.6 Luna (High) · 2026-07-09 · 29%</title></circle><circle class="pt s1" cx="623.5" cy="126.9" r="2.5"><title>ARC-AGI-2 · GPT-5.6 Luna (XHigh) · 2026-07-09 · 48%</title></circle><circle class="pt s1" cx="623.5" cy="102.2" r="2.5"><title>ARC-AGI-2 · GPT-5.6 Luna (Max) · 2026-07-09 · 60%</title></circle><circle class="pt s1" cx="626.2" cy="150.0" r="2.5"><title>ARC-AGI-2 · Inkling · 2026-07-15 · 37%</title></circle><circle class="pt s1" cx="626.6" cy="116.5" r="2.5"><title>ARC-AGI-2 · Grok 4.5 (High) · 2026-07-16 · 53%</title></circle><circle class="pt s1" cx="626.6" cy="116.5" r="2.5"><title>ARC-AGI-2 · Grok 4.5 (Medium) · 2026-07-16 · 53%</title></circle><circle class="pt s1" cx="626.6" cy="157.2" r="2.5"><title>ARC-AGI-2 · Grok 4.5 (Low) · 2026-07-16 · 33%</title></circle><circle class="pt s1" cx="626.6" cy="100.3" r="2.5"><title>ARC-AGI-2 · Kimi K3 (Max) · 2026-07-16 · 60%</title></circle><circle class="pt s1" cx="626.6" cy="111.6" r="2.5"><title>ARC-AGI-2 · Kimi K3 (High) · 2026-07-16 · 55%</title></circle><circle class="pt s1" cx="626.6" cy="200.3" r="2.5"><title>ARC-AGI-2 · Kimi K3 (Low) · 2026-07-16 · 12%</title></circle><circle class="pt s1" cx="628.8" cy="204.6" r="2.5"><title>ARC-AGI-2 · Gemini 3.5 Flash-Lite (High) · 2026-07-21 · 10%</title></circle><circle class="pt s1" cx="628.8" cy="215.0" r="2.5"><title>ARC-AGI-2 · Gemini 3.5 Flash-Lite (Medium) · 2026-07-21 · 5%</title></circle><circle class="pt s1" cx="628.8" cy="222.8" r="2.5"><title>ARC-AGI-2 · Gemini 3.5 Flash-Lite (Low) · 2026-07-21 · 2%</title></circle><circle class="pt s1" cx="628.8" cy="224.3" r="2.5"><title>ARC-AGI-2 · Gemini 3.5 Flash-Lite (Minimal) · 2026-07-21 · 1%</title></circle><circle class="pt s1" cx="628.8" cy="100.3" r="2.5"><title>ARC-AGI-2 · Gemini 3.6 Flash (High) · 2026-07-21 · 60%</title></circle><circle class="pt s1" cx="628.8" cy="121.1" r="2.5"><title>ARC-AGI-2 · Gemini 3.6 Flash (Medium) · 2026-07-21 · 50%</title></circle><circle class="pt s1" cx="628.8" cy="162.7" r="2.5"><title>ARC-AGI-2 · Gemini 3.6 Flash (Low) · 2026-07-21 · 30%</title></circle><circle class="pt s1" cx="628.8" cy="220.5" r="2.5"><title>ARC-AGI-2 · Gemini 3.6 Flash (Minimal) · 2026-07-21 · 3%</title></circle><circle class="pt s1" cx="630.1" cy="42.3" r="2.5"><title>ARC-AGI-2 · Claude Opus 5 (High) · 2026-07-24 · 88%</title></circle><circle class="pt s1" cx="630.1" cy="37.9" r="2.5"><title>ARC-AGI-2 · Claude Opus 5 (Max) · 2026-07-24 · 90%</title></circle><circle class="pt s1" cx="632.7" cy="142.5" r="2.5"><title>ARC-AGI-2 · Inkling Small (XHigh) · 2026-07-30 · 40%</title></circle><circle class="pt s1" cx="632.7" cy="157.2" r="2.5"><title>ARC-AGI-2 · Inkling Small (High) · 2026-07-30 · 33%</title></circle><circle class="pt s1" cx="632.7" cy="197.7" r="2.5"><title>ARC-AGI-2 · Inkling Small (Medium) · 2026-07-30 · 14%</title></circle><circle class="pt s1" cx="632.7" cy="215.9" r="2.5"><title>ARC-AGI-2 · Inkling Small (Low) · 2026-07-30 · 5%</title></circle><circle class="pt s1" cx="632.7" cy="217.6" r="2.5"><title>ARC-AGI-2 · Inkling Small (Minimal) · 2026-07-30 · 4%</title></circle><circle class="pt s1" cx="632.7" cy="226.0" r="2.5"><title>ARC-AGI-2 · Inkling Small (None) · 2026-07-30 · 0%</title></circle><circle class="pt s1" cx="632.7" cy="102.1" r="2.5"><title>ARC-AGI-2 · GPT-5.6 Luna 2026-07-30 (Max) · 2026-07-30 · 60%</title></circle><circle class="pt s1" cx="632.7" cy="135.6" r="2.5"><title>ARC-AGI-2 · GPT-5.6 Luna 2026-07-30 (XHigh) · 2026-07-30 · 43%</title></circle><circle class="pt s1" cx="632.7" cy="156.7" r="2.5"><title>ARC-AGI-2 · GPT-5.6 Luna 2026-07-30 (High) · 2026-07-30 · 33%</title></circle><circle class="pt s1" cx="632.7" cy="210.7" r="2.5"><title>ARC-AGI-2 · GPT-5.6 Luna 2026-07-30 (Medium) · 2026-07-30 · 7%</title></circle><circle class="pt s1" cx="632.7" cy="218.5" r="2.5"><title>ARC-AGI-2 · GPT-5.6 Luna 2026-07-30 (Low) · 2026-07-30 · 4%</title></circle><circle class="pt s1" cx="632.7" cy="224.3" r="2.5"><title>ARC-AGI-2 · GPT-5.6 Luna 2026-07-30 (None) · 2026-07-30 · 1%</title></circle><circle class="pt s1" cx="633.1" cy="98.3" r="2.5"><title>ARC-AGI-2 · DeepSeek V4 Flash 0731 (Max) · 2026-07-31 · 61%</title></circle><circle class="pt s1" cx="633.1" cy="109.6" r="2.5"><title>ARC-AGI-2 · DeepSeek V4 Flash 0731 (High) · 2026-07-31 · 56%</title></circle><circle class="pt s1" cx="633.1" cy="130.4" r="2.5"><title>ARC-AGI-2 · DeepSeek V4 Flash 0731 (Low) · 2026-07-31 · 46%</title></circle><circle class="pt s1" cx="633.1" cy="221.7" r="2.5"><title>ARC-AGI-2 · DeepSeek V4 Flash 0731 (None) · 2026-07-31 · 2%</title></circle><circle class="pt s1" cx="637.9" cy="86.5" r="2.5"><title>ARC-AGI-2 · Grok 4.6 (XHigh) · 2026-08-11 · 67%</title></circle><circle class="pt s1" cx="637.9" cy="90.5" r="2.5"><title>ARC-AGI-2 · Grok 4.6 (High) · 2026-08-11 · 65%</title></circle><circle class="pt s1" cx="637.9" cy="98.6" r="2.5"><title>ARC-AGI-2 · Grok 4.6 (Medium) · 2026-08-11 · 61%</title></circle><circle class="pt s1" cx="637.9" cy="168.5" r="2.5"><title>ARC-AGI-2 · Grok 4.6 (Low) · 2026-08-11 · 28%</title></circle><circle class="pt s1" cx="638.8" cy="50.1" r="2.5"><title>ARC-AGI-2 · Gemini 3.7 Flash (High) · 2026-08-13 · 85%</title></circle><circle class="pt s1" cx="638.8" cy="93.4" r="2.5"><title>ARC-AGI-2 · Gemini 3.7 Flash (Medium) · 2026-08-13 · 64%</title></circle><circle class="pt s1" cx="638.8" cy="115.9" r="2.5"><title>ARC-AGI-2 · Gemini 3.7 Flash (Low) · 2026-08-13 · 53%</title></circle><circle class="pt s1" cx="638.8" cy="98.6" r="2.5"><title>ARC-AGI-2 · DeepSeek V4 Pro 0813 (Max) · 2026-08-13 · 61%</title></circle><circle class="pt s1" cx="638.8" cy="101.8" r="2.5"><title>ARC-AGI-2 · DeepSeek V4 Pro 0813 (High) · 2026-08-13 · 60%</title></circle><circle class="pt s1" cx="638.8" cy="109.0" r="2.5"><title>ARC-AGI-2 · DeepSeek V4 Pro 0813 (Low) · 2026-08-13 · 56%</title></circle><circle class="pt s1" cx="638.8" cy="224.3" r="2.5"><title>ARC-AGI-2 · DeepSeek V4 Pro 0813 (None) · 2026-08-13 · 1%</title></circle><circle class="pt s1" cx="639.2" cy="66.2" r="2.5"><title>ARC-AGI-2 · Dots3-Note Preview (Max) · 2026-08-14 · 77%</title></circle><circle class="pt s1" cx="639.2" cy="137.9" r="2.5"><title>ARC-AGI-2 · Qwen3.8-27B (XHigh) · 2026-08-14 · 42%</title></circle><circle class="pt s1" cx="639.2" cy="198.6" r="2.5"><title>ARC-AGI-2 · Qwen3.8-27B (Medium) · 2026-08-14 · 13%</title></circle><circle class="pt s1" cx="639.2" cy="178.6" r="2.5"><title>ARC-AGI-2 · Qwen3.8-27B (Low) · 2026-08-14 · 23%</title></circle><circle class="pt s1" cx="639.2" cy="222.8" r="2.5"><title>ARC-AGI-2 · Qwen3.8-27B (None) · 2026-08-14 · 2%</title></circle><circle class="pt s1" cx="644.5" cy="89.1" r="2.5"><title>ARC-AGI-2 · GLM-5.3-Flash (Max) · 2026-08-26 · 66%</title></circle><circle class="pt s1" cx="644.5" cy="121.7" r="2.5"><title>ARC-AGI-2 · GLM-5.3-Flash (High) · 2026-08-26 · 50%</title></circle><circle class="pt s1" cx="644.5" cy="167.9" r="2.5"><title>ARC-AGI-2 · GLM-5.3-Flash (Low) · 2026-08-26 · 28%</title></circle><circle class="pt s1" cx="647.1" cy="38.8" r="2.5"><title>ARC-AGI-2 · Claude Fable 5.1 (Max) · 2026-09-01 · 90%</title></circle><circle class="pt s1" cx="647.1" cy="38.8" r="2.5"><title>ARC-AGI-2 · Claude Fable 5.1 (XHigh) · 2026-09-01 · 90%</title></circle><circle class="pt s1" cx="647.1" cy="41.4" r="2.5"><title>ARC-AGI-2 · Claude Fable 5.1 (High) · 2026-09-01 · 89%</title></circle><circle class="pt s1" cx="647.1" cy="46.6" r="2.5"><title>ARC-AGI-2 · Claude Fable 5.1 (Medium) · 2026-09-01 · 86%</title></circle><circle class="pt s1" cx="647.1" cy="63.1" r="2.5"><title>ARC-AGI-2 · Claude Fable 5.1 (Low) · 2026-09-01 · 78%</title></circle><circle class="pt s1" cx="647.5" cy="28.4" r="2.5"><title>ARC-AGI-2 · GPT-6 Astra (Max) · 2026-09-02 · 95%</title></circle><circle class="pt s1" cx="647.5" cy="31.9" r="2.5"><title>ARC-AGI-2 · GPT-6 Astra (XHigh) · 2026-09-02 · 93%</title></circle><circle class="pt s1" cx="647.5" cy="34.5" r="2.5"><title>ARC-AGI-2 · GPT-6 Astra (High) · 2026-09-02 · 92%</title></circle><circle class="pt s1" cx="647.5" cy="34.5" r="2.5"><title>ARC-AGI-2 · GPT-6 Astra (Medium) · 2026-09-02 · 92%</title></circle><circle class="pt s1" cx="647.5" cy="48.3" r="2.5"><title>ARC-AGI-2 · GPT-6 Astra (Low) · 2026-09-02 · 85%</title></circle><circle class="pt s1" cx="647.5" cy="102.1" r="2.5"><title>ARC-AGI-2 · GPT-6 Astra (None) · 2026-09-02 · 60%</title></circle><circle class="pt s1" cx="647.5" cy="40.5" r="2.5"><title>ARC-AGI-2 · Gemini 3.8 Flash (High) · 2026-09-02 · 89%</title></circle><circle class="pt s1" cx="647.5" cy="53.5" r="2.5"><title>ARC-AGI-2 · Gemini 3.8 Flash (Medium) · 2026-09-02 · 83%</title></circle><circle class="pt s1" cx="647.5" cy="64.8" r="2.5"><title>ARC-AGI-2 · Gemini 3.8 Flash (Low) · 2026-09-02 · 78%</title></circle><circle class="pt s1" cx="651.0" cy="74.3" r="2.5"><title>ARC-AGI-2 · DeepSeek V4.1 Flash (Max) · 2026-09-10 · 73%</title></circle><circle class="pt s1" cx="651.0" cy="85.6" r="2.5"><title>ARC-AGI-2 · DeepSeek V4.1 Flash (High) · 2026-09-10 · 68%</title></circle><circle class="pt s1" cx="651.0" cy="100.0" r="2.5"><title>ARC-AGI-2 · DeepSeek V4.1 Flash (Low) · 2026-09-10 · 61%</title></circle><circle class="pt s1" cx="651.0" cy="223.4" r="2.5"><title>ARC-AGI-2 · DeepSeek V4.1 Flash (None) · 2026-09-10 · 1%</title></circle><circle class="pt s1" cx="655.8" cy="98.3" r="2.5"><title>ARC-AGI-2 · Grok 4.7 (XHigh) · 2026-09-21 · 61%</title></circle><circle class="pt s1" cx="655.8" cy="104.7" r="2.5"><title>ARC-AGI-2 · Grok 4.7 (High) · 2026-09-21 · 58%</title></circle><circle class="pt s1" cx="655.8" cy="103.8" r="2.5"><title>ARC-AGI-2 · Grok 4.7 (Medium) · 2026-09-21 · 59%</title></circle><circle class="pt s1" cx="655.8" cy="191.3" r="2.5"><title>ARC-AGI-2 · Grok 4.7 (Low) · 2026-09-21 · 17%</title></circle><circle class="pt s1" cx="656.2" cy="102.6" r="2.5"><title>ARC-AGI-2 · GPT-6 Luna (Max) · 2026-09-22 · 59%</title></circle><circle class="pt s1" cx="656.2" cy="138.8" r="2.5"><title>ARC-AGI-2 · GPT-6 Luna (XHigh) · 2026-09-22 · 42%</title></circle><circle class="pt s1" cx="656.2" cy="160.7" r="2.5"><title>ARC-AGI-2 · GPT-6 Luna (High) · 2026-09-22 · 31%</title></circle><circle class="pt s1" cx="656.2" cy="188.4" r="2.5"><title>ARC-AGI-2 · GPT-6 Luna (Medium) · 2026-09-22 · 18%</title></circle><circle class="pt s1" cx="656.2" cy="216.5" r="2.5"><title>ARC-AGI-2 · GPT-6 Luna (Low) · 2026-09-22 · 5%</title></circle><circle class="pt s1" cx="656.2" cy="226.0" r="2.5"><title>ARC-AGI-2 · GPT-6 Luna (None) · 2026-09-22 · 0%</title></circle><circle class="pt s1" cx="656.2" cy="35.3" r="2.5"><title>ARC-AGI-2 · Claude Opus 5.5 (Max) · 2026-09-22 · 92%</title></circle><circle class="pt s1" cx="656.2" cy="33.6" r="2.5"><title>ARC-AGI-2 · Claude Opus 5.5 (XHigh) · 2026-09-22 · 92%</title></circle><circle class="pt s1" cx="656.2" cy="31.9" r="2.5"><title>ARC-AGI-2 · Claude Opus 5.5 (High) · 2026-09-22 · 93%</title></circle><circle class="pt s1" cx="656.2" cy="44.0" r="2.5"><title>ARC-AGI-2 · Claude Opus 5.5 (Medium) · 2026-09-22 · 88%</title></circle><circle class="pt s1" cx="656.2" cy="80.1" r="2.5"><title>ARC-AGI-2 · Claude Opus 5.5 (Low) · 2026-09-22 · 70%</title></circle><circle class="pt s1" cx="656.2" cy="39.7" r="2.5"><title>ARC-AGI-2 · GPT-6 Sol (Max) · 2026-09-22 · 90%</title></circle><circle class="pt s1" cx="656.2" cy="63.6" r="2.5"><title>ARC-AGI-2 · GPT-6 Sol (XHigh) · 2026-09-22 · 78%</title></circle><circle class="pt s1" cx="656.2" cy="82.7" r="2.5"><title>ARC-AGI-2 · GPT-6 Sol (High) · 2026-09-22 · 69%</title></circle><circle class="pt s1" cx="656.2" cy="105.8" r="2.5"><title>ARC-AGI-2 · GPT-6 Sol (Medium) · 2026-09-22 · 58%</title></circle><circle class="pt s1" cx="656.2" cy="160.4" r="2.5"><title>ARC-AGI-2 · GPT-6 Sol (Low) · 2026-09-22 · 32%</title></circle><circle class="pt s1" cx="656.2" cy="222.5" r="2.5"><title>ARC-AGI-2 · GPT-6 Sol (None) · 2026-09-22 · 2%</title></circle><circle class="pt s1" cx="659.3" cy="30.1" r="2.5"><title>ARC-AGI-2 · GPT-6.1 Sol (Max) · 2026-09-29 · 94%</title></circle><circle class="pt s1" cx="659.3" cy="35.3" r="2.5"><title>ARC-AGI-2 · GPT-6.1 Sol (XHigh) · 2026-09-29 · 92%</title></circle><circle class="pt s1" cx="659.3" cy="35.3" r="2.5"><title>ARC-AGI-2 · GPT-6.1 Sol (High) · 2026-09-29 · 92%</title></circle><circle class="pt s1" cx="659.3" cy="45.7" r="2.5"><title>ARC-AGI-2 · GPT-6.1 Sol (Medium) · 2026-09-29 · 87%</title></circle><circle class="pt s1" cx="659.3" cy="66.5" r="2.5"><title>ARC-AGI-2 · GPT-6.1 Sol (Low) · 2026-09-29 · 77%</title></circle><path class="step s1" d="M197.3,222.7 L356.5,222.7 L356.5,168.5 L477.1,168.5 L477.1,164.8 L522.0,164.8 L522.0,161.3 L524.6,161.3 L524.6,147.7 L529.0,147.7 L529.0,113.7 L532.0,113.7 L532.0,113.3 L555.6,113.3 L555.6,74.4 L559.5,74.4 L559.5,50.1 L589.5,50.1 L589.5,49.2 L610.5,49.2 L610.5,40.5 L623.5,40.5 L623.5,38.8 L623.5,38.8 L623.5,33.6 L647.5,33.6 L647.5,28.4 L663.2,28.4"/><text class="series-label s1" x="667.2" y="32.4">ARC-AGI-2</text><line class="now" x1="663.2" x2="663.2" y1="18" y2="226"/><text class="now-label" x="659.2" y="220" text-anchor="end">now</text></svg>
+    <p class="cap">Stepped line: best score to date. Points: every reported result. FrontierMath (tiers 1–3) from <a href="https://epoch.ai/benchmarks/frontiermath">Epoch AI</a>; ARC-AGI semi-private set from <a href="https://arcprize.org/leaderboard">ARC Prize</a> (undocumented endpoint), plotted by model release date. ARC's own human-panel row is drawn as a reference line, as ARC Prize lists it.</p>
+  </div></section>
+
+<section id="crowd">
+  <h2>Crowd vs. CEOs</h2>
+  <p class="lede">Prediction-market odds that AGI arrives before each year (Manifold), set against the windows lab leaders have given. These are separate markets with their own resolution criteria, and none uses a CEO's definition of AGI. Read the line as the crowd's rough timing, not as a calibrated distribution.</p>
+  <div class="panel"><svg class="chart" viewBox="0 0 760 470" role="img" aria-label="Crowd vs CEOs" preserveAspectRatio="xMidYMid meet"><line class="grid" x1="170.0" x2="170.0" y1="18" y2="436"/><text class="tick" x="170.0" y="452" text-anchor="middle">2026</text><line class="grid" x1="227.0" x2="227.0" y1="18" y2="436"/><text class="tick" x="227.0" y="452" text-anchor="middle">2027</text><line class="grid" x1="284.0" x2="284.0" y1="18" y2="436"/><text class="tick" x="284.0" y="452" text-anchor="middle">2028</text><line class="grid" x1="341.0" x2="341.0" y1="18" y2="436"/><text class="tick" x="341.0" y="452" text-anchor="middle">2029</text><line class="grid" x1="398.0" x2="398.0" y1="18" y2="436"/><text class="tick" x="398.0" y="452" text-anchor="middle">2030</text><line class="grid" x1="455.0" x2="455.0" y1="18" y2="436"/><text class="tick" x="455.0" y="452" text-anchor="middle">2031</text><line class="grid" x1="512.0" x2="512.0" y1="18" y2="436"/><text class="tick" x="512.0" y="452" text-anchor="middle">2032</text><line class="grid" x1="569.0" x2="569.0" y1="18" y2="436"/><text class="tick" x="569.0" y="452" text-anchor="middle">2033</text><line class="grid" x1="626.0" x2="626.0" y1="18" y2="436"/><text class="tick" x="626.0" y="452" text-anchor="middle">2034</text><line class="grid" x1="683.0" x2="683.0" y1="18" y2="436"/><text class="tick" x="683.0" y="452" text-anchor="middle">2035</text><line class="grid" x1="740.0" x2="740.0" y1="18" y2="436"/><text class="tick" x="740.0" y="452" text-anchor="middle">2036</text><line class="grid" x1="170" x2="740" y1="190.0" y2="190.0"/><text class="tick" x="164" y="194.0" text-anchor="end">0%</text><line class="grid" x1="170" x2="740" y1="147.0" y2="147.0"/><text class="tick" x="164" y="151.0" text-anchor="end">25%</text><line class="grid" x1="170" x2="740" y1="104.0" y2="104.0"/><text class="tick" x="164" y="108.0" text-anchor="end">50%</text><line class="grid" x1="170" x2="740" y1="61.0" y2="61.0"/><text class="tick" x="164" y="65.0" text-anchor="end">75%</text><line class="grid" x1="170" x2="740" y1="18.0" y2="18.0"/><text class="tick" x="164" y="22.0" text-anchor="end">100%</text><text class="row-label" x="130" y="108.0" text-anchor="end">P(AGI before year)</text><path class="crowd" d="M227.0,183.4 L284.0,149.3 L398.0,104.7 L512.0,93.7"/><circle class="pt-front" cx="227.0" cy="183.4" r="4"><title>Will we get AGI before 2027?: 4%</title></circle><circle class="pt-front" cx="284.0" cy="149.3" r="4"><title>Will we get AGI before 2028?: 24%</title></circle><circle class="pt-front" cx="398.0" cy="104.7" r="4"><title>Will we get AGI before 2030?: 50%</title></circle><circle class="pt-front" cx="512.0" cy="93.7" r="4"><title>Will we get AGI before 2032?: 56%</title></circle><a href="#cu17"><text class="row-label" x="164" y="223.0" text-anchor="end">Elon Musk · 2024</text></a><rect class="window st-passed" x="170.0" y="215.0" width="3.0" height="8" rx="2"><title>Elon Musk: AI smarter than any one human around end of 2025</title></rect><a href="#cu10"><text class="row-label" x="164" y="237.0" text-anchor="end">Dario Amodei · 2025</text></a><text class="row-label st-passed-text" x="172.0" y="237.0">◂ 2025-09<title>Dario Amodei: AI writes 90% of code within 3-6 months</title></text><a href="#cu04"><text class="row-label" x="164" y="251.0" text-anchor="end">Sam Altman · 2025</text></a><rect class="window st-window" x="170.0" y="243.0" width="57.0" height="8" rx="2"><title>Sam Altman: Novel-insight systems in 2026</title></rect><a href="#cu07"><text class="row-label" x="164" y="265.0" text-anchor="end">Dario Amodei · 2024</text></a><rect class="window st-window" x="170.0" y="257.0" width="57.0" height="8" rx="2"><title>Dario Amodei: Powerful AI could arrive as early as 2026</title></rect><a href="#cu05"><text class="row-label" x="164" y="279.0" text-anchor="end">Sam Altman · 2025</text></a><rect class="window st-passed" x="207.9" y="271.0" width="4.7" height="8" rx="2"><title>Sam Altman: OpenAI target: intern-level AI research assistant by Sept 2026</title></rect><a href="#cu09"><text class="row-label" x="164" y="293.0" text-anchor="end">Anthropic · 2025</text></a><rect class="window st-open" x="227.0" y="285.0" width="57.0" height="8" rx="2"><title>Anthropic: Powerful AI systems (Nobel-level across most disciplines) by late 2026 / early 2027</title></rect><a href="#cu13"><text class="row-label" x="164" y="307.0" text-anchor="end">Leopold Aschenbrenner · 2024</text></a><rect class="window st-open" x="227.0" y="299.0" width="57.0" height="8" rx="2"><title>Leopold Aschenbrenner: AGI by 2027 is strikingly plausible</title></rect><a href="#cu11"><text class="row-label" x="164" y="321.0" text-anchor="end">Dario Amodei · 2026</text></a><rect class="window st-open" x="227.0" y="313.0" width="114.0" height="8" rx="2"><title>Dario Amodei: Powerful AI could be 1-2 years away</title></rect><a href="#cu06"><text class="row-label" x="164" y="335.0" text-anchor="end">Sam Altman · 2025</text></a><rect class="window st-open" x="284.0" y="327.0" width="57.0" height="8" rx="2"><title>Sam Altman: OpenAI target: fully automated AI researcher by 2028</title></rect><a href="#cu21"><text class="row-label" x="164" y="349.0" text-anchor="end">Geoffrey Hinton · 2023</text></a><rect class="window st-open" x="284.0" y="341.0" width="57.0" height="8" rx="2"><title>Geoffrey Hinton: AI may reason better than humans in five years</title></rect><a href="#cu20"><text class="row-label" x="164" y="363.0" text-anchor="end">Jensen Huang · 2024</text></a><rect class="window st-open" x="341.0" y="355.0" width="57.0" height="8" rx="2"><title>Jensen Huang: AI performs well on every test within five years</title></rect><a href="#cu19"><text class="row-label" x="164" y="377.0" text-anchor="end">Mark Zuckerberg · 2025</text></a><rect class="window st-open" x="398.0" y="369.0" width="57.0" height="8" rx="2"><title>Mark Zuckerberg: The rest of this decade is decisive for superintelligence&#x27;s path</title></rect><a href="#cu14"><text class="row-label" x="164" y="391.0" text-anchor="end">Demis Hassabis · 2025</text></a><rect class="window st-open" x="398.0" y="383.0" width="342.0" height="8" rx="2"><title>Demis Hassabis: AGI within five to ten years</title></rect><a href="#cu03"><text class="row-label" x="164" y="405.0" text-anchor="end">Sam Altman · 2025</text></a><rect class="window st-open" x="683.0" y="397.0" width="57.0" height="8" rx="2"><title>Sam Altman: By 2035 one person can command the intellectual capacity of all of 2025</title></rect><a href="#cu12"><text class="row-label" x="164" y="419.0" text-anchor="end">Daniel Kokotajlo et al. · 2025</text></a><rect class="window st-open" x="683.0" y="411.0" width="57.0" height="8" rx="2"><title>Daniel Kokotajlo et al.: AI 2027 scenario: superhuman AI impact over the next decade exceeds the Industrial Revolution</title></rect><a href="#cu15"><text class="row-label" x="164" y="433.0" text-anchor="end">Demis Hassabis · 2025</text></a><rect class="window st-open" x="683.0" y="425.0" width="57.0" height="8" rx="2"><title>Demis Hassabis: AI could end disease within about a decade</title></rect><line class="now" x1="213.7" x2="213.7" y1="18" y2="436"/><text class="now-label" x="217.7" y="28">now</text></svg>
+    <p class="cap">Observed 2026-10-08 22:48 UTC. Below the line: every dated horizon from the current-claims set, sorted by when it opens and coloured by status.</p>
+  </div>
+  <div class="tbl-wrap"><table>
+    <tr><th>Market</th><th>Probability</th><th class="hide-sm">Volume</th></tr>
+    <tr><td><a href="https://manifold.markets/RemNi/will-we-get-agi-before-2027-d7b5f2b00ace">Will we get AGI before 2027?</a></td><td>4%</td><td class="hide-sm">296,254</td></tr>
+    <tr><td><a href="https://manifold.markets/RemNi/will-we-get-agi-before-2028-ff560f9e9346">Will we get AGI before 2028?</a></td><td>24%</td><td class="hide-sm">172,417</td></tr>
+    <tr><td><a href="https://manifold.markets/RemNi/will-we-get-agi-before-2030">Will we get AGI before 2030?</a></td><td>50%</td><td class="hide-sm">139,445</td></tr>
+    <tr><td><a href="https://manifold.markets/RemNi/will-we-get-agi-before-2032">Will we get AGI before 2032?</a></td><td>56%</td><td class="hide-sm">66,755</td></tr>
+  </table></div>
+</section>
+
+<section id="superhuman">
+  <h2>Superhuman Ledger</h2>
+  <p class="lede">The first time an AI system matched or beat the best humans, or expert humans, at something. "Superhuman" is often contested, so every row states its criterion and a confidence grade. Of 31 events, 24 came from industry, 4 from academia and 3 from collaborations.</p>
+  <div class="panel">
+    <div class="legend">
+      <span><i style="background:var(--achieved)"></i>exceeded best humans</span>
+      <span><i style="background:var(--open)"></i>matched best</span>
+      <span><i style="background:var(--window)"></i>exceeded expert median</span>
+      <span><i style="background:var(--contested)"></i>contested</span>
+      <span><i style="border:2px solid var(--muted)"></i>hollow = low confidence</span>
+    </div>
+    <svg class="chart" viewBox="0 0 760 358" role="img" aria-label="Superhuman Ledger" preserveAspectRatio="xMidYMid meet"><line class="grid" x1="120.0" x2="120.0" y1="18" y2="324"/><text class="tick" x="120.0" y="340" text-anchor="middle">1990</text><line class="grid" x1="201.6" x2="201.6" y1="18" y2="324"/><text class="tick" x="201.6" y="340" text-anchor="middle">1995</text><line class="grid" x1="283.2" x2="283.2" y1="18" y2="324"/><text class="tick" x="283.2" y="340" text-anchor="middle">2000</text><line class="grid" x1="364.7" x2="364.7" y1="18" y2="324"/><text class="tick" x="364.7" y="340" text-anchor="middle">2005</text><line class="grid" x1="446.3" x2="446.3" y1="18" y2="324"/><text class="tick" x="446.3" y="340" text-anchor="middle">2010</text><line class="grid" x1="527.9" x2="527.9" y1="18" y2="324"/><text class="tick" x="527.9" y="340" text-anchor="middle">2015</text><line class="grid" x1="609.5" x2="609.5" y1="18" y2="324"/><text class="tick" x="609.5" y="340" text-anchor="middle">2020</text><line class="grid" x1="691.1" x2="691.1" y1="18" y2="324"/><text class="tick" x="691.1" y="340" text-anchor="middle">2025</text><line class="now" x1="719.9" x2="719.9" y1="18" y2="324"/><line class="lane" x1="120" x2="740" y1="39.0" y2="39.0"/><text class="row-label" x="112" y="43.0" text-anchor="end">games</text><line class="lane" x1="120" x2="740" y1="69.0" y2="69.0"/><text class="row-label" x="112" y="73.0" text-anchor="end">vision</text><line class="lane" x1="120" x2="740" y1="99.0" y2="99.0"/><text class="row-label" x="112" y="103.0" text-anchor="end">speech</text><line class="lane" x1="120" x2="740" y1="129.0" y2="129.0"/><text class="row-label" x="112" y="133.0" text-anchor="end">medicine</text><line class="lane" x1="120" x2="740" y1="159.0" y2="159.0"/><text class="row-label" x="112" y="163.0" text-anchor="end">biology</text><line class="lane" x1="120" x2="740" y1="189.0" y2="189.0"/><text class="row-label" x="112" y="193.0" text-anchor="end">law</text><line class="lane" x1="120" x2="740" y1="219.0" y2="219.0"/><text class="row-label" x="112" y="223.0" text-anchor="end">robotics</text><line class="lane" x1="120" x2="740" y1="249.0" y2="249.0"/><text class="row-label" x="112" y="253.0" text-anchor="end">earth-science</text><line class="lane" x1="120" x2="740" y1="279.0" y2="279.0"/><text class="row-label" x="112" y="283.0" text-anchor="end">math</text><line class="lane" x1="120" x2="740" y1="309.0" y2="309.0"/><text class="row-label" x="112" y="313.0" text-anchor="end">coding</text><a href="#checkers-chinook-1994"><circle class="sh lv-contested" cx="195.5" cy="39.0" r="5"><title>1994-08-18 · Declared Man-Machine World Checkers Champion · contested · medium confidence</title></circle></a><a href="#backgammon-tdgammon-1995"><circle class="sh lv-matched" cx="204.2" cy="39.0" r="5"><title>1995-03-01 · Backgammon play at or near world-class human level · matched best · medium confidence</title></circle></a><a href="#chess-deepblue-1997"><circle class="sh lv-exceeded" cx="239.6" cy="39.0" r="5"><title>1997-05-01 · Defeated reigning world chess champion in a standard-time match · exceeded best · high confidence</title></circle></a><a href="#checkers-solved-2007"><circle class="sh lv-exceeded" cx="408.8" cy="39.0" r="5"><title>2007-09-14 · Checkers weakly solved: perfect play by both sides is a draw · exceeded best · high confidence</title></circle></a><a href="#jeopardy-watson-2011"><circle class="sh lv-exceeded" cx="464.0" cy="39.0" r="5"><title>2011-02-01 · Defeated the two best Jeopardy! champions in a televised match · exceeded best · high confidence</title></circle></a><a href="#imagenet-prelu-2015"><circle class="sh lv-contested" cx="529.5" cy="69.0" r="5"><title>2015-02-06 · First reported ImageNet classification top-5 error below cited human error · contested · medium confidence</title></circle></a><a href="#go-alphago-fanhui-2016"><circle class="sh lv-expert" cx="545.4" cy="39.0" r="5"><title>2016-01-27 · Beat a professional Go player 5-0 in full tournament conditions · exceeded expert median · medium confidence</title></circle></a><a href="#go-alphago-leesedol-2016"><circle class="sh lv-exceeded" cx="546.9" cy="39.0" r="5"><title>2016-03-01 · Defeated Lee Sedol 4-1 in Seoul · exceeded best · high confidence</title></circle></a><a href="#speech-microsoft-parity-2016"><circle class="sh lv-contested" cx="557.1" cy="99.0" r="5"><title>2016-10-17 · Reported human parity on conversational speech recognition · contested · medium confidence</title></circle></a><a href="#poker-deepstack-2017"><circle class="sh lv-expert" cx="560.7" cy="39.0" r="5"><title>2017-01-06 · Defeated professional poker players in heads-up no-limit hold&#x27;em · exceeded expert median · medium confidence</title></circle></a><a href="#poker-libratus-2017"><circle class="sh lv-exceeded" cx="561.8" cy="39.0" r="5"><title>2017-01-30 · Beat four top heads-up no-limit hold&#x27;em professionals over 120000 hands · exceeded best · high confidence</title></circle></a><a href="#go-alphago-zero-2017"><circle class="sh lv-exceeded" cx="573.5" cy="46.0" r="5"><title>2017-10-18 · Self-play-only system beat the version that defeated Lee Sedol 100-0 · exceeded best · high confidence</title></circle></a><a href="#radiology-chexnet-2017"><circle class="sh lv-contested" cx="574.7" cy="129.0" r="5"><title>2017-11-14 · Pneumonia detection on chest X-ray exceeds average radiologist F1 · contested · medium confidence</title></circle></a><a href="#boardgames-alphazero-2017"><circle class="sh lv-exceeded" cx="575.6" cy="32.0" r="5"><title>2017-12-05 · Single algorithm superhuman at chess shogi and Go from rules alone · exceeded best · medium confidence</title></circle></a><a href="#dota2-openaifive-2019"><circle class="sh lv-exceeded" cx="597.7" cy="39.0" r="5"><title>2019-04-13 · Defeated Dota 2 world champions Team OG · exceeded best · medium confidence</title></circle></a><a href="#poker-pluribus-2019"><circle class="sh lv-exceeded" cx="601.7" cy="39.0" r="5"><title>2019-07-11 · Beat elite professionals in six-player no-limit hold&#x27;em · exceeded best · high confidence</title></circle></a><a href="#starcraft2-alphastar-2019"><circle class="sh lv-contested" cx="606.7" cy="46.0" r="5"><title>2019-10-30 · Grandmaster level in StarCraft II in all three races · contested · medium confidence</title></circle></a><a href="#atari-agent57-2020"><circle class="sh lv-expert" cx="613.4" cy="39.0" r="5"><title>2020-03-30 · First deep RL agent above the standard human benchmark on all 57 Atari games · exceeded expert median · medium confidence</title></circle></a><a href="#protein-alphafold2-casp14-2020"><circle class="sh lv-matched" cx="624.4" cy="159.0" r="5"><title>2020-11-30 · Median GDT 92.4 at CASP14 near experimental accuracy · matched best · medium confidence</title></circle></a><a href="#racing-sophy-2022"><circle class="sh lv-exceeded" cx="643.8" cy="39.0" r="5"><title>2022-02-09 · Outraced top Gran Turismo e-sports drivers · exceeded best · medium confidence</title></circle></a><a href="#diplomacy-cicero-2022"><circle class="sh lv-expert" cx="656.6" cy="39.0" r="5"><title>2022-11-22 · Human-level play in Diplomacy with natural language negotiation · exceeded expert median · medium confidence</title></circle></a><a href="#law-gpt4-bar-2023"><circle class="sh lv-contested" cx="661.7" cy="189.0" r="5"><title>2023-03-15 · Simulated bar exam score in roughly the top 10% of test takers · contested · medium confidence</title></circle></a><a href="#drone-swift-2023"><circle class="sh lv-matched" cx="669.2" cy="219.0" r="5"><title>2023-08-30 · Autonomous drone matched/beat human FPV champions in head-to-head races · matched best · high confidence</title></circle></a><a href="#weather-graphcast-2023"><circle class="sh lv-exceeded" cx="672.6" cy="249.0" r="5"><title>2023-11-14 · Beat the leading operational deterministic forecast on most targets · exceeded best · high confidence</title></circle></a><a href="#math-imo-alphaproof-2024"><circle class="sh lv-expert" cx="683.9" cy="279.0" r="5"><title>2024-07-25 · Silver-medal-level score at the IMO (28/42) · exceeded expert median · high confidence</title></circle></a><a href="#math-imo-openai-2025"><circle class="sh lv-expert" cx="699.9" cy="279.0" r="5"><title>2025-07-19 · Gold-medal-level score at the IMO (35/42) in natural language within time limit · exceeded expert median · medium confidence</title></circle></a><a href="#math-imo-gemini-2025"><circle class="sh lv-expert" cx="700.0" cy="279.0" r="5"><title>2025-07-21 · Gold-medal-standard score at the IMO (35/42) in natural language within time limit · exceeded expert median · high confidence</title></circle></a><a href="#coding-ioi-openai-2025"><circle class="sh lv-expert low" cx="700.5" cy="309.0" r="5"><title>2025-08-01 · Gold-level score at the IOI online track (6th of 330) · exceeded expert median · low confidence</title></circle></a><a href="#coding-icpc-gemini-2025"><circle class="sh lv-expert" cx="702.0" cy="309.0" r="5"><title>2025-09-04 · Gold-level result at the ICPC World Finals (10/12 problems) · exceeded expert median · high confidence</title></circle></a><a href="#coding-icpc-openai-2025"><circle class="sh lv-exceeded" cx="702.0" cy="316.0" r="5"><title>2025-09-04 · Solved all 12 problems at ICPC World Finals · exceeded best · medium confidence</title></circle></a><a href="#coding-ioi-nvidia-2026"><circle class="sh lv-exceeded" cx="718.3" cy="309.0" r="5"><title>2026-09-02 · First AI to outscore the top human on an IOI problem set (535.4/600 vs 498.27) · exceeded best · medium confidence</title></circle></a></svg>
+  </div>
+  <div class="tbl-wrap"><table>
+    <tr><th>Date</th><th>Achievement</th><th class="hide-sm">Criterion</th><th>Level</th></tr>
+    <tr id="coding-ioi-nvidia-2026">
+      <td class="when">2026-09-02</td>
+      <td><a href="https://arxiv.org/abs/2609.02849">First AI to outscore the top human on an IOI problem set (535.4/600 vs 498.27)</a><div class="note">Nemotron-3-Ultra-CC competition-specific · NVIDIA</div></td>
+      <td class="hide-sm note">Score on IOI 2026 problems under same time and submission constraints</td>
+      <td><span class="badge achieved">exceeded best</span><div class="note">medium confidence</div></td>
+    </tr>
+    <tr id="coding-icpc-openai-2025">
+      <td class="when">2025-09-04</td>
+      <td><a href="https://the-decoder.com/openai-outperforms-humans-and-google-at-the-worlds-top-collegiate-programming-contest/">Solved all 12 problems at ICPC World Finals</a><div class="note">GPT-5 + experimental reasoning model · OpenAI</div></td>
+      <td class="hide-sm note">12 of 12 problems vs best human team 11</td>
+      <td><span class="badge achieved">exceeded best</span><div class="note">medium confidence</div></td>
+    </tr>
+    <tr id="coding-icpc-gemini-2025">
+      <td class="when">2025-09-04</td>
+      <td><a href="https://deepmind.google/discover/blog/gemini-achieves-gold-level-performance-at-the-international-collegiate-programming-contest-world-finals/">Gold-level result at the ICPC World Finals (10/12 problems)</a><div class="note">Gemini 2.5 Deep Think · Google DeepMind</div></td>
+      <td class="hide-sm note">Solved 10 of 12 problems; would rank 2nd by time (677 min); solved Problem C no team solved</td>
+      <td><span class="badge window_open">exceeded expert median</span><div class="note">high confidence</div></td>
+    </tr>
+    <tr id="coding-ioi-openai-2025">
+      <td class="when">2025-08</td>
+      <td><a href="https://the-decoder.com/openais-ai-system-wins-a-gold-medal-level-score-at-the-international-olympiad-in-informatics-2025/">Gold-level score at the IOI online track (6th of 330)</a><div class="note">Ensemble of general-purpose reasoning models · OpenAI</div></td>
+      <td class="hide-sm note">Ranked 6th overall under 5-hour limit and 50-submission cap</td>
+      <td><span class="badge window_open">exceeded expert median</span><div class="note">low confidence</div></td>
+    </tr>
+    <tr id="math-imo-gemini-2025">
+      <td class="when">2025-07-21</td>
+      <td><a href="https://deepmind.google/discover/blog/advanced-version-of-gemini-with-deep-think-officially-achieves-gold-medal-standard-at-the-international-mathematical-olympiad/">Gold-medal-standard score at the IMO (35/42) in natural language within time limit</a><div class="note">Gemini Deep Think · Google DeepMind</div></td>
+      <td class="hide-sm note">Solved 5 of 6 problems for 35 of 42 points; graded by IMO coordinators</td>
+      <td><span class="badge window_open">exceeded expert median</span><div class="note">high confidence</div></td>
+    </tr>
+    <tr id="math-imo-openai-2025">
+      <td class="when">2025-07-19</td>
+      <td><a href="https://x.com/alexwei_/status/1946477742855532918">Gold-medal-level score at the IMO (35/42) in natural language within time limit</a><div class="note">Experimental reasoning LLM (unreleased) · OpenAI</div></td>
+      <td class="hide-sm note">Solved 5 of 6 problems for 35 of 42 points; graded by three former IMO medalists (unanimous consensus), per the researcher post</td>
+      <td><span class="badge window_open">exceeded expert median</span><div class="note">medium confidence</div></td>
+    </tr>
+    <tr id="math-imo-alphaproof-2024">
+      <td class="when">2024-07-25</td>
+      <td><a href="https://deepmind.google/discover/blog/ai-solves-imo-problems-at-silver-medal-level/">Silver-medal-level score at the IMO (28/42)</a><div class="note">AlphaProof + AlphaGeometry 2 · Google DeepMind</div></td>
+      <td class="hide-sm note">Solved 4 of 6 problems for 28 of 42 points</td>
+      <td><span class="badge window_open">exceeded expert median</span><div class="note">high confidence</div></td>
+    </tr>
+    <tr id="weather-graphcast-2023">
+      <td class="when">2023-11-14</td>
+      <td><a href="https://deepmind.google/discover/blog/graphcast-ai-model-for-faster-and-more-accurate-global-weather-forecasting/">Beat the leading operational deterministic forecast on most targets</a><div class="note">GraphCast · Google DeepMind</div></td>
+      <td class="hide-sm note">Outperformed HRES on over 90% of 1380 verification targets</td>
+      <td><span class="badge achieved">exceeded best</span><div class="note">high confidence</div></td>
+    </tr>
+    <tr id="drone-swift-2023">
+      <td class="when">2023-08-30</td>
+      <td><a href="https://api.crossref.org/works/10.1038/s41586-023-06419-4">Autonomous drone matched/beat human FPV champions in head-to-head races</a><div class="note">Swift · University of Zurich / Intel</div></td>
+      <td class="hide-sm note">Won several races vs each champion and recorded fastest race time</td>
+      <td><span class="badge open">matched best</span><div class="note">high confidence</div></td>
+    </tr>
+    <tr id="law-gpt4-bar-2023">
+      <td class="when">2023-03-15</td>
+      <td><a href="https://arxiv.org/abs/2303.08774">Simulated bar exam score in roughly the top 10% of test takers</a><div class="note">GPT-4 · OpenAI</div></td>
+      <td class="hide-sm note">Percentile on simulated bar exam</td>
+      <td><span class="badge contested">contested</span><div class="note">medium confidence</div></td>
+    </tr>
+    <tr id="diplomacy-cicero-2022">
+      <td class="when">2022-11-22</td>
+      <td><a href="https://ai.meta.com/blog/cicero-ai-negotiates-persuades-and-cooperates-with-people/">Human-level play in Diplomacy with natural language negotiation</a><div class="note">CICERO · Meta AI</div></td>
+      <td class="hide-sm note">Over 40 games: more than 2x average human score and top 10% of multi-game players</td>
+      <td><span class="badge window_open">exceeded expert median</span><div class="note">medium confidence</div></td>
+    </tr>
+    <tr id="racing-sophy-2022">
+      <td class="when">2022-02-09</td>
+      <td><a href="https://api.semanticscholar.org/graph/v1/paper/DOI:10.1038/s41586-021-04357-7?fields=title,abstract,publicationDate">Outraced top Gran Turismo e-sports drivers</a><div class="note">Gran Turismo Sophy · Sony AI</div></td>
+      <td class="hide-sm note">Head-to-head competition vs top drivers</td>
+      <td><span class="badge achieved">exceeded best</span><div class="note">medium confidence</div></td>
+    </tr>
+    <tr id="protein-alphafold2-casp14-2020">
+      <td class="when">2020-11-30</td>
+      <td><a href="https://deepmind.google/discover/blog/alphafold-a-solution-to-a-50-year-old-grand-challenge-in-biology/">Median GDT 92.4 at CASP14 near experimental accuracy</a><div class="note">AlphaFold 2 · Google DeepMind</div></td>
+      <td class="hide-sm note">Median GDT across targets vs informal threshold of ~90</td>
+      <td><span class="badge open">matched best</span><div class="note">medium confidence</div></td>
+    </tr>
+    <tr id="atari-agent57-2020">
+      <td class="when">2020-03-30</td>
+      <td><a href="https://arxiv.org/abs/2003.13350">First deep RL agent above the standard human benchmark on all 57 Atari games</a><div class="note">Agent57 · DeepMind</div></td>
+      <td class="hide-sm note">Score above human baseline on every game of the 57-game suite</td>
+      <td><span class="badge window_open">exceeded expert median</span><div class="note">medium confidence</div></td>
+    </tr>
+    <tr id="starcraft2-alphastar-2019">
+      <td class="when">2019-10-30</td>
+      <td><a href="https://deepmind.google/discover/blog/alphastar-grandmaster-level-in-starcraft-ii-using-multi-agent-reinforcement-learning/">Grandmaster level in StarCraft II in all three races</a><div class="note">AlphaStar · Google DeepMind</div></td>
+      <td class="hide-sm note">Ranked above 99.8% of active players</td>
+      <td><span class="badge contested">contested</span><div class="note">medium confidence</div></td>
+    </tr>
+    <tr id="poker-pluribus-2019">
+      <td class="when">2019-07-11</td>
+      <td><a href="https://ai.meta.com/blog/pluribus-first-ai-to-beat-pros-in-6-player-poker/">Beat elite professionals in six-player no-limit hold&#39;em</a><div class="note">Pluribus · Meta AI / Carnegie Mellon University</div></td>
+      <td class="hide-sm note">10000 hands 5 humans+1 AI over 12 days; 5000 hands each for 3 pros vs 5 AIs</td>
+      <td><span class="badge achieved">exceeded best</span><div class="note">high confidence</div></td>
+    </tr>
+    <tr id="dota2-openaifive-2019">
+      <td class="when">2019-04-13</td>
+      <td><a href="https://arxiv.org/abs/1912.06680">Defeated Dota 2 world champions Team OG</a><div class="note">OpenAI Five · OpenAI</div></td>
+      <td class="hide-sm note">Won match vs reigning champions</td>
+      <td><span class="badge achieved">exceeded best</span><div class="note">medium confidence</div></td>
+    </tr>
+    <tr id="boardgames-alphazero-2017">
+      <td class="when">2017-12-05</td>
+      <td><a href="https://arxiv.org/abs/1712.01815">Single algorithm superhuman at chess shogi and Go from rules alone</a><div class="note">AlphaZero · Google DeepMind</div></td>
+      <td class="hide-sm note">Within 24 hours reached superhuman level; defeated world-champion program in each game</td>
+      <td><span class="badge achieved">exceeded best</span><div class="note">medium confidence</div></td>
+    </tr>
+    <tr id="radiology-chexnet-2017">
+      <td class="when">2017-11-14</td>
+      <td><a href="https://arxiv.org/abs/1711.05225">Pneumonia detection on chest X-ray exceeds average radiologist F1</a><div class="note">CheXNet · Stanford University</div></td>
+      <td class="hide-sm note">F1 on pneumonia detection vs average of 4 radiologists</td>
+      <td><span class="badge contested">contested</span><div class="note">medium confidence</div></td>
+    </tr>
+    <tr id="go-alphago-zero-2017">
+      <td class="when">2017-10-18</td>
+      <td><a href="https://deepmind.google/discover/blog/alphago-zero-starting-from-scratch/">Self-play-only system beat the version that defeated Lee Sedol 100-0</a><div class="note">AlphaGo Zero · Google DeepMind</div></td>
+      <td class="hide-sm note">100-0 vs AlphaGo Lee after 3 days; &#39;quickly surpassed human level&#39;</td>
+      <td><span class="badge achieved">exceeded best</span><div class="note">high confidence</div></td>
+    </tr>
+    <tr id="poker-libratus-2017">
+      <td class="when">2017-01-30</td>
+      <td><a href="https://www.cmu.edu/news/stories/archives/2017/january/AI-beats-poker-pros.html">Beat four top heads-up no-limit hold&#39;em professionals over 120000 hands</a><div class="note">Libratus · Carnegie Mellon University</div></td>
+      <td class="hide-sm note">Led pros by $1766250 in chips over 20 days; developers state statistically significant</td>
+      <td><span class="badge achieved">exceeded best</span><div class="note">high confidence</div></td>
+    </tr>
+    <tr id="poker-deepstack-2017">
+      <td class="when">2017-01-06</td>
+      <td><a href="https://arxiv.org/abs/1701.01724">Defeated professional poker players in heads-up no-limit hold&#39;em</a><div class="note">DeepStack · University of Alberta / Charles University / CTU Prague</div></td>
+      <td class="hide-sm note">Win rate with statistical significance over 44000 hands</td>
+      <td><span class="badge window_open">exceeded expert median</span><div class="note">medium confidence</div></td>
+    </tr>
+    <tr id="speech-microsoft-parity-2016">
+      <td class="when">2016-10-17</td>
+      <td><a href="https://arxiv.org/abs/1610.05256">Reported human parity on conversational speech recognition</a><div class="note">Microsoft conversational speech system · Microsoft Research</div></td>
+      <td class="hide-sm note">WER 5.8% vs 5.9% Switchboard; 11.0% vs 11.3% CallHome</td>
+      <td><span class="badge contested">contested</span><div class="note">medium confidence</div></td>
+    </tr>
+    <tr id="go-alphago-leesedol-2016">
+      <td class="when">2016-03</td>
+      <td><a href="https://deepmind.google/research/breakthroughs/alphago/">Defeated Lee Sedol 4-1 in Seoul</a><div class="note">AlphaGo · Google DeepMind</div></td>
+      <td class="hide-sm note">Match result 4-1</td>
+      <td><span class="badge achieved">exceeded best</span><div class="note">high confidence</div></td>
+    </tr>
+    <tr id="go-alphago-fanhui-2016">
+      <td class="when">2016-01-27</td>
+      <td><a href="https://britgo.org/node/5812">Beat a professional Go player 5-0 in full tournament conditions</a><div class="note">AlphaGo · Google DeepMind</div></td>
+      <td class="hide-sm note">5-0 match</td>
+      <td><span class="badge window_open">exceeded expert median</span><div class="note">medium confidence</div></td>
+    </tr>
+    <tr id="imagenet-prelu-2015">
+      <td class="when">2015-02-06</td>
+      <td><a href="https://arxiv.org/abs/1502.01852">First reported ImageNet classification top-5 error below cited human error</a><div class="note">PReLU-Net · Microsoft Research</div></td>
+      <td class="hide-sm note">Top-5 error 4.94% vs 5.1% on ImageNet 2012 classification</td>
+      <td><span class="badge contested">contested</span><div class="note">medium confidence</div></td>
+    </tr>
+    <tr id="jeopardy-watson-2011">
+      <td class="when">2011-02</td>
+      <td><a href="https://www.ibm.com/history/watson-jeopardy">Defeated the two best Jeopardy! champions in a televised match</a><div class="note">Watson · IBM</div></td>
+      <td class="hide-sm note">Final score $77147 vs $24000 and $21600</td>
+      <td><span class="badge achieved">exceeded best</span><div class="note">high confidence</div></td>
+    </tr>
+    <tr id="checkers-solved-2007">
+      <td class="when">2007-09-14</td>
+      <td><a href="https://api.crossref.org/works/10.1126/science.1144079">Checkers weakly solved: perfect play by both sides is a draw</a><div class="note">Chinook · University of Alberta</div></td>
+      <td class="hide-sm note">Game-theoretic solution (cannot be beaten)</td>
+      <td><span class="badge achieved">exceeded best</span><div class="note">high confidence</div></td>
+    </tr>
+    <tr id="chess-deepblue-1997">
+      <td class="when">1997-05</td>
+      <td><a href="https://www.ibm.com/history/deep-blue">Defeated reigning world chess champion in a standard-time match</a><div class="note">Deep Blue · IBM</div></td>
+      <td class="hide-sm note">Won 6-game rematch 3.5-2.5 vs reigning champion</td>
+      <td><span class="badge achieved">exceeded best</span><div class="note">high confidence</div></td>
+    </tr>
+    <tr id="backgammon-tdgammon-1995">
+      <td class="when">1995-03</td>
+      <td><a href="https://www.bkgm.com/articles/tesauro/tdl.html">Backgammon play at or near world-class human level</a><div class="note">TD-Gammon 2.1 · IBM Research (G. Tesauro)</div></td>
+      <td class="hide-sm note">Net points in exhibition sessions vs top players; expert assessment</td>
+      <td><span class="badge open">matched best</span><div class="note">medium confidence</div></td>
+    </tr>
+    <tr id="checkers-chinook-1994">
+      <td class="when">1994-08-18</td>
+      <td><a href="https://webdocs.cs.ualberta.ca/~chinook/matches/1994/Boston/Tinsley/description.php">Declared Man-Machine World Checkers Champion</a><div class="note">Chinook · University of Alberta</div></td>
+      <td class="hide-sm note">Title awarded by organizers after Tinsley resigned the match (six games all drawn) citing health; no match win over Tinsley</td>
+      <td><span class="badge contested">contested</span><div class="note">medium confidence</div></td>
+    </tr>
+  </table></div>
+</section>
+
+<section id="claims">
+  <h2>All claims</h2>
+  <p class="lede">Quotes are verbatim from the linked source. Every quote is re-checked weekly against the live page (last check 2026-10-08); a quote that can no longer be found there is flagged, not hidden. 3 further claims are held off the page until the quote is confirmed at its source.</p>
+  <h3>Current: 2020 onward</h3>
+  <div class="tbl-wrap"><table>
+    <tr><th>Said</th><th>Claim</th><th>Horizon</th><th>Status</th></tr>
+    <tr id="cu11">
+      <td class="when">2026-01</td>
+      <td><strong>Dario Amodei</strong> <span class="note">CEO, Anthropic</span>        <div>Powerful AI could be 1-2 years away</div>
+        <blockquote>“could be as little as 1-2 years away”</blockquote>
+        <div class="note"><a href="https://www.darioamodei.com/essay/the-adolescence-of-technology">source</a> (primary)
+ · <span class="qc ">quote check: verbatim</span></div>
+      </td>
+      <td class="when">2027-2028</td>
+      <td><span class="badge open">open</span>
+      </td>
+    </tr>
+    <tr id="cu05">
+      <td class="when">2025-10-28</td>
+      <td><strong>Sam Altman</strong> <span class="note">CEO, OpenAI</span>        <div>OpenAI target: intern-level AI research assistant by Sept 2026</div>
+        <blockquote>“an intern-level research assistant by September 2026”</blockquote>
+        <div class="note"><a href="https://techcrunch.com/2025/10/28/sam-altman-says-openai-will-have-a-legitimate-ai-researcher-by-2028/">source</a> (press)
+ · <span class="qc ">quote check: verbatim</span></div>
+      </td>
+      <td class="when">2026-09</td>
+      <td><span class="badge passed_unverified">deadline passed: outcome unverified</span>
+      </td>
+    </tr>
+    <tr id="cu06">
+      <td class="when">2025-10-28</td>
+      <td><strong>Sam Altman</strong> <span class="note">CEO, OpenAI</span>        <div>OpenAI target: fully automated AI researcher by 2028</div>
+        <blockquote>“a fully automated &#39;legitimate AI researcher&#39; by 2028”</blockquote>
+        <div class="note"><a href="https://techcrunch.com/2025/10/28/sam-altman-says-openai-will-have-a-legitimate-ai-researcher-by-2028/">source</a> (press)
+ · <span class="qc ">quote check: verbatim</span></div>
+      </td>
+      <td class="when">2028</td>
+      <td><span class="badge open">open</span>
+      </td>
+    </tr>
+    <tr id="cu18">
+      <td class="when">2025-07-30</td>
+      <td><strong>Mark Zuckerberg</strong> <span class="note">CEO, Meta</span>        <div>Superintelligence development is &#39;now in sight&#39;</div>
+        <blockquote>“Developing superintelligence is now in sight.”</blockquote>
+        <div class="note"><a href="https://www.meta.com/superintelligence/">source</a> (official)
+ · <span class="qc ">quote check: verbatim</span></div>
+      </td>
+      <td class="when">—</td>
+      <td><span class="badge undated">undated</span>
+      </td>
+    </tr>
+    <tr id="cu19">
+      <td class="when">2025-07-30</td>
+      <td><strong>Mark Zuckerberg</strong> <span class="note">CEO, Meta</span>        <div>The rest of this decade is decisive for superintelligence&#39;s path</div>
+        <blockquote>“The rest of this decade seems likely to be the decisive period for determining the path this technology will take”</blockquote>
+        <div class="note"><a href="https://www.meta.com/superintelligence/">source</a> (official)
+ · <span class="qc ">quote check: verbatim</span></div>
+      </td>
+      <td class="when">2030</td>
+      <td><span class="badge open">open</span>
+      </td>
+    </tr>
+    <tr id="cu14">
+      <td class="when">2025-04-20</td>
+      <td><strong>Demis Hassabis</strong> <span class="note">CEO, Google DeepMind</span>        <div>AGI within five to ten years</div>
+        <blockquote>“In the next five to ten years, I think.”</blockquote>
+        <div class="note"><a href="https://www.cbsnews.com/news/artificial-intelligence-google-deepmind-ceo-demis-hassabis-60-minutes-transcript/">source</a> (press)
+ · <span class="qc ">quote check: verbatim</span></div>
+      </td>
+      <td class="when">2030-2035</td>
+      <td><span class="badge open">open</span>
+      </td>
+    </tr>
+    <tr id="cu15">
+      <td class="when">2025-04-20</td>
+      <td><strong>Demis Hassabis</strong> <span class="note">CEO, Google DeepMind</span>        <div>AI could end disease within about a decade</div>
+        <blockquote>“Maybe within the next decade or so, I don&#39;t see why not.”</blockquote>
+        <div class="note"><a href="https://www.cbsnews.com/news/artificial-intelligence-google-deepmind-ceo-demis-hassabis-60-minutes-transcript/">source</a> (press)
+ · <span class="qc ">quote check: verbatim</span> · Answer to the interviewer&#39;s question &#34;The end of disease?&#34;</div>
+      </td>
+      <td class="when">2035</td>
+      <td><span class="badge open">open</span>
+      </td>
+    </tr>
+    <tr id="cu12">
+      <td class="when">2025-04-03</td>
+      <td><strong>Daniel Kokotajlo et al.</strong> <span class="note">AI Futures Project</span>        <div>AI 2027 scenario: superhuman AI impact over the next decade exceeds the Industrial Revolution</div>
+        <blockquote>“We predict that the impact of superhuman AI over the next decade will be enormous”</blockquote>
+        <div class="note"><a href="https://ai-2027.com/">source</a> (primary)
+ · <span class="qc ">quote check: verbatim</span></div>
+      </td>
+      <td class="when">2035</td>
+      <td><span class="badge open">open</span>
+      </td>
+    </tr>
+    <tr id="cu10">
+      <td class="when">2025-03-10</td>
+      <td><strong>Dario Amodei</strong> <span class="note">CEO, Anthropic</span>        <div>AI writes 90% of code within 3-6 months</div>
+        <blockquote>“we are not far from the world—I think we&#39;ll be there in three to six months—where AI is writing 90 percent of the code.”</blockquote>
+        <div class="note"><a href="https://www.cfr.org/event/ceo-speaker-series-dario-amodei-anthropic">source</a> (official)
+ · <span class="qc ">quote check: verbatim</span></div>
+      </td>
+      <td class="when">2025-09</td>
+      <td><span class="badge passed_unverified">deadline passed: outcome unverified</span>
+      </td>
+    </tr>
+    <tr id="cu09">
+      <td class="when">2025-03-06</td>
+      <td><strong>Anthropic</strong> <span class="note">AI lab, submission to US OSTP</span>        <div>Powerful AI systems (Nobel-level across most disciplines) by late 2026 / early 2027</div>
+        <blockquote>“we expect powerful AI systems will emerge in late 2026 or early 2027.”</blockquote>
+        <div class="note"><a href="https://www.anthropic.com/news/anthropic-s-recommendations-ostp-u-s-ai-action-plan">source</a> (official)
+ · <span class="qc ">quote check: verbatim</span></div>
+      </td>
+      <td class="when">2027</td>
+      <td><span class="badge open">open</span>
+      </td>
+    </tr>
+    <tr id="cu02">
+      <td class="when">2025</td>
+      <td><strong>Sam Altman</strong> <span class="note">CEO, OpenAI</span>        <div>OpenAI knows how to build AGI; aiming beyond it to superintelligence</div>
+        <blockquote>“We are now confident we know how to build AGI as we have traditionally understood it.”</blockquote>
+        <div class="note"><a href="https://blog.samaltman.com/reflections">source</a> (primary)
+ · <span class="qc ">quote check: verbatim</span></div>
+      </td>
+      <td class="when">—</td>
+      <td><span class="badge undated">undated</span>
+      </td>
+    </tr>
+    <tr id="cu03">
+      <td class="when">2025</td>
+      <td><strong>Sam Altman</strong> <span class="note">CEO, OpenAI</span>        <div>By 2035 one person can command the intellectual capacity of all of 2025</div>
+        <blockquote>“Anyone in 2035 should be able to marshall the intellectual capacity equivalent to everyone in 2025”</blockquote>
+        <div class="note"><a href="https://blog.samaltman.com/three-observations">source</a> (primary)
+ · <span class="qc ">quote check: verbatim</span></div>
+      </td>
+      <td class="when">2035</td>
+      <td><span class="badge open">open</span>
+      </td>
+    </tr>
+    <tr id="cu04">
+      <td class="when">2025</td>
+      <td><strong>Sam Altman</strong> <span class="note">CEO, OpenAI</span>        <div>Novel-insight systems in 2026</div>
+        <blockquote>“2026 will likely see the arrival of systems that can figure out novel insights.”</blockquote>
+        <div class="note"><a href="https://blog.samaltman.com/the-gentle-singularity">source</a> (primary)
+ · <span class="qc ">quote check: verbatim</span></div>
+      </td>
+      <td class="when">2026</td>
+      <td><span class="badge window_open">window open</span>
+      </td>
+    </tr>
+    <tr id="cu07">
+      <td class="when">2024-10</td>
+      <td><strong>Dario Amodei</strong> <span class="note">CEO, Anthropic</span>        <div>Powerful AI could arrive as early as 2026</div>
+        <blockquote>“I think it could come as early as 2026, though there are also ways it could take much longer.”</blockquote>
+        <div class="note"><a href="https://www.darioamodei.com/essay/machines-of-loving-grace">source</a> (primary)
+ · <span class="qc ">quote check: verbatim</span></div>
+      </td>
+      <td class="when">2026</td>
+      <td><span class="badge window_open">window open</span>
+      </td>
+    </tr>
+    <tr id="cu08">
+      <td class="when">2024-10</td>
+      <td><strong>Dario Amodei</strong> <span class="note">CEO, Anthropic</span>        <div>Powerful AI compresses 50-100 years of biology progress into 5-10 years</div>
+        <blockquote>“compress the progress that human biologists would have achieved over the next 50-100 years into 5-10 years”</blockquote>
+        <div class="note"><a href="https://www.darioamodei.com/essay/machines-of-loving-grace">source</a> (primary)
+ · <span class="qc ">quote check: verbatim</span></div>
+      </td>
+      <td class="when">—</td>
+      <td><span class="badge undated">undated</span>
+      </td>
+    </tr>
+    <tr id="cu01">
+      <td class="when">2024-09-23</td>
+      <td><strong>Sam Altman</strong> <span class="note">CEO, OpenAI</span>        <div>Superintelligence in &#39;a few thousand days&#39;</div>
+        <blockquote>“It is possible that we will have superintelligence in a few thousand days”</blockquote>
+        <div class="note"><a href="https://ia.samaltman.com/">source</a> (primary)
+ · <span class="qc ">quote check: verbatim</span></div>
+      </td>
+      <td class="when">—</td>
+      <td><span class="badge undated">undated</span>
+      </td>
+    </tr>
+    <tr id="cu13">
+      <td class="when">2024-06</td>
+      <td><strong>Leopold Aschenbrenner</strong> <span class="note">Ex-OpenAI; Situational Awareness</span>        <div>AGI by 2027 is strikingly plausible</div>
+        <blockquote>“AGI by 2027 is strikingly plausible.”</blockquote>
+        <div class="note"><a href="https://situational-awareness.ai/from-gpt-4-to-agi/">source</a> (primary)
+ · <span class="qc ">quote check: verbatim</span></div>
+      </td>
+      <td class="when">2027</td>
+      <td><span class="badge open">open</span>
+      </td>
+    </tr>
+    <tr id="cu17">
+      <td class="when">2024-04-09</td>
+      <td><strong>Elon Musk</strong> <span class="note">CEO, Tesla/xAI</span>        <div>AI smarter than any one human around end of 2025</div>
+        <blockquote>“My guess is that we&#39;ll have AI that is smarter than any one human probably around the end of next year,”</blockquote>
+        <div class="note"><a href="https://fortune.com/2024/04/09/elon-musk-ai-smarter-than-humans-by-next-year">source</a> (press)
+ · <span class="qc ">quote check: verbatim</span></div>
+      </td>
+      <td class="when">2025</td>
+      <td><span class="badge passed_unverified">deadline passed: outcome unverified</span>
+      </td>
+    </tr>
+    <tr id="cu23">
+      <td class="when">2024-03-07</td>
+      <td><strong>Yann LeCun</strong> <span class="note">Chief AI Scientist, Meta (at the time)</span>        <div>Skeptic: generative/LLM approach will not reach human-level AI</div>
+        <blockquote>“If you&#39;re really interested in human level AI, abandon the idea of generative AI.”</blockquote>
+        <div class="note"><a href="https://lexfridman.com/yann-lecun-3-transcript/">source</a> (press)
+ · <span class="qc ">quote check: verbatim</span> · Date is when the transcript was posted, which may differ from the recording date.</div>
+      </td>
+      <td class="when">—</td>
+      <td><span class="badge undated">undated</span>
+      </td>
+    </tr>
+    <tr id="cu20">
+      <td class="when">2024-03</td>
+      <td><strong>Jensen Huang</strong> <span class="note">CEO, Nvidia</span>        <div>AI performs well on every test within five years</div>
+        <blockquote>“and I&#39;m guessing in five years time, we&#39;ll do well on every single one,”</blockquote>
+        <div class="note"><a href="https://www.foxbusiness.com/technology/nvidia-ceo-jensen-huang-says-ai-could-pass-most-human-tests-5-years">source</a> (press)
+ · <span class="qc ">quote check: verbatim</span></div>
+      </td>
+      <td class="when">2029</td>
+      <td><span class="badge open">open</span>
+      </td>
+    </tr>
+    <tr id="cu21">
+      <td class="when">2023-10-08</td>
+      <td><strong>Geoffrey Hinton</strong> <span class="note">Univ. of Toronto; Nobel laureate</span>        <div>AI may reason better than humans in five years</div>
+        <blockquote>“I think in five years&#39; time it may well be able to reason better than us.”</blockquote>
+        <div class="note"><a href="https://www.cbsnews.com/news/geoffrey-hinton-ai-dangers-60-minutes-transcript/">source</a> (press)
+ · <span class="qc ">quote check: verbatim</span></div>
+      </td>
+      <td class="when">2028</td>
+      <td><span class="badge open">open</span>
+      </td>
+    </tr>
+  </table></div>
+  <h3>Graveyard: historical forecasts</h3>
+  <div class="tbl-wrap"><table>
+    <tr><th>Said</th><th>Claim</th><th>Horizon</th><th>Status</th></tr>
+    <tr id="gr19">
+      <td class="when">2024-01</td>
+      <td><strong>Katja Grace et al.</strong> <span class="note">AI Impacts</span>        <div>2023 survey: 10% by 2027, 50% by 2047 for machines outperforming humans on every task</div>
+        <blockquote>“If science continues undisrupted, the chance of unaided machines outperforming humans in every possible task was estimated at 10% by 2027, and 50% by 2047.”</blockquote>
+        <div class="note"><a href="https://arxiv.org/abs/2401.02843">source</a> (paper)
+ · <span class="qc ">quote check: verbatim</span></div>
+      </td>
+      <td class="when">2047</td>
+      <td><span class="badge open">open</span>
+      </td>
+    </tr>
+    <tr id="gr18">
+      <td class="when">2022-08</td>
+      <td><strong>Zach Stein-Perlman, Katja Grace et al.</strong> <span class="note">AI Impacts</span>        <div>2022 survey: 50% chance of HLMI by 2059</div>
+        <blockquote>“The aggregate forecast time to a 50% chance of HLMI was 37 years, i.e. 2059”</blockquote>
+        <div class="note"><a href="https://aiimpacts.org/2022-expert-survey-on-progress-in-ai/">source</a> (paper)
+ · <span class="qc ">quote check: verbatim</span></div>
+      </td>
+      <td class="when">2059</td>
+      <td><span class="badge open">open</span>
+      </td>
+    </tr>
+    <tr id="gr17">
+      <td class="when">2017-05</td>
+      <td><strong>Katja Grace et al.</strong> <span class="note">AI Impacts / Oxford / Yale</span>        <div>Expert survey: 50% chance AI outperforms humans in all tasks in 45 years; all jobs automated in 120 years</div>
+        <blockquote>“Researchers believe there is a 50% chance of AI outperforming humans in all tasks in 45 years and of automating all human jobs in 120 years”</blockquote>
+        <div class="note"><a href="https://arxiv.org/abs/1705.08807">source</a> (paper)
+ · <span class="qc ">quote check: verbatim</span></div>
+      </td>
+      <td class="when">2061</td>
+      <td><span class="badge open">open</span>
+      </td>
+    </tr>
+    <tr id="gr16">
+      <td class="when">2014</td>
+      <td><strong>Vincent C. Muller and Nick Bostrom</strong> <span class="note">Future of Humanity Institute, Oxford</span>        <div>Expert survey (2012/13): 50% chance of HLMI around 2040-2050; 90% by 2075</div>
+        <blockquote>“The median estimate of respondents was for a one in two chance that high-level machine intelligence will be developed around 2040-2050, rising to a nine in ten chance by 2075.”</blockquote>
+        <div class="note"><a href="https://nickbostrom.com/papers/survey.pdf">source</a> (paper)
+ · <span class="qc ">quote check: verbatim</span></div>
+      </td>
+      <td class="when">2040-2050</td>
+      <td><span class="badge open">open</span>
+      </td>
+    </tr>
+    <tr id="gr14">
+      <td class="when">2002</td>
+      <td><strong>Ray Kurzweil (Long Bets wager vs Mitchell Kapor)</strong> <span class="note">Inventor and author</span>        <div>A machine will pass the Turing test by 2029</div>
+        <blockquote>“Ray Kurzweil maintains that a computer (i.e., a machine intelligence) will pass the Turing test by 2029.”</blockquote>
+        <div class="note"><a href="https://longbets.org/1/">source</a> (primary)
+ · <span class="qc ">quote check: verbatim</span></div>
+      </td>
+      <td class="when">2029</td>
+      <td><span class="badge open">open</span>
+      </td>
+    </tr>
+    <tr id="gr11">
+      <td class="when">1998</td>
+      <td><strong>Hans Moravec</strong> <span class="note">Carnegie Mellon Univ.</span>        <div>Hardware matching the human brain available in cheap machines by the 2020s</div>
+        <blockquote>“At the present rate, computers suitable for humanlike robots will appear in the 2020s.”</blockquote>
+        <div class="note"><a href="https://jetpress.org/volume1/moravec.htm">source</a> (paper)
+ · <span class="qc ">quote check: verbatim</span></div>
+      </td>
+      <td class="when">2020s</td>
+      <td><span class="badge window_open">window open</span>
+      </td>
+    </tr>
+    <tr id="gr12">
+      <td class="when">1993-03</td>
+      <td><strong>Vernor Vinge</strong> <span class="note">San Diego State Univ.</span>        <div>Technological means for superhuman intelligence within 30 years</div>
+        <blockquote>“Within thirty years, we will have the technological means to create superhuman intelligence.”</blockquote>
+        <div class="note"><a href="https://edoras.sdsu.edu/~vinge/misc/singularity.html">source</a> (primary)
+ · <span class="qc ">quote check: verbatim</span></div>
+      </td>
+      <td class="when">2023</td>
+      <td><span class="badge passed_unverified">deadline passed: outcome unverified</span>
+      </td>
+    </tr>
+    <tr id="gr13">
+      <td class="when">1993-03</td>
+      <td><strong>Vernor Vinge</strong> <span class="note">San Diego State Univ.</span>        <div>The singularity will occur between 2005 and 2030</div>
+        <blockquote>“I&#39;ll be surprised if this event occurs before 2005 or after 2030.”</blockquote>
+        <div class="note"><a href="https://edoras.sdsu.edu/~vinge/misc/singularity.html">source</a> (primary)
+ · <span class="qc ">quote check: verbatim</span></div>
+      </td>
+      <td class="when">2005-2030</td>
+      <td><span class="badge window_open">window open</span>
+      </td>
+    </tr>
+    <tr id="gr10">
+      <td class="when">1973</td>
+      <td><strong>Sir James Lighthill</strong> <span class="note">Univ. of Cambridge; report to UK Science Research Council</span>        <div>Retrospective: AI had not delivered the promised impact (the Lighthill report preceding the first AI winter)</div>
+        <blockquote>“In no part of the field have the discoveries made so far produced the major impact that was then promised”</blockquote>
+        <div class="note"><a href="https://en.wikipedia.org/wiki/Lighthill_report">source</a> (secondary)
+ · <span class="qc ">quote check: verbatim</span> · A retrospective assessment, not a forecast. Quoted via Wikipedia; the original publication was not consulted.</div>
+      </td>
+      <td class="when">—</td>
+      <td><span class="badge undated">undated</span>
+      </td>
+    </tr>
+    <tr id="gr08">
+      <td class="when">1970</td>
+      <td><strong>Marvin Minsky (as reported by Life magazine)</strong> <span class="note">MIT</span>        <div>General-intelligence machine within 3-8 years</div>
+        <blockquote>“In from three to eight years we will have a machine with the general intelligence of an average human being.”</blockquote>
+        <div class="note"><a href="https://slate.com/technology/2021/05/artificial-intelligence-moonshots-usually-fail.html">source</a> (secondary)
+ · <span class="qc ">quote check: verbatim</span> · Attribution caution: the wording is from a 1970 Life magazine article by a journalist, not Minsky&#39;s own writing.</div>
+      </td>
+      <td class="when">1978</td>
+      <td><span class="badge passed_unverified">deadline passed: outcome unverified</span>
+      </td>
+    </tr>
+    <tr id="gr07">
+      <td class="when">1967</td>
+      <td><strong>Marvin Minsky</strong> <span class="note">MIT</span>        <div>AI will be substantially solved within a generation</div>
+        <blockquote>“Within a generation... the problem of creating &#39;artificial intelligence&#39; will substantially be solved.”</blockquote>
+        <div class="note"><a href="https://en.wikipedia.org/wiki/History_of_artificial_intelligence">source</a> (secondary)
+ · <span class="qc ">quote check: verbatim</span> · Quoted via Wikipedia; the original publication was not consulted. &#39;A generation&#39; gives no date, so no horizon is recorded.</div>
+      </td>
+      <td class="when">—</td>
+      <td><span class="badge undated">undated</span>
+      </td>
+    </tr>
+    <tr id="gr06">
+      <td class="when">1965</td>
+      <td><strong>Herbert A. Simon</strong> <span class="note">Carnegie Tech</span>        <div>Machines will do any work a man can do within twenty years</div>
+        <blockquote>“machines will be capable, within twenty years, of doing any work a man can do.”</blockquote>
+        <div class="note"><a href="https://en.wikipedia.org/wiki/History_of_artificial_intelligence">source</a> (secondary)
+ · <span class="qc ">quote check: verbatim</span> · Quoted via Wikipedia; the original publication was not consulted.</div>
+      </td>
+      <td class="when">1985</td>
+      <td><span class="badge passed_unverified">deadline passed: outcome unverified</span>
+      </td>
+    </tr>
+    <tr id="gr09">
+      <td class="when">1965</td>
+      <td><strong>I. J. Good</strong> <span class="note">Virginia Tech</span>        <div>The first ultraintelligent machine would trigger an intelligence explosion and be humanity&#39;s last necessary invention</div>
+        <blockquote>“the first ultraintelligent machine is the last invention that man need ever make”</blockquote>
+        <div class="note"><a href="https://en.wikipedia.org/wiki/Irving_John_Good">source</a> (secondary)
+ · <span class="qc ">quote check: verbatim</span> · Quoted via Wikipedia; the original publication was not consulted.</div>
+      </td>
+      <td class="when">—</td>
+      <td><span class="badge undated">undated</span>
+      </td>
+    </tr>
+    <tr id="gr04">
+      <td class="when">1958</td>
+      <td><strong>Herbert A. Simon and Allen Newell</strong> <span class="note">Carnegie Tech</span>        <div>A computer will be world chess champion within ten years</div>
+        <blockquote>“within ten years a digital computer will be the world&#39;s chess champion”</blockquote>
+        <div class="note"><a href="https://en.wikipedia.org/wiki/History_of_artificial_intelligence">source</a> (secondary)
+ · <span class="qc ">quote check: verbatim</span> · Quoted via Wikipedia; the original publication was not consulted.</div>
+      </td>
+      <td class="when">1968</td>
+      <td><span class="badge achieved">achieved</span>
+<div class="note"><a href="#chess-deepblue-1997">1997</a>, +28 yr vs. horizon</div>      </td>
+    </tr>
+    <tr id="gr05">
+      <td class="when">1958</td>
+      <td><strong>Herbert A. Simon and Allen Newell</strong> <span class="note">Carnegie Tech</span>        <div>A computer will discover and prove an important new theorem within ten years</div>
+        <blockquote>“within ten years a digital computer will discover and prove an important new mathematical theorem.”</blockquote>
+        <div class="note"><a href="https://en.wikipedia.org/wiki/History_of_artificial_intelligence">source</a> (secondary)
+ · <span class="qc ">quote check: verbatim</span> · Quoted via Wikipedia; the original publication was not consulted.</div>
+      </td>
+      <td class="when">1968</td>
+      <td><span class="badge passed_unverified">deadline passed: outcome unverified</span>
+      </td>
+    </tr>
+    <tr id="gr01">
+      <td class="when">1955-08-31</td>
+      <td><strong>John McCarthy et al.</strong> <span class="note">Dartmouth summer project proposal</span>        <div>A carefully chosen group working together for a summer could make significant advances on machine intelligence problems</div>
+        <blockquote>“We think that a significant advance can be made in one or more of these problems”</blockquote>
+        <div class="note"><a href="http://www-formal.stanford.edu/jmc/history/dartmouth/dartmouth.html">source</a> (primary)
+ · <span class="qc ">quote check: verbatim</span></div>
+      </td>
+      <td class="when">—</td>
+      <td><span class="badge undated">undated</span>
+      </td>
+    </tr>
+    <tr id="gr02">
+      <td class="when">1950</td>
+      <td><strong>Alan Turing</strong> <span class="note">Univ. of Manchester; Mind</span>        <div>By ~2000 a computer will hold an average interrogator to &lt;=70% correct identification after 5 minutes</div>
+        <blockquote>“I believe that in about fifty years&#39; time it will be possible, to programme computers, with a storage capacity of about 109, to make them play the imitation game so well that an average interrogator will not have more than 70 per cent chance of making the right identification after five minutes of questioning.”</blockquote>
+        <div class="note"><a href="https://redirect.cs.umbc.edu/courses/471/papers/turing.pdf">source</a> (paper)
+ · <span class="qc ">quote check: verbatim</span></div>
+      </td>
+      <td class="when">2000</td>
+      <td><span class="badge passed_unverified">deadline passed: outcome unverified</span>
+      </td>
+    </tr>
+    <tr id="gr03">
+      <td class="when">1950</td>
+      <td><strong>Alan Turing</strong> <span class="note">Univ. of Manchester; Mind</span>        <div>By ~2000 educated opinion will accept the phrase &#39;machines thinking&#39;</div>
+        <blockquote>“Nevertheless I believe that at the end of the century the use of words and general educated opinion will have altered so much that one will be able to speak of machines thinking without expecting to be contradicted.”</blockquote>
+        <div class="note"><a href="https://redirect.cs.umbc.edu/courses/471/papers/turing.pdf">source</a> (paper)
+ · <span class="qc ">quote check: verbatim</span></div>
+      </td>
+      <td class="when">2000</td>
+      <td><span class="badge passed_unverified">deadline passed: outcome unverified</span>
+      </td>
+    </tr>
+  </table></div>
+</section>
+
+<footer id="sources">
+  <h2 style="font-size:20px;color:var(--ink)">Sources and freshness</h2>
+  <p>Data is fetched on a schedule and committed; the page itself makes no data requests. A failed fetch keeps the last good copy and is flagged here.</p>
+  <div class="tbl-wrap"><table>
+    <tr><th>Source</th><th>Fetched</th><th>Age</th><th>Last error</th></tr>
+    <tr><td>metr</td><td>2026-10-08 22:48</td><td class="">2m</td><td></td></tr>
+    <tr><td>epoch_compute</td><td>2026-10-08 22:48</td><td class="">2m</td><td></td></tr>
+    <tr><td>frontiermath</td><td>2026-10-08 22:48</td><td class="">2m</td><td></td></tr>
+    <tr><td>arc</td><td>2026-10-08 22:48</td><td class="">2m</td><td></td></tr>
+    <tr><td>manifold</td><td>2026-10-08 22:48</td><td class="">2m</td><td></td></tr>
+    <tr><td>quotecheck</td><td>2026-10-08 22:49</td><td class="">1m</td><td></td></tr>
+  </table></div>
+  <p>Credits: METR; Epoch AI (CC BY 4.0); ARC Prize; Manifold Markets. Claims and the Superhuman Ledger are hand-curated with a source for every row; the build fails on a row without one.</p>
+</footer>
+</main>
+</body>
+</html>

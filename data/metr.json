@@ -1,0 +1,219 @@
+{
+ "data": {
+  "benchmark": "METR-Horizon-v1.1",
+  "points": [
+   {
+    "ci_high": 0.141825,
+    "ci_low": 0.009994,
+    "date": "2019-02-14",
+    "is_sota": true,
+    "model": "gpt2",
+    "value": 0.053778
+   },
+   {
+    "ci_high": 0.221209,
+    "ci_low": 0.093319,
+    "date": "2020-05-28",
+    "is_sota": true,
+    "model": "davinci_002",
+    "value": 0.144057
+   },
+   {
+    "ci_high": 1.115905,
+    "ci_low": 0.255148,
+    "date": "2022-03-15",
+    "is_sota": true,
+    "model": "gpt_3_5_turbo_instruct",
+    "value": 0.599247
+   },
+   {
+    "ci_high": 7.995283,
+    "ci_low": 1.93292,
+    "date": "2023-03-14",
+    "is_sota": true,
+    "model": "gpt_4",
+    "value": 3.987428
+   },
+   {
+    "ci_high": 8.443226,
+    "ci_low": 1.866859,
+    "date": "2023-11-06",
+    "is_sota": true,
+    "model": "gpt_4_1106_inspect",
+    "value": 4.044959
+   },
+   {
+    "ci_high": 8.76484,
+    "ci_low": 1.706313,
+    "date": "2024-03-04",
+    "is_sota": false,
+    "model": "claude_3_opus_inspect",
+    "value": 3.952262
+   },
+   {
+    "ci_high": 6.736613,
+    "ci_low": 1.980046,
+    "date": "2024-04-09",
+    "is_sota": false,
+    "model": "gpt_4_turbo_inspect",
+    "value": 3.732787
+   },
+   {
+    "ci_high": 12.905741,
+    "ci_low": 4.001482,
+    "date": "2024-05-13",
+    "is_sota": true,
+    "model": "gpt_4o_inspect",
+    "value": 6.991195
+   },
+   {
+    "ci_high": 22.384214,
+    "ci_low": 5.489734,
+    "date": "2024-06-20",
+    "is_sota": true,
+    "model": "claude_3_5_sonnet_20240620_inspect",
+    "value": 11.395377
+   },
+   {
+    "ci_high": 33.379877,
+    "ci_low": 11.716193,
+    "date": "2024-09-12",
+    "is_sota": true,
+    "model": "o1_preview",
+    "value": 20.326586
+   },
+   {
+    "ci_high": 40.82028,
+    "ci_low": 10.144026,
+    "date": "2024-10-22",
+    "is_sota": true,
+    "model": "claude_3_5_sonnet_20241022_inspect",
+    "value": 20.522872
+   },
+   {
+    "ci_high": 64.95249,
+    "ci_low": 21.164512,
+    "date": "2024-12-05",
+    "is_sota": true,
+    "model": "o1_inspect",
+    "value": 38.831588
+   },
+   {
+    "ci_high": 104.226017,
+    "ci_low": 33.006168,
+    "date": "2025-02-24",
+    "is_sota": true,
+    "model": "claude_3_7_sonnet_inspect",
+    "value": 60.388937
+   },
+   {
+    "ci_high": 190.943818,
+    "ci_low": 74.615398,
+    "date": "2025-04-16",
+    "is_sota": true,
+    "model": "o3_inspect",
+    "value": 119.732634
+   },
+   {
+    "ci_high": 163.454074,
+    "ci_low": 59.994073,
+    "date": "2025-05-22",
+    "is_sota": false,
+    "model": "claude_4_opus_inspect",
+    "value": 100.366123
+   },
+   {
+    "ci_high": 159.451918,
+    "ci_low": 59.272391,
+    "date": "2025-08-05",
+    "is_sota": false,
+    "model": "claude_4_1_opus_inspect",
+    "value": 100.472004
+   },
+   {
+    "ci_high": 405.551565,
+    "ci_low": 112.641357,
+    "date": "2025-08-07",
+    "is_sota": true,
+    "model": "gpt_5_2025_08_07_inspect",
+    "value": 203.012577
+   },
+   {
+    "ci_high": 379.235434,
+    "ci_low": 139.565157,
+    "date": "2025-11-18",
+    "is_sota": true,
+    "model": "gemini_3_pro",
+    "value": 224.325884
+   },
+   {
+    "ci_high": 396.206723,
+    "ci_low": 134.31077,
+    "date": "2025-11-19",
+    "is_sota": false,
+    "model": "gpt_5_1_codex_max_inspect",
+    "value": 223.714694
+   },
+   {
+    "ci_high": 623.704698,
+    "ci_low": 161.717714,
+    "date": "2025-11-24",
+    "is_sota": true,
+    "model": "claude_opus_4_5_inspect",
+    "value": 292.994594
+   },
+   {
+    "ci_high": 815.177445,
+    "ci_low": 198.067494,
+    "date": "2025-12-11",
+    "is_sota": true,
+    "model": "gpt_5_2",
+    "value": 352.249302
+   },
+   {
+    "ci_high": 3633.786163,
+    "ci_low": 316.685725,
+    "date": "2026-02-05",
+    "is_sota": true,
+    "model": "claude_opus_4_6_inspect",
+    "value": 718.80683
+   },
+   {
+    "ci_high": 816.351994,
+    "ci_low": 194.913134,
+    "date": "2026-02-05",
+    "is_sota": false,
+    "model": "gpt_5_3_codex",
+    "value": 349.530732
+   },
+   {
+    "ci_high": 694.750898,
+    "ci_low": 233.50073,
+    "date": "2026-02-19",
+    "is_sota": false,
+    "model": "gemini_3_1_pro",
+    "value": 384.147435
+   },
+   {
+    "ci_high": 768.779526,
+    "ci_low": 186.581591,
+    "date": "2026-03-05",
+    "is_sota": false,
+    "model": "gpt_5_4",
+    "value": 341.735276
+   },
+   {
+    "ci_high": 3304.261235,
+    "ci_low": 508.876789,
+    "date": "2026-04-07",
+    "is_sota": true,
+    "model": "claude_mythos_preview_early_inspect",
+    "value": 1044.780145
+   }
+  ],
+  "published_doubling_days_2023_on": 128.744,
+  "source_url": "https://metr.org/",
+  "unit": "minutes"
+ },
+ "fetched_at": "2026-10-08T22:48:09.530216+00:00"
+}

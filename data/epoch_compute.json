@@ -1,0 +1,773 @@
+{
+ "data": {
+  "points": [
+   {
+    "date": "1950-07-02",
+    "model": "Theseus",
+    "org": "Bell Laboratories",
+    "value": 40.0
+   },
+   {
+    "date": "1957-01-01",
+    "model": "Perceptron Mark I",
+    "org": "Cornell Aeronautical Laboratory,Cornell University",
+    "value": 694894.9377361819
+   },
+   {
+    "date": "1959-02-01",
+    "model": "Pandemonium (morse)",
+    "org": "Massachusetts Institute of Technology (MIT)",
+    "value": 600000000.0
+   },
+   {
+    "date": "1959-07-01",
+    "model": "Samuel Neural Checkers",
+    "org": "IBM",
+    "value": 428400000.0
+   },
+   {
+    "date": "1960-03-30",
+    "model": "Perceptron (1960)",
+    "org": "Cornell Aeronautical Laboratory",
+    "value": 720000000.0
+   },
+   {
+    "date": "1960-06-30",
+    "model": "ADALINE",
+    "org": "Stanford University",
+    "value": 6600.0
+   },
+   {
+    "date": "1962-06-01",
+    "model": "Linear Decision Functions",
+    "org": "Bell Laboratories",
+    "value": 1559250.0
+   },
+   {
+    "date": "1963-01-01",
+    "model": "Print Recognition Logic",
+    "org": "IBM",
+    "value": 22500000.0
+   },
+   {
+    "date": "1966-11-01",
+    "model": "LTE speaker verification system",
+    "org": "IBM",
+    "value": 105917060.0
+   },
+   {
+    "date": "1980-04-01",
+    "model": "Neocognitron",
+    "org": "NHK Broadcasting Science Research Laboratories",
+    "value": 273738240.0
+   },
+   {
+    "date": "1983-09-01",
+    "model": "ASE+ACE",
+    "org": "University of Massachusetts Amherst",
+    "value": 324000000.0
+   },
+   {
+    "date": "1986-08-15",
+    "model": "Distributed representation NN",
+    "org": "Carnegie Mellon University (CMU)",
+    "value": 388800000.0
+   },
+   {
+    "date": "1986-10-01",
+    "model": "MLP with back-propagation",
+    "org": "University of California San Diego,Carnegie Mellon University (CMU)",
+    "value": 673920000.0
+   },
+   {
+    "date": "1987-06-06",
+    "model": "NetTalk (transcription)",
+    "org": "Princeton University",
+    "value": 28328002560.0
+   },
+   {
+    "date": "1987-06-06",
+    "model": "NetTalk (dictionary)",
+    "org": "Princeton University",
+    "value": 27664065000.0
+   },
+   {
+    "date": "1987-06-15",
+    "model": "Translation-invariant MLP",
+    "org": "Carnegie Mellon University (CMU)",
+    "value": 18032947200.0
+   },
+   {
+    "date": "1989-06-18",
+    "model": "Invariant image recognition",
+    "org": "Complutense University of Madrid",
+    "value": 27000000000.0
+   },
+   {
+    "date": "1989-11-27",
+    "model": "Handwritten digit recognition network",
+    "org": "AT&T",
+    "value": 181440000000.0
+   },
+   {
+    "date": "1989-12-01",
+    "model": "Zip CNN",
+    "org": "AT&T,Bell Laboratories",
+    "value": 1496338054440.0
+   },
+   {
+    "date": "1990-06-01",
+    "model": "NETtalk reimplementation",
+    "org": "Oregon State University",
+    "value": 35811936000.0
+   },
+   {
+    "date": "1990-10-01",
+    "model": "SexNet compression",
+    "org": "",
+    "value": 78775200000.0
+   },
+   {
+    "date": "1991-12-02",
+    "model": "Weight Decay",
+    "org": "",
+    "value": 75474000000.0
+   },
+   {
+    "date": "1992-05-01",
+    "model": "TD-Gammon",
+    "org": "IBM",
+    "value": 18232157622832.703
+   },
+   {
+    "date": "1993-08-01",
+    "model": "Siamese-TDNN",
+    "org": "Bell Laboratories",
+    "value": 12869570138112.0
+   },
+   {
+    "date": "1994-12-02",
+    "model": "Predictive Coding NN",
+    "org": "Technical University of Munich",
+    "value": 18621900000000.0
+   },
+   {
+    "date": "1994-12-02",
+    "model": "NeuroChess",
+    "org": "",
+    "value": 858730812676.0
+   },
+   {
+    "date": "1996-06-03",
+    "model": "MUSIC perceptron",
+    "org": "",
+    "value": 881733600000.0
+   },
+   {
+    "date": "1997-11-15",
+    "model": "LSTM",
+    "org": "Technical University of Munich",
+    "value": 31512000000000.0
+   },
+   {
+    "date": "1998-11-01",
+    "model": "LeNet-5",
+    "org": "AT&T",
+    "value": 2810937600000.0
+   },
+   {
+    "date": "1999-06-02",
+    "model": "RECONTRA-categorized",
+    "org": "",
+    "value": 8013600000000.0
+   },
+   {
+    "date": "2000-11-28",
+    "model": "PoE MNIST",
+    "org": "University College London (UCL)",
+    "value": 51810000000000.0
+   },
+   {
+    "date": "2000-11-28",
+    "model": "Neural LM",
+    "org": "University of Montreal / Universit\u00c3\u00a9 de Montr\u00c3\u00a9al",
+    "value": 6339000000000000.0
+   },
+   {
+    "date": "2001-12-08",
+    "model": "Decision tree (classification)",
+    "org": "Mitsubishi Electric Research Labs,Compaq CRL",
+    "value": 63000000000000.0
+   },
+   {
+    "date": "2003-03-15",
+    "model": "NPLM (Brown)",
+    "org": "University of Montreal / Universit\u00c3\u00a9 de Montr\u00c3\u00a9al",
+    "value": 132076260000000.0
+   },
+   {
+    "date": "2003-03-15",
+    "model": "NPLM (AP News)",
+    "org": "University of Montreal / Universit\u00c3\u00a9 de Montr\u00c3\u00a9al",
+    "value": 1666869200000000.0
+   },
+   {
+    "date": "2004-12-01",
+    "model": "LMICA",
+    "org": "",
+    "value": 2782080000000000.0
+   },
+   {
+    "date": "2005-01-06",
+    "model": "Hierarchical LM",
+    "org": "",
+    "value": 115848000000000.0
+   },
+   {
+    "date": "2006-06-17",
+    "model": "SVM-CNN",
+    "org": "New York University (NYU)",
+    "value": 745200000000000.0
+   },
+   {
+    "date": "2007-06-22",
+    "model": "SB-LM",
+    "org": "Google",
+    "value": 1.4494464e+18
+   },
+   {
+    "date": "2007-06-22",
+    "model": "KN-LM",
+    "org": "Google",
+    "value": 7.7303808e+17
+   },
+   {
+    "date": "2009-11-22",
+    "model": "LCNP LabelMe",
+    "org": "University of Bonn",
+    "value": 3295150080000000.0
+   },
+   {
+    "date": "2009-11-22",
+    "model": "LCNP MNIST",
+    "org": "",
+    "value": 4181852160000000.0
+   },
+   {
+    "date": "2010-09-26",
+    "model": "KN5 LM + RNN 400/10 (WSJ)",
+    "org": "Brno University of Technology,Johns Hopkins University",
+    "value": 1.7e+16
+   },
+   {
+    "date": "2010-09-26",
+    "model": "RNN LM",
+    "org": "Johns Hopkins University",
+    "value": 5.396e+16
+   },
+   {
+    "date": "2010-09-26",
+    "model": "RNN 1000/5 + RT09 LM (NIST RT05)",
+    "org": "Brno University of Technology,Johns Hopkins University",
+    "value": 5e+16
+   },
+   {
+    "date": "2011-04-29",
+    "model": "Deep Autoencoders",
+    "org": "University of Toronto",
+    "value": 3.672864e+16
+   },
+   {
+    "date": "2011-09-18",
+    "model": "CNN Committee (MNIST)",
+    "org": "IDSIA",
+    "value": 5.2e+16
+   },
+   {
+    "date": "2012-06-03",
+    "model": "Dropout (ImageNet)",
+    "org": "University of Toronto",
+    "value": 2.731968e+17
+   },
+   {
+    "date": "2012-07-12",
+    "model": "Unsupervised High-level Feature Learner",
+    "org": "Google",
+    "value": 6e+17
+   },
+   {
+    "date": "2012-09-30",
+    "model": "AlexNet",
+    "org": "University of Toronto",
+    "value": 4.7e+17
+   },
+   {
+    "date": "2012-12-03",
+    "model": "DNN EM segmentation",
+    "org": "IDSIA,SUPSI",
+    "value": 4.78e+17
+   },
+   {
+    "date": "2013-01-16",
+    "model": "DistBelief NNLM",
+    "org": "Google",
+    "value": 2.612736e+18
+   },
+   {
+    "date": "2013-11-12",
+    "model": "Visualizing CNNs",
+    "org": "New York University (NYU)",
+    "value": 5.32e+17
+   },
+   {
+    "date": "2013-12-05",
+    "model": "TransE",
+    "org": "Universite de Technologie de Compi\u00c3\u00a8gne \u00e2\u0080\u0093 CNRS,Google",
+    "value": 1.340928e+18
+   },
+   {
+    "date": "2014-06-18",
+    "model": "SPPNet",
+    "org": "Microsoft,Xi\u00e2\u0080\u0099an Jiaotong University,University of Science and Technology of China (USTC)",
+    "value": 3.411072e+18
+   },
+   {
+    "date": "2014-09-01",
+    "model": "RNNsearch-50*",
+    "org": "Jacobs University Bremen,University of Montreal / Universit\u00c3\u00a9 de Montr\u00c3\u00a9al",
+    "value": 1.5552e+18
+   },
+   {
+    "date": "2014-09-04",
+    "model": "VGG16",
+    "org": "University of Oxford",
+    "value": 1.2291e+19
+   },
+   {
+    "date": "2014-09-04",
+    "model": "VGG19",
+    "org": "University of Oxford",
+    "value": 1.1e+19
+   },
+   {
+    "date": "2014-09-10",
+    "model": "Seq2Seq LSTM",
+    "org": "Google",
+    "value": 5.6e+19
+   },
+   {
+    "date": "2014-12-03",
+    "model": "SNM-skip",
+    "org": "Google",
+    "value": 2.97600000001e+20
+   },
+   {
+    "date": "2015-02-06",
+    "model": "MSRA (C, PReLU)",
+    "org": "Microsoft Research",
+    "value": 2.397403008e+19
+   },
+   {
+    "date": "2015-10-01",
+    "model": "AlphaGo Fan",
+    "org": "DeepMind",
+    "value": 3.8e+20
+   },
+   {
+    "date": "2015-10-28",
+    "model": "SAF R-CNN",
+    "org": "Beijing Institute of Technology,Sun Yat-sen University,Panasonic R&D,National University of Singapore",
+    "value": 1.2311081250000001e+19
+   },
+   {
+    "date": "2015-12-02",
+    "model": "Inception v3",
+    "org": "Google,University College London (UCL)",
+    "value": 1e+20
+   },
+   {
+    "date": "2015-12-08",
+    "model": "DeepSpeech2 (English)",
+    "org": "Baidu Research - Silicon Valley AI Lab",
+    "value": 2.6e+19
+   },
+   {
+    "date": "2016-01-27",
+    "model": "AlphaGo Lee",
+    "org": "DeepMind",
+    "value": 1.9e+21
+   },
+   {
+    "date": "2016-02-11",
+    "model": "BIG LSTM+CNN INPUTS",
+    "org": "Google Brain",
+    "value": 1.0220883e+20
+   },
+   {
+    "date": "2016-09-26",
+    "model": "GNMT",
+    "org": "Google",
+    "value": 6.620000000001e+21
+   },
+   {
+    "date": "2016-10-07",
+    "model": "Xception",
+    "org": "Google",
+    "value": 4.36e+20
+   },
+   {
+    "date": "2016-11-05",
+    "model": "NASv3 (CIFAR-10)",
+    "org": "Google Brain",
+    "value": 2.2e+21
+   },
+   {
+    "date": "2017-07-10",
+    "model": "JFT",
+    "org": "Google Research,Carnegie Mellon University (CMU)",
+    "value": 8.43e+20
+   },
+   {
+    "date": "2017-08-11",
+    "model": "OpenAI TI7 DOTA 1v1",
+    "org": "OpenAI",
+    "value": 6.046095222592002e+20
+   },
+   {
+    "date": "2017-10-18",
+    "model": "AlphaGo Zero",
+    "org": "DeepMind",
+    "value": 6.49439910290227e+20
+   },
+   {
+    "date": "2018-05-02",
+    "model": "ResNeXt-101 32x48d",
+    "org": "Facebook",
+    "value": 8.74395e+21
+   },
+   {
+    "date": "2018-09-28",
+    "model": "BigGAN-deep 512x512",
+    "org": "Heriot-Watt University,DeepMind",
+    "value": 1.8e+21
+   },
+   {
+    "date": "2019-02-14",
+    "model": "GPT-2 (774M)",
+    "org": "OpenAI",
+    "value": 4.9536e+21
+   },
+   {
+    "date": "2019-02-14",
+    "model": "GPT-2 (355M)",
+    "org": "OpenAI",
+    "value": 2.272000000071e+21
+   },
+   {
+    "date": "2019-05-29",
+    "model": "Grover-Mega",
+    "org": "University of Washington",
+    "value": 4.6386183e+21
+   },
+   {
+    "date": "2019-06-01",
+    "model": "XLNet",
+    "org": "Carnegie Mellon University (CMU),Google Brain",
+    "value": 6.19e+21
+   },
+   {
+    "date": "2019-07-01",
+    "model": "RoBERTa Large",
+    "org": "Facebook,University of Washington",
+    "value": 8.5067e+21
+   },
+   {
+    "date": "2019-09-17",
+    "model": "Megatron-BERT",
+    "org": "Nvidia",
+    "value": 2.2e+22
+   },
+   {
+    "date": "2019-09-17",
+    "model": "Megatron-LM (8.3B)",
+    "org": "Nvidia",
+    "value": 9.1e+21
+   },
+   {
+    "date": "2019-10-23",
+    "model": "T5-3B",
+    "org": "Google",
+    "value": 9.0000000001e+21
+   },
+   {
+    "date": "2019-10-23",
+    "model": "T5-11B",
+    "org": "Google",
+    "value": 3.3e+22
+   },
+   {
+    "date": "2019-10-30",
+    "model": "AlphaStar",
+    "org": "DeepMind",
+    "value": 1.0773400001e+23
+   },
+   {
+    "date": "2019-11-05",
+    "model": "XLM-RoBERTa",
+    "org": "Facebook AI",
+    "value": 2.076e+22
+   },
+   {
+    "date": "2019-11-11",
+    "model": "Noisy Student (L2)",
+    "org": "Carnegie Mellon University (CMU),Google",
+    "value": 2.612e+22
+   },
+   {
+    "date": "2019-12-13",
+    "model": "OpenAI Five",
+    "org": "OpenAI",
+    "value": 6.7e+22
+   },
+   {
+    "date": "2020-01-28",
+    "model": "Meena",
+    "org": "Google Brain",
+    "value": 1.12e+23
+   },
+   {
+    "date": "2020-05-28",
+    "model": "GPT-3 175B (davinci)",
+    "org": "OpenAI",
+    "value": 3.14e+23
+   },
+   {
+    "date": "2020-06-17",
+    "model": "iGPT-XL",
+    "org": "OpenAI",
+    "value": 3.3e+22
+   },
+   {
+    "date": "2020-06-30",
+    "model": "GShard (dense)",
+    "org": "Google",
+    "value": 4.765e+22
+   },
+   {
+    "date": "2020-10-20",
+    "model": "mT5-XXL",
+    "org": "Google,Google Research",
+    "value": 8.2e+22
+   },
+   {
+    "date": "2021-01-11",
+    "model": "Switch",
+    "org": "Google",
+    "value": 8.22e+22
+   },
+   {
+    "date": "2021-05-31",
+    "model": "Wu Dao 2.0",
+    "org": "Beijing Academy of Artificial Intelligence / BAAI",
+    "value": 1.54350000000001e+24
+   },
+   {
+    "date": "2021-08-11",
+    "model": "Jurassic-1-Jumbo",
+    "org": "AI21 Labs",
+    "value": 3.7e+23
+   },
+   {
+    "date": "2021-09-03",
+    "model": "FLAN 137B",
+    "org": "Google Research",
+    "value": 2.047e+24
+   },
+   {
+    "date": "2021-09-10",
+    "model": "HyperCLOVA 204B",
+    "org": "NAVER",
+    "value": 2.0000000001e+23
+   },
+   {
+    "date": "2021-10-11",
+    "model": "Megatron-Turing NLG 530B",
+    "org": "Microsoft,Nvidia",
+    "value": 8.586e+23
+   },
+   {
+    "date": "2021-10-12",
+    "model": "Yuan 1.0",
+    "org": "Inspur",
+    "value": 3.5380000000001e+23
+   },
+   {
+    "date": "2021-12-08",
+    "model": "Gopher (280B)",
+    "org": "DeepMind",
+    "value": 6.31e+23
+   },
+   {
+    "date": "2021-12-14",
+    "model": "EXAONE 1.0",
+    "org": "LG",
+    "value": 1.6956e+24
+   },
+   {
+    "date": "2021-12-23",
+    "model": "ERNIE 3.0 Titan",
+    "org": "Baidu,Peng Cheng Laboratory",
+    "value": 1.0421e+24
+   },
+   {
+    "date": "2022-03-15",
+    "model": "GPT-3.5 (davinci-002)",
+    "org": "OpenAI",
+    "value": 2.578e+24
+   },
+   {
+    "date": "2022-04-04",
+    "model": "PaLM (540B)",
+    "org": "Google Research",
+    "value": 2.5272e+24
+   },
+   {
+    "date": "2022-06-29",
+    "model": "Minerva (540B)",
+    "org": "Google",
+    "value": 2.7415e+24
+   },
+   {
+    "date": "2022-10-20",
+    "model": "U-PaLM (540B)",
+    "org": "Google",
+    "value": 2.53e+24
+   },
+   {
+    "date": "2022-10-20",
+    "model": "Flan-PaLM 540B",
+    "org": "Google",
+    "value": 2.540000000001e+24
+   },
+   {
+    "date": "2023-03-15",
+    "model": "GPT-4 (Mar 2023)",
+    "org": "OpenAI",
+    "value": 2.1e+25
+   },
+   {
+    "date": "2023-04-10",
+    "model": "SenseChat",
+    "org": "SenseTime",
+    "value": 3.89e+24
+   },
+   {
+    "date": "2023-05-10",
+    "model": "PaLM 2",
+    "org": "Google",
+    "value": 7.34e+24
+   },
+   {
+    "date": "2023-06-13",
+    "model": "GPT-4 (Jun 2023)",
+    "org": "OpenAI",
+    "value": 2.1e+25
+   },
+   {
+    "date": "2023-07-11",
+    "model": "Claude 2",
+    "org": "Anthropic",
+    "value": 3.866e+24
+   },
+   {
+    "date": "2023-09-06",
+    "model": "Falcon-180B",
+    "org": "Technology Innovation Institute",
+    "value": 3.76e+24
+   },
+   {
+    "date": "2023-09-28",
+    "model": "Amazon Titan",
+    "org": "Amazon",
+    "value": 4.8e+24
+   },
+   {
+    "date": "2023-11-22",
+    "model": "Inflection-2",
+    "org": "Inflection AI",
+    "value": 1.001e+25
+   },
+   {
+    "date": "2023-12-06",
+    "model": "Gemini 1.0 Ultra",
+    "org": "Google DeepMind",
+    "value": 5.0000000001e+25
+   },
+   {
+    "date": "2024-06-14",
+    "model": "Nemotron-4 340B",
+    "org": "Nvidia",
+    "value": 1.8e+25
+   },
+   {
+    "date": "2024-06-20",
+    "model": "Claude 3.5 Sonnet",
+    "org": "Anthropic",
+    "value": 2.700000000000001e+25
+   },
+   {
+    "date": "2024-07-23",
+    "model": "Llama 3.1-405B",
+    "org": "Meta AI",
+    "value": 3.8e+25
+   },
+   {
+    "date": "2024-08-13",
+    "model": "Grok-2",
+    "org": "xAI",
+    "value": 2.96e+25
+   },
+   {
+    "date": "2025-02-17",
+    "model": "Grok 3",
+    "org": "xAI",
+    "value": 3.5e+26
+   },
+   {
+    "date": "2025-02-27",
+    "model": "GPT-4.5",
+    "org": "OpenAI",
+    "value": 3.8e+26
+   },
+   {
+    "date": "2025-03-18",
+    "model": "Llama Nemotron Ultra 253B",
+    "org": "Nvidia",
+    "value": 3.911001e+25
+   },
+   {
+    "date": "2025-04-05",
+    "model": "Llama 4 Behemoth (preview)",
+    "org": "Meta AI",
+    "value": 5.18400000000001e+25
+   },
+   {
+    "date": "2025-07-09",
+    "model": "Grok 4",
+    "org": "xAI",
+    "value": 5.0000000000001e+26
+   },
+   {
+    "date": "2026-09-03",
+    "model": "GPT-6 Astra",
+    "org": "OpenAI",
+    "value": 1.0001e+27
+   }
+  ],
+  "rows_total": 138,
+  "rows_without_compute": 11,
+  "source_url": "https://epoch.ai/data/frontier-ai-models",
+  "unit": "FLOP"
+ },
+ "fetched_at": "2026-10-08T22:48:09.926385+00:00"
+}
