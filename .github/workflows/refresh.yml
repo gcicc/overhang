@@ -25,10 +25,13 @@ jobs:
           python-version: '3.11'
           cache: pip
 
-      # poppler-utils provides pdftotext for checking quotes whose source is a PDF.
+      # poppler-utils provides pdftotext for checking quotes whose source is a PDF. It is
+      # optional: without it those quotes report "pdf_unchecked", so an apt outage must
+      # not block the refresh.
       - name: Install dependencies
         run: |
-          sudo apt-get install -y --no-install-recommends poppler-utils
+          (sudo apt-get update -q && sudo apt-get install -y --no-install-recommends poppler-utils) \
+            || echo "::warning::poppler-utils unavailable; PDF quotes will be unchecked"
           pip install requests jinja2
 
       - name: Refresh and render
