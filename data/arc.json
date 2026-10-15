@@ -2,7 +2,7 @@
  "data": {
   "series": {
    "ARC-AGI-1": {
-    "generated_at": "2026-10-05T19:34:27.104Z",
+    "generated_at": "2026-10-13T17:37:10.480Z",
     "points": [
      {
       "date": "2023-11-03",
@@ -1605,6 +1605,36 @@
       "model": "GPT-6.1 Sol (Low)",
       "org": "OpenAI",
       "value": 0.935
+     },
+     {
+      "date": "2026-10-07",
+      "model": "Claude Haiku 5.5 (Max)",
+      "org": "Anthropic",
+      "value": 0.89
+     },
+     {
+      "date": "2026-10-07",
+      "model": "Claude Haiku 5.5 (XHigh)",
+      "org": "Anthropic",
+      "value": 0.875
+     },
+     {
+      "date": "2026-10-07",
+      "model": "Claude Haiku 5.5 (High)",
+      "org": "Anthropic",
+      "value": 0.815
+     },
+     {
+      "date": "2026-10-07",
+      "model": "Claude Haiku 5.5 (Medium)",
+      "org": "Anthropic",
+      "value": 0.5733333333333333
+     },
+     {
+      "date": "2026-10-07",
+      "model": "Claude Haiku 5.5 (Low)",
+      "org": "Anthropic",
+      "value": 0.5033333333333334
      }
     ],
     "reference": [
@@ -1624,7 +1654,7 @@
     "unit": "fraction solved"
    },
    "ARC-AGI-2": {
-    "generated_at": "2026-10-05T19:34:27.105Z",
+    "generated_at": "2026-10-13T17:37:10.481Z",
     "points": [
      {
       "date": "2023-11-03",
@@ -3257,6 +3287,30 @@
       "model": "GPT-6.1 Sol (Low)",
       "org": "OpenAI",
       "value": 0.7666666666666667
+     },
+     {
+      "date": "2026-10-07",
+      "model": "Claude Haiku 5.5 (XHigh)",
+      "org": "Anthropic",
+      "value": 0.6125
+     },
+     {
+      "date": "2026-10-07",
+      "model": "Claude Haiku 5.5 (High)",
+      "org": "Anthropic",
+      "value": 0.3069444444444444
+     },
+     {
+      "date": "2026-10-07",
+      "model": "Claude Haiku 5.5 (Medium)",
+      "org": "Anthropic",
+      "value": 0.09444444444444443
+     },
+     {
+      "date": "2026-10-07",
+      "model": "Claude Haiku 5.5 (Low)",
+      "org": "Anthropic",
+      "value": 0.027777777777777776
      }
     ],
     "reference": [
@@ -3270,5 +3324,5 @@
   },
   "source_url": "https://arcprize.org/leaderboard"
  },
- "fetched_at": "2026-10-13T22:54:14.206412+00:00"
+ "fetched_at": "2026-10-15T04:50:49.162326+00:00"
 }
