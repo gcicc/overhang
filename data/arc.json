@@ -2,7 +2,7 @@
  "data": {
   "series": {
    "ARC-AGI-1": {
-    "generated_at": "2026-10-13T17:37:10.480Z",
+    "generated_at": "2026-10-15T13:43:29.213Z",
     "points": [
      {
       "date": "2023-11-03",
@@ -1635,6 +1635,24 @@
       "model": "Claude Haiku 5.5 (Low)",
       "org": "Anthropic",
       "value": 0.5033333333333334
+     },
+     {
+      "date": "2026-10-13",
+      "model": "Gemini 4 Argon (High)",
+      "org": "Google",
+      "value": 0.985
+     },
+     {
+      "date": "2026-10-13",
+      "model": "Gemini 4 Argon (Medium)",
+      "org": "Google",
+      "value": 0.985
+     },
+     {
+      "date": "2026-10-13",
+      "model": "Gemini 4 Argon (Low)",
+      "org": "Google",
+      "value": 0.765
      }
     ],
     "reference": [
@@ -1654,7 +1672,7 @@
     "unit": "fraction solved"
    },
    "ARC-AGI-2": {
-    "generated_at": "2026-10-13T17:37:10.481Z",
+    "generated_at": "2026-10-15T13:43:29.214Z",
     "points": [
      {
       "date": "2023-11-03",
@@ -3311,6 +3329,24 @@
       "model": "Claude Haiku 5.5 (Low)",
       "org": "Anthropic",
       "value": 0.027777777777777776
+     },
+     {
+      "date": "2026-10-13",
+      "model": "Gemini 4 Argon (High)",
+      "org": "Google",
+      "value": 0.9125
+     },
+     {
+      "date": "2026-10-13",
+      "model": "Gemini 4 Argon (Medium)",
+      "org": "Google",
+      "value": 0.8708333333333333
+     },
+     {
+      "date": "2026-10-13",
+      "model": "Gemini 4 Argon (Low)",
+      "org": "Google",
+      "value": 0.42083333333333334
      }
     ],
     "reference": [
@@ -3324,5 +3360,5 @@
   },
   "source_url": "https://arcprize.org/leaderboard"
  },
- "fetched_at": "2026-10-15T04:50:49.162326+00:00"
+ "fetched_at": "2026-10-16T11:34:36.281409+00:00"
 }
