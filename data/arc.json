@@ -2,7 +2,7 @@
  "data": {
   "series": {
    "ARC-AGI-1": {
-    "generated_at": "2026-10-15T13:43:29.213Z",
+    "generated_at": "2026-10-19T14:20:54.821Z",
     "points": [
      {
       "date": "2023-11-03",
@@ -1653,6 +1653,30 @@
       "model": "Gemini 4 Argon (Low)",
       "org": "Google",
       "value": 0.765
+     },
+     {
+      "date": "2026-10-16",
+      "model": "Beam 1.0 (XHigh)",
+      "org": "Reflection",
+      "value": 0.74
+     },
+     {
+      "date": "2026-10-16",
+      "model": "Beam 1.0 (High)",
+      "org": "Reflection",
+      "value": 0.6766666666666665
+     },
+     {
+      "date": "2026-10-16",
+      "model": "Beam 1.0 (Medium)",
+      "org": "Reflection",
+      "value": 0.5566666666666666
+     },
+     {
+      "date": "2026-10-16",
+      "model": "Beam 1.0 (Low)",
+      "org": "Reflection",
+      "value": 0.45
      }
     ],
     "reference": [
@@ -1672,7 +1696,7 @@
     "unit": "fraction solved"
    },
    "ARC-AGI-2": {
-    "generated_at": "2026-10-15T13:43:29.214Z",
+    "generated_at": "2026-10-19T14:20:54.822Z",
     "points": [
      {
       "date": "2023-11-03",
@@ -3347,6 +3371,30 @@
       "model": "Gemini 4 Argon (Low)",
       "org": "Google",
       "value": 0.42083333333333334
+     },
+     {
+      "date": "2026-10-16",
+      "model": "Beam 1.0 (XHigh)",
+      "org": "Reflection",
+      "value": 0.23472222222222222
+     },
+     {
+      "date": "2026-10-16",
+      "model": "Beam 1.0 (High)",
+      "org": "Reflection",
+      "value": 0.2
+     },
+     {
+      "date": "2026-10-16",
+      "model": "Beam 1.0 (Medium)",
+      "org": "Reflection",
+      "value": 0.0638888888888889
+     },
+     {
+      "date": "2026-10-16",
+      "model": "Beam 1.0 (Low)",
+      "org": "Reflection",
+      "value": 0.02777777777777778
      }
     ],
     "reference": [
@@ -3360,5 +3408,5 @@
   },
   "source_url": "https://arcprize.org/leaderboard"
  },
- "fetched_at": "2026-10-18T15:57:41.529204+00:00"
+ "fetched_at": "2026-10-19T22:27:33.690223+00:00"
 }
