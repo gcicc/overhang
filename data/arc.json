@@ -2,7 +2,7 @@
  "data": {
   "series": {
    "ARC-AGI-1": {
-    "generated_at": "2026-10-19T14:20:54.821Z",
+    "generated_at": "2026-10-21T18:43:21.622Z",
     "points": [
      {
       "date": "2023-11-03",
@@ -1577,6 +1577,36 @@
       "value": 0.29333333333333333
      },
      {
+      "date": "2026-09-28",
+      "model": "Claude Sonnet 5.5 (Max)",
+      "org": "Anthropic",
+      "value": 0.965
+     },
+     {
+      "date": "2026-09-28",
+      "model": "Claude Sonnet 5.5 (XHigh)",
+      "org": "Anthropic",
+      "value": 0.965
+     },
+     {
+      "date": "2026-09-28",
+      "model": "Claude Sonnet 5.5 (High)",
+      "org": "Anthropic",
+      "value": 0.92
+     },
+     {
+      "date": "2026-09-28",
+      "model": "Claude Sonnet 5.5 (Medium)",
+      "org": "Anthropic",
+      "value": 0.7
+     },
+     {
+      "date": "2026-09-28",
+      "model": "Claude Sonnet 5.5 (Low)",
+      "org": "Anthropic",
+      "value": 0.67
+     },
+     {
       "date": "2026-09-29",
       "model": "GPT-6.1 Sol (Max)",
       "org": "OpenAI",
@@ -1655,6 +1685,48 @@
       "value": 0.765
      },
      {
+      "date": "2026-10-15",
+      "model": "Muse Spark Open (XHigh)",
+      "org": "Meta AI",
+      "value": 0.89
+     },
+     {
+      "date": "2026-10-15",
+      "model": "Muse Spark Open (High)",
+      "org": "Meta AI",
+      "value": 0.885
+     },
+     {
+      "date": "2026-10-15",
+      "model": "Muse Spark Open (Medium)",
+      "org": "Meta AI",
+      "value": 0.7766666666666666
+     },
+     {
+      "date": "2026-10-15",
+      "model": "Muse Spark Open (Low)",
+      "org": "Meta AI",
+      "value": 0.585
+     },
+     {
+      "date": "2026-10-15",
+      "model": "Nemotron 3.5 Super VL (High)",
+      "org": "NVIDIA",
+      "value": 0.22666666666666668
+     },
+     {
+      "date": "2026-10-15",
+      "model": "Nemotron 3.5 Super VL (Medium)",
+      "org": "NVIDIA",
+      "value": 0.2016666666666667
+     },
+     {
+      "date": "2026-10-15",
+      "model": "Nemotron 3.5 Super VL (None)",
+      "org": "NVIDIA",
+      "value": 0.02
+     },
+     {
       "date": "2026-10-16",
       "model": "Beam 1.0 (XHigh)",
       "org": "Reflection",
@@ -1677,6 +1749,30 @@
       "model": "Beam 1.0 (Low)",
       "org": "Reflection",
       "value": 0.45
+     },
+     {
+      "date": "2026-10-17",
+      "model": "DeepSeek V4.1 Flash 1017 (Max)",
+      "org": "DeepSeek",
+      "value": 0.935
+     },
+     {
+      "date": "2026-10-17",
+      "model": "DeepSeek V4.1 Flash 1017 (High)",
+      "org": "DeepSeek",
+      "value": 0.945
+     },
+     {
+      "date": "2026-10-17",
+      "model": "DeepSeek V4.1 Flash 1017 (Low)",
+      "org": "DeepSeek",
+      "value": 0.915
+     },
+     {
+      "date": "2026-10-17",
+      "model": "DeepSeek V4.1 Flash 1017 (None)",
+      "org": "DeepSeek",
+      "value": 0.05666666666666667
      }
     ],
     "reference": [
@@ -1696,7 +1792,7 @@
     "unit": "fraction solved"
    },
    "ARC-AGI-2": {
-    "generated_at": "2026-10-19T14:20:54.822Z",
+    "generated_at": "2026-10-21T18:43:21.622Z",
     "points": [
      {
       "date": "2023-11-03",
@@ -2069,12 +2165,6 @@
       "model": "GPT-5 (Medium)",
       "org": "OpenAI",
       "value": 0.0749
-     },
-     {
-      "date": "2025-08-07",
-      "model": "GPT-5 (Low)",
-      "org": "OpenAI",
-      "value": 0.0194
      },
      {
       "date": "2025-08-07",
@@ -3301,6 +3391,30 @@
       "value": 0.016666666666666666
      },
      {
+      "date": "2026-09-28",
+      "model": "Claude Sonnet 5.5 (XHigh)",
+      "org": "Anthropic",
+      "value": 0.8388888888888889
+     },
+     {
+      "date": "2026-09-28",
+      "model": "Claude Sonnet 5.5 (High)",
+      "org": "Anthropic",
+      "value": 0.6736111111111112
+     },
+     {
+      "date": "2026-09-28",
+      "model": "Claude Sonnet 5.5 (Medium)",
+      "org": "Anthropic",
+      "value": 0.3277777777777777
+     },
+     {
+      "date": "2026-09-28",
+      "model": "Claude Sonnet 5.5 (Low)",
+      "org": "Anthropic",
+      "value": 0.24027777777777776
+     },
+     {
       "date": "2026-09-29",
       "model": "GPT-6.1 Sol (Max)",
       "org": "OpenAI",
@@ -3373,6 +3487,48 @@
       "value": 0.42083333333333334
      },
      {
+      "date": "2026-10-15",
+      "model": "Muse Spark Open (XHigh)",
+      "org": "Meta AI",
+      "value": 0.575
+     },
+     {
+      "date": "2026-10-15",
+      "model": "Muse Spark Open (High)",
+      "org": "Meta AI",
+      "value": 0.475
+     },
+     {
+      "date": "2026-10-15",
+      "model": "Muse Spark Open (Medium)",
+      "org": "Meta AI",
+      "value": 0.275
+     },
+     {
+      "date": "2026-10-15",
+      "model": "Muse Spark Open (Low)",
+      "org": "Meta AI",
+      "value": 0.12222222222222222
+     },
+     {
+      "date": "2026-10-15",
+      "model": "Nemotron 3.5 Super VL (High)",
+      "org": "NVIDIA",
+      "value": 0.015277777777777777
+     },
+     {
+      "date": "2026-10-15",
+      "model": "Nemotron 3.5 Super VL (Medium)",
+      "org": "NVIDIA",
+      "value": 0.019444444444444445
+     },
+     {
+      "date": "2026-10-15",
+      "model": "Nemotron 3.5 Super VL (None)",
+      "org": "NVIDIA",
+      "value": 0.008333333333333333
+     },
+     {
       "date": "2026-10-16",
       "model": "Beam 1.0 (XHigh)",
       "org": "Reflection",
@@ -3395,6 +3551,30 @@
       "model": "Beam 1.0 (Low)",
       "org": "Reflection",
       "value": 0.02777777777777778
+     },
+     {
+      "date": "2026-10-17",
+      "model": "DeepSeek V4.1 Flash 1017 (Max)",
+      "org": "DeepSeek",
+      "value": 0.7805555555555556
+     },
+     {
+      "date": "2026-10-17",
+      "model": "DeepSeek V4.1 Flash 1017 (High)",
+      "org": "DeepSeek",
+      "value": 0.6861111111111112
+     },
+     {
+      "date": "2026-10-17",
+      "model": "DeepSeek V4.1 Flash 1017 (Low)",
+      "org": "DeepSeek",
+      "value": 0.7361111111111112
+     },
+     {
+      "date": "2026-10-17",
+      "model": "DeepSeek V4.1 Flash 1017 (None)",
+      "org": "DeepSeek",
+      "value": 0.020833333333333332
      }
     ],
     "reference": [
@@ -3408,5 +3588,5 @@
   },
   "source_url": "https://arcprize.org/leaderboard"
  },
- "fetched_at": "2026-10-21T04:58:56.918732+00:00"
+ "fetched_at": "2026-10-22T05:00:20.395837+00:00"
 }
