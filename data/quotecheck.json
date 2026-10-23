@@ -1,6 +1,6 @@
 {
  "data": {
-  "checked_at": "2026-10-16T04:41:43+00:00",
+  "checked_at": "2026-10-23T05:04:14+00:00",
   "results": {
    "cu01": {
     "detail": "",
@@ -95,8 +95,8 @@
     "status": "verbatim"
    },
    "gr01": {
-    "detail": "",
-    "status": "verbatim"
+    "detail": "ConnectTimeout",
+    "status": "fetch_failed"
    },
    "gr02": {
     "detail": "",
@@ -139,12 +139,12 @@
     "status": "verbatim"
    },
    "gr12": {
-    "detail": "",
-    "status": "verbatim"
+    "detail": "ConnectTimeout",
+    "status": "fetch_failed"
    },
    "gr13": {
-    "detail": "",
-    "status": "verbatim"
+    "detail": "ConnectTimeout",
+    "status": "fetch_failed"
    },
    "gr14": {
     "detail": "",
@@ -172,5 +172,5 @@
    }
   }
  },
- "fetched_at": "2026-10-16T04:41:43.790263+00:00"
+ "fetched_at": "2026-10-23T05:04:14.945500+00:00"
 }
