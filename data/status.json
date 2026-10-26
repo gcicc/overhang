@@ -1,31 +1,31 @@
 {
  "arc": {
-  "last_attempt": "2026-10-26T13:16:03.970457+00:00",
+  "last_attempt": "2026-10-26T22:45:11.341889+00:00",
   "last_error": null,
   "last_success": "2026-10-26T13:16:03.970464+00:00"
  },
  "epoch_compute": {
-  "last_attempt": "2026-10-26T13:16:03.088106+00:00",
+  "last_attempt": "2026-10-26T22:45:11.339433+00:00",
   "last_error": null,
   "last_success": "2026-10-26T13:16:03.088115+00:00"
  },
  "frontiermath": {
-  "last_attempt": "2026-10-26T13:16:03.473733+00:00",
+  "last_attempt": "2026-10-26T22:45:11.340114+00:00",
   "last_error": null,
   "last_success": "2026-10-26T13:16:03.473742+00:00"
  },
  "manifold": {
-  "last_attempt": "2026-10-26T13:16:04.841992+00:00",
+  "last_attempt": "2026-10-26T22:45:12.240187+00:00",
   "last_error": null,
-  "last_success": "2026-10-26T13:16:04.841998+00:00"
+  "last_success": "2026-10-26T22:45:12.240194+00:00"
  },
  "metr": {
-  "last_attempt": "2026-10-26T13:16:02.805423+00:00",
+  "last_attempt": "2026-10-26T22:45:11.338680+00:00",
   "last_error": null,
   "last_success": "2026-10-26T13:16:02.805429+00:00"
  },
  "quotecheck": {
-  "last_attempt": "2026-10-26T13:16:04.842478+00:00",
+  "last_attempt": "2026-10-26T22:45:12.240705+00:00",
   "last_error": null,
   "last_success": "2026-10-23T05:04:14.946150+00:00"
  }
