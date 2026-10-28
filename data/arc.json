@@ -2,7 +2,7 @@
  "data": {
   "series": {
    "ARC-AGI-1": {
-    "generated_at": "2026-10-21T18:43:21.622Z",
+    "generated_at": "2026-10-28T16:04:23.365Z",
     "points": [
      {
       "date": "2023-11-03",
@@ -1686,6 +1686,24 @@
      },
      {
       "date": "2026-10-15",
+      "model": "Nemotron 3.5 Super VL (High)",
+      "org": "NVIDIA",
+      "value": 0.22666666666666668
+     },
+     {
+      "date": "2026-10-15",
+      "model": "Nemotron 3.5 Super VL (Medium)",
+      "org": "NVIDIA",
+      "value": 0.2016666666666667
+     },
+     {
+      "date": "2026-10-15",
+      "model": "Nemotron 3.5 Super VL (None)",
+      "org": "NVIDIA",
+      "value": 0.02
+     },
+     {
+      "date": "2026-10-15",
       "model": "Muse Spark Open (XHigh)",
       "org": "Meta AI",
       "value": 0.89
@@ -1707,24 +1725,6 @@
       "model": "Muse Spark Open (Low)",
       "org": "Meta AI",
       "value": 0.585
-     },
-     {
-      "date": "2026-10-15",
-      "model": "Nemotron 3.5 Super VL (High)",
-      "org": "NVIDIA",
-      "value": 0.22666666666666668
-     },
-     {
-      "date": "2026-10-15",
-      "model": "Nemotron 3.5 Super VL (Medium)",
-      "org": "NVIDIA",
-      "value": 0.2016666666666667
-     },
-     {
-      "date": "2026-10-15",
-      "model": "Nemotron 3.5 Super VL (None)",
-      "org": "NVIDIA",
-      "value": 0.02
      },
      {
       "date": "2026-10-16",
@@ -1792,7 +1792,7 @@
     "unit": "fraction solved"
    },
    "ARC-AGI-2": {
-    "generated_at": "2026-10-21T18:43:21.622Z",
+    "generated_at": "2026-10-28T16:04:23.366Z",
     "points": [
      {
       "date": "2023-11-03",
@@ -3488,6 +3488,24 @@
      },
      {
       "date": "2026-10-15",
+      "model": "Nemotron 3.5 Super VL (High)",
+      "org": "NVIDIA",
+      "value": 0.015277777777777777
+     },
+     {
+      "date": "2026-10-15",
+      "model": "Nemotron 3.5 Super VL (Medium)",
+      "org": "NVIDIA",
+      "value": 0.019444444444444445
+     },
+     {
+      "date": "2026-10-15",
+      "model": "Nemotron 3.5 Super VL (None)",
+      "org": "NVIDIA",
+      "value": 0.008333333333333333
+     },
+     {
+      "date": "2026-10-15",
       "model": "Muse Spark Open (XHigh)",
       "org": "Meta AI",
       "value": 0.575
@@ -3509,24 +3527,6 @@
       "model": "Muse Spark Open (Low)",
       "org": "Meta AI",
       "value": 0.12222222222222222
-     },
-     {
-      "date": "2026-10-15",
-      "model": "Nemotron 3.5 Super VL (High)",
-      "org": "NVIDIA",
-      "value": 0.015277777777777777
-     },
-     {
-      "date": "2026-10-15",
-      "model": "Nemotron 3.5 Super VL (Medium)",
-      "org": "NVIDIA",
-      "value": 0.019444444444444445
-     },
-     {
-      "date": "2026-10-15",
-      "model": "Nemotron 3.5 Super VL (None)",
-      "org": "NVIDIA",
-      "value": 0.008333333333333333
      },
      {
       "date": "2026-10-16",
@@ -3588,5 +3588,5 @@
   },
   "source_url": "https://arcprize.org/leaderboard"
  },
- "fetched_at": "2026-10-27T22:23:01.522464+00:00"
+ "fetched_at": "2026-10-28T22:41:13.721642+00:00"
 }
