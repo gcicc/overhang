@@ -183,3 +183,9 @@ footer table { font-size: 13px; }
   .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .tile .v { font-size: 20px; }
 }
+
+/* History: winters are shaded spans; milestones are ink dots. */
+.chart .winter { fill: var(--ink); opacity: 0.07; }
+.chart .winter-label { fill: var(--muted); font-size: 11px; }
+.chart .ms { fill: var(--ink); stroke: var(--panel); stroke-width: 1.5; }
+.chart .ms-first { fill: var(--panel); stroke: var(--ink); stroke-width: 2; }

@@ -589,3 +589,124 @@ def category_scatter(
             f'cy="{y(p["value"]):.1f}" r="4"><title>{escape(tip)}</title></circle>'
         )
     return _svg(h, body, label)
+
+
+SECTOR_SLOT = {"academia": 7, "industry": 4, "both": 3, "other": 0}
+HISTORY_LANES = [
+    ("academia", "Academia"),
+    ("industry", "Industry"),
+    ("government", "Government"),
+    ("superhuman", "Superhuman firsts"),
+]
+
+
+def history_timeline(
+    notable: list[dict], history: list[dict], superhuman: list[dict], today: float, label: str
+) -> str:
+    """One time axis from 1940: model compute above, milestone lanes below, winters shaded.
+
+    The x axis is piecewise linear with a marked break at 2010 (1940-2010 takes 45% of the
+    width) so the dense recent decade is readable. Compute dots are coloured by sector;
+    milestones and superhuman firsts stay in ink so they never borrow a sector colour.
+    """
+    origin, brk, end = 1940.0, 2010.0, math.ceil(today) + 0.5
+    share = 0.45
+    left = 118
+
+    def tx(v: float) -> float:
+        v = min(max(v, origin), end)
+        if v <= brk:
+            return share * (v - origin) / (brk - origin)
+        return share + (1 - share) * (v - brk) / (end - brk)
+
+    x = Scale(0, 1, left, W - PAD_R)
+    top, chart_bottom = PAD_T + 14, 250
+    lane_h = 26
+    lanes_top = chart_bottom + 14
+    bottom = lanes_top + lane_h * len(HISTORY_LANES)
+    h = bottom + PAD_B
+    body: list[str] = []
+    for w in (r for r in history if r["lane"] == "winter"):
+        a, b = x(tx(to_year(w["date"]))), x(tx(to_year(w["date_end"]) + 1))
+        tip = f"{w['title']}, about {w['date']}–{w['date_end']}"
+        body.append(
+            f'<rect class="winter" x="{a:.1f}" y="{top - 14}" width="{b - a:.1f}" '
+            f'height="{bottom - top + 14}"><title>{escape(tip)}</title></rect>'
+        )
+        body.append(
+            f'<text class="winter-label" x="{(a + b) / 2:.1f}" y="{top - 4}" '
+            f'text-anchor="middle">AI winter</text>'
+        )
+    for yr in (1940, 1950, 1960, 1970, 1980, 1990, 2000, 2010, 2015, 2020, 2025):
+        if yr > end:
+            continue
+        px = x(tx(yr))
+        body.append(f'<line class="grid" x1="{px:.1f}" x2="{px:.1f}" y1="{top}" y2="{bottom}"/>')
+        body.append(
+            f'<text class="tick" x="{px:.1f}" y="{bottom + 16}" text-anchor="middle">{yr}</text>'
+        )
+    bx = x(tx(brk))
+    body.append(f'<line class="axis-break" x1="{bx:.1f}" x2="{bx:.1f}" y1="{top}" y2="{bottom}"/>')
+    pts = [p for p in notable if p["value"] > 0]
+    if pts:
+        y0 = 10 ** math.floor(math.log10(min(p["value"] for p in pts)))
+        y1 = 10 ** math.ceil(math.log10(max(p["value"] for p in pts)))
+        y = Scale(y0, y1, chart_bottom, top, log=True)
+        lo, hi = round(math.log10(y0)), round(math.log10(y1))
+        for e in range(lo + (-lo) % 5, hi + 1, 5):
+            py = y(10**e)
+            body.append(
+                f'<line class="grid" x1="{left}" x2="{W - PAD_R}" y1="{py:.1f}" y2="{py:.1f}"/>'
+            )
+            body.append(
+                f'<text class="tick" x="{left - 6}" y="{py + 4:.1f}" text-anchor="end">'
+                f"{fmt_flop(10**e)}</text>"
+            )
+        body.append(
+            f'<text class="row-label" x="{left - 6}" y="{top - 4}" text-anchor="end">'
+            "Training FLOP</text>"
+        )
+        for p in pts:
+            tip = f"{p['model']} · {p['org'] or 'organisation not stated'} · {p['date']} · {fmt_flop(p['value'])} FLOP"
+            body.append(
+                f'<circle class="cat c{SECTOR_SLOT[p["sector"]]}" '
+                f'cx="{x(tx(to_year(p["date"]))):.1f}" cy="{y(p["value"]):.1f}" r="3">'
+                f"<title>{escape(tip)}</title></circle>"
+            )
+    lane_y = {}
+    for i, (key, name) in enumerate(HISTORY_LANES):
+        cy = lanes_top + i * lane_h + lane_h / 2
+        lane_y[key] = cy
+        body.append(
+            f'<line class="lane" x1="{left}" x2="{W - PAD_R}" y1="{cy:.1f}" y2="{cy:.1f}"/>'
+        )
+        body.append(
+            f'<text class="row-label" x="{left - 8}" y="{cy + 4:.1f}" text-anchor="end">{name}</text>'
+        )
+    last_x: dict[str, tuple[float, int]] = {}
+
+    def nudge(lane: str, px: float) -> float:
+        prev = last_x.get(lane)
+        k = (prev[1] + 1) % 3 if prev and px - prev[0] < 7 else 0
+        last_x[lane] = (px, k)
+        return lane_y[lane] + (0, -7, 7)[k]
+
+    marks = [
+        (to_year(r["date"]), r["lane"], r, False) for r in history if r["lane"] != "winter"
+    ] + [(to_year(e["date"]), "superhuman", e, True) for e in superhuman]
+    for t, lane, r, lv in sorted(marks, key=lambda m: (m[1], m[0])):
+        px = x(tx(t))
+        cy = nudge(lane, px)
+        if lv:
+            cls = "ms-first"
+            tip = f"{r['date']} · {r['achievement']} · {r['level'].replace('_', ' ')}"
+        else:
+            cls = "ms"
+            tip = f"{r['date']} · {r['title']}" + (f" · {r['who']}" if r.get("who") else "")
+        body.append(
+            f'<a href="#{escape(r["id"])}"><circle class="{cls}" cx="{px:.1f}" cy="{cy:.1f}" '
+            f'r="4.5"><title>{escape(tip)}</title></circle></a>'
+        )
+    nx = x(tx(today))
+    body.append(f'<line class="now" x1="{nx:.1f}" x2="{nx:.1f}" y1="{top}" y2="{bottom}"/>')
+    return _svg(h, body, label)

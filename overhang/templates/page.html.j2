@@ -22,6 +22,7 @@
     <a href="#agi">What counts as AGI?</a>
     <a href="#crowd">Crowd vs. CEOs</a>
     <a href="#superhuman">Superhuman Ledger</a>
+    <a href="#history">History</a>
     <a href="#claims">All claims</a>
     <a href="#sources">Sources</a>
     <a href="#glossary">Glossary</a>
@@ -285,6 +286,48 @@
       <td class="hide-sm note">{{ e.criterion }}</td>
       <td><span class="badge {{ 'contested' if e.level == 'contested' else 'achieved' if e.level == 'exceeded_best' else 'open' if e.level == 'matched_best' else 'window_open' }}">{{ e.level.replace('_', ' ') }}</span><div class="note">{{ e.confidence }} confidence</div></td>
     </tr>
+    {% endfor %}
+  </table></div>
+</section>
+
+<section id="history">
+  {% set hi = p.history %}
+  <h2>History</h2>
+  <p class="lede">AI since 1943 on one time axis. Above: training compute of {{ hi.notable.plotted }} notable models from Epoch AI, coloured by who built them. Below: sourced milestones in academia, industry and government, and the Superhuman Ledger's firsts. The two AI winters are shaded. The axis changes scale at 2010 (dotted line) so the last decade is readable.</p>
+  <div class="panel">
+    <div class="legend">
+      <span><i class="c7"></i>academia</span>
+      <span><i class="c4"></i>industry</span>
+      <span><i class="c3"></i>academia and industry</span>
+      <span><i class="c0"></i>other or not stated</span>
+      <span><i style="background:var(--ink)"></i>milestone</span>
+      <span><i style="border:2px solid var(--ink)"></i>superhuman first</span>
+      <span><i style="background:var(--ink);opacity:.15"></i>AI winter</span>
+    </div>
+    {{ hi.chart|safe }}
+  </div>
+  <p class="note">Epoch lists {{ hi.notable.total }} notable models; {{ hi.notable.without_compute }} have no published training-compute estimate and are not plotted, which leaves out most systems before 1980. Notability is Epoch's own criterion (citations, state of the art, historical importance). Winter dates are approximate and differ between accounts{% for w in hi.winters %}; {{ w.title }}: about {{ w.date }}–{{ w.date_end }} (<a href="{{ w.source_url }}">source</a>){% endfor %}.</p>
+  <div class="tbl-wrap"><table>
+    <tr><th>Date</th><th>Milestone</th><th class="hide-sm">Lane</th></tr>
+    {% for m in hi.milestones %}
+    {% set r = m.row %}
+    {% if m.lane == 'superhuman' %}
+    <tr>
+      <td class="when">{{ r.date[:7] if r.date_precision == 'month' else r.date }}</td>
+      <td><a href="#{{ r.id }}">{{ r.achievement }}</a><div class="note">{{ r.system }} · {{ r.org }} · see Superhuman Ledger</div></td>
+      <td class="hide-sm note">Superhuman first</td>
+    </tr>
+    {% else %}
+    <tr id="{{ r.id }}">
+      <td class="when">{{ r.date }}</td>
+      <td><a href="{{ r.source_url }}">{{ r.title }}</a>{% if r.who %}<div class="note">{{ r.who }}</div>{% endif %}
+        <blockquote>“{{ r.quote }}”</blockquote>
+        {% if r.public_note %}<div class="note">{{ r.public_note }}</div>{% endif %}
+        {% set q = r.quotecheck %}<div class="note">{{ r.source_type }} source{% if q %} · <span class="qc {{ 'bad' if q.status in ('not_found', 'partial') else '' }}">quote check: {{ q.status.replace('_', ' ') }}</span>{% endif %}</div>
+      </td>
+      <td class="hide-sm note">{{ m.lane|capitalize }}</td>
+    </tr>
+    {% endif %}
     {% endfor %}
   </table></div>
 </section>

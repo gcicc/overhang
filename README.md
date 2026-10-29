@@ -22,6 +22,7 @@ requests; a scheduled job fetches, commits JSON to `data/`, and renders.
 | What counts as AGI? | `data/curated/agi_definitions.csv` | curated, sourced, quote-checked weekly |
 | Crowd vs. CEOs | Manifold markets listed in `data/curated/manifold_markets.csv` | live |
 | Superhuman Ledger | `data/curated/superhuman.csv` | curated, sourced |
+| History | Epoch Notable AI Models (compute since 1950) + `data/curated/history.csv` + the Superhuman Ledger | live + curated, quote-checked weekly |
 
 ## Rules the build enforces
 

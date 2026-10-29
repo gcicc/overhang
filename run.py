@@ -330,6 +330,40 @@ def agi_definitions(qc: dict) -> list[dict]:
     return rows
 
 
+def build_history(today: float, superhuman: list[dict], qc: dict) -> dict:
+    """One timeline: Epoch notable-model compute, curated milestones, Superhuman Ledger."""
+    rows = [r for r in curated.load_history() if r.get("quote_verified") == "yes"]
+    for r in rows:
+        r["quotecheck"] = (qc.get("results") or {}).get(r["id"])
+    nb = cached("epoch_notable") or {"points": [], "rows_without_compute": 0, "rows_total": 0}
+    sectors = Counter(p["sector"] for p in nb["points"])
+    merged = [
+        {"id": r["id"], "date": r["date"], "lane": r["lane"], "title": r["title"], "row": r}
+        for r in rows
+        if r["lane"] != "winter"
+    ] + [
+        {
+            "id": e["id"],
+            "date": e["date"],
+            "lane": "superhuman",
+            "title": e["achievement"],
+            "row": e,
+        }
+        for e in superhuman
+    ]
+    return {
+        "milestones": sorted(merged, key=lambda m: m["date"], reverse=True),
+        "winters": [r for r in rows if r["lane"] == "winter"],
+        "notable": {
+            "plotted": len(nb["points"]),
+            "without_compute": nb["rows_without_compute"],
+            "total": nb["rows_total"],
+            "sectors": dict(sectors),
+        },
+        "chart": charts.history_timeline(nb["points"], rows, superhuman, today, "History of AI"),
+    }
+
+
 def build_payload(today_d: date) -> dict:
     today = trend.to_year(today_d.isoformat())
     superhuman = curated.load_superhuman()
@@ -371,6 +405,7 @@ def build_payload(today_d: date) -> dict:
             "bounded": measured_bounded(today),
             "quality": measured_quality(),
         },
+        "history": build_history(today, superhuman, qc),
         "race": build_race(today_d),
         "silicon": build_silicon(today_d),
         "status": cache.status_report(),
@@ -395,6 +430,7 @@ def main() -> None:
     claims = curated.load_claims()
     curated.load_superhuman()
     definitions = curated.load_agi_definitions()
+    history = curated.load_history()
     markets = curated.load_manifold_markets()
 
     if not args.render:
@@ -405,11 +441,14 @@ def main() -> None:
         cache.refresh("arc", sources.fetch_arc, force=f)
         cache.refresh("epoch_bench", sources.fetch_epoch_benchmarks, force=f)
         cache.refresh("epoch_hardware", sources.fetch_epoch_hardware, force=f)
+        cache.refresh("epoch_notable", sources.fetch_epoch_notable, force=f)
         cache.refresh("epoch_datacenters", sources.fetch_epoch_datacenters, force=f)
         cache.refresh("filings", filings.fetch_filings, force=f)
         cache.refresh("quotes", filings.fetch_quotes, force=f)
         cache.refresh("manifold", lambda: sources.fetch_manifold(markets), force=f)
-        cache.refresh("quotecheck", lambda: quotecheck.fetch(claims + definitions), force=f)
+        cache.refresh(
+            "quotecheck", lambda: quotecheck.fetch(claims + definitions + history), force=f
+        )
 
     payload = build_payload(datetime.now(UTC).date())
 

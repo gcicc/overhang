@@ -13,7 +13,7 @@ url: https://gcicc.github.io/overhang/
 ## Where this stands
 
 **Slice 1b shipped 2026-10-29 (SPEC "Race, Compute & Silicon").** Two new sections and a
-glossary. 34 tests pass, ruff clean, checked in a browser at 1280 and 390 px.
+glossary; History added the same day. 39 tests pass, ruff clean, checked in a browser at 1280 and 390 px.
 
 | Panel | State (2026-10-29) |
 |---|---|
@@ -23,6 +23,7 @@ glossary. 34 tests pass, ruff clean, checked in a browser at 1280 and 390 px.
 | Data centers | 15.2M H100e tracked across 96 sites; Google largest owner |
 | Filings | Latest quarter: Nvidia $96.2B, Broadcom $29.6B, AMD $11.5B. Hyperscaler capex TTM $573B combined |
 | Glossary | 29 terms with hover definitions and a Glossary section |
+| History | One timeline from 1940: 541 Epoch notable models with compute (547 without, counted not plotted), 23 sourced milestones + 2 AI winters in `history.csv`, and the 31 superhuman firsts. All 75 checkable quotes verbatim |
 | What counts as AGI? | 8 sourced definitions (2 measurable, 3 partly, 3 not); all quotes verbatim. Jensen Huang's 2026-09-06 "AGI has arrived" added as claim cu24 |
 
 Earlier state (slice 1, 2026-10-08):
@@ -52,8 +53,8 @@ Seed vendor roadmap claims (SPEC R6), e.g. Nvidia architecture ship dates, as qu
 placeholder address. Then Slice 2 as below.
 
 
-Slice 2: SPEC Sections 3 to 5 (frontier news and arXiv ranked by buzz; AI in the sciences;
-history), on the same pipeline.
+Slice 2: SPEC Sections 3 and 4 (frontier news and arXiv ranked by buzz; AI in the sciences),
+on the same pipeline. History (Section 5) has a first cut; researcher lineage is open.
 
 Published 2026-10-08 at https://gcicc.github.io/overhang/ (repo `gcicc/overhang`, Pages from
 `/docs` on `main`, branch build). Greg approved going straight to Tier 2, skipping the

@@ -111,6 +111,32 @@ def load_agi_definitions() -> list[dict]:
     return sorted(rows, key=lambda r: r["date"])
 
 
+HISTORY_LANES = {"academia", "industry", "government", "winter"}
+HISTORY_KINDS = {"paper", "event", "report", "company", "product", "policy", "award", "winter"}
+
+
+def load_history() -> list[dict]:
+    """History milestones. A winter is a span (date to date_end) and is drawn as shading."""
+    rows = _read("history.csv")
+    seen: set[str] = set()
+    for r in rows:
+        where = f"history.csv[{r.get('id')}]"
+        _require(r, ["id", "date", "lane", "kind", "title", "quote", "source_url"], where)
+        if r["id"] in seen:
+            raise CuratedError(f"{where}: duplicate id")
+        seen.add(r["id"])
+        for f in ("date", "date_end"):
+            if r.get(f) and not DATE_RE.match(r[f]):
+                raise CuratedError(f"{where}: bad {f} {r[f]!r}")
+        if r["lane"] not in HISTORY_LANES:
+            raise CuratedError(f"{where}: lane {r['lane']!r} not in {sorted(HISTORY_LANES)}")
+        if r["kind"] not in HISTORY_KINDS:
+            raise CuratedError(f"{where}: kind {r['kind']!r} not in {sorted(HISTORY_KINDS)}")
+        if (r["lane"] == "winter") != bool(r.get("date_end")):
+            raise CuratedError(f"{where}: a winter needs date_end, and only a winter has one")
+    return sorted(rows, key=lambda r: r["date"])
+
+
 def load_manifold_markets() -> list[dict]:
     rows = _read("manifold_markets.csv")
     for r in rows:

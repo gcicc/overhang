@@ -35,6 +35,7 @@ MAX_AGE: dict[str, timedelta] = {
     "arc": timedelta(days=1),
     "epoch_bench": timedelta(days=1),
     "epoch_hardware": timedelta(days=7),
+    "epoch_notable": timedelta(days=7),
     "epoch_datacenters": timedelta(days=7),
     # Filings change quarterly; a daily read catches a new 10-Q within a day.
     "filings": timedelta(days=1),

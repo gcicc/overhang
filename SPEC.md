@@ -59,6 +59,25 @@ Done criteria for 1b:
 - [ ] R6. Vendor roadmap claims (e.g. Nvidia architecture dates) in `claims.csv`, quote-verified.
       Not started: needs sourced quotes, never from recollection.
 
+### Section 5 History: first cut (added 2026-10-29, Greg)
+
+Greg asked for AI milestones as "both - same timeline": capability firsts and the history of
+the field on one axis. Built ahead of Sections 3–4.
+
+- One time axis from 1940 (piecewise, break at 2010). Above: Epoch *Notable AI Models*
+  training compute, coloured by sector (academia, industry, both, other). Below: lanes for
+  academia, industry and government milestones (`data/curated/history.csv`) and the
+  Superhuman Ledger's firsts. The two AI winters are shaded spans.
+- Researcher lineage is not built.
+
+Done criteria for History:
+
+- [x] H1. Every history row has a source and a quote confirmed verbatim at it; re-checked weekly
+      with the other ledgers.
+- [x] H2. Models without a compute estimate are counted on the page, not imputed.
+- [x] H3. Milestones and superhuman firsts never take a sector colour (tested).
+- [ ] H4. Researcher lineage.
+
 ## Done criteria (testable)
 
 - [ ] D1. One command refreshes all sources and renders the site. A scheduled job runs it unattended.

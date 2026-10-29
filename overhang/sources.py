@@ -23,6 +23,7 @@ from overhang import net
 
 METR_URL = "https://metr.org/assets/benchmark_results_1_1.yaml"
 EPOCH_FRONTIER_URL = "https://epoch.ai/data/frontier_ai_models.csv"
+EPOCH_NOTABLE_URL = "https://epoch.ai/data/notable_ai_models.csv"
 EPOCH_BENCH_URL = "https://epoch.ai/data/benchmark_data.zip"
 EPOCH_HARDWARE_URL = "https://epoch.ai/data/ml_hardware.csv"
 EPOCH_DATACENTERS_URL = "https://epoch.ai/data/data_centers/data_centers.zip"
@@ -92,6 +93,48 @@ def fetch_metr() -> dict:
 
 
 # --- Epoch -----------------------------------------------------------------
+
+
+def sector(categorization: str) -> str:
+    """Epoch lists one category per organisation ("Industry,Academia"); collapse to one."""
+    parts = {p.strip() for p in categorization.split(",") if p.strip()}
+    if parts == {"Academia"}:
+        return "academia"
+    if parts == {"Industry"}:
+        return "industry"
+    if parts >= {"Academia", "Industry"}:
+        return "both"
+    return "other"
+
+
+def fetch_epoch_notable() -> dict:
+    """Epoch Notable AI Models since 1950: the History backbone. Rows without compute are
+    counted, not imputed."""
+    rows = list(csv.DictReader(io.StringIO(net.get(EPOCH_NOTABLE_URL).text)))
+    points, missing = [], 0
+    for r in rows:
+        flop = _maybe_float(r["Training compute (FLOP)"])
+        date = r["Publication date"]
+        if flop is None or not date:
+            missing += 1
+            continue
+        points.append(
+            {
+                "model": r["Model"],
+                "org": r["Organization"],
+                "date": date,
+                "value": flop,
+                "sector": sector(r["Organization categorization"]),
+            }
+        )
+    points.sort(key=lambda p: p["date"])
+    return {
+        "unit": "FLOP",
+        "points": points,
+        "rows_without_compute": missing,
+        "rows_total": len(rows),
+        "source_url": "https://epoch.ai/data/notable-ai-models",
+    }
 
 
 def fetch_epoch_compute() -> dict:
