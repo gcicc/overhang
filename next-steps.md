@@ -23,6 +23,7 @@ glossary. 34 tests pass, ruff clean, checked in a browser at 1280 and 390 px.
 | Data centers | 15.2M H100e tracked across 96 sites; Google largest owner |
 | Filings | Latest quarter: Nvidia $96.2B, Broadcom $29.6B, AMD $11.5B. Hyperscaler capex TTM $573B combined |
 | Glossary | 29 terms with hover definitions and a Glossary section |
+| What counts as AGI? | 8 sourced definitions (2 measurable, 3 partly, 3 not); all quotes verbatim. Jensen Huang's 2026-09-06 "AGI has arrived" added as claim cu24 |
 
 Earlier state (slice 1, 2026-10-08):
 

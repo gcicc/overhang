@@ -169,3 +169,24 @@ def test_glossary_wraps_text_only_and_prefers_longest_term():
     assert "<svg><text>FLOP</text></svg>" in out and 'title="FLOP"' in out
     assert used == ["ARC-AGI", "AGI", "TTM"]
     assert out.count('<abbr class="term"') == 3
+
+
+# --- AGI definitions --------------------------------------------------------
+
+
+def test_agi_definitions_validate_and_reject_bad_measurable(tmp_path, monkeypatch):
+    import pytest
+
+    from overhang import curated
+
+    rows = curated.load_agi_definitions()
+    assert rows and all(r["measurable"] in curated.MEASURABLE for r in rows)
+    bad = tmp_path / "agi_definitions.csv"
+    bad.write_text(
+        "id,who,date,kind,quote,measurable,source_url\n"
+        "x1,Someone,2025,Economic,a quote,maybe,https://example.org\n",
+        encoding="utf-8",
+    )
+    monkeypatch.setattr(curated, "CURATED", tmp_path)
+    with pytest.raises(curated.CuratedError, match="measurable"):
+        curated.load_agi_definitions()

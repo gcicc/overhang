@@ -89,6 +89,28 @@ def load_claims() -> list[dict]:
     return rows
 
 
+MEASURABLE = {"yes", "partly", "no"}
+
+
+def load_agi_definitions() -> list[dict]:
+    """Definitions of AGI, each with a verbatim quote and whether it can be measured."""
+    rows = _read("agi_definitions.csv")
+    seen: set[str] = set()
+    for r in rows:
+        where = f"agi_definitions.csv[{r.get('id')}]"
+        _require(r, ["id", "who", "date", "kind", "quote", "measurable", "source_url"], where)
+        if r["id"] in seen:
+            raise CuratedError(f"{where}: duplicate id")
+        seen.add(r["id"])
+        if not DATE_RE.match(r["date"]):
+            raise CuratedError(f"{where}: bad date {r['date']!r}")
+        if r["measurable"] not in MEASURABLE:
+            raise CuratedError(
+                f"{where}: measurable {r['measurable']!r} not in {sorted(MEASURABLE)}"
+            )
+    return sorted(rows, key=lambda r: r["date"])
+
+
 def load_manifold_markets() -> list[dict]:
     rows = _read("manifold_markets.csv")
     for r in rows:

@@ -1,6 +1,6 @@
 {
  "data": {
-  "checked_at": "2026-10-23T05:04:14+00:00",
+  "checked_at": "2026-10-29T16:57:31+00:00",
   "results": {
    "cu01": {
     "detail": "",
@@ -94,9 +94,45 @@
     "detail": "",
     "status": "verbatim"
    },
+   "cu24": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "def01": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "def02": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "def03": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "def04": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "def05": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "def06": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "def07": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "def08": {
+    "detail": "",
+    "status": "verbatim"
+   },
    "gr01": {
-    "detail": "ConnectTimeout",
-    "status": "fetch_failed"
+    "detail": "",
+    "status": "verbatim"
    },
    "gr02": {
     "detail": "",
@@ -139,12 +175,12 @@
     "status": "verbatim"
    },
    "gr12": {
-    "detail": "ConnectTimeout",
-    "status": "fetch_failed"
+    "detail": "",
+    "status": "verbatim"
    },
    "gr13": {
-    "detail": "ConnectTimeout",
-    "status": "fetch_failed"
+    "detail": "",
+    "status": "verbatim"
    },
    "gr14": {
     "detail": "",
@@ -172,5 +208,5 @@
    }
   }
  },
- "fetched_at": "2026-10-23T05:04:14.945500+00:00"
+ "fetched_at": "2026-10-29T16:57:31.501628+00:00"
 }

@@ -19,6 +19,7 @@
     <a href="#measured">Measured</a>
     <a href="#race">The Race</a>
     <a href="#silicon">Compute &amp; Silicon</a>
+    <a href="#agi">What counts as AGI?</a>
     <a href="#crowd">Crowd vs. CEOs</a>
     <a href="#superhuman">Superhuman Ledger</a>
     <a href="#claims">All claims</a>
@@ -217,9 +218,37 @@
   {% endif %}
 </section>
 
+<section id="agi">
+  <h2>What counts as AGI?</h2>
+  <p class="lede">There is no single objective definition of AGI. The ones below range from a mathematical formula nobody can compute, to a scored test battery, to a contract that leaves the call to a panel. When someone says AGI has arrived, the first question is which of these they mean; most such claims name none.</p>
+  <div class="tiles">
+    {% for m, label in [('yes', 'Measurable'), ('partly', 'Partly measurable'), ('no', 'Not measurable')] %}
+    <div class="tile"><div class="k">{{ label }}</div><div class="v">{{ p.agi_definitions|selectattr('measurable', 'equalto', m)|list|length }}</div><div class="s">of {{ p.agi_definitions|length }} definitions</div></div>
+    {% endfor %}
+  </div>
+  <div class="tbl-wrap"><table>
+    <tr><th>When</th><th>Definition</th><th>How it would be tested</th><th>Measurable?</th></tr>
+    {% for d in p.agi_definitions %}
+    <tr id="{{ d.id }}">
+      <td class="when">{{ d.date[:7] if d.date|length > 4 else d.date }}</td>
+      <td><strong>{{ d.who }}</strong> <span class="note">{{ d.kind }}</span>
+        <blockquote>“{{ d.quote }}”</blockquote>
+        <div class="note"><a href="{{ d.source_url }}">source</a>
+          {% set q = d.quotecheck %}
+          {% if q %} · <span class="qc {{ 'bad' if q.status in ('not_found', 'partial') else '' }}">quote check: {{ q.status.replace('_', ' ') }}</span>{% endif %}
+          {% if d.public_note %} · {{ d.public_note }}{% endif %}</div>
+      </td>
+      <td class="note">{{ d.how_tested }}</td>
+      <td><span class="badge {{ 'achieved' if d.measurable == 'yes' else 'window_open' if d.measurable == 'partly' else 'passed_unverified' }}">{{ d.measurable }}</span></td>
+    </tr>
+    {% endfor %}
+  </table></div>
+  <p class="note">"Measurable" means the definition names a test that gives a score anyone can rerun. "Partly" means it names what to measure but not how. Quotes are verbatim and re-checked weekly with the claims. Declarations that AGI has arrived, such as <a href="#cu24">Jensen Huang's in September 2026</a>, are in the claims ledger, not here: a declaration is not a definition.</p>
+</section>
+
 <section id="crowd">
   <h2>Crowd vs. CEOs</h2>
-  <p class="lede">Prediction-market odds that AGI arrives before each year (Manifold), set against the windows lab leaders have given. These are separate markets with their own resolution criteria, and none uses a CEO's definition of AGI. Read the line as the crowd's rough timing, not as a calibrated distribution.</p>
+  <p class="lede">Prediction-market odds that AGI arrives before each year (Manifold), set against the windows lab leaders have given. These are separate markets with their own resolution criteria, and none uses a CEO's definition of AGI. All four share one loose definition and resolve on a moderator's judgement (<a href="#def08">see What counts as AGI?</a>). Read the line as the crowd's rough timing, not as a calibrated distribution.</p>
   {% if p.crowd %}
   <div class="panel">{{ p.crowd.chart|safe }}
     <p class="cap">Observed {{ p.crowd.observed_at }}. Below the line: every dated horizon from the current-claims set, sorted by when it opens and coloured by status.</p>

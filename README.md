@@ -19,6 +19,7 @@ requests; a scheduled job fetches, commits JSON to `data/`, and renders.
 | Measured | METR time horizons; Epoch frontier compute and FrontierMath; ARC-AGI | live |
 | The Race | computed from Epoch compute + benchmark hub (GPQA, SWE-bench, FrontierMath, METR copy) | live |
 | Compute & Silicon | Epoch ML hardware and data centers; SEC XBRL revenue (NVDA, AMD, AVGO) and capex (MSFT, GOOGL, AMZN, META); Yahoo weekly prices | live |
+| What counts as AGI? | `data/curated/agi_definitions.csv` | curated, sourced, quote-checked weekly |
 | Crowd vs. CEOs | Manifold markets listed in `data/curated/manifold_markets.csv` | live |
 | Superhuman Ledger | `data/curated/superhuman.csv` | curated, sourced |
 
@@ -53,6 +54,9 @@ requests; a scheduled job fetches, commits JSON to `data/`, and renders.
   `public_note` is shown to readers; `notes` is for curation and is not rendered.
 - A resolution: add `claim_id,superhuman_id,rationale` to `resolutions.csv`.
 - A market: add its id to `manifold_markets.csv`.
+- An AGI definition: add a row to `agi_definitions.csv` with a verbatim quote, the source URL
+  and `measurable` = yes / partly / no (yes only if it names a rerunnable scored test). A
+  declaration that AGI has arrived is a claim, not a definition: it goes in `claims.csv`.
 
 ## Sources and credit
 

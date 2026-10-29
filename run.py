@@ -322,6 +322,14 @@ def measured_quality() -> list[dict]:
     return out
 
 
+def agi_definitions(qc: dict) -> list[dict]:
+    """Verified definitions only, each with its latest quote-check result."""
+    rows = [d for d in curated.load_agi_definitions() if d.get("quote_verified") == "yes"]
+    for d in rows:
+        d["quotecheck"] = (qc.get("results") or {}).get(d["id"])
+    return rows
+
+
 def build_payload(today_d: date) -> dict:
     today = trend.to_year(today_d.isoformat())
     superhuman = curated.load_superhuman()
@@ -347,6 +355,7 @@ def build_payload(today_d: date) -> dict:
         "status_labels": resolve.STATUS_LABEL,
         "claims": sorted(claims, key=lambda c: c["date_said"], reverse=True),
         "superhuman": superhuman,
+        "agi_definitions": agi_definitions(qc),
         "org_split": (
             f"Of {len(superhuman)} events, {orgs['industry']} came from industry, "
             f"{orgs['academia']} from academia and {orgs['collaboration']} from collaborations."
@@ -385,6 +394,7 @@ def main() -> None:
     # Validate curated data before touching the network, so a bad row fails fast.
     claims = curated.load_claims()
     curated.load_superhuman()
+    definitions = curated.load_agi_definitions()
     markets = curated.load_manifold_markets()
 
     if not args.render:
@@ -399,7 +409,7 @@ def main() -> None:
         cache.refresh("filings", filings.fetch_filings, force=f)
         cache.refresh("quotes", filings.fetch_quotes, force=f)
         cache.refresh("manifold", lambda: sources.fetch_manifold(markets), force=f)
-        cache.refresh("quotecheck", lambda: quotecheck.fetch(claims), force=f)
+        cache.refresh("quotecheck", lambda: quotecheck.fetch(claims + definitions), force=f)
 
     payload = build_payload(datetime.now(UTC).date())
 

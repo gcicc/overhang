@@ -21,8 +21,8 @@ TEMPLATES = Path(__file__).resolve().parent / "templates"
 
 # Term as it appears in the rendered HTML (so "&amp;" not "&") -> plain-English definition.
 GLOSSARY = {
-    "AGI": "Artificial general intelligence: AI that can do most cognitive work as well as "
-    "a person. Definitions differ from speaker to speaker.",
+    "AGI": "Artificial general intelligence: roughly, AI that can do most cognitive work as "
+    "well as a person. There is no single objective definition; see What counts as AGI?",
     "METR": "Model Evaluation & Threat Research, a nonprofit that measures how long a task "
     "AI agents can complete.",
     "time horizon": "The length of task (measured by how long it takes a skilled human) "
