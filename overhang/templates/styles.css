@@ -114,6 +114,31 @@ h3 { font-size: 17px; margin: 22px 0 6px; }
 .chart .sh.lv-contested { fill: var(--contested); stroke: var(--contested); }
 .chart .sh.low { fill: var(--panel); }
 
+/* Categorical slots: dataviz reference palette, validated for CVD in light and dark.
+   c0 = any entity without a slot, named in its label or tooltip. */
+:root { --c0: #9a988f; --c1: #2a78d6; --c2: #eb6834; --c3: #1baf7a; --c4: #eda100; --c5: #e87ba4; --c6: #008300; --c7: #6250d6; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --c0: #6f6d66; --c1: #3987e5; --c2: #d95926; --c3: #199e70; --c4: #c98500; --c5: #d55181; --c6: #008300; --c7: #9085e9; }
+}
+:root[data-theme="dark"] { --c0: #6f6d66; --c1: #3987e5; --c2: #d95926; --c3: #199e70; --c4: #c98500; --c5: #d55181; --c6: #008300; --c7: #9085e9; }
+.chart .c0, .legend .c0 { fill: var(--c0); background: var(--c0); stroke: var(--c0); }
+.chart .c1, .legend .c1 { fill: var(--c1); background: var(--c1); stroke: var(--c1); }
+.chart .c2, .legend .c2 { fill: var(--c2); background: var(--c2); stroke: var(--c2); }
+.chart .c3, .legend .c3 { fill: var(--c3); background: var(--c3); stroke: var(--c3); }
+.chart .c4, .legend .c4 { fill: var(--c4); background: var(--c4); stroke: var(--c4); }
+.chart .c5, .legend .c5 { fill: var(--c5); background: var(--c5); stroke: var(--c5); }
+.chart .c6, .legend .c6 { fill: var(--c6); background: var(--c6); stroke: var(--c6); }
+.chart .c7, .legend .c7 { fill: var(--c7); background: var(--c7); stroke: var(--c7); }
+.chart .spell { stroke: none; }
+.chart .spell-label { fill: #fff; font-size: 11px; font-weight: 600; pointer-events: none; }
+.chart .bar { fill: var(--s0); }
+.chart path.line { fill: none; stroke-width: 2; }
+.chart .hit { fill: transparent; }
+.chart .hit:hover { fill: var(--ink); opacity: 0.5; }
+.chart .cat { stroke: var(--panel); stroke-width: 1.5; }
+.chart .end-label { fill: var(--ink); font-size: 11px; }
+.chart .end-label .swatch { stroke: none; }
+
 .legend { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 12px; color: var(--muted); margin: 0 4px 6px; }
 .legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
 .legend .passed { border: 1.5px solid var(--passed); }
@@ -135,6 +160,12 @@ blockquote { margin: 4px 0 0; padding-left: 10px; border-left: 2px solid var(--r
 .qc { font-size: 11px; color: var(--muted); }
 .qc.bad { color: var(--stale); font-weight: 600; }
 .note { font-size: 12px; color: var(--muted); }
+
+abbr.term { text-decoration: underline dotted var(--muted); text-underline-offset: 3px; cursor: help; }
+dl.glossary { display: grid; grid-template-columns: max-content 1fr; gap: 6px 16px; margin: 0 0 18px; font-size: 14px; }
+dl.glossary dt { font-weight: 600; }
+dl.glossary dd { margin: 0; color: var(--muted); }
+@media (max-width: 640px) { dl.glossary { grid-template-columns: 1fr; } dl.glossary dd { margin-bottom: 6px; } }
 
 footer { padding: 24px 0; font-size: 13px; color: var(--muted); }
 footer table { font-size: 13px; }

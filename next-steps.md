@@ -3,7 +3,7 @@ name: overhang
 type: maintain
 category: building
 tier: 02-Maintain
-updated: 2026-10-08
+updated: 2026-10-29
 note: started directly in 02-Maintain per Greg 2026-10-08
 url: https://gcicc.github.io/overhang/
 ---
@@ -11,6 +11,20 @@ url: https://gcicc.github.io/overhang/
 # OVERHANG — next steps
 
 ## Where this stands
+
+**Slice 1b shipped 2026-10-29 (SPEC "Race, Compute & Silicon").** Two new sections and a
+glossary. 34 tests pass, ruff clean, checked in a browser at 1280 and 390 px.
+
+| Panel | State (2026-10-29) |
+|---|---|
+| The Race | 5 metrics since 2023. Leaders now: compute OpenAI, GPQA Google, SWE-bench Anthropic, FrontierMath OpenAI, METR Anthropic. GPQA median spell 84 d overall, 27 d over the last 5 |
+| Country share | Frontier models since 2018: 43 US, 3 China, 8 other (n=54, disclosed compute only) |
+| Accelerators | Fastest AMD MI455X 5.0 PFLOP/s (16-bit); frontier 1.6×/yr (n=15 since 2017) |
+| Data centers | 15.2M H100e tracked across 96 sites; Google largest owner |
+| Filings | Latest quarter: Nvidia $96.2B, Broadcom $29.6B, AMD $11.5B. Hyperscaler capex TTM $573B combined |
+| Glossary | 29 terms with hover definitions and a Glossary section |
+
+Earlier state (slice 1, 2026-10-08):
 
 Slice 1 is built and verified locally (2026-10-08): Sections 1 and 2 of `SPEC.md`, plus the
 measured and crowd panels. `python run.py` builds `docs/index.html` from four live sources (METR,
@@ -30,6 +44,12 @@ was checked in a browser at 1280 px and 390 px with no horizontal overflow.
 ADR 0001: a Python pipeline renders one self-contained HTML page, the same approach as HANGAR.
 
 ## Next task
+
+Seed vendor roadmap claims (SPEC R6), e.g. Nvidia architecture ship dates, as quote-verified
+`claims.csv` rows. They need sourced quotes, never recollection. Optional: add the
+`SEC_CONTACT` repo secret (`gh secret set SEC_CONTACT -R gcicc/overhang`); without it SEC gets a
+placeholder address. Then Slice 2 as below.
+
 
 Slice 2: SPEC Sections 3 to 5 (frontier news and arXiv ranked by buzz; AI in the sciences;
 history), on the same pipeline.

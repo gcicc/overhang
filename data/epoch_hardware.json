@@ -1,0 +1,500 @@
+{
+ "data": {
+  "chips": [
+   {
+    "date": "2017-05-01",
+    "model": "Google TPU v2",
+    "org": "Google",
+    "price_usd": null,
+    "value": 46000000000000.0
+   },
+   {
+    "date": "2017-06-21",
+    "model": "NVIDIA Tesla V100 SXM2 16 GB",
+    "org": "NVIDIA",
+    "price_usd": null,
+    "value": 125000000000000.0
+   },
+   {
+    "date": "2017-06-21",
+    "model": "NVIDIA Tesla V100 PCIe 16 GB",
+    "org": "NVIDIA",
+    "price_usd": 10664.0,
+    "value": 112000000000000.0
+   },
+   {
+    "date": "2017-06-21",
+    "model": "NVIDIA V100",
+    "org": "NVIDIA",
+    "price_usd": null,
+    "value": 125000000000000.0
+   },
+   {
+    "date": "2017-07-01",
+    "model": "NVIDIA Tesla V100 SXM2",
+    "org": "NVIDIA",
+    "price_usd": 11500.0,
+    "value": 125000000000000.0
+   },
+   {
+    "date": "2018-03-27",
+    "model": "NVIDIA Tesla V100 DGXS 16 GB",
+    "org": "NVIDIA",
+    "price_usd": null,
+    "value": 125000000000000.0
+   },
+   {
+    "date": "2018-03-27",
+    "model": "NVIDIA Tesla V100 PCIe 32 GB",
+    "org": "NVIDIA",
+    "price_usd": 11458.0,
+    "value": 112000000000000.0
+   },
+   {
+    "date": "2018-03-27",
+    "model": "NVIDIA Tesla V100 DGXS 32 GB",
+    "org": "NVIDIA",
+    "price_usd": null,
+    "value": 125000000000000.0
+   },
+   {
+    "date": "2018-03-27",
+    "model": "NVIDIA Tesla V100 SXM3 32 GB",
+    "org": "NVIDIA",
+    "price_usd": null,
+    "value": 125000000000000.0
+   },
+   {
+    "date": "2018-03-27",
+    "model": "NVIDIA Tesla V100 SXM2 32 GB",
+    "org": "NVIDIA",
+    "price_usd": 11458.0,
+    "value": 125000000000000.0
+   },
+   {
+    "date": "2018-05-18",
+    "model": "Google TPU v3",
+    "org": "Google",
+    "price_usd": null,
+    "value": 123000000000000.0
+   },
+   {
+    "date": "2018-09-20",
+    "model": "NVIDIA GeForce RTX 2080 Ti 11GB",
+    "org": "NVIDIA",
+    "price_usd": 999.0,
+    "value": 113800000000000.0
+   },
+   {
+    "date": "2019-11-26",
+    "model": "NVIDIA Tesla V100S PCIe 32 GB",
+    "org": "NVIDIA",
+    "price_usd": null,
+    "value": 130000000000000.0
+   },
+   {
+    "date": "2020-01-01",
+    "model": "Google TPU v4i",
+    "org": "Google",
+    "price_usd": null,
+    "value": 138000000000000.0
+   },
+   {
+    "date": "2020-03-01",
+    "model": "NVIDIA A100",
+    "org": "NVIDIA",
+    "price_usd": null,
+    "value": 312000000000000.0
+   },
+   {
+    "date": "2020-05-14",
+    "model": "NVIDIA A100 SXM4 40 GB",
+    "org": "NVIDIA",
+    "price_usd": 15000.0,
+    "value": 312000000000000.0
+   },
+   {
+    "date": "2020-06-22",
+    "model": "NVIDIA A100 PCIe",
+    "org": "NVIDIA",
+    "price_usd": null,
+    "value": 312000000000000.0
+   },
+   {
+    "date": "2020-10-05",
+    "model": "NVIDIA A40 PCIe",
+    "org": "NVIDIA",
+    "price_usd": null,
+    "value": 149700000000000.0
+   },
+   {
+    "date": "2020-11-16",
+    "model": "NVIDIA A100 SXM4 80 GB",
+    "org": "NVIDIA",
+    "price_usd": null,
+    "value": 312000000000000.0
+   },
+   {
+    "date": "2021-05-20",
+    "model": "Google TPU v4",
+    "org": "Google",
+    "price_usd": null,
+    "value": 275000000000000.0
+   },
+   {
+    "date": "2021-08-21",
+    "model": "Tesla D1 Dojo",
+    "org": "Tesla",
+    "price_usd": null,
+    "value": 362000000000000.0
+   },
+   {
+    "date": "2021-11-08",
+    "model": "AMD Radeon Instinct MI250X",
+    "org": "AMD",
+    "price_usd": 14500.0,
+    "value": 383000000000000.0
+   },
+   {
+    "date": "2022-03-29",
+    "model": "NVIDIA GeForce RTX 3090 Ti",
+    "org": "NVIDIA",
+    "price_usd": 1999.0,
+    "value": 160000000000000.0
+   },
+   {
+    "date": "2022-05-10",
+    "model": "Intel Habana Gaudi2",
+    "org": "Intel",
+    "price_usd": null,
+    "value": 450000000000000.0
+   },
+   {
+    "date": "2022-08-11",
+    "model": "NVIDIA A800 SXM",
+    "org": "NVIDIA",
+    "price_usd": null,
+    "value": 311800000000000.0
+   },
+   {
+    "date": "2022-08-22",
+    "model": "Biren BR100",
+    "org": "Biren",
+    "price_usd": null,
+    "value": 1024000000000000.0
+   },
+   {
+    "date": "2022-09-20",
+    "model": "NVIDIA H100 PCIe",
+    "org": "NVIDIA",
+    "price_usd": null,
+    "value": 756000000000000.0
+   },
+   {
+    "date": "2022-09-20",
+    "model": "NVIDIA GeForce RTX 4090",
+    "org": "NVIDIA",
+    "price_usd": 1599.0,
+    "value": 330000000000000.0
+   },
+   {
+    "date": "2022-09-20",
+    "model": "NVIDIA H100 SXM5 80GB",
+    "org": "NVIDIA",
+    "price_usd": 33600.0,
+    "value": 989500000000000.0
+   },
+   {
+    "date": "2022-10-13",
+    "model": "NVIDIA L40",
+    "org": "NVIDIA",
+    "price_usd": null,
+    "value": 181000000000000.0
+   },
+   {
+    "date": "2022-10-15",
+    "model": "Amazon Trainium1",
+    "org": "Amazon AWS",
+    "price_usd": null,
+    "value": 190000000000000.0
+   },
+   {
+    "date": "2022-11-03",
+    "model": "NVIDIA A800 PCIe 80 GB",
+    "org": "NVIDIA",
+    "price_usd": null,
+    "value": 312000000000000.0
+   },
+   {
+    "date": "2022-11-08",
+    "model": "NVIDIA A800 PCIe 40 GB",
+    "org": "NVIDIA",
+    "price_usd": null,
+    "value": 311800000000000.0
+   },
+   {
+    "date": "2023-01-04",
+    "model": "AMD Instinct MI300A",
+    "org": "AMD",
+    "price_usd": null,
+    "value": 980600000000000.0
+   },
+   {
+    "date": "2023-03-21",
+    "model": "NVIDIA H800 SXM5",
+    "org": "NVIDIA",
+    "price_usd": null,
+    "value": 989000000000000.0
+   },
+   {
+    "date": "2023-03-21",
+    "model": "NVIDIA GH100",
+    "org": "NVIDIA",
+    "price_usd": null,
+    "value": 989500000000000.0
+   },
+   {
+    "date": "2023-03-21",
+    "model": "NVIDIA L4",
+    "org": "NVIDIA",
+    "price_usd": null,
+    "value": 121000000000000.0
+   },
+   {
+    "date": "2023-04-13",
+    "model": "AWS Inferentia2",
+    "org": "Amazon AWS",
+    "price_usd": null,
+    "value": 190000000000000.0
+   },
+   {
+    "date": "2023-05-18",
+    "model": "Meta MTIA v1 (MTIA 100)",
+    "org": "Meta",
+    "price_usd": null,
+    "value": 51200000000000.0
+   },
+   {
+    "date": "2023-08-08",
+    "model": "NVIDIA GH200",
+    "org": "NVIDIA",
+    "price_usd": null,
+    "value": 989500000000000.0
+   },
+   {
+    "date": "2023-08-29",
+    "model": "Google TPU v5e",
+    "org": "Google",
+    "price_usd": null,
+    "value": 197000000000000.0
+   },
+   {
+    "date": "2023-09-16",
+    "model": "NVIDIA L20 PCle",
+    "org": "NVIDIA",
+    "price_usd": 4299.0,
+    "value": 119500000000000.0
+   },
+   {
+    "date": "2023-11-09",
+    "model": "NVIDIA HGX H20",
+    "org": "NVIDIA",
+    "price_usd": 12000.0,
+    "value": 148000000000000.0
+   },
+   {
+    "date": "2023-11-09",
+    "model": "NVIDIA L2 PCle",
+    "org": "NVIDIA",
+    "price_usd": null,
+    "value": 96500000000000.0
+   },
+   {
+    "date": "2023-12-06",
+    "model": "Google TPU v5p",
+    "org": "Google",
+    "price_usd": null,
+    "value": 459000000000000.0
+   },
+   {
+    "date": "2023-12-06",
+    "model": "AMD Instinct MI300X",
+    "org": "AMD",
+    "price_usd": 15000.0,
+    "value": 1307400000000000.0
+   },
+   {
+    "date": "2023-12-06",
+    "model": "AMD Radeon Instinct MI308X",
+    "org": "AMD",
+    "price_usd": null,
+    "value": 653700000000000.0
+   },
+   {
+    "date": "2023-12-19",
+    "model": "MTT S4000",
+    "org": "Moore Threads (Tencent)",
+    "price_usd": null,
+    "value": 100000000000000.0
+   },
+   {
+    "date": "2024-04-10",
+    "model": "Meta MTIA v2 (MTIA 200)",
+    "org": "Meta",
+    "price_usd": null,
+    "value": 177000000000000.0
+   },
+   {
+    "date": "2024-05-14",
+    "model": "Google TPU v6e Trillium",
+    "org": "Google",
+    "price_usd": null,
+    "value": 918000000000000.0
+   },
+   {
+    "date": "2024-08-27",
+    "model": "Maia 100 (M100)",
+    "org": "Microsoft",
+    "price_usd": null,
+    "value": 800000000000000.0
+   },
+   {
+    "date": "2024-09-24",
+    "model": "Intel Habana Gaudi3",
+    "org": "Intel",
+    "price_usd": null,
+    "value": 1678000000000000.0
+   },
+   {
+    "date": "2024-10-10",
+    "model": "AMD Instinct MI325X",
+    "org": "AMD",
+    "price_usd": null,
+    "value": 1307400000000000.0
+   },
+   {
+    "date": "2024-10-15",
+    "model": "Huawei Ascend 910C",
+    "org": "Huawei",
+    "price_usd": null,
+    "value": 800000000000000.0
+   },
+   {
+    "date": "2024-11-15",
+    "model": "NVIDIA B200",
+    "org": "NVIDIA",
+    "price_usd": null,
+    "value": 2250000000000000.0
+   },
+   {
+    "date": "2024-11-18",
+    "model": "NVIDIA H200 SXM",
+    "org": "NVIDIA",
+    "price_usd": 30000.0,
+    "value": 989500000000000.0
+   },
+   {
+    "date": "2024-12-03",
+    "model": "Amazon Trainium2",
+    "org": "Amazon AWS",
+    "price_usd": null,
+    "value": 667000000000000.0
+   },
+   {
+    "date": "2025-02-15",
+    "model": "NVIDIA GB200",
+    "org": "NVIDIA",
+    "price_usd": 37000.0,
+    "value": 2500000000000000.0
+   },
+   {
+    "date": "2025-03-18",
+    "model": "NVIDIA RTX Pro 6000 Blackwell",
+    "org": "NVIDIA",
+    "price_usd": 13250.0,
+    "value": 503800000000000.0
+   },
+   {
+    "date": "2025-06-12",
+    "model": "AMD Instinct MI355X",
+    "org": "AMD",
+    "price_usd": 30000.0,
+    "value": 2516600000000000.0
+   },
+   {
+    "date": "2025-06-12",
+    "model": "AMD Instinct MI350X",
+    "org": "AMD",
+    "price_usd": 25000.0,
+    "value": 2309600000000000.0
+   },
+   {
+    "date": "2025-08-22",
+    "model": "NVIDIA GB300 (Blackwell Ultra)",
+    "org": "NVIDIA",
+    "price_usd": 43000.0,
+    "value": 2500000000000000.0
+   },
+   {
+    "date": "2025-08-22",
+    "model": "NVIDIA B300 (Blackwell Ultra)",
+    "org": "NVIDIA",
+    "price_usd": null,
+    "value": 2250000000000000.0
+   },
+   {
+    "date": "2025-10-01",
+    "model": "Huawei Ascend 920",
+    "org": "Huawei",
+    "price_usd": null,
+    "value": 900000000000000.0
+   },
+   {
+    "date": "2025-11-06",
+    "model": "Google TPU v7 Ironwood",
+    "org": "Google",
+    "price_usd": 12000.0,
+    "value": 2307000000000000.0
+   },
+   {
+    "date": "2025-12-02",
+    "model": "Amazon Trainium3",
+    "org": "Amazon AWS",
+    "price_usd": null,
+    "value": 671000000000000.0
+   },
+   {
+    "date": "2026-03-11",
+    "model": "Meta MTIA 300",
+    "org": "Meta",
+    "price_usd": null,
+    "value": 600000000000000.0
+   },
+   {
+    "date": "2026-07-23",
+    "model": "AMD Instinct MI455X",
+    "org": "AMD",
+    "price_usd": null,
+    "value": 5000000000000000.0
+   },
+   {
+    "date": "2026-08-02",
+    "model": "Google TPU v8i",
+    "org": "Google",
+    "price_usd": 17500.0,
+    "value": 1101000000000000.0
+   },
+   {
+    "date": "2026-09-30",
+    "model": "NVIDIA VR200 (Vera Rubin)",
+    "org": "NVIDIA",
+    "price_usd": null,
+    "value": 4000000000000000.0
+   }
+  ],
+  "rows_total": 183,
+  "source_url": "https://epoch.ai/data/machine-learning-hardware",
+  "undated_with_flops": 1
+ },
+ "fetched_at": "2026-10-29T16:22:28.544288+00:00"
+}

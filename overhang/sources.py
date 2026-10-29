@@ -6,7 +6,8 @@ so an upstream rename can never quietly empty a chart.
 
 Sources and terms (see ``data/staging/SOURCES.md`` for the recon):
 - METR time horizons: https://metr.org/ (no licence stated; attributed and linked)
-- Epoch AI frontier models and benchmarks hub: CC BY 4.0, https://epoch.ai/data
+- Epoch AI frontier models, benchmarks hub, ML hardware and data centers: CC BY 4.0,
+  https://epoch.ai/data
 - ARC Prize leaderboard JSON: undocumented endpoint, attributed and linked
 - Manifold Markets public API: read-only, no key
 """
@@ -23,6 +24,8 @@ from overhang import net
 METR_URL = "https://metr.org/assets/benchmark_results_1_1.yaml"
 EPOCH_FRONTIER_URL = "https://epoch.ai/data/frontier_ai_models.csv"
 EPOCH_BENCH_URL = "https://epoch.ai/data/benchmark_data.zip"
+EPOCH_HARDWARE_URL = "https://epoch.ai/data/ml_hardware.csv"
+EPOCH_DATACENTERS_URL = "https://epoch.ai/data/data_centers/data_centers.zip"
 ARC_URL = "https://arcprize.org/media/data/leaderboard/{version}.json"
 MANIFOLD_URL = "https://api.manifold.markets/v0/market/{id}"
 
@@ -100,7 +103,15 @@ def fetch_epoch_compute() -> dict:
         if flop is None or not date:
             missing += 1
             continue
-        points.append({"model": r["Model"], "org": r["Organization"], "date": date, "value": flop})
+        points.append(
+            {
+                "model": r["Model"],
+                "org": r["Organization"],
+                "country": r["Country (of organization)"],
+                "date": date,
+                "value": flop,
+            }
+        )
     points.sort(key=lambda p: p["date"])
     return {
         "unit": "FLOP",
@@ -137,6 +148,105 @@ def fetch_frontiermath() -> dict:
         "unit": "fraction solved",
         "points": points,
         "source_url": "https://epoch.ai/benchmarks/frontiermath",
+    }
+
+
+# Benchmarks from the hub that feed the Race and the quality tiles. Keys are the CSV
+# stems inside the zip; METR's own file has no organisation column, so the Race reads
+# Epoch's external copy of it, which does.
+EPOCH_BENCHMARKS = {
+    "gpqa_diamond": ("GPQA Diamond", "mean_score"),
+    "swe_bench_verified": ("SWE-bench Verified", "mean_score"),
+    "frontiermath_tiers_1_3_v2": ("FrontierMath T1–3", "mean_score"),
+    "metr_time_horizons_external": ("METR time horizon", "Time horizon"),
+}
+
+
+def fetch_epoch_benchmarks() -> dict:
+    blob = zipfile.ZipFile(io.BytesIO(net.get(EPOCH_BENCH_URL).content))
+    by_stem = {n.rsplit("/", 1)[-1].lower().removesuffix(".csv"): n for n in blob.namelist()}
+    out = {}
+    for stem, (label, column) in EPOCH_BENCHMARKS.items():
+        rows = list(csv.DictReader(io.StringIO(blob.read(by_stem[stem]).decode("utf-8"))))
+        points = []
+        for r in rows:
+            value = _maybe_float(r[column])
+            if value is None or not r["Release date"]:
+                continue
+            points.append(
+                {
+                    "model": r["Model version"],
+                    "org": r["Organization"],
+                    "date": r["Release date"],
+                    "value": value,
+                }
+            )
+        points.sort(key=lambda p: p["date"])
+        out[stem] = {"label": label, "points": points}
+    return {"benchmarks": out, "source_url": "https://epoch.ai/benchmarks"}
+
+
+def fetch_epoch_hardware() -> dict:
+    """ML accelerators with dense 16-bit tensor throughput and a release date.
+
+    16-bit is the comparison column because every generation reports it; FP8 and FP4
+    figures exist only for recent chips and would inflate the trend.
+    """
+    rows = list(csv.DictReader(io.StringIO(net.get(EPOCH_HARDWARE_URL).text)))
+    chips, undated = [], 0
+    for r in rows:
+        flops = _maybe_float(r["Tensor-FP16/BF16 performance (FLOP/s)"])
+        if flops is None:
+            continue
+        if not r["Release date"]:
+            undated += 1
+            continue
+        chips.append(
+            {
+                "model": r["Hardware name"],
+                "org": r["Manufacturer"],
+                "date": r["Release date"][:10],
+                "value": flops,
+                "price_usd": _maybe_float(r["Release price (USD)"]),
+            }
+        )
+    chips.sort(key=lambda c: c["date"])
+    return {
+        "chips": chips,
+        "rows_total": len(rows),
+        "undated_with_flops": undated,
+        "source_url": "https://epoch.ai/data/machine-learning-hardware",
+    }
+
+
+def fetch_epoch_datacenters() -> dict:
+    """Frontier data centers: owner, plus a dated H100-equivalent timeline per site.
+
+    Owners carry a confidence tag in the source ("Amazon #confident"); the tag is split
+    off and kept. Timeline rows dated in the future are Epoch's projections from permits
+    and announcements; they are kept and labelled, never mixed into "current".
+    """
+    blob = zipfile.ZipFile(io.BytesIO(net.get(EPOCH_DATACENTERS_URL).content))
+    sites = list(csv.DictReader(io.StringIO(blob.read("data_centers.csv").decode("utf-8"))))
+    owners = {}
+    for r in sites:
+        owner, _, tag = r["Owner"].partition("#")
+        owners[r["Name"]] = {
+            "owner": owner.strip() or "Owner not stated",
+            "confidence": tag.strip(),
+        }
+    timeline = []
+    rows = blob.read("data_center_timelines.csv").decode("utf-8")
+    for r in csv.DictReader(io.StringIO(rows)):
+        h100e = _maybe_float(r["H100 equivalents"])
+        if h100e is None or not r["Date"]:
+            continue
+        timeline.append({"site": r["Data center"], "date": r["Date"][:10], "h100e": h100e})
+    timeline.sort(key=lambda t: (t["site"], t["date"]))
+    return {
+        "owners": owners,
+        "timeline": timeline,
+        "source_url": "https://epoch.ai/data/ai-data-centers",
     }
 
 

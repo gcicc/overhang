@@ -6,9 +6,13 @@ they are never edited, only superseded.
 ## Architecture
 
 `run.py` → `overhang/cache.py` (per-source `max_age`) → `overhang/sources.py` (METR, Epoch,
-ARC, Manifold) + `overhang/quotecheck.py` → `overhang/curated.py` (validation) →
-`overhang/resolve.py` (claim status) + `overhang/trend.py` (fits) → `overhang/charts.py`
-(server-side SVG) → `overhang/render.py` + `templates/` → `docs/index.html`.
+ARC, Manifold) + `overhang/filings.py` (SEC, Yahoo) + `overhang/quotecheck.py` → `overhang/curated.py` (validation) →
+`overhang/resolve.py` (claim status) + `overhang/trend.py` (fits) + `overhang/race.py`
+(frontier holders) + `overhang/compute.py` (data centers) → `overhang/charts.py`
+(server-side SVG) → `overhang/render.py` (+ glossary pass) + `templates/` → `docs/index.html`.
+
+Colour follows the entity: every lab, chip maker and company takes its fixed slot from
+`race.SLOTS` (never enumeration order). New jargon on the page gets a `render.GLOSSARY` entry.
 
 ## Rules
 

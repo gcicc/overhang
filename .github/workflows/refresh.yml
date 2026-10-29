@@ -34,7 +34,11 @@ jobs:
             || echo "::warning::poppler-utils unavailable; PDF quotes will be unchecked"
           pip install requests jinja2
 
+      # SEC asks for a contact address in the User-Agent. Optional repo secret; without it
+      # a placeholder address is sent.
       - name: Refresh and render
+        env:
+          SEC_CONTACT: ${{ secrets.SEC_CONTACT }}
         run: python run.py
 
       - name: Commit and push

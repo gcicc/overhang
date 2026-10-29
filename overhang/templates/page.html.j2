@@ -17,10 +17,13 @@
   <nav class="toc">
     <a href="#ledger">The Ledger</a>
     <a href="#measured">Measured</a>
+    <a href="#race">The Race</a>
+    <a href="#silicon">Compute &amp; Silicon</a>
     <a href="#crowd">Crowd vs. CEOs</a>
     <a href="#superhuman">Superhuman Ledger</a>
     <a href="#claims">All claims</a>
     <a href="#sources">Sources</a>
+    <a href="#glossary">Glossary</a>
   </nav>
 </header>
 
@@ -74,7 +77,7 @@
     <div class="tile"><div class="k">Rows without compute</div><div class="v">{{ c.missing }} / {{ c.total }}</div><div class="s">newest models often undisclosed; not imputed</div></div>
   </div>
   <div class="panel">{{ c.chart|safe }}
-    <p class="cap">FLOP, log scale. Fit over frontier (record-setting) points from {{ c.fit_start }}. Source: <a href="{{ c.source_url }}">Epoch AI, Frontier AI Models</a>, CC BY 4.0.</p>
+    <p class="cap">FLOP, log scale; axis labels are in scientific notation (1e15 = 10^15). Fit over frontier (record-setting) points from {{ c.fit_start }}. Source: <a href="{{ c.source_url }}">Epoch AI, Frontier AI Models</a>, CC BY 4.0.</p>
   </div>
   {% else %}<p class="stale">Epoch compute data unavailable this build.</p>{% endif %}
 
@@ -84,10 +87,134 @@
     {% for name, s in b.series.items() %}
     <div class="tile"><div class="k">{{ name }}</div><div class="v">{{ s.best.value|pct if s.best else 'n/a' }}</div><div class="s">{% if s.best %}{{ s.best.model }} · {{ s.best.date }}{% endif %}</div></div>
     {% endfor %}
+    {% for q in p.measured.quality %}
+    <div class="tile"><div class="k">{{ q.name }}</div><div class="v">{{ q.best.value|pct }}</div><div class="s">{{ q.best.model }} · {{ q.best.date }} · Epoch's runs, n={{ q.n }}</div></div>
+    {% endfor %}
   </div>
   {% if b.chart %}<div class="panel">{{ b.chart|safe }}
     <p class="cap">Stepped line: best score to date. Points: every reported result. FrontierMath (tiers 1–3) from <a href="https://epoch.ai/benchmarks/frontiermath">Epoch AI</a>; ARC-AGI semi-private set from <a href="https://arcprize.org/leaderboard">ARC Prize</a> (undocumented endpoint), plotted by model release date. ARC's own human-panel row is drawn as a reference line, as ARC Prize lists it.</p>
   </div>{% endif %}
+</section>
+
+<section id="race">
+  <h2>The Race</h2>
+  {% set r = p.race %}
+  <p class="lede">Who held the frontier on each measured axis since {{ r.start[:4] if r else '2023' }}. The holder on a day is the lab whose model has the best result released on or before that day; matching a record does not take the lead. Everything is computed from the series. The only curated input merges names for the same lab (DeepMind and Google Brain count as Google).</p>
+  {% if r %}
+  <div class="panel">
+    <div class="legend">
+      {% for o in r.orgs %}<span><i class="c{{ o.slot }}"></i>{{ o.org }}</span>{% endfor %}
+    </div>
+    {{ r.chart|safe }}
+    <p class="cap">Each band is one metric; each segment is one unbroken spell at #1. Hover a segment for the model, the dates and the days held. Training compute: Epoch's Frontier AI Models. GPQA Diamond, SWE-bench Verified and FrontierMath: Epoch's own runs, which cover only the models Epoch evaluated. METR: Epoch's copy of METR's results, which lag by months. ARC-AGI is left out: its leaderboard ranks competition entries and individuals' scaffolds built on lab models, so its leader is often not a lab.</p>
+  </div>
+  <div class="tbl-wrap"><table>
+    <tr><th>Metric</th><th>Leader now</th><th>Lead changes</th><th>Median spell</th><th class="hide-sm">Last 5 spells</th><th class="hide-sm">Days at #1</th></tr>
+    {% for row in r.rows %}{% set t = row.tenure %}
+    <tr>
+      <td>{{ row.name }}</td>
+      <td><strong>{{ t.current.org }}</strong><div class="note">{{ t.current.model }} · since {{ t.current.start }} ({{ t.current.days }} days, ongoing)</div></td>
+      <td>{{ t.lead_changes }}</td>
+      <td>{{ '%.0f days'|format(t.median_tenure_days) if t.median_tenure_days is not none else 'n/a' }}<div class="note">n={{ t.completed_n }} completed</div></td>
+      <td class="hide-sm">{{ '%.0f days'|format(t.recent_median_days) if t.recent_median_days is not none else 'n/a' }}</td>
+      <td class="hide-sm note">{% for org, d in t.days_by_org.items() %}{{ org }} {{ d }}{{ ', ' if not loop.last }}{% endfor %}</td>
+    </tr>
+    {% endfor %}
+  </table></div>
+  <p class="note">Median spell uses completed spells only. The current spell is still running, and a spell already under way when the window opens is cut off at its start, so both are left out rather than counted short. "Last 5 spells" is the median of the five most recent completed spells (shown when there are at least three). A value below the overall median means the lead is changing hands faster.</p>
+  {% if r.share %}
+  <h3>Where frontier models come from</h3>
+  <div class="tiles">
+    {% for k, v in r.share.totals.items() %}
+    <div class="tile"><div class="k">{{ k }}, since 2018</div><div class="v">{{ '%.0f'|format(100 * v / r.share.n) }}%</div><div class="s">{{ '%.1f'|format(v) }} of {{ r.share.n }} models</div></div>
+    {% endfor %}
+  </div>
+  <div class="tbl-wrap"><table>
+    <tr><th>Year</th><th>US</th><th>China</th><th>Other</th></tr>
+    {% for y, row in r.share.by_year.items() %}
+    <tr><td class="when">{{ y }}</td><td>{{ '%.1f'|format(row.US) }}</td><td>{{ '%.1f'|format(row.China) }}</td><td>{{ '%.1f'|format(row.Other) }}</td></tr>
+    {% endfor %}
+  </table></div>
+  <p class="note">Epoch's Frontier AI Models (in the top 10 by training compute when released) with disclosed compute, by the developer's country. A model from labs in two countries counts half to each. Only models whose compute is known are counted; if Chinese labs disclose less often, their share is understated.</p>
+  {% endif %}
+  {% else %}<p class="stale">Race data unavailable this build.</p>{% endif %}
+</section>
+
+<section id="silicon">
+  <h2>Compute &amp; Silicon</h2>
+  <p class="lede">The hardware and money under the models: how fast the chips are, who has installed them, what chip makers sold and hyperscalers spent (filed figures), and how the market prices it.</p>
+  {% set si = p.silicon %}
+  {% set hw = si.hardware %}
+  {% if hw %}
+  <h3>Accelerators: 16-bit throughput by release date (Epoch AI)</h3>
+  <div class="tiles">
+    <div class="tile"><div class="k">Fastest chip</div><div class="v">{{ '%.1f'|format(hw.best.value / 1e15) }} PFLOP/s</div><div class="s">{{ hw.best.model }} · {{ hw.best.org }} · {{ hw.best.date }}</div></div>
+    {% if hw.fit %}<div class="tile"><div class="k">Frontier growth (our fit)</div><div class="v">{{ '%.1f'|format(hw.fit.growth_per_year) }}× / yr</div><div class="s">doubling {{ hw.fit.doubling_days|days }}; n={{ hw.fit.n }} record-setting chips, {{ hw.fit.window_start }} → {{ hw.fit.window_end }}</div></div>{% endif %}
+    {% if hw.best_ppd %}<div class="tile"><div class="k">Best 16-bit FLOP/s per $</div><div class="v">{{ '%.2g'|format(hw.best_ppd.value) }}</div><div class="s">{{ hw.best_ppd.model }} · only {{ hw.priced }} chips have a launch price</div></div>{% endif %}
+  </div>
+  <div class="panel">
+    <div class="legend">
+      {% for sl, org in hw.legend %}<span><i class="c{{ sl }}"></i>{{ org }}</span>{% endfor %}<span><i class="c0"></i>other makers (named on hover)</span>
+    </div>
+    {{ hw.chart|safe }}
+    {{ hw.ribbon|safe }}
+    <p class="cap">Dense 16-bit (FP16/BF16) tensor throughput, log scale. Every generation reports this figure; FP8 and FP4 exist only for recent chips and would inflate the trend. Line: OLS fit of log₂ throughput over record-setting chips from {{ hw.fit_start[:4] }}. Band: which maker had the fastest chip released. {{ hw.n }} chips plotted; {{ hw.undated }} with a throughput figure but no release date are left out. Source: <a href="{{ hw.source_url }}">Epoch AI, Machine Learning Hardware</a>, CC BY 4.0.</p>
+  </div>
+  {% endif %}
+
+  {% set dc = si.datacenters %}
+  {% if dc %}
+  <h3>Installed compute by owner (Epoch AI data centers)</h3>
+  <div class="tiles">
+    <div class="tile"><div class="k">Tracked total now</div><div class="v">{{ '%.1f'|format(dc.current_total / 1e6) }}M H100e</div><div class="s">across the {{ dc.sites }} sites Epoch tracks</div></div>
+    <div class="tile"><div class="k">Largest owner</div><div class="v">{{ dc.top[0].owner }}</div><div class="s">{{ '{:,.0f}'.format(dc.top[0].current) }} H100e</div></div>
+  </div>
+  <div class="panel">{{ dc.chart|safe }}
+    <p class="cap">H100-equivalents operating today at the sites in Epoch's dataset, by owner: the company that owns the site, which is not always the lab using it. This is a sample of the largest AI data centers, built from permits, satellite imagery and disclosures, not all the world's AI compute. Source: <a href="{{ dc.source_url }}">Epoch AI, AI Data Centers</a>, CC BY 4.0.</p>
+  </div>
+  <div class="tbl-wrap"><table>
+    <tr><th>Owner</th><th>Operating now (H100e)</th><th>Planned (Epoch projection)</th></tr>
+    {% for o in dc.owners if o.current > 0 or o.planned %}
+    <tr><td>{{ o.owner }}</td><td>{{ '{:,.0f}'.format(o.current) }}</td><td>{% if o.planned %}{{ '{:,.0f}'.format(o.planned) }} <span class="note">by {{ o.planned_by[:7] }}</span>{% else %}—{% endif %}</td></tr>
+    {% endfor %}
+  </table></div>
+  <p class="note">"Planned" is every site an owner has at its final timeline value: finished sites at what they run now, unfinished ones at Epoch's projection from announcements and permits. It is shown only for owners with at least one unfinished site, and the projected part is not measured capacity.</p>
+  {% endif %}
+
+  {% set fl = si.filings %}
+  {% if fl %}
+  <h3>What chip makers sold: quarterly revenue filed with the SEC</h3>
+  <div class="tiles">
+    {% for name, pt in fl.latest_revenue.items() %}
+    <div class="tile"><div class="k">{{ name }}, latest quarter</div><div class="v">${{ '%.1f'|format(pt.value / 1e9) }}B</div><div class="s">quarter ending {{ pt.end }}{% if pt.derived %} · derived{% endif %}</div></div>
+    {% endfor %}
+  </div>
+  <div class="panel">{{ fl.revenue_chart|safe }}
+    <p class="cap">Total revenue per fiscal quarter, plotted at the quarter's end date (Nvidia's fiscal year ends in late January). Log scale. Where a company files only the full year, Q4 is derived as the year minus its three quarters. Nvidia reports data-center revenue as a segment, which SEC's company-facts API does not carry, so the series is total revenue. TSMC files annual IFRS figures in TWD and is not shown here. Source: <a href="{{ fl.source_url }}">SEC EDGAR XBRL</a>.</p>
+  </div>
+  <h3>What hyperscalers spent: capital expenditure filed with the SEC</h3>
+  <div class="tiles">
+    <div class="tile"><div class="k">Four combined, trailing 12 months</div><div class="v">${{ '%.0f'|format(fl.capex_ttm_total / 1e9) }}B</div><div class="s">each company through its latest filing</div></div>
+    {% for name, t in fl.capex_ttm.items() %}
+    <div class="tile"><div class="k">{{ name }}, {{ t.basis }}</div><div class="v">${{ '%.0f'|format(t.value / 1e9) }}B</div><div class="s">through {{ t.through }}</div></div>
+    {% endfor %}
+  </div>
+  <div class="panel">{{ fl.capex_chart|safe }}
+    <p class="cap">Purchases of property and equipment from the cash-flow statement, per fiscal year (Microsoft's ends in June). This is all capex; AI data centers are now most of it, but not all. Trailing 12 months = last fiscal year + this year to date − the same span a year earlier. Assets acquired under finance leases are not in this line. Source: <a href="{{ fl.source_url }}">SEC EDGAR XBRL</a>.</p>
+  </div>
+  {% endif %}
+
+  {% set qt = si.quotes %}
+  {% if qt %}
+  <h3>How the market prices it: share prices rebased to 100</h3>
+  <div class="panel">{{ qt.chart|safe }}
+    <p class="cap">Weekly closes over five years, each rebased to 100 at the first week, log scale. The S&amp;P 500 (grey) is the baseline. Prices are not adjusted for dividends. Source: Yahoo Finance.</p>
+  </div>
+  <div class="tbl-wrap"><table>
+    <tr><th>Company</th><th>Multiple since {{ qt.perf[0].since }}</th><th>As of</th></tr>
+    {% for q in qt.perf %}<tr><td>{{ q.name }}</td><td>{{ '%.1f'|format(q.multiple) }}×</td><td class="when">{{ q.asof }}</td></tr>{% endfor %}
+  </table></div>
+  {% endif %}
 </section>
 
 <section id="crowd">
@@ -160,6 +287,8 @@
   {% endfor %}
 </section>
 
+<!--GLOSSARY-->
+
 <footer id="sources">
   <h2 style="font-size:20px;color:var(--ink)">Sources and freshness</h2>
   <p>Data is fetched on a schedule and committed; the page itself makes no data requests. A failed fetch keeps the last good copy and is flagged here.</p>
@@ -169,7 +298,7 @@
     <tr><td>{{ name }}</td><td>{{ (s.fetched_at or 'never')[:16].replace('T', ' ') }}</td><td class="{{ 'stale' if s.stale else '' }}">{{ s.age }}{% if s.stale %} · STALE{% endif %}</td><td>{{ s.last_error or '' }}</td></tr>
     {% endfor %}
   </table></div>
-  <p>Credits: METR; Epoch AI (CC BY 4.0); ARC Prize; Manifold Markets. Claims and the Superhuman Ledger are hand-curated with a source for every row; the build fails on a row without one.</p>
+  <p>Credits: METR; Epoch AI (CC BY 4.0); ARC Prize; Manifold Markets; SEC EDGAR; Yahoo Finance. Claims and the Superhuman Ledger are hand-curated with a source for every row; the build fails on a row without one.</p>
 </footer>
 </main>
 </body>

@@ -34,6 +34,31 @@ history of milestones in academia and industry.
 5. **History.** Academia and industry lanes from 1943, with the AI winters shaded. Backbone: Epoch
    *Notable AI Models* (compute on a log axis). Plus researcher lineage.
 
+### Slice 1b: Race, Compute & Silicon (added 2026-10-29, Greg)
+
+Requested 2026-10-29: "growth in computing, LLM quality, leading company vs. time", plus chip
+companies such as Nvidia. Greg weighted the race as "one panel among several", so ideas 1–3
+were built together.
+
+- **The Race.** Frontier holder over time per metric (training compute, GPQA Diamond, SWE-bench
+  Verified, FrontierMath T1–3, METR), lead changes, completed-spell tenure; frontier-model share
+  by country.
+- **Compute & Silicon.** Accelerator throughput and FLOP/$ by maker (Epoch ML hardware); installed
+  H100e by owner with Epoch projections kept separate; filed quarterly revenue (NVDA, AMD, AVGO)
+  and capex (MSFT, GOOGL, AMZN, META) with TTM; five-year price index (NVDA, AMD, AVGO, TSM, S&P).
+- **Quality.** GPQA Diamond and SWE-bench Verified best-to-date tiles.
+- **Glossary.** Every acronym explained on hover and in a Glossary section (Greg, 2026-10-29).
+
+Done criteria for 1b:
+
+- [x] R1. Holder spells, tie rule, censoring and alias merge are unit-tested on synthetic data.
+- [x] R2. Filed figures only: year-long facts from 10-Ks only, derived Q4 marked, TTM tested.
+- [x] R3. Projections never counted as current (tested).
+- [x] R4. Colour follows the entity across every chart (`race.SLOTS`).
+- [x] R5. Every acronym on the page has a hover definition and a glossary entry; none inside SVG.
+- [ ] R6. Vendor roadmap claims (e.g. Nvidia architecture dates) in `claims.csv`, quote-verified.
+      Not started: needs sourced quotes, never from recollection.
+
 ## Done criteria (testable)
 
 - [ ] D1. One command refreshes all sources and renders the site. A scheduled job runs it unattended.

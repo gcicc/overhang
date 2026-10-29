@@ -16,7 +16,18 @@ from collections import Counter
 from datetime import UTC, date, datetime
 from pathlib import Path
 
-from overhang import cache, charts, curated, quotecheck, resolve, sources, trend
+from overhang import (
+    cache,
+    charts,
+    compute,
+    curated,
+    filings,
+    quotecheck,
+    race,
+    resolve,
+    sources,
+    trend,
+)
 from overhang.render import render
 
 ROOT = Path(__file__).resolve().parent
@@ -118,6 +129,199 @@ def measured_bounded(today: float) -> dict:
     return {"series": series, "chart": chart}
 
 
+RACE_START = "2023-01-01"
+HARDWARE_FIT_START = "2016-01-01"
+
+
+def build_race(today_d: date) -> dict | None:
+    """Frontier-holder spells per metric, from 2023, with tenure statistics.
+
+    ARC-AGI is deliberately absent: its leaderboard ranks competition entries and
+    individuals' scaffolds on top of lab models, so its leader is often not a lab.
+    """
+    today = today_d.isoformat()
+    metrics: list[tuple[str, list[dict]]] = []
+    comp = cached("epoch_compute")
+    if comp:
+        metrics.append(("Training compute", comp["points"]))
+    bench = (cached("epoch_bench") or {}).get("benchmarks", {})
+    for stem in sources.EPOCH_BENCHMARKS:
+        if stem in bench and bench[stem]["points"]:
+            metrics.append((bench[stem]["label"], bench[stem]["points"]))
+    if not metrics:
+        return None
+    rows = []
+    for name, pts in metrics:
+        sp = race.spells(pts, today, RACE_START)
+        if sp:
+            rows.append({"name": name, "spells": sp, "tenure": race.tenure(sp)})
+    days: Counter = Counter()
+    for r in rows:
+        days.update(r["tenure"]["days_by_org"])
+    orgs = sorted(days, key=lambda o: -days[o])
+    chart = charts.ribbon_chart(
+        rows, trend.to_year(RACE_START), trend.to_year(today), race.slot, "The Race"
+    )
+    share = race.country_share(comp["points"], 2018) if comp else None
+    return {
+        "rows": rows,
+        "start": RACE_START,
+        "orgs": [{"org": o, "slot": race.slot(o), "days": days[o]} for o in orgs],
+        "chart": chart,
+        "share": share,
+    }
+
+
+def build_silicon(today_d: date) -> dict:
+    today_s = today_d.isoformat()
+    today = trend.to_year(today_s)
+    out: dict = {}
+    hw = cached("epoch_hardware")
+    if hw and hw["chips"]:
+        chips = hw["chips"]
+        fit = trend.fit_doubling(trend.frontier(chips), HARDWARE_FIT_START)
+        ppd = compute.price_performance(chips)
+        sp = race.spells(chips, today_s, "2016-01-01")
+        out["hardware"] = {
+            "best": trend.best_to_date(chips),
+            "fit": fit,
+            "fit_start": HARDWARE_FIT_START,
+            "n": len(chips),
+            "undated": hw["undated_with_flops"],
+            "priced": len(ppd),
+            "best_ppd": trend.best_to_date(ppd),
+            "chart": charts.category_scatter(
+                chips,
+                fit,
+                today,
+                race.slot,
+                fmt=charts.fmt_flop,
+                x0=2012.0,
+                label="Accelerator 16-bit throughput by release date",
+            ),
+            "ribbon": charts.ribbon_chart(
+                [{"name": "Fastest chip", "spells": sp}],
+                2016.0,
+                today,
+                race.slot,
+                "Fastest accelerator by maker",
+            ),
+            "spells": sp,
+            "legend": sorted(
+                {(race.slot(c["org"]), race.normalise_org(c["org"])) for c in chips}
+                - {(0, race.normalise_org(c["org"])) for c in chips}
+            ),
+            "source_url": hw["source_url"],
+        }
+    dc = cached("epoch_datacenters")
+    if dc and dc["timeline"]:
+        agg = compute.by_owner(dc, today_s)
+        top = [o for o in agg["owners"] if o["current"] > 0][:10]
+        out["datacenters"] = {
+            **agg,
+            "top": top,
+            "current_total": sum(o["current"] for o in agg["owners"]),
+            "chart": charts.hbar_chart(
+                [
+                    (o["owner"], o["current"], f"{o['owner']}: {o['current']:,.0f} H100e")
+                    for o in top
+                ],
+                fmt_h100e,
+                "Installed H100-equivalents by owner, tracked sites",
+            ),
+            "source_url": dc["source_url"],
+        }
+    fl = cached("filings")
+    if fl:
+        rev = {
+            v["name"]: {
+                "slot": race.slot(v["name"]),
+                "points": [(trend.to_year(p["end"]), p["value"]) for p in v["points"]],
+            }
+            for v in fl["revenue"].values()
+        }
+        cap = {
+            v["name"]: {
+                "slot": race.slot(v["name"]),
+                "points": [(trend.to_year(p["end"]), p["value"]) for p in v["annual"]],
+            }
+            for v in fl["capex"].values()
+        }
+        latest = {v["name"]: v["points"][-1] for v in fl["revenue"].values() if v["points"]}
+        ttm = {v["name"]: v["ttm"] for v in fl["capex"].values() if v["ttm"]}
+        out["filings"] = {
+            "revenue_chart": charts.lines_chart(
+                rev, today, fmt=fmt_usd, log=True, x0=2018.0, label="Quarterly revenue, filed"
+            ),
+            "capex_chart": charts.lines_chart(
+                cap, today, fmt=fmt_usd, log=False, x0=2015.0, label="Annual capex, filed"
+            ),
+            "latest_revenue": latest,
+            "capex_ttm": ttm,
+            "capex_ttm_total": sum(t["value"] for t in ttm.values()),
+            "derived_any": any(p["derived"] for v in fl["revenue"].values() for p in v["points"]),
+            "source_url": fl["source_url"],
+        }
+    qt = cached("quotes")
+    if qt and qt["quotes"]:
+        series, perf = {}, []
+        for q in qt["quotes"].values():
+            s = q["series"]
+            if not s:
+                continue
+            base = s[0]["close"]
+            series[q["name"]] = {
+                # The S&P 500 is the baseline, drawn neutral; the companies take slots.
+                "slot": race.slot(q["name"]),
+                "points": [(trend.to_year(p["date"]), 100 * p["close"] / base) for p in s],
+            }
+            perf.append(
+                {
+                    "name": q["name"],
+                    "since": s[0]["date"],
+                    "multiple": s[-1]["close"] / base,
+                    "asof": s[-1]["date"],
+                }
+            )
+        out["quotes"] = {
+            "chart": charts.lines_chart(
+                series,
+                today,
+                fmt=lambda v: f"{v:,.0f}",
+                log=True,
+                label="Share price, rebased to 100 five years ago",
+            ),
+            "perf": sorted(perf, key=lambda p: -p["multiple"]),
+        }
+    return out
+
+
+def fmt_usd(v: float) -> str:
+    if v == 0:
+        return "$0"
+    if v >= 1e12:
+        return f"${v / 1e12:.1f}T"
+    if v >= 1e9:
+        return f"${v / 1e9:.0f}B"
+    return f"${v / 1e6:.0f}M"
+
+
+def fmt_h100e(v: float) -> str:
+    return f"{v / 1e6:.2f}M" if v >= 1e6 else f"{v / 1e3:.0f}k"
+
+
+def measured_quality() -> list[dict]:
+    """Best-to-date tiles for the extra hub benchmarks (bounded scores)."""
+    bench = (cached("epoch_bench") or {}).get("benchmarks", {})
+    out = []
+    for stem in ("gpqa_diamond", "swe_bench_verified"):
+        b = bench.get(stem)
+        if b and b["points"]:
+            best = trend.best_to_date(b["points"])
+            out.append({"name": b["label"], "best": best, "n": len(b["points"])})
+    return out
+
+
 def build_payload(today_d: date) -> dict:
     today = trend.to_year(today_d.isoformat())
     superhuman = curated.load_superhuman()
@@ -156,7 +360,10 @@ def build_payload(today_d: date) -> dict:
             "metr": measured_metr(today),
             "compute": measured_compute(today),
             "bounded": measured_bounded(today),
+            "quality": measured_quality(),
         },
+        "race": build_race(today_d),
+        "silicon": build_silicon(today_d),
         "status": cache.status_report(),
     }
     mk = cached("manifold")
@@ -186,6 +393,11 @@ def main() -> None:
         cache.refresh("epoch_compute", sources.fetch_epoch_compute, force=f)
         cache.refresh("frontiermath", sources.fetch_frontiermath, force=f)
         cache.refresh("arc", sources.fetch_arc, force=f)
+        cache.refresh("epoch_bench", sources.fetch_epoch_benchmarks, force=f)
+        cache.refresh("epoch_hardware", sources.fetch_epoch_hardware, force=f)
+        cache.refresh("epoch_datacenters", sources.fetch_epoch_datacenters, force=f)
+        cache.refresh("filings", filings.fetch_filings, force=f)
+        cache.refresh("quotes", filings.fetch_quotes, force=f)
         cache.refresh("manifold", lambda: sources.fetch_manifold(markets), force=f)
         cache.refresh("quotecheck", lambda: quotecheck.fetch(claims), force=f)
 

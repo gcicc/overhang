@@ -1,0 +1,3249 @@
+{
+ "data": {
+  "owners": {
+   "AWS Berwick": {
+    "confidence": "confident",
+    "owner": "Amazon"
+   },
+   "AWS New Albany": {
+    "confidence": "confident",
+    "owner": "Amazon"
+   },
+   "Alibaba Zhangbei": {
+    "confidence": "confident",
+    "owner": "Alibaba"
+   },
+   "Amazon Madison Mega Site": {
+    "confidence": "confident",
+    "owner": "Amazon"
+   },
+   "Amazon Ridgeland": {
+    "confidence": "confident",
+    "owner": "Amazon"
+   },
+   "Anthropic Barber Lake": {
+    "confidence": "confident",
+    "owner": "Cipher Mining"
+   },
+   "Anthropic Lake Mariner": {
+    "confidence": "confident",
+    "owner": "AI XPV Platform"
+   },
+   "Anthropic-Amazon New Carlisle": {
+    "confidence": "confident",
+    "owner": "Amazon"
+   },
+   "Bridge Data Centres MY06": {
+    "confidence": "likely",
+    "owner": "ByteDance"
+   },
+   "Colossus 1": {
+    "confidence": "confident",
+    "owner": "SpaceXAI"
+   },
+   "Colossus 2": {
+    "confidence": "confident",
+    "owner": "SpaceXAI"
+   },
+   "Core42 Lake Mariner": {
+    "confidence": "confident",
+    "owner": "Core42"
+   },
+   "CoreWeave Chester VA": {
+    "confidence": "confident",
+    "owner": "CoreWeave"
+   },
+   "CoreWeave Dalton 1 & 2": {
+    "confidence": "confident",
+    "owner": "CoreWeave"
+   },
+   "CoreWeave Denton TX": {
+    "confidence": "confident",
+    "owner": "CoreWeave"
+   },
+   "CoreWeave Ellendale ND": {
+    "confidence": "confident",
+    "owner": "CoreWeave"
+   },
+   "CoreWeave Lancaster Greenfield site": {
+    "confidence": "confident",
+    "owner": "CoreWeave"
+   },
+   "CoreWeave Marble NC": {
+    "confidence": "confident",
+    "owner": "CoreWeave"
+   },
+   "CoreWeave Muskogee OK": {
+    "confidence": "confident",
+    "owner": "CoreWeave"
+   },
+   "CoreWeave Norway": {
+    "confidence": "confident",
+    "owner": "CoreWeave"
+   },
+   "Coreweave Helios": {
+    "confidence": "confident",
+    "owner": "CoreWeave"
+   },
+   "Crusoe Abilene Expansion": {
+    "confidence": "confident",
+    "owner": "Microsoft"
+   },
+   "DayOne Kempas": {
+    "confidence": "",
+    "owner": "Owner not stated"
+   },
+   "DayOne Nusajaya": {
+    "confidence": "",
+    "owner": "Owner not stated"
+   },
+   "EcoDataCenter 2": {
+    "confidence": "confident",
+    "owner": "Mistral AI"
+   },
+   "Envision Galaxy Ulanqab": {
+    "confidence": "",
+    "owner": "Owner not stated"
+   },
+   "Goodnight": {
+    "confidence": "speculative",
+    "owner": "Google"
+   },
+   "Google Arcola": {
+    "confidence": "confident",
+    "owner": "Google"
+   },
+   "Google Bristow": {
+    "confidence": "",
+    "owner": "Google"
+   },
+   "Google Cedar Rapids": {
+    "confidence": "confident",
+    "owner": "Google"
+   },
+   "Google Columbus": {
+    "confidence": "confident",
+    "owner": "Google"
+   },
+   "Google Council Bluffs (East)": {
+    "confidence": "confident",
+    "owner": "Google"
+   },
+   "Google Fort Wayne": {
+    "confidence": "confident",
+    "owner": "Google"
+   },
+   "Google Kansas City East": {
+    "confidence": "confident",
+    "owner": "Google"
+   },
+   "Google Lancaster": {
+    "confidence": "confident",
+    "owner": "Google"
+   },
+   "Google Lincoln": {
+    "confidence": "confident",
+    "owner": "Google"
+   },
+   "Google Mesa": {
+    "confidence": "confident",
+    "owner": "Google"
+   },
+   "Google Midlothian": {
+    "confidence": "confident",
+    "owner": "Google"
+   },
+   "Google New Albany": {
+    "confidence": "confident",
+    "owner": "Google"
+   },
+   "Google Omaha": {
+    "confidence": "confident",
+    "owner": "Google"
+   },
+   "Google Papillion": {
+    "confidence": "confident",
+    "owner": "Google"
+   },
+   "Google Pryor (North)": {
+    "confidence": "confident",
+    "owner": "Google"
+   },
+   "Google Red Oak": {
+    "confidence": "confident",
+    "owner": "Google"
+   },
+   "Google Storey County": {
+    "confidence": "confident",
+    "owner": "Google"
+   },
+   "Google The Dalles": {
+    "confidence": "confident",
+    "owner": "Google"
+   },
+   "Google Waltham Cross": {
+    "confidence": "confident",
+    "owner": "Google"
+   },
+   "Huawei Horinger": {
+    "confidence": "confident",
+    "owner": "Huawei"
+   },
+   "Huawei Wuhu": {
+    "confidence": "confident",
+    "owner": "Huawei"
+   },
+   "Meta Aiken": {
+    "confidence": "confident",
+    "owner": "Meta"
+   },
+   "Meta Bowling Green": {
+    "confidence": "confident",
+    "owner": "Meta"
+   },
+   "Meta Cheyenne": {
+    "confidence": "confident",
+    "owner": "Meta"
+   },
+   "Meta Eagle Mountain": {
+    "confidence": "confident",
+    "owner": "Meta"
+   },
+   "Meta Gallatin": {
+    "confidence": "confident",
+    "owner": "Meta"
+   },
+   "Meta Huntsville": {
+    "confidence": "confident",
+    "owner": "Meta"
+   },
+   "Meta Hyperion": {
+    "confidence": "confident",
+    "owner": "Meta"
+   },
+   "Meta Jeffersonville": {
+    "confidence": "confident",
+    "owner": "Meta"
+   },
+   "Meta Kuna": {
+    "confidence": "confident",
+    "owner": "Meta"
+   },
+   "Meta Los Lunas": {
+    "confidence": "confident",
+    "owner": "Meta"
+   },
+   "Meta Montgomery": {
+    "confidence": "confident",
+    "owner": "Meta"
+   },
+   "Meta Prometheus": {
+    "confidence": "confident",
+    "owner": "Meta"
+   },
+   "Meta Rosemount": {
+    "confidence": "confident",
+    "owner": "Meta"
+   },
+   "Meta Sarpy": {
+    "confidence": "confident",
+    "owner": "Meta"
+   },
+   "Meta Temple": {
+    "confidence": "confident",
+    "owner": "Meta"
+   },
+   "Meta-QTS Hillsboro 2": {
+    "confidence": "likely",
+    "owner": "Meta"
+   },
+   "Microsoft Fairwater Atlanta": {
+    "confidence": "confident",
+    "owner": "Microsoft"
+   },
+   "Microsoft Fairwater Wisconsin": {
+    "confidence": "confident",
+    "owner": "Microsoft"
+   },
+   "Microsoft Goodyear": {
+    "confidence": "confident",
+    "owner": "Microsoft"
+   },
+   "Microsoft Narvik Norway": {
+    "confidence": "likely",
+    "owner": "Nscale"
+   },
+   "Microsoft Project Osmium": {
+    "confidence": "confident",
+    "owner": "Microsoft"
+   },
+   "Microsoft SAT14": {
+    "confidence": "confident",
+    "owner": "Microsoft"
+   },
+   "Microsoft SAT40": {
+    "confidence": "confident",
+    "owner": "Microsoft"
+   },
+   "Microsoft-Nebius New Jersey": {
+    "confidence": "confident",
+    "owner": "Nebius"
+   },
+   "Nebius Mantsala": {
+    "confidence": "confident",
+    "owner": "Nebius"
+   },
+   "Nscale Keflavik": {
+    "confidence": "confident",
+    "owner": "Nscale"
+   },
+   "OpenAI Stargate Abilene": {
+    "confidence": "confident",
+    "owner": "Oracle"
+   },
+   "OpenAI Stargate Lordstown": {
+    "confidence": "confident",
+    "owner": "Softbank"
+   },
+   "OpenAI Stargate Michigan": {
+    "confidence": "confident",
+    "owner": "Oracle"
+   },
+   "OpenAI Stargate Milam": {
+    "confidence": "confident",
+    "owner": "Softbank"
+   },
+   "OpenAI Stargate New Mexico": {
+    "confidence": "confident",
+    "owner": "Oracle"
+   },
+   "OpenAI Stargate Shackelford": {
+    "confidence": "confident",
+    "owner": "Oracle"
+   },
+   "OpenAI Stargate UAE": {
+    "confidence": "likely",
+    "owner": "G42"
+   },
+   "OpenAI Stargate Wisconsin": {
+    "confidence": "confident",
+    "owner": "Oracle"
+   },
+   "Oracle Batam": {
+    "confidence": "likely",
+    "owner": "Oracle"
+   },
+   "QTS Cedar Rapids": {
+    "confidence": "",
+    "owner": "Owner not stated"
+   },
+   "QTS Eagle Mountain": {
+    "confidence": "speculative",
+    "owner": "Meta"
+   },
+   "QTS Richmond 1": {
+    "confidence": "",
+    "owner": "Owner not stated"
+   },
+   "QTS Richmond 2": {
+    "confidence": "",
+    "owner": "Owner not stated"
+   },
+   "QTS Richmond 3": {
+    "confidence": "",
+    "owner": "Owner not stated"
+   },
+   "STACK Infrastructure NVA02": {
+    "confidence": "",
+    "owner": "Owner not stated"
+   },
+   "Southgate Melbourne": {
+    "confidence": "confident",
+    "owner": "Firmus"
+   },
+   "Start Campus Sines Data Campus": {
+    "confidence": "confident",
+    "owner": "Nscale"
+   },
+   "Stream Phoenix": {
+    "confidence": "",
+    "owner": "Owner not stated"
+   },
+   "VNET Bayin Ulanqab": {
+    "confidence": "confident",
+    "owner": "VNET"
+   },
+   "Vantage TX1": {
+    "confidence": "",
+    "owner": "Owner not stated"
+   },
+   "YTL Johor": {
+    "confidence": "",
+    "owner": "Owner not stated"
+   },
+   "xAI QTS Atlanta": {
+    "confidence": "confident",
+    "owner": "SpaceXAI"
+   }
+  },
+  "source_url": "https://epoch.ai/data/ai-data-centers",
+  "timeline": [
+   {
+    "date": "2021-07-01",
+    "h100e": 0.0,
+    "site": "AWS Berwick"
+   },
+   {
+    "date": "2023-01-17",
+    "h100e": 0.0,
+    "site": "AWS Berwick"
+   },
+   {
+    "date": "2024-03-04",
+    "h100e": 0.0,
+    "site": "AWS Berwick"
+   },
+   {
+    "date": "2024-06-01",
+    "h100e": 0.0,
+    "site": "AWS Berwick"
+   },
+   {
+    "date": "2025-09-09",
+    "h100e": 35320.86912582112,
+    "site": "AWS Berwick"
+   },
+   {
+    "date": "2026-01-07",
+    "h100e": 58110.15664477008,
+    "site": "AWS Berwick"
+   },
+   {
+    "date": "2026-03-12",
+    "h100e": 58110.15664477008,
+    "site": "AWS Berwick"
+   },
+   {
+    "date": "2026-05-05",
+    "h100e": 58110.15664477008,
+    "site": "AWS Berwick"
+   },
+   {
+    "date": "2026-08-01",
+    "h100e": 81354.21930267812,
+    "site": "AWS Berwick"
+   },
+   {
+    "date": "2027-08-01",
+    "h100e": 145022.73875694795,
+    "site": "AWS Berwick"
+   },
+   {
+    "date": "2022-07-01",
+    "h100e": 0.0,
+    "site": "AWS New Albany"
+   },
+   {
+    "date": "2024-12-01",
+    "h100e": 92470.94492167761,
+    "site": "AWS New Albany"
+   },
+   {
+    "date": "2026-03-12",
+    "h100e": 201111.67256189996,
+    "site": "AWS New Albany"
+   },
+   {
+    "date": "2026-05-18",
+    "h100e": 201111.67256189996,
+    "site": "AWS New Albany"
+   },
+   {
+    "date": "2027-07-01",
+    "h100e": 351692.77412834764,
+    "site": "AWS New Albany"
+   },
+   {
+    "date": "2024-07-23",
+    "h100e": 0.0,
+    "site": "Alibaba Zhangbei"
+   },
+   {
+    "date": "2025-09-17",
+    "h100e": 15967.660434562911,
+    "site": "Alibaba Zhangbei"
+   },
+   {
+    "date": "2025-12-23",
+    "h100e": 15967.660434562911,
+    "site": "Alibaba Zhangbei"
+   },
+   {
+    "date": "2026-01-03",
+    "h100e": 31884.79029813037,
+    "site": "Alibaba Zhangbei"
+   },
+   {
+    "date": "2023-10-02",
+    "h100e": 0.0,
+    "site": "Amazon Madison Mega Site"
+   },
+   {
+    "date": "2025-03-11",
+    "h100e": 0.0,
+    "site": "Amazon Madison Mega Site"
+   },
+   {
+    "date": "2025-06-23",
+    "h100e": 214348.14354550533,
+    "site": "Amazon Madison Mega Site"
+   },
+   {
+    "date": "2025-10-04",
+    "h100e": 214348.14354550533,
+    "site": "Amazon Madison Mega Site"
+   },
+   {
+    "date": "2026-06-04",
+    "h100e": 214348.14354550533,
+    "site": "Amazon Madison Mega Site"
+   },
+   {
+    "date": "2027-03-01",
+    "h100e": 300087.4009637075,
+    "site": "Amazon Madison Mega Site"
+   },
+   {
+    "date": "2028-03-15",
+    "h100e": 514435.54450921173,
+    "site": "Amazon Madison Mega Site"
+   },
+   {
+    "date": "2024-02-24",
+    "h100e": 0.0,
+    "site": "Amazon Ridgeland"
+   },
+   {
+    "date": "2025-10-04",
+    "h100e": 0.0,
+    "site": "Amazon Ridgeland"
+   },
+   {
+    "date": "2026-05-15",
+    "h100e": 171298.6356745831,
+    "site": "Amazon Ridgeland"
+   },
+   {
+    "date": "2027-02-09",
+    "h100e": 214249.62102071755,
+    "site": "Amazon Ridgeland"
+   },
+   {
+    "date": "2028-09-29",
+    "h100e": 788276.907529055,
+    "site": "Amazon Ridgeland"
+   },
+   {
+    "date": "2025-09-18",
+    "h100e": 0.0,
+    "site": "Anthropic Barber Lake"
+   },
+   {
+    "date": "2025-11-29",
+    "h100e": 0.0,
+    "site": "Anthropic Barber Lake"
+   },
+   {
+    "date": "2026-07-30",
+    "h100e": 0.0,
+    "site": "Anthropic Barber Lake"
+   },
+   {
+    "date": "2026-12-30",
+    "h100e": 234461.84941889843,
+    "site": "Anthropic Barber Lake"
+   },
+   {
+    "date": "2027-04-30",
+    "h100e": 288529.5603840323,
+    "site": "Anthropic Barber Lake"
+   },
+   {
+    "date": "2025-06-11",
+    "h100e": 0.0,
+    "site": "Anthropic Lake Mariner"
+   },
+   {
+    "date": "2026-03-02",
+    "h100e": 0.0,
+    "site": "Anthropic Lake Mariner"
+   },
+   {
+    "date": "2026-05-31",
+    "h100e": 58564.93178372915,
+    "site": "Anthropic Lake Mariner"
+   },
+   {
+    "date": "2026-07-23",
+    "h100e": 58564.93178372915,
+    "site": "Anthropic Lake Mariner"
+   },
+   {
+    "date": "2026-10-31",
+    "h100e": 292829.71197574533,
+    "site": "Anthropic Lake Mariner"
+   },
+   {
+    "date": "2027-03-31",
+    "h100e": 527084.3860535624,
+    "site": "Anthropic Lake Mariner"
+   },
+   {
+    "date": "2024-02-09",
+    "h100e": 0.0,
+    "site": "Anthropic-Amazon New Carlisle"
+   },
+   {
+    "date": "2024-06-10",
+    "h100e": 0.0,
+    "site": "Anthropic-Amazon New Carlisle"
+   },
+   {
+    "date": "2025-05-10",
+    "h100e": 0.0,
+    "site": "Anthropic-Amazon New Carlisle"
+   },
+   {
+    "date": "2025-06-23",
+    "h100e": 300151.59171298635,
+    "site": "Anthropic-Amazon New Carlisle"
+   },
+   {
+    "date": "2025-09-26",
+    "h100e": 300151.59171298635,
+    "site": "Anthropic-Amazon New Carlisle"
+   },
+   {
+    "date": "2025-10-17",
+    "h100e": 300151.59171298635,
+    "site": "Anthropic-Amazon New Carlisle"
+   },
+   {
+    "date": "2025-12-23",
+    "h100e": 471450.2273875695,
+    "site": "Anthropic-Amazon New Carlisle"
+   },
+   {
+    "date": "2026-02-09",
+    "h100e": 471450.2273875695,
+    "site": "Anthropic-Amazon New Carlisle"
+   },
+   {
+    "date": "2026-03-23",
+    "h100e": 685912.076806468,
+    "site": "Anthropic-Amazon New Carlisle"
+   },
+   {
+    "date": "2026-06-03",
+    "h100e": 685912.076806468,
+    "site": "Anthropic-Amazon New Carlisle"
+   },
+   {
+    "date": "2026-10-19",
+    "h100e": 818428.4992420415,
+    "site": "Anthropic-Amazon New Carlisle"
+   },
+   {
+    "date": "2028-03-17",
+    "h100e": 1746038.4032339565,
+    "site": "Anthropic-Amazon New Carlisle"
+   },
+   {
+    "date": "2021-10-01",
+    "h100e": 0.0,
+    "site": "Bridge Data Centres MY06"
+   },
+   {
+    "date": "2022-12-31",
+    "h100e": 6467.913087417888,
+    "site": "Bridge Data Centres MY06"
+   },
+   {
+    "date": "2023-03-01",
+    "h100e": 6467.913087417888,
+    "site": "Bridge Data Centres MY06"
+   },
+   {
+    "date": "2023-05-30",
+    "h100e": 20765.386558868115,
+    "site": "Bridge Data Centres MY06"
+   },
+   {
+    "date": "2024-11-05",
+    "h100e": 65485.093481556345,
+    "site": "Bridge Data Centres MY06"
+   },
+   {
+    "date": "2025-02-09",
+    "h100e": 65485.093481556345,
+    "site": "Bridge Data Centres MY06"
+   },
+   {
+    "date": "2025-05-25",
+    "h100e": 221051.54118241536,
+    "site": "Bridge Data Centres MY06"
+   },
+   {
+    "date": "2025-09-23",
+    "h100e": 221051.54118241536,
+    "site": "Bridge Data Centres MY06"
+   },
+   {
+    "date": "2026-03-03",
+    "h100e": 221051.54118241536,
+    "site": "Bridge Data Centres MY06"
+   },
+   {
+    "date": "2026-09-13",
+    "h100e": 221051.54118241536,
+    "site": "Bridge Data Centres MY06"
+   },
+   {
+    "date": "2024-04-24",
+    "h100e": 0.0,
+    "site": "Colossus 1"
+   },
+   {
+    "date": "2024-08-11",
+    "h100e": 25000.0,
+    "site": "Colossus 1"
+   },
+   {
+    "date": "2024-09-02",
+    "h100e": 100000.0,
+    "site": "Colossus 1"
+   },
+   {
+    "date": "2025-02-17",
+    "h100e": 200000.0,
+    "site": "Colossus 1"
+   },
+   {
+    "date": "2025-07-22",
+    "h100e": 275795.85649317835,
+    "site": "Colossus 1"
+   },
+   {
+    "date": "2025-09-17",
+    "h100e": 209125.31581606873,
+    "site": "Colossus 1"
+   },
+   {
+    "date": "2025-10-19",
+    "h100e": 209125.31581606873,
+    "site": "Colossus 1"
+   },
+   {
+    "date": "2025-11-07",
+    "h100e": 275795.85649317835,
+    "site": "Colossus 1"
+   },
+   {
+    "date": "2026-02-11",
+    "h100e": 275795.85649317835,
+    "site": "Colossus 1"
+   },
+   {
+    "date": "2026-05-06",
+    "h100e": 275795.85649317835,
+    "site": "Colossus 1"
+   },
+   {
+    "date": "2026-06-01",
+    "h100e": 275795.85649317835,
+    "site": "Colossus 1"
+   },
+   {
+    "date": "2026-06-15",
+    "h100e": 275795.85649317835,
+    "site": "Colossus 1"
+   },
+   {
+    "date": "2025-02-28",
+    "h100e": 0.0,
+    "site": "Colossus 2"
+   },
+   {
+    "date": "2025-09-08",
+    "h100e": 0.0,
+    "site": "Colossus 2"
+   },
+   {
+    "date": "2025-10-19",
+    "h100e": 277918.1404749874,
+    "site": "Colossus 2"
+   },
+   {
+    "date": "2026-01-13",
+    "h100e": 277918.1404749874,
+    "site": "Colossus 2"
+   },
+   {
+    "date": "2026-04-06",
+    "h100e": 555836.2809499748,
+    "site": "Colossus 2"
+   },
+   {
+    "date": "2026-06-15",
+    "h100e": 1111672.5618999496,
+    "site": "Colossus 2"
+   },
+   {
+    "date": "2027-02-25",
+    "h100e": 1824153.6129358262,
+    "site": "Colossus 2"
+   },
+   {
+    "date": "2024-10-01",
+    "h100e": 0.0,
+    "site": "Core42 Lake Mariner"
+   },
+   {
+    "date": "2025-10-01",
+    "h100e": 19858.514401212735,
+    "site": "Core42 Lake Mariner"
+   },
+   {
+    "date": "2026-03-02",
+    "h100e": 19858.514401212735,
+    "site": "Core42 Lake Mariner"
+   },
+   {
+    "date": "2026-03-31",
+    "h100e": 71753.4108135422,
+    "site": "Core42 Lake Mariner"
+   },
+   {
+    "date": "2026-07-23",
+    "h100e": 71753.4108135422,
+    "site": "Core42 Lake Mariner"
+   },
+   {
+    "date": "2023-09-18",
+    "h100e": 0.0,
+    "site": "CoreWeave Chester VA"
+   },
+   {
+    "date": "2024-01-31",
+    "h100e": 14805.45730166751,
+    "site": "CoreWeave Chester VA"
+   },
+   {
+    "date": "2024-04-30",
+    "h100e": 22081.85952501263,
+    "site": "CoreWeave Chester VA"
+   },
+   {
+    "date": "2025-01-22",
+    "h100e": 22081.85952501263,
+    "site": "CoreWeave Chester VA"
+   },
+   {
+    "date": "2026-05-20",
+    "h100e": 88428.49924204143,
+    "site": "CoreWeave Chester VA"
+   },
+   {
+    "date": "2027-06-30",
+    "h100e": 125821.1217786761,
+    "site": "CoreWeave Chester VA"
+   },
+   {
+    "date": "2024-06-03",
+    "h100e": 0.0,
+    "site": "CoreWeave Dalton 1 & 2"
+   },
+   {
+    "date": "2025-05-01",
+    "h100e": 0.0,
+    "site": "CoreWeave Dalton 1 & 2"
+   },
+   {
+    "date": "2025-08-29",
+    "h100e": 0.0,
+    "site": "CoreWeave Dalton 1 & 2"
+   },
+   {
+    "date": "2026-02-20",
+    "h100e": 32238.504295098533,
+    "site": "CoreWeave Dalton 1 & 2"
+   },
+   {
+    "date": "2024-11-01",
+    "h100e": 0.0,
+    "site": "CoreWeave Denton TX"
+   },
+   {
+    "date": "2025-05-31",
+    "h100e": 7781.707933299646,
+    "site": "CoreWeave Denton TX"
+   },
+   {
+    "date": "2025-12-31",
+    "h100e": 64679.13087417888,
+    "site": "CoreWeave Denton TX"
+   },
+   {
+    "date": "2026-02-23",
+    "h100e": 126326.42748863062,
+    "site": "CoreWeave Denton TX"
+   },
+   {
+    "date": "2026-03-02",
+    "h100e": 126326.42748863062,
+    "site": "CoreWeave Denton TX"
+   },
+   {
+    "date": "2026-07-03",
+    "h100e": 252652.85497726125,
+    "site": "CoreWeave Denton TX"
+   },
+   {
+    "date": "2026-09-01",
+    "h100e": 252652.85497726125,
+    "site": "CoreWeave Denton TX"
+   },
+   {
+    "date": "2027-05-31",
+    "h100e": 271854.4719555331,
+    "site": "CoreWeave Denton TX"
+   },
+   {
+    "date": "2023-10-31",
+    "h100e": 0.0,
+    "site": "CoreWeave Ellendale ND"
+   },
+   {
+    "date": "2025-05-28",
+    "h100e": 0.0,
+    "site": "CoreWeave Ellendale ND"
+   },
+   {
+    "date": "2025-08-29",
+    "h100e": 0.0,
+    "site": "CoreWeave Ellendale ND"
+   },
+   {
+    "date": "2025-10-27",
+    "h100e": 68721.57655381506,
+    "site": "CoreWeave Ellendale ND"
+   },
+   {
+    "date": "2025-11-24",
+    "h100e": 93481.55634158666,
+    "site": "CoreWeave Ellendale ND"
+   },
+   {
+    "date": "2026-03-27",
+    "h100e": 93481.55634158666,
+    "site": "CoreWeave Ellendale ND"
+   },
+   {
+    "date": "2026-06-30",
+    "h100e": 93481.55634158666,
+    "site": "CoreWeave Ellendale ND"
+   },
+   {
+    "date": "2026-12-31",
+    "h100e": 300151.59171298635,
+    "site": "CoreWeave Ellendale ND"
+   },
+   {
+    "date": "2027-06-01",
+    "h100e": 505305.7099545225,
+    "site": "CoreWeave Ellendale ND"
+   },
+   {
+    "date": "2025-07-15",
+    "h100e": 0.0,
+    "site": "CoreWeave Lancaster Greenfield site"
+   },
+   {
+    "date": "2026-07-13",
+    "h100e": 0.0,
+    "site": "CoreWeave Lancaster Greenfield site"
+   },
+   {
+    "date": "2027-06-30",
+    "h100e": 232945.93228903486,
+    "site": "CoreWeave Lancaster Greenfield site"
+   },
+   {
+    "date": "2024-06-25",
+    "h100e": 0.0,
+    "site": "CoreWeave Marble NC"
+   },
+   {
+    "date": "2026-03-13",
+    "h100e": 43456.291056088936,
+    "site": "CoreWeave Marble NC"
+   },
+   {
+    "date": "2026-04-17",
+    "h100e": 43456.291056088936,
+    "site": "CoreWeave Marble NC"
+   },
+   {
+    "date": "2026-05-06",
+    "h100e": 78827.6907529055,
+    "site": "CoreWeave Marble NC"
+   },
+   {
+    "date": "2024-11-18",
+    "h100e": 0.0,
+    "site": "CoreWeave Muskogee OK"
+   },
+   {
+    "date": "2026-04-09",
+    "h100e": 0.0,
+    "site": "CoreWeave Muskogee OK"
+   },
+   {
+    "date": "2026-06-13",
+    "h100e": 0.0,
+    "site": "CoreWeave Muskogee OK"
+   },
+   {
+    "date": "2026-12-31",
+    "h100e": 90955.02779181405,
+    "site": "CoreWeave Muskogee OK"
+   },
+   {
+    "date": "2027-12-31",
+    "h100e": 198079.8383021728,
+    "site": "CoreWeave Muskogee OK"
+   },
+   {
+    "date": "2024-01-23",
+    "h100e": 0.0,
+    "site": "CoreWeave Norway"
+   },
+   {
+    "date": "2025-07-27",
+    "h100e": 50773.11773623042,
+    "site": "CoreWeave Norway"
+   },
+   {
+    "date": "2026-04-25",
+    "h100e": 50773.11773623042,
+    "site": "CoreWeave Norway"
+   },
+   {
+    "date": "2026-08-15",
+    "h100e": 50773.11773623042,
+    "site": "CoreWeave Norway"
+   },
+   {
+    "date": "2025-05-31",
+    "h100e": 0.0,
+    "site": "Coreweave Helios"
+   },
+   {
+    "date": "2025-08-27",
+    "h100e": 0.0,
+    "site": "Coreweave Helios"
+   },
+   {
+    "date": "2026-04-04",
+    "h100e": 0.0,
+    "site": "Coreweave Helios"
+   },
+   {
+    "date": "2026-06-17",
+    "h100e": 0.0,
+    "site": "Coreweave Helios"
+   },
+   {
+    "date": "2026-08-30",
+    "h100e": 159551.768236855,
+    "site": "Coreweave Helios"
+   },
+   {
+    "date": "2028-01-01",
+    "h100e": 478655.30471056444,
+    "site": "Coreweave Helios"
+   },
+   {
+    "date": "2029-01-01",
+    "h100e": 638207.072947418,
+    "site": "Coreweave Helios"
+   },
+   {
+    "date": "2025-11-02",
+    "h100e": 0.0,
+    "site": "Crusoe Abilene Expansion"
+   },
+   {
+    "date": "2026-01-15",
+    "h100e": 0.0,
+    "site": "Crusoe Abilene Expansion"
+   },
+   {
+    "date": "2027-09-17",
+    "h100e": 853966.649823143,
+    "site": "Crusoe Abilene Expansion"
+   },
+   {
+    "date": "2027-11-11",
+    "h100e": 1707933.299646286,
+    "site": "Crusoe Abilene Expansion"
+   },
+   {
+    "date": "2023-11-11",
+    "h100e": 0.0,
+    "site": "DayOne Kempas"
+   },
+   {
+    "date": "2025-09-15",
+    "h100e": 0.0,
+    "site": "DayOne Kempas"
+   },
+   {
+    "date": "2026-01-22",
+    "h100e": 91408.28701364326,
+    "site": "DayOne Kempas"
+   },
+   {
+    "date": "2026-06-01",
+    "h100e": 254455.78575037897,
+    "site": "DayOne Kempas"
+   },
+   {
+    "date": "2026-08-10",
+    "h100e": 254455.78575037897,
+    "site": "DayOne Kempas"
+   },
+   {
+    "date": "2026-09-01",
+    "h100e": 367547.2460838808,
+    "site": "DayOne Kempas"
+   },
+   {
+    "date": "2026-10-01",
+    "h100e": 480638.7064173825,
+    "site": "DayOne Kempas"
+   },
+   {
+    "date": "2023-10-01",
+    "h100e": 0.0,
+    "site": "DayOne Nusajaya"
+   },
+   {
+    "date": "2024-12-31",
+    "h100e": 34399.727134916626,
+    "site": "DayOne Nusajaya"
+   },
+   {
+    "date": "2026-01-22",
+    "h100e": 281670.4396159676,
+    "site": "DayOne Nusajaya"
+   },
+   {
+    "date": "2026-04-05",
+    "h100e": 281670.4396159676,
+    "site": "DayOne Nusajaya"
+   },
+   {
+    "date": "2026-10-02",
+    "h100e": 583836.7862556847,
+    "site": "DayOne Nusajaya"
+   },
+   {
+    "date": "2025-09-01",
+    "h100e": 0.0,
+    "site": "EcoDataCenter 2"
+   },
+   {
+    "date": "2026-05-09",
+    "h100e": 0.0,
+    "site": "EcoDataCenter 2"
+   },
+   {
+    "date": "2026-08-17",
+    "h100e": 0.0,
+    "site": "EcoDataCenter 2"
+   },
+   {
+    "date": "2027-06-30",
+    "h100e": 69460.58615462355,
+    "site": "EcoDataCenter 2"
+   },
+   {
+    "date": "2028-06-30",
+    "h100e": 138912.3294593229,
+    "site": "EcoDataCenter 2"
+   },
+   {
+    "date": "2025-08-01",
+    "h100e": 0.0,
+    "site": "Envision Galaxy Ulanqab"
+   },
+   {
+    "date": "2026-05-11",
+    "h100e": 0.0,
+    "site": "Envision Galaxy Ulanqab"
+   },
+   {
+    "date": "2026-08-06",
+    "h100e": 0.0,
+    "site": "Envision Galaxy Ulanqab"
+   },
+   {
+    "date": "2026-09-05",
+    "h100e": 0.0,
+    "site": "Envision Galaxy Ulanqab"
+   },
+   {
+    "date": "2026-11-01",
+    "h100e": 47931.27842344619,
+    "site": "Envision Galaxy Ulanqab"
+   },
+   {
+    "date": "2027-07-01",
+    "h100e": 88575.03789792824,
+    "site": "Envision Galaxy Ulanqab"
+   },
+   {
+    "date": "2027-12-01",
+    "h100e": 169868.62051541184,
+    "site": "Envision Galaxy Ulanqab"
+   },
+   {
+    "date": "2025-05-19",
+    "h100e": 0.0,
+    "site": "Goodnight"
+   },
+   {
+    "date": "2025-10-16",
+    "h100e": 0.0,
+    "site": "Goodnight"
+   },
+   {
+    "date": "2025-12-23",
+    "h100e": 0.0,
+    "site": "Goodnight"
+   },
+   {
+    "date": "2026-04-16",
+    "h100e": 0.0,
+    "site": "Goodnight"
+   },
+   {
+    "date": "2027-03-15",
+    "h100e": 124305.20464881253,
+    "site": "Goodnight"
+   },
+   {
+    "date": "2027-05-15",
+    "h100e": 249115.7150075796,
+    "site": "Goodnight"
+   },
+   {
+    "date": "2027-10-01",
+    "h100e": 2278928.7518948964,
+    "site": "Goodnight"
+   },
+   {
+    "date": "2024-10-01",
+    "h100e": 0.0,
+    "site": "Google Arcola"
+   },
+   {
+    "date": "2025-09-08",
+    "h100e": 0.0,
+    "site": "Google Arcola"
+   },
+   {
+    "date": "2026-04-09",
+    "h100e": 0.0,
+    "site": "Google Arcola"
+   },
+   {
+    "date": "2026-06-16",
+    "h100e": 108135.42193026781,
+    "site": "Google Arcola"
+   },
+   {
+    "date": "2021-07-01",
+    "h100e": 0.0,
+    "site": "Google Bristow"
+   },
+   {
+    "date": "2024-04-29",
+    "h100e": 43895.6038403234,
+    "site": "Google Bristow"
+   },
+   {
+    "date": "2025-04-29",
+    "h100e": 120248.61040929763,
+    "site": "Google Bristow"
+   },
+   {
+    "date": "2026-05-20",
+    "h100e": 209860.53562405254,
+    "site": "Google Bristow"
+   },
+   {
+    "date": "2024-06-14",
+    "h100e": 0.0,
+    "site": "Google Cedar Rapids"
+   },
+   {
+    "date": "2025-10-27",
+    "h100e": 0.0,
+    "site": "Google Cedar Rapids"
+   },
+   {
+    "date": "2025-12-29",
+    "h100e": 0.0,
+    "site": "Google Cedar Rapids"
+   },
+   {
+    "date": "2026-04-16",
+    "h100e": 0.0,
+    "site": "Google Cedar Rapids"
+   },
+   {
+    "date": "2026-12-31",
+    "h100e": 193466.39717028802,
+    "site": "Google Cedar Rapids"
+   },
+   {
+    "date": "2027-02-22",
+    "h100e": 415447.1955533097,
+    "site": "Google Cedar Rapids"
+   },
+   {
+    "date": "2027-05-23",
+    "h100e": 670136.4325416877,
+    "site": "Google Cedar Rapids"
+   },
+   {
+    "date": "2021-10-01",
+    "h100e": 0.0,
+    "site": "Google Columbus"
+   },
+   {
+    "date": "2023-07-01",
+    "h100e": 0.0,
+    "site": "Google Columbus"
+   },
+   {
+    "date": "2024-04-01",
+    "h100e": 32794.34057604851,
+    "site": "Google Columbus"
+   },
+   {
+    "date": "2025-03-01",
+    "h100e": 89944.416371905,
+    "site": "Google Columbus"
+   },
+   {
+    "date": "2025-10-01",
+    "h100e": 211217.7867609904,
+    "site": "Google Columbus"
+   },
+   {
+    "date": "2026-02-21",
+    "h100e": 211217.7867609904,
+    "site": "Google Columbus"
+   },
+   {
+    "date": "2026-05-01",
+    "h100e": 331985.85144012125,
+    "site": "Google Columbus"
+   },
+   {
+    "date": "2026-08-05",
+    "h100e": 331985.85144012125,
+    "site": "Google Columbus"
+   },
+   {
+    "date": "2027-07-01",
+    "h100e": 576048.5093481556,
+    "site": "Google Columbus"
+   },
+   {
+    "date": "2022-09-06",
+    "h100e": 0.0,
+    "site": "Google Council Bluffs (East)"
+   },
+   {
+    "date": "2024-11-19",
+    "h100e": 48660.93986862052,
+    "site": "Google Council Bluffs (East)"
+   },
+   {
+    "date": "2025-06-15",
+    "h100e": 145528.04446690247,
+    "site": "Google Council Bluffs (East)"
+   },
+   {
+    "date": "2025-07-19",
+    "h100e": 145528.04446690247,
+    "site": "Google Council Bluffs (East)"
+   },
+   {
+    "date": "2026-01-11",
+    "h100e": 145528.04446690247,
+    "site": "Google Council Bluffs (East)"
+   },
+   {
+    "date": "2026-07-07",
+    "h100e": 255684.68923698837,
+    "site": "Google Council Bluffs (East)"
+   },
+   {
+    "date": "2024-04-01",
+    "h100e": 0.0,
+    "site": "Google Fort Wayne"
+   },
+   {
+    "date": "2024-09-13",
+    "h100e": 0.0,
+    "site": "Google Fort Wayne"
+   },
+   {
+    "date": "2025-06-10",
+    "h100e": 0.0,
+    "site": "Google Fort Wayne"
+   },
+   {
+    "date": "2025-10-01",
+    "h100e": 0.0,
+    "site": "Google Fort Wayne"
+   },
+   {
+    "date": "2026-03-01",
+    "h100e": 0.0,
+    "site": "Google Fort Wayne"
+   },
+   {
+    "date": "2026-08-19",
+    "h100e": 0.0,
+    "site": "Google Fort Wayne"
+   },
+   {
+    "date": "2026-12-01",
+    "h100e": 383021.72814552806,
+    "site": "Google Fort Wayne"
+   },
+   {
+    "date": "2027-03-31",
+    "h100e": 823648.3072258716,
+    "site": "Google Fort Wayne"
+   },
+   {
+    "date": "2027-08-28",
+    "h100e": 1399696.8165740273,
+    "site": "Google Fort Wayne"
+   },
+   {
+    "date": "2028-01-25",
+    "h100e": 2066700.353713997,
+    "site": "Google Fort Wayne"
+   },
+   {
+    "date": "2028-06-23",
+    "h100e": 2940879.231935321,
+    "site": "Google Fort Wayne"
+   },
+   {
+    "date": "2024-01-01",
+    "h100e": 0.0,
+    "site": "Google Kansas City East"
+   },
+   {
+    "date": "2024-03-01",
+    "h100e": 0.0,
+    "site": "Google Kansas City East"
+   },
+   {
+    "date": "2024-10-01",
+    "h100e": 0.0,
+    "site": "Google Kansas City East"
+   },
+   {
+    "date": "2025-07-01",
+    "h100e": 0.0,
+    "site": "Google Kansas City East"
+   },
+   {
+    "date": "2025-11-01",
+    "h100e": 0.0,
+    "site": "Google Kansas City East"
+   },
+   {
+    "date": "2026-04-16",
+    "h100e": 0.0,
+    "site": "Google Kansas City East"
+   },
+   {
+    "date": "2026-08-01",
+    "h100e": 202627.5896917635,
+    "site": "Google Kansas City East"
+   },
+   {
+    "date": "2021-10-01",
+    "h100e": 0.0,
+    "site": "Google Lancaster"
+   },
+   {
+    "date": "2024-01-01",
+    "h100e": 34663.97170288024,
+    "site": "Google Lancaster"
+   },
+   {
+    "date": "2025-09-11",
+    "h100e": 34663.97170288024,
+    "site": "Google Lancaster"
+   },
+   {
+    "date": "2025-10-31",
+    "h100e": 130368.8731682668,
+    "site": "Google Lancaster"
+   },
+   {
+    "date": "2026-03-12",
+    "h100e": 130368.8731682668,
+    "site": "Google Lancaster"
+   },
+   {
+    "date": "2023-07-01",
+    "h100e": 0.0,
+    "site": "Google Lincoln"
+   },
+   {
+    "date": "2025-10-23",
+    "h100e": 0.0,
+    "site": "Google Lincoln"
+   },
+   {
+    "date": "2026-05-12",
+    "h100e": 197574.53259221828,
+    "site": "Google Lincoln"
+   },
+   {
+    "date": "2027-10-01",
+    "h100e": 672056.5942395149,
+    "site": "Google Lincoln"
+   },
+   {
+    "date": "2023-07-01",
+    "h100e": 0.0,
+    "site": "Google Mesa"
+   },
+   {
+    "date": "2025-07-01",
+    "h100e": 110156.6447700859,
+    "site": "Google Mesa"
+   },
+   {
+    "date": "2025-09-07",
+    "h100e": 110156.6447700859,
+    "site": "Google Mesa"
+   },
+   {
+    "date": "2026-05-15",
+    "h100e": 110156.6447700859,
+    "site": "Google Mesa"
+   },
+   {
+    "date": "2026-08-15",
+    "h100e": 289540.17180394137,
+    "site": "Google Mesa"
+   },
+   {
+    "date": "2023-11-28",
+    "h100e": 0.0,
+    "site": "Google Midlothian"
+   },
+   {
+    "date": "2024-10-01",
+    "h100e": 0.0,
+    "site": "Google Midlothian"
+   },
+   {
+    "date": "2026-04-19",
+    "h100e": 95743.48069732188,
+    "site": "Google Midlothian"
+   },
+   {
+    "date": "2026-07-01",
+    "h100e": 143580.85118746842,
+    "site": "Google Midlothian"
+   },
+   {
+    "date": "2024-04-20",
+    "h100e": 33703.89085396665,
+    "site": "Google New Albany"
+   },
+   {
+    "date": "2024-09-13",
+    "h100e": 72764.02223345124,
+    "site": "Google New Albany"
+   },
+   {
+    "date": "2025-06-01",
+    "h100e": 167761.49570490146,
+    "site": "Google New Albany"
+   },
+   {
+    "date": "2025-10-14",
+    "h100e": 323900.9600808489,
+    "site": "Google New Albany"
+   },
+   {
+    "date": "2026-01-18",
+    "h100e": 323900.9600808489,
+    "site": "Google New Albany"
+   },
+   {
+    "date": "2026-03-12",
+    "h100e": 323900.9600808489,
+    "site": "Google New Albany"
+   },
+   {
+    "date": "2026-05-18",
+    "h100e": 323900.9600808489,
+    "site": "Google New Albany"
+   },
+   {
+    "date": "2021-11-25",
+    "h100e": 0.0,
+    "site": "Google Omaha"
+   },
+   {
+    "date": "2024-04-08",
+    "h100e": 39868.62051541182,
+    "site": "Google Omaha"
+   },
+   {
+    "date": "2024-07-29",
+    "h100e": 39868.62051541182,
+    "site": "Google Omaha"
+   },
+   {
+    "date": "2024-11-19",
+    "h100e": 88428.49924204143,
+    "site": "Google Omaha"
+   },
+   {
+    "date": "2025-03-16",
+    "h100e": 88428.49924204143,
+    "site": "Google Omaha"
+   },
+   {
+    "date": "2025-04-21",
+    "h100e": 88428.49924204143,
+    "site": "Google Omaha"
+   },
+   {
+    "date": "2025-10-21",
+    "h100e": 88428.49924204143,
+    "site": "Google Omaha"
+   },
+   {
+    "date": "2026-05-15",
+    "h100e": 88428.49924204143,
+    "site": "Google Omaha"
+   },
+   {
+    "date": "2026-06-30",
+    "h100e": 198585.14401212733,
+    "site": "Google Omaha"
+   },
+   {
+    "date": "2028-01-23",
+    "h100e": 502779.18140474986,
+    "site": "Google Omaha"
+   },
+   {
+    "date": "2028-07-23",
+    "h100e": 904497.2208185953,
+    "site": "Google Omaha"
+   },
+   {
+    "date": "2020-03-04",
+    "h100e": 0.0,
+    "site": "Google Papillion"
+   },
+   {
+    "date": "2022-10-16",
+    "h100e": 0.0,
+    "site": "Google Papillion"
+   },
+   {
+    "date": "2023-01-23",
+    "h100e": 21424.962102071753,
+    "site": "Google Papillion"
+   },
+   {
+    "date": "2024-02-15",
+    "h100e": 21424.962102071753,
+    "site": "Google Papillion"
+   },
+   {
+    "date": "2024-08-03",
+    "h100e": 100555.83628094998,
+    "site": "Google Papillion"
+   },
+   {
+    "date": "2025-11-03",
+    "h100e": 100555.83628094998,
+    "site": "Google Papillion"
+   },
+   {
+    "date": "2026-05-04",
+    "h100e": 100555.83628094998,
+    "site": "Google Papillion"
+   },
+   {
+    "date": "2024-07-19",
+    "h100e": 26376.958059626075,
+    "site": "Google Pryor (North)"
+   },
+   {
+    "date": "2025-01-28",
+    "h100e": 26376.958059626075,
+    "site": "Google Pryor (North)"
+   },
+   {
+    "date": "2025-10-19",
+    "h100e": 26376.958059626075,
+    "site": "Google Pryor (North)"
+   },
+   {
+    "date": "2026-05-26",
+    "h100e": 26376.958059626075,
+    "site": "Google Pryor (North)"
+   },
+   {
+    "date": "2026-09-06",
+    "h100e": 636685.1945426983,
+    "site": "Google Pryor (North)"
+   },
+   {
+    "date": "2023-04-30",
+    "h100e": 0.0,
+    "site": "Google Red Oak"
+   },
+   {
+    "date": "2025-08-25",
+    "h100e": 108135.42193026781,
+    "site": "Google Red Oak"
+   },
+   {
+    "date": "2026-02-06",
+    "h100e": 108135.42193026781,
+    "site": "Google Red Oak"
+   },
+   {
+    "date": "2026-12-01",
+    "h100e": 279434.0576048509,
+    "site": "Google Red Oak"
+   },
+   {
+    "date": "2023-08-30",
+    "h100e": 35219.807983830215,
+    "site": "Google Storey County"
+   },
+   {
+    "date": "2025-03-11",
+    "h100e": 35219.807983830215,
+    "site": "Google Storey County"
+   },
+   {
+    "date": "2025-06-30",
+    "h100e": 133906.01313794847,
+    "site": "Google Storey County"
+   },
+   {
+    "date": "2025-09-28",
+    "h100e": 133906.01313794847,
+    "site": "Google Storey County"
+   },
+   {
+    "date": "2026-04-13",
+    "h100e": 133906.01313794847,
+    "site": "Google Storey County"
+   },
+   {
+    "date": "2027-06-30",
+    "h100e": 540677.109651339,
+    "site": "Google Storey County"
+   },
+   {
+    "date": "2023-05-21",
+    "h100e": 0.0,
+    "site": "Google The Dalles"
+   },
+   {
+    "date": "2025-03-07",
+    "h100e": 67710.96513390601,
+    "site": "Google The Dalles"
+   },
+   {
+    "date": "2026-04-29",
+    "h100e": 175341.0813542193,
+    "site": "Google The Dalles"
+   },
+   {
+    "date": "2024-01-01",
+    "h100e": 0.0,
+    "site": "Google Waltham Cross"
+   },
+   {
+    "date": "2025-09-01",
+    "h100e": 123799.89893885801,
+    "site": "Google Waltham Cross"
+   },
+   {
+    "date": "2026-04-23",
+    "h100e": 123799.89893885801,
+    "site": "Google Waltham Cross"
+   },
+   {
+    "date": "2023-10-08",
+    "h100e": 0.0,
+    "site": "Huawei Horinger"
+   },
+   {
+    "date": "2025-02-24",
+    "h100e": 0.0,
+    "site": "Huawei Horinger"
+   },
+   {
+    "date": "2025-04-01",
+    "h100e": 0.0,
+    "site": "Huawei Horinger"
+   },
+   {
+    "date": "2025-06-01",
+    "h100e": 17532.64274886306,
+    "site": "Huawei Horinger"
+   },
+   {
+    "date": "2025-07-01",
+    "h100e": 35901.061141990904,
+    "site": "Huawei Horinger"
+   },
+   {
+    "date": "2026-02-01",
+    "h100e": 55096.513390601314,
+    "site": "Huawei Horinger"
+   },
+   {
+    "date": "2026-03-05",
+    "h100e": 55096.513390601314,
+    "site": "Huawei Horinger"
+   },
+   {
+    "date": "2026-05-12",
+    "h100e": 55096.513390601314,
+    "site": "Huawei Horinger"
+   },
+   {
+    "date": "2026-06-07",
+    "h100e": 55096.513390601314,
+    "site": "Huawei Horinger"
+   },
+   {
+    "date": "2026-07-01",
+    "h100e": 89439.11066195049,
+    "site": "Huawei Horinger"
+   },
+   {
+    "date": "2026-08-18",
+    "h100e": 89439.11066195049,
+    "site": "Huawei Horinger"
+   },
+   {
+    "date": "2028-02-14",
+    "h100e": 168107.6301162203,
+    "site": "Huawei Horinger"
+   },
+   {
+    "date": "2023-01-01",
+    "h100e": 0.0,
+    "site": "Huawei Wuhu"
+   },
+   {
+    "date": "2025-01-01",
+    "h100e": 21628.954017180393,
+    "site": "Huawei Wuhu"
+   },
+   {
+    "date": "2025-03-01",
+    "h100e": 57767.55937342092,
+    "site": "Huawei Wuhu"
+   },
+   {
+    "date": "2025-11-01",
+    "h100e": 76326.42748863062,
+    "site": "Huawei Wuhu"
+   },
+   {
+    "date": "2026-01-24",
+    "h100e": 76326.42748863062,
+    "site": "Huawei Wuhu"
+   },
+   {
+    "date": "2026-06-01",
+    "h100e": 76326.42748863062,
+    "site": "Huawei Wuhu"
+   },
+   {
+    "date": "2026-08-06",
+    "h100e": 76326.42748863062,
+    "site": "Huawei Wuhu"
+   },
+   {
+    "date": "2026-11-01",
+    "h100e": 96537.64527539161,
+    "site": "Huawei Wuhu"
+   },
+   {
+    "date": "2026-12-31",
+    "h100e": 176595.25012632643,
+    "site": "Huawei Wuhu"
+   },
+   {
+    "date": "2027-12-01",
+    "h100e": 221923.6988377969,
+    "site": "Huawei Wuhu"
+   },
+   {
+    "date": "2024-05-30",
+    "h100e": 0.0,
+    "site": "Meta Aiken"
+   },
+   {
+    "date": "2026-04-08",
+    "h100e": 0.0,
+    "site": "Meta Aiken"
+   },
+   {
+    "date": "2026-08-07",
+    "h100e": 78322.38504295099,
+    "site": "Meta Aiken"
+   },
+   {
+    "date": "2026-11-05",
+    "h100e": 147043.96159676605,
+    "site": "Meta Aiken"
+   },
+   {
+    "date": "2024-11-01",
+    "h100e": 0.0,
+    "site": "Meta Bowling Green"
+   },
+   {
+    "date": "2026-02-14",
+    "h100e": 0.0,
+    "site": "Meta Bowling Green"
+   },
+   {
+    "date": "2026-07-30",
+    "h100e": 0.0,
+    "site": "Meta Bowling Green"
+   },
+   {
+    "date": "2027-02-01",
+    "h100e": 104469.42900454775,
+    "site": "Meta Bowling Green"
+   },
+   {
+    "date": "2027-04-01",
+    "h100e": 197001.0106114199,
+    "site": "Meta Bowling Green"
+   },
+   {
+    "date": "2028-01-01",
+    "h100e": 855159.1712986357,
+    "site": "Meta Bowling Green"
+   },
+   {
+    "date": "2024-04-01",
+    "h100e": 0.0,
+    "site": "Meta Cheyenne"
+   },
+   {
+    "date": "2025-01-30",
+    "h100e": 0.0,
+    "site": "Meta Cheyenne"
+   },
+   {
+    "date": "2026-03-22",
+    "h100e": 0.0,
+    "site": "Meta Cheyenne"
+   },
+   {
+    "date": "2026-07-25",
+    "h100e": 172814.5528044467,
+    "site": "Meta Cheyenne"
+   },
+   {
+    "date": "2027-02-15",
+    "h100e": 235977.766548762,
+    "site": "Meta Cheyenne"
+   },
+   {
+    "date": "2023-10-01",
+    "h100e": 0.0,
+    "site": "Meta Eagle Mountain"
+   },
+   {
+    "date": "2025-09-08",
+    "h100e": 0.0,
+    "site": "Meta Eagle Mountain"
+   },
+   {
+    "date": "2025-12-07",
+    "h100e": 151354.21930267813,
+    "site": "Meta Eagle Mountain"
+   },
+   {
+    "date": "2026-05-02",
+    "h100e": 151354.21930267813,
+    "site": "Meta Eagle Mountain"
+   },
+   {
+    "date": "2023-09-11",
+    "h100e": 0.0,
+    "site": "Meta Gallatin"
+   },
+   {
+    "date": "2026-02-09",
+    "h100e": 0.0,
+    "site": "Meta Gallatin"
+   },
+   {
+    "date": "2026-08-24",
+    "h100e": 99545.22486104093,
+    "site": "Meta Gallatin"
+   },
+   {
+    "date": "2021-12-13",
+    "h100e": 0.0,
+    "site": "Meta Huntsville"
+   },
+   {
+    "date": "2025-03-03",
+    "h100e": 0.0,
+    "site": "Meta Huntsville"
+   },
+   {
+    "date": "2025-11-04",
+    "h100e": 0.0,
+    "site": "Meta Huntsville"
+   },
+   {
+    "date": "2026-02-02",
+    "h100e": 0.0,
+    "site": "Meta Huntsville"
+   },
+   {
+    "date": "2026-03-04",
+    "h100e": 88433.55229914098,
+    "site": "Meta Huntsville"
+   },
+   {
+    "date": "2026-06-02",
+    "h100e": 166760.9903991915,
+    "site": "Meta Huntsville"
+   },
+   {
+    "date": "2024-12-20",
+    "h100e": 0.0,
+    "site": "Meta Hyperion"
+   },
+   {
+    "date": "2025-10-19",
+    "h100e": 0.0,
+    "site": "Meta Hyperion"
+   },
+   {
+    "date": "2026-04-19",
+    "h100e": 0.0,
+    "site": "Meta Hyperion"
+   },
+   {
+    "date": "2026-12-01",
+    "h100e": 0.0,
+    "site": "Meta Hyperion"
+   },
+   {
+    "date": "2028-01-01",
+    "h100e": 4142944.4163719052,
+    "site": "Meta Hyperion"
+   },
+   {
+    "date": "2024-02-01",
+    "h100e": 0.0,
+    "site": "Meta Jeffersonville"
+   },
+   {
+    "date": "2026-03-06",
+    "h100e": 0.0,
+    "site": "Meta Jeffersonville"
+   },
+   {
+    "date": "2026-06-04",
+    "h100e": 203132.89540171804,
+    "site": "Meta Jeffersonville"
+   },
+   {
+    "date": "2022-07-01",
+    "h100e": 0.0,
+    "site": "Meta Kuna"
+   },
+   {
+    "date": "2026-03-15",
+    "h100e": 0.0,
+    "site": "Meta Kuna"
+   },
+   {
+    "date": "2026-06-01",
+    "h100e": 173247.67205659422,
+    "site": "Meta Kuna"
+   },
+   {
+    "date": "2024-07-24",
+    "h100e": 0.0,
+    "site": "Meta Los Lunas"
+   },
+   {
+    "date": "2026-03-01",
+    "h100e": 99545.22486104093,
+    "site": "Meta Los Lunas"
+   },
+   {
+    "date": "2026-07-28",
+    "h100e": 99545.22486104093,
+    "site": "Meta Los Lunas"
+   },
+   {
+    "date": "2026-10-26",
+    "h100e": 133906.01313794847,
+    "site": "Meta Los Lunas"
+   },
+   {
+    "date": "2028-01-01",
+    "h100e": 869125.8211217787,
+    "site": "Meta Los Lunas"
+   },
+   {
+    "date": "2024-03-01",
+    "h100e": 0.0,
+    "site": "Meta Montgomery"
+   },
+   {
+    "date": "2025-07-04",
+    "h100e": 0.0,
+    "site": "Meta Montgomery"
+   },
+   {
+    "date": "2026-03-20",
+    "h100e": 0.0,
+    "site": "Meta Montgomery"
+   },
+   {
+    "date": "2026-06-18",
+    "h100e": 174517.43304699342,
+    "site": "Meta Montgomery"
+   },
+   {
+    "date": "2027-02-02",
+    "h100e": 232968.6710459828,
+    "site": "Meta Montgomery"
+   },
+   {
+    "date": "2027-02-23",
+    "h100e": 407486.10409297625,
+    "site": "Meta Montgomery"
+   },
+   {
+    "date": "2022-04-14",
+    "h100e": 0.0,
+    "site": "Meta Prometheus"
+   },
+   {
+    "date": "2025-06-01",
+    "h100e": 0.0,
+    "site": "Meta Prometheus"
+   },
+   {
+    "date": "2025-09-20",
+    "h100e": 0.0,
+    "site": "Meta Prometheus"
+   },
+   {
+    "date": "2025-10-14",
+    "h100e": 86623.83527033855,
+    "site": "Meta Prometheus"
+   },
+   {
+    "date": "2026-01-18",
+    "h100e": 419441.73319858516,
+    "site": "Meta Prometheus"
+   },
+   {
+    "date": "2026-03-12",
+    "h100e": 419441.73319858516,
+    "site": "Meta Prometheus"
+   },
+   {
+    "date": "2026-05-18",
+    "h100e": 419441.73319858516,
+    "site": "Meta Prometheus"
+   },
+   {
+    "date": "2026-08-31",
+    "h100e": 536343.0015159171,
+    "site": "Meta Prometheus"
+   },
+   {
+    "date": "2026-11-30",
+    "h100e": 770145.528044467,
+    "site": "Meta Prometheus"
+   },
+   {
+    "date": "2027-01-15",
+    "h100e": 843091.9151086408,
+    "site": "Meta Prometheus"
+   },
+   {
+    "date": "2027-04-15",
+    "h100e": 916038.3021728146,
+    "site": "Meta Prometheus"
+   },
+   {
+    "date": "2027-07-14",
+    "h100e": 988984.6892369884,
+    "site": "Meta Prometheus"
+   },
+   {
+    "date": "2028-07-01",
+    "h100e": 1164336.5841334006,
+    "site": "Meta Prometheus"
+   },
+   {
+    "date": "2024-05-01",
+    "h100e": 0.0,
+    "site": "Meta Rosemount"
+   },
+   {
+    "date": "2026-03-21",
+    "h100e": 0.0,
+    "site": "Meta Rosemount"
+   },
+   {
+    "date": "2026-06-19",
+    "h100e": 215675.11520970188,
+    "site": "Meta Rosemount"
+   },
+   {
+    "date": "2024-08-01",
+    "h100e": 0.0,
+    "site": "Meta Sarpy"
+   },
+   {
+    "date": "2026-05-04",
+    "h100e": 0.0,
+    "site": "Meta Sarpy"
+   },
+   {
+    "date": "2026-08-02",
+    "h100e": 91965.63921172309,
+    "site": "Meta Sarpy"
+   },
+   {
+    "date": "2022-04-01",
+    "h100e": 0.0,
+    "site": "Meta Temple"
+   },
+   {
+    "date": "2023-02-05",
+    "h100e": 0.0,
+    "site": "Meta Temple"
+   },
+   {
+    "date": "2023-04-01",
+    "h100e": 0.0,
+    "site": "Meta Temple"
+   },
+   {
+    "date": "2025-11-15",
+    "h100e": 0.0,
+    "site": "Meta Temple"
+   },
+   {
+    "date": "2025-12-09",
+    "h100e": 173247.6719844078,
+    "site": "Meta Temple"
+   },
+   {
+    "date": "2026-02-24",
+    "h100e": 173247.6719844078,
+    "site": "Meta Temple"
+   },
+   {
+    "date": "2026-09-30",
+    "h100e": 202472.98777125112,
+    "site": "Meta Temple"
+   },
+   {
+    "date": "2021-04-01",
+    "h100e": 0.0,
+    "site": "Meta-QTS Hillsboro 2"
+   },
+   {
+    "date": "2023-04-29",
+    "h100e": 0.0,
+    "site": "Meta-QTS Hillsboro 2"
+   },
+   {
+    "date": "2023-08-02",
+    "h100e": 30959.750025265286,
+    "site": "Meta-QTS Hillsboro 2"
+   },
+   {
+    "date": "2024-11-08",
+    "h100e": 123839.0,
+    "site": "Meta-QTS Hillsboro 2"
+   },
+   {
+    "date": "2025-04-14",
+    "h100e": 123839.0,
+    "site": "Meta-QTS Hillsboro 2"
+   },
+   {
+    "date": "2026-04-17",
+    "h100e": 123839.0,
+    "site": "Meta-QTS Hillsboro 2"
+   },
+   {
+    "date": "2023-04-09",
+    "h100e": 0.0,
+    "site": "Microsoft Fairwater Atlanta"
+   },
+   {
+    "date": "2025-10-14",
+    "h100e": 387981.94436584134,
+    "site": "Microsoft Fairwater Atlanta"
+   },
+   {
+    "date": "2026-02-13",
+    "h100e": 387981.94436584134,
+    "site": "Microsoft Fairwater Atlanta"
+   },
+   {
+    "date": "2026-05-15",
+    "h100e": 387981.94436584134,
+    "site": "Microsoft Fairwater Atlanta"
+   },
+   {
+    "date": "2026-06-14",
+    "h100e": 768768.7220818596,
+    "site": "Microsoft Fairwater Atlanta"
+   },
+   {
+    "date": "2023-07-14",
+    "h100e": 0.0,
+    "site": "Microsoft Fairwater Wisconsin"
+   },
+   {
+    "date": "2025-09-26",
+    "h100e": 0.0,
+    "site": "Microsoft Fairwater Wisconsin"
+   },
+   {
+    "date": "2026-01-28",
+    "h100e": 0.0,
+    "site": "Microsoft Fairwater Wisconsin"
+   },
+   {
+    "date": "2026-04-16",
+    "h100e": 445679.63617988885,
+    "site": "Microsoft Fairwater Wisconsin"
+   },
+   {
+    "date": "2026-05-15",
+    "h100e": 445679.63617988885,
+    "site": "Microsoft Fairwater Wisconsin"
+   },
+   {
+    "date": "2027-02-20",
+    "h100e": 889338.0495199596,
+    "site": "Microsoft Fairwater Wisconsin"
+   },
+   {
+    "date": "2028-05-13",
+    "h100e": 4527539.161192521,
+    "site": "Microsoft Fairwater Wisconsin"
+   },
+   {
+    "date": "2021-06-21",
+    "h100e": 0.0,
+    "site": "Microsoft Goodyear"
+   },
+   {
+    "date": "2023-04-24",
+    "h100e": 29156.13946437595,
+    "site": "Microsoft Goodyear"
+   },
+   {
+    "date": "2025-01-16",
+    "h100e": 58110.15664477008,
+    "site": "Microsoft Goodyear"
+   },
+   {
+    "date": "2025-09-01",
+    "h100e": 205154.11824153614,
+    "site": "Microsoft Goodyear"
+   },
+   {
+    "date": "2025-11-12",
+    "h100e": 205154.11824153614,
+    "site": "Microsoft Goodyear"
+   },
+   {
+    "date": "2026-04-27",
+    "h100e": 205154.11824153614,
+    "site": "Microsoft Goodyear"
+   },
+   {
+    "date": "2023-07-01",
+    "h100e": 0.0,
+    "site": "Microsoft Narvik Norway"
+   },
+   {
+    "date": "2025-06-27",
+    "h100e": 0.0,
+    "site": "Microsoft Narvik Norway"
+   },
+   {
+    "date": "2025-08-01",
+    "h100e": 0.0,
+    "site": "Microsoft Narvik Norway"
+   },
+   {
+    "date": "2026-05-31",
+    "h100e": 0.0,
+    "site": "Microsoft Narvik Norway"
+   },
+   {
+    "date": "2026-07-05",
+    "h100e": 0.0,
+    "site": "Microsoft Narvik Norway"
+   },
+   {
+    "date": "2026-12-31",
+    "h100e": 265285.4977261243,
+    "site": "Microsoft Narvik Norway"
+   },
+   {
+    "date": "2018-12-18",
+    "h100e": 0.0,
+    "site": "Microsoft Project Osmium"
+   },
+   {
+    "date": "2021-01-01",
+    "h100e": 7882.769075290551,
+    "site": "Microsoft Project Osmium"
+   },
+   {
+    "date": "2023-06-30",
+    "h100e": 40576.048509348155,
+    "site": "Microsoft Project Osmium"
+   },
+   {
+    "date": "2025-03-01",
+    "h100e": 155634.15866599293,
+    "site": "Microsoft Project Osmium"
+   },
+   {
+    "date": "2025-10-08",
+    "h100e": 155634.15866599293,
+    "site": "Microsoft Project Osmium"
+   },
+   {
+    "date": "2026-06-16",
+    "h100e": 155634.15866599293,
+    "site": "Microsoft Project Osmium"
+   },
+   {
+    "date": "2022-02-18",
+    "h100e": 0.0,
+    "site": "Microsoft SAT14"
+   },
+   {
+    "date": "2024-07-01",
+    "h100e": 12986.356745831228,
+    "site": "Microsoft SAT14"
+   },
+   {
+    "date": "2025-08-03",
+    "h100e": 12986.356745831228,
+    "site": "Microsoft SAT14"
+   },
+   {
+    "date": "2026-02-28",
+    "h100e": 12986.356745831228,
+    "site": "Microsoft SAT14"
+   },
+   {
+    "date": "2026-03-31",
+    "h100e": 45174.33046993431,
+    "site": "Microsoft SAT14"
+   },
+   {
+    "date": "2018-12-28",
+    "h100e": 0.0,
+    "site": "Microsoft SAT40"
+   },
+   {
+    "date": "2024-05-24",
+    "h100e": 32390.096008084893,
+    "site": "Microsoft SAT40"
+   },
+   {
+    "date": "2025-12-01",
+    "h100e": 64679.13087417888,
+    "site": "Microsoft SAT40"
+   },
+   {
+    "date": "2026-02-04",
+    "h100e": 64679.13087417888,
+    "site": "Microsoft SAT40"
+   },
+   {
+    "date": "2025-12-15",
+    "h100e": 0.0,
+    "site": "Microsoft-Nebius New Jersey"
+   },
+   {
+    "date": "2026-04-15",
+    "h100e": 56846.89236988378,
+    "site": "Microsoft-Nebius New Jersey"
+   },
+   {
+    "date": "2026-07-12",
+    "h100e": 56846.89236988378,
+    "site": "Microsoft-Nebius New Jersey"
+   },
+   {
+    "date": "2024-10-08",
+    "h100e": 25284.0,
+    "site": "Nebius Mantsala"
+   },
+   {
+    "date": "2025-11-14",
+    "h100e": 25284.0,
+    "site": "Nebius Mantsala"
+   },
+   {
+    "date": "2026-03-31",
+    "h100e": 48527.92066700354,
+    "site": "Nebius Mantsala"
+   },
+   {
+    "date": "2026-06-29",
+    "h100e": 48527.92066700354,
+    "site": "Nebius Mantsala"
+   },
+   {
+    "date": "2027-12-31",
+    "h100e": 226233.83274381,
+    "site": "Nebius Mantsala"
+   },
+   {
+    "date": "2022-07-08",
+    "h100e": 0.0,
+    "site": "Nscale Keflavik"
+   },
+   {
+    "date": "2023-05-01",
+    "h100e": 0.0,
+    "site": "Nscale Keflavik"
+   },
+   {
+    "date": "2026-01-23",
+    "h100e": 0.0,
+    "site": "Nscale Keflavik"
+   },
+   {
+    "date": "2026-04-23",
+    "h100e": 5821.121778676099,
+    "site": "Nscale Keflavik"
+   },
+   {
+    "date": "2026-06-30",
+    "h100e": 5821.121778676099,
+    "site": "Nscale Keflavik"
+   },
+   {
+    "date": "2026-07-27",
+    "h100e": 5821.121778676099,
+    "site": "Nscale Keflavik"
+   },
+   {
+    "date": "2026-12-31",
+    "h100e": 11642.243557352198,
+    "site": "Nscale Keflavik"
+   },
+   {
+    "date": "2024-05-31",
+    "h100e": 0.0,
+    "site": "OpenAI Stargate Abilene"
+   },
+   {
+    "date": "2025-06-28",
+    "h100e": 0.0,
+    "site": "OpenAI Stargate Abilene"
+   },
+   {
+    "date": "2025-09-26",
+    "h100e": 127337.03890853966,
+    "site": "OpenAI Stargate Abilene"
+   },
+   {
+    "date": "2025-12-24",
+    "h100e": 254674.07781707932,
+    "site": "OpenAI Stargate Abilene"
+   },
+   {
+    "date": "2026-01-15",
+    "h100e": 254674.07781707932,
+    "site": "OpenAI Stargate Abilene"
+   },
+   {
+    "date": "2026-03-24",
+    "h100e": 254674.07781707932,
+    "site": "OpenAI Stargate Abilene"
+   },
+   {
+    "date": "2026-05-23",
+    "h100e": 509348.15563415864,
+    "site": "OpenAI Stargate Abilene"
+   },
+   {
+    "date": "2026-07-28",
+    "h100e": 509348.15563415864,
+    "site": "OpenAI Stargate Abilene"
+   },
+   {
+    "date": "2026-09-10",
+    "h100e": 764022.233451238,
+    "site": "OpenAI Stargate Abilene"
+   },
+   {
+    "date": "2026-11-01",
+    "h100e": 1018696.3112683173,
+    "site": "OpenAI Stargate Abilene"
+   },
+   {
+    "date": "2025-10-12",
+    "h100e": 0.0,
+    "site": "OpenAI Stargate Lordstown"
+   },
+   {
+    "date": "2026-02-27",
+    "h100e": 0.0,
+    "site": "OpenAI Stargate Lordstown"
+   },
+   {
+    "date": "2026-07-30",
+    "h100e": 0.0,
+    "site": "OpenAI Stargate Lordstown"
+   },
+   {
+    "date": "2027-03-01",
+    "h100e": 545730.1667508843,
+    "site": "OpenAI Stargate Lordstown"
+   },
+   {
+    "date": "2025-12-04",
+    "h100e": 0.0,
+    "site": "OpenAI Stargate Michigan"
+   },
+   {
+    "date": "2026-01-20",
+    "h100e": 0.0,
+    "site": "OpenAI Stargate Michigan"
+   },
+   {
+    "date": "2026-03-12",
+    "h100e": 0.0,
+    "site": "OpenAI Stargate Michigan"
+   },
+   {
+    "date": "2028-12-31",
+    "h100e": 2880242.5467407783,
+    "site": "OpenAI Stargate Michigan"
+   },
+   {
+    "date": "2025-09-27",
+    "h100e": 0.0,
+    "site": "OpenAI Stargate Milam"
+   },
+   {
+    "date": "2026-01-04",
+    "h100e": 0.0,
+    "site": "OpenAI Stargate Milam"
+   },
+   {
+    "date": "2026-03-23",
+    "h100e": 0.0,
+    "site": "OpenAI Stargate Milam"
+   },
+   {
+    "date": "2028-12-31",
+    "h100e": 2496210.207175341,
+    "site": "OpenAI Stargate Milam"
+   },
+   {
+    "date": "2025-10-01",
+    "h100e": 0.0,
+    "site": "OpenAI Stargate New Mexico"
+   },
+   {
+    "date": "2026-02-06",
+    "h100e": 0.0,
+    "site": "OpenAI Stargate New Mexico"
+   },
+   {
+    "date": "2026-06-22",
+    "h100e": 0.0,
+    "site": "OpenAI Stargate New Mexico"
+   },
+   {
+    "date": "2028-12-31",
+    "h100e": 5103587.670540676,
+    "site": "OpenAI Stargate New Mexico"
+   },
+   {
+    "date": "2025-08-01",
+    "h100e": 0.0,
+    "site": "OpenAI Stargate Shackelford"
+   },
+   {
+    "date": "2026-01-18",
+    "h100e": 0.0,
+    "site": "OpenAI Stargate Shackelford"
+   },
+   {
+    "date": "2026-04-14",
+    "h100e": 0.0,
+    "site": "OpenAI Stargate Shackelford"
+   },
+   {
+    "date": "2026-09-04",
+    "h100e": 0.0,
+    "site": "OpenAI Stargate Shackelford"
+   },
+   {
+    "date": "2027-08-15",
+    "h100e": 355229.9140980293,
+    "site": "OpenAI Stargate Shackelford"
+   },
+   {
+    "date": "2027-10-19",
+    "h100e": 712481.0510358767,
+    "site": "OpenAI Stargate Shackelford"
+   },
+   {
+    "date": "2027-11-18",
+    "h100e": 1066195.0480040424,
+    "site": "OpenAI Stargate Shackelford"
+   },
+   {
+    "date": "2028-02-11",
+    "h100e": 1419909.044972208,
+    "site": "OpenAI Stargate Shackelford"
+   },
+   {
+    "date": "2028-03-08",
+    "h100e": 1778676.0990399192,
+    "site": "OpenAI Stargate Shackelford"
+   },
+   {
+    "date": "2028-04-04",
+    "h100e": 2334512.379989894,
+    "site": "OpenAI Stargate Shackelford"
+   },
+   {
+    "date": "2028-05-12",
+    "h100e": 2890348.6609398685,
+    "site": "OpenAI Stargate Shackelford"
+   },
+   {
+    "date": "2028-10-17",
+    "h100e": 3451237.998989389,
+    "site": "OpenAI Stargate Shackelford"
+   },
+   {
+    "date": "2028-10-18",
+    "h100e": 4007074.2799393632,
+    "site": "OpenAI Stargate Shackelford"
+   },
+   {
+    "date": "2028-11-11",
+    "h100e": 4562910.560889338,
+    "site": "OpenAI Stargate Shackelford"
+   },
+   {
+    "date": "2025-06-09",
+    "h100e": 0.0,
+    "site": "OpenAI Stargate UAE"
+   },
+   {
+    "date": "2025-11-16",
+    "h100e": 0.0,
+    "site": "OpenAI Stargate UAE"
+   },
+   {
+    "date": "2026-12-01",
+    "h100e": 252652.85497726125,
+    "site": "OpenAI Stargate UAE"
+   },
+   {
+    "date": "2028-01-01",
+    "h100e": 2021222.83981809,
+    "site": "OpenAI Stargate UAE"
+   },
+   {
+    "date": "2026-01-02",
+    "h100e": 0.0,
+    "site": "OpenAI Stargate Wisconsin"
+   },
+   {
+    "date": "2026-02-14",
+    "h100e": 0.0,
+    "site": "OpenAI Stargate Wisconsin"
+   },
+   {
+    "date": "2026-07-24",
+    "h100e": 0.0,
+    "site": "OpenAI Stargate Wisconsin"
+   },
+   {
+    "date": "2028-12-31",
+    "h100e": 2627589.691763517,
+    "site": "OpenAI Stargate Wisconsin"
+   },
+   {
+    "date": "2022-07-01",
+    "h100e": 0.0,
+    "site": "Oracle Batam"
+   },
+   {
+    "date": "2025-05-15",
+    "h100e": 40424.456796361796,
+    "site": "Oracle Batam"
+   },
+   {
+    "date": "2025-06-13",
+    "h100e": 40424.456796361796,
+    "site": "Oracle Batam"
+   },
+   {
+    "date": "2025-10-01",
+    "h100e": 40424.456796361796,
+    "site": "Oracle Batam"
+   },
+   {
+    "date": "2026-03-19",
+    "h100e": 40424.456796361796,
+    "site": "Oracle Batam"
+   },
+   {
+    "date": "2026-04-17",
+    "h100e": 84386.05356240526,
+    "site": "Oracle Batam"
+   },
+   {
+    "date": "2026-05-06",
+    "h100e": 84386.05356240526,
+    "site": "Oracle Batam"
+   },
+   {
+    "date": "2025-01-17",
+    "h100e": 0.0,
+    "site": "QTS Cedar Rapids"
+   },
+   {
+    "date": "2025-10-27",
+    "h100e": 0.0,
+    "site": "QTS Cedar Rapids"
+   },
+   {
+    "date": "2026-05-07",
+    "h100e": 0.0,
+    "site": "QTS Cedar Rapids"
+   },
+   {
+    "date": "2026-11-15",
+    "h100e": 1136975.5639961243,
+    "site": "QTS Cedar Rapids"
+   },
+   {
+    "date": "2027-11-15",
+    "h100e": 3668823.12124194,
+    "site": "QTS Cedar Rapids"
+   },
+   {
+    "date": "2023-10-01",
+    "h100e": 0.0,
+    "site": "QTS Eagle Mountain"
+   },
+   {
+    "date": "2025-09-08",
+    "h100e": 0.0,
+    "site": "QTS Eagle Mountain"
+   },
+   {
+    "date": "2026-05-02",
+    "h100e": 0.0,
+    "site": "QTS Eagle Mountain"
+   },
+   {
+    "date": "2026-12-31",
+    "h100e": 231311.26831733197,
+    "site": "QTS Eagle Mountain"
+   },
+   {
+    "date": "2027-07-01",
+    "h100e": 346968.16574027285,
+    "site": "QTS Eagle Mountain"
+   },
+   {
+    "date": "2023-10-01",
+    "h100e": 0.0,
+    "site": "QTS Richmond 1"
+   },
+   {
+    "date": "2023-11-02",
+    "h100e": 0.0,
+    "site": "QTS Richmond 1"
+   },
+   {
+    "date": "2024-01-29",
+    "h100e": 33855.482566953004,
+    "site": "QTS Richmond 1"
+   },
+   {
+    "date": "2024-06-23",
+    "h100e": 67710.96513390601,
+    "site": "QTS Richmond 1"
+   },
+   {
+    "date": "2025-02-04",
+    "h100e": 125821.1217786761,
+    "site": "QTS Richmond 1"
+   },
+   {
+    "date": "2025-06-03",
+    "h100e": 183931.27842344617,
+    "site": "QTS Richmond 1"
+   },
+   {
+    "date": "2025-11-19",
+    "h100e": 242546.7407781708,
+    "site": "QTS Richmond 1"
+   },
+   {
+    "date": "2025-12-31",
+    "h100e": 242546.7407781708,
+    "site": "QTS Richmond 1"
+   },
+   {
+    "date": "2026-02-13",
+    "h100e": 242546.7407781708,
+    "site": "QTS Richmond 1"
+   },
+   {
+    "date": "2022-04-01",
+    "h100e": 0.0,
+    "site": "QTS Richmond 2"
+   },
+   {
+    "date": "2024-01-29",
+    "h100e": 0.0,
+    "site": "QTS Richmond 2"
+   },
+   {
+    "date": "2024-06-23",
+    "h100e": 0.0,
+    "site": "QTS Richmond 2"
+   },
+   {
+    "date": "2025-02-04",
+    "h100e": 52046.48812531582,
+    "site": "QTS Richmond 2"
+   },
+   {
+    "date": "2025-11-19",
+    "h100e": 52046.48812531582,
+    "site": "QTS Richmond 2"
+   },
+   {
+    "date": "2025-12-31",
+    "h100e": 138959.0702374937,
+    "site": "QTS Richmond 2"
+   },
+   {
+    "date": "2026-02-13",
+    "h100e": 138959.0702374937,
+    "site": "QTS Richmond 2"
+   },
+   {
+    "date": "2026-05-14",
+    "h100e": 182920.66700353715,
+    "site": "QTS Richmond 2"
+   },
+   {
+    "date": "2024-04-01",
+    "h100e": 0.0,
+    "site": "QTS Richmond 3"
+   },
+   {
+    "date": "2025-02-04",
+    "h100e": 0.0,
+    "site": "QTS Richmond 3"
+   },
+   {
+    "date": "2025-11-19",
+    "h100e": 0.0,
+    "site": "QTS Richmond 3"
+   },
+   {
+    "date": "2025-12-31",
+    "h100e": 0.0,
+    "site": "QTS Richmond 3"
+   },
+   {
+    "date": "2026-02-13",
+    "h100e": 58110.15664477008,
+    "site": "QTS Richmond 3"
+   },
+   {
+    "date": "2026-05-14",
+    "h100e": 174835.77564426477,
+    "site": "QTS Richmond 3"
+   },
+   {
+    "date": "2027-02-13",
+    "h100e": 291056.08893380495,
+    "site": "QTS Richmond 3"
+   },
+   {
+    "date": "2019-10-19",
+    "h100e": 0.0,
+    "site": "STACK Infrastructure NVA02"
+   },
+   {
+    "date": "2024-10-01",
+    "h100e": 61141.99090449722,
+    "site": "STACK Infrastructure NVA02"
+   },
+   {
+    "date": "2026-02-14",
+    "h100e": 61141.99090449722,
+    "site": "STACK Infrastructure NVA02"
+   },
+   {
+    "date": "2028-01-01",
+    "h100e": 250631.63213744314,
+    "site": "STACK Infrastructure NVA02"
+   },
+   {
+    "date": "2022-12-26",
+    "h100e": 0.0,
+    "site": "Southgate Melbourne"
+   },
+   {
+    "date": "2025-10-28",
+    "h100e": 0.0,
+    "site": "Southgate Melbourne"
+   },
+   {
+    "date": "2026-05-11",
+    "h100e": 0.0,
+    "site": "Southgate Melbourne"
+   },
+   {
+    "date": "2026-08-09",
+    "h100e": 46488.12531581607,
+    "site": "Southgate Melbourne"
+   },
+   {
+    "date": "2022-01-01",
+    "h100e": 0.0,
+    "site": "Start Campus Sines Data Campus"
+   },
+   {
+    "date": "2024-10-31",
+    "h100e": 0.0,
+    "site": "Start Campus Sines Data Campus"
+   },
+   {
+    "date": "2026-04-03",
+    "h100e": 31834.259727134915,
+    "site": "Start Campus Sines Data Campus"
+   },
+   {
+    "date": "2026-08-16",
+    "h100e": 31834.259727134915,
+    "site": "Start Campus Sines Data Campus"
+   },
+   {
+    "date": "2027-09-30",
+    "h100e": 540677.109651339,
+    "site": "Start Campus Sines Data Campus"
+   },
+   {
+    "date": "2022-10-30",
+    "h100e": 0.0,
+    "site": "Stream Phoenix"
+   },
+   {
+    "date": "2026-01-31",
+    "h100e": 0.0,
+    "site": "Stream Phoenix"
+   },
+   {
+    "date": "2026-05-01",
+    "h100e": 46134.4113188479,
+    "site": "Stream Phoenix"
+   },
+   {
+    "date": "2030-01-01",
+    "h100e": 160181.91005558363,
+    "site": "Stream Phoenix"
+   },
+   {
+    "date": "2024-03-15",
+    "h100e": 0.0,
+    "site": "VNET Bayin Ulanqab"
+   },
+   {
+    "date": "2025-02-05",
+    "h100e": 0.0,
+    "site": "VNET Bayin Ulanqab"
+   },
+   {
+    "date": "2025-07-01",
+    "h100e": 20970.186963112683,
+    "site": "VNET Bayin Ulanqab"
+   },
+   {
+    "date": "2025-08-01",
+    "h100e": 20970.186963112683,
+    "site": "VNET Bayin Ulanqab"
+   },
+   {
+    "date": "2025-11-01",
+    "h100e": 94492.1677614957,
+    "site": "VNET Bayin Ulanqab"
+   },
+   {
+    "date": "2025-12-01",
+    "h100e": 122789.28751894896,
+    "site": "VNET Bayin Ulanqab"
+   },
+   {
+    "date": "2026-03-05",
+    "h100e": 122789.28751894896,
+    "site": "VNET Bayin Ulanqab"
+   },
+   {
+    "date": "2026-05-06",
+    "h100e": 122789.28751894896,
+    "site": "VNET Bayin Ulanqab"
+   },
+   {
+    "date": "2027-09-01",
+    "h100e": 388074.78524507326,
+    "site": "VNET Bayin Ulanqab"
+   },
+   {
+    "date": "2023-12-15",
+    "h100e": 0.0,
+    "site": "Vantage TX1"
+   },
+   {
+    "date": "2026-02-15",
+    "h100e": 38706.417382516425,
+    "site": "Vantage TX1"
+   },
+   {
+    "date": "2027-08-31",
+    "h100e": 154623.54724608388,
+    "site": "Vantage TX1"
+   },
+   {
+    "date": "2023-11-01",
+    "h100e": 0.0,
+    "site": "YTL Johor"
+   },
+   {
+    "date": "2025-11-03",
+    "h100e": 24194.037392622537,
+    "site": "YTL Johor"
+   },
+   {
+    "date": "2026-03-14",
+    "h100e": 138251.64224355735,
+    "site": "YTL Johor"
+   },
+   {
+    "date": "2026-05-15",
+    "h100e": 153532.0869125821,
+    "site": "YTL Johor"
+   },
+   {
+    "date": "2026-07-13",
+    "h100e": 153532.0869125821,
+    "site": "YTL Johor"
+   },
+   {
+    "date": "2028-08-01",
+    "h100e": 585421.9302678121,
+    "site": "YTL Johor"
+   },
+   {
+    "date": "2024-01-23",
+    "h100e": 0.0,
+    "site": "xAI QTS Atlanta"
+   },
+   {
+    "date": "2025-02-20",
+    "h100e": 11470.43961596766,
+    "site": "xAI QTS Atlanta"
+   },
+   {
+    "date": "2025-08-21",
+    "h100e": 11470.43961596766,
+    "site": "xAI QTS Atlanta"
+   },
+   {
+    "date": "2026-07-10",
+    "h100e": 11470.43961596766,
+    "site": "xAI QTS Atlanta"
+   }
+  ]
+ },
+ "fetched_at": "2026-10-29T16:25:33.614278+00:00"
+}

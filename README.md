@@ -17,6 +17,8 @@ requests; a scheduled job fetches, commits JSON to `data/`, and renders.
 |---|---|---|
 | The Ledger | `data/curated/claims.csv`, `resolutions.csv` | curated, sourced, quote-checked weekly |
 | Measured | METR time horizons; Epoch frontier compute and FrontierMath; ARC-AGI | live |
+| The Race | computed from Epoch compute + benchmark hub (GPQA, SWE-bench, FrontierMath, METR copy) | live |
+| Compute & Silicon | Epoch ML hardware and data centers; SEC XBRL revenue (NVDA, AMD, AVGO) and capex (MSFT, GOOGL, AMZN, META); Yahoo weekly prices | live |
 | Crowd vs. CEOs | Manifold markets listed in `data/curated/manifold_markets.csv` | live |
 | Superhuman Ledger | `data/curated/superhuman.csv` | curated, sourced |
 
@@ -32,6 +34,15 @@ requests; a scheduled job fetches, commits JSON to `data/`, and renders.
   unverified" unless `resolutions.csv` links it to a dated Superhuman Ledger event.
 - **Doubling times state their window and n.** Bounded scores get best-to-date, not a
   doubling time.
+- **The Race is computed, never curated.** Ties keep the earlier holder; tenure medians use
+  completed spells only (the ongoing and window-clipped spells are censored). ARC-AGI is
+  excluded because its leaders are often competition entries, not labs (`overhang/race.py`).
+- **Filed figures only on the money side.** Year-long facts count only from a 10-K (Amazon's
+  10-Qs carry TTM facts); Q4 is derived by date window and marked; TTM capex is
+  FY + YTD − prior YTD (`overhang/filings.py`). Projections (Epoch data-center plans) are
+  labelled planned and never added to current.
+- **Every acronym is explained.** `overhang/render.py` holds one glossary; terms in page prose
+  get a hover definition and a Glossary section lists them for touch screens. Add a term there.
 - **A failed fetch keeps the last good copy** and is marked stale in the footer
   (`overhang/cache.py`, adapted from HANGAR).
 
@@ -45,5 +56,6 @@ requests; a scheduled job fetches, commits JSON to `data/`, and renders.
 
 ## Sources and credit
 
-METR · Epoch AI (CC BY 4.0) · ARC Prize (undocumented JSON endpoint) · Manifold Markets.
+METR · Epoch AI (CC BY 4.0) · ARC Prize (undocumented JSON endpoint) · Manifold Markets ·
+SEC EDGAR (set `SEC_CONTACT` for the User-Agent) · Yahoo Finance.
 Source recon is in `data/staging/SOURCES.md`, and curation fixes in `data/staging/FIXES.md`.

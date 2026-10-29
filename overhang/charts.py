@@ -10,7 +10,7 @@ from __future__ import annotations
 import math
 from html import escape
 
-from overhang.trend import predict, to_year
+from overhang.trend import from_year, predict, to_year
 
 W = 760
 PAD_L, PAD_R, PAD_T, PAD_B = 64, 20, 18, 34
@@ -415,4 +415,177 @@ def crowd_chart(markets: list[dict], claims: list[dict], today: float, label: st
     nx = x(today)
     body.append(f'<line class="now" x1="{nx:.1f}" x2="{nx:.1f}" y1="{top}" y2="{h - PAD_B}"/>')
     body.append(f'<text class="now-label" x="{nx + 4:.1f}" y="{top + 10}">now</text>')
+    return _svg(h, body, label)
+
+
+# --- The Race and Compute & Silicon ---------------------------------------
+# Categorical colour classes are ``c1``..``c7`` (fixed slot per entity, see race.SLOTS)
+# and ``c0`` for anything unlisted. Colour never carries identity alone: every segment
+# wide enough is labelled, every mark has a tooltip, and each chart has a table nearby.
+
+
+def _short(org: str, n: int = 10) -> str:
+    return org if len(org) <= n else org[: max(n - 1, 1)] + "…"
+
+
+def ribbon_chart(rows: list[dict], x0: float, today: float, slot_of, label: str) -> str:
+    """One horizontal band per metric, split into holder spells coloured by organisation."""
+    row_h, gap = 26, 10
+    left = 150
+    top = PAD_T + 4
+    h = top + len(rows) * (row_h + gap) + PAD_B - gap
+    x = Scale(x0, today, left, W - PAD_R)
+    body = _year_ticks(x, x0, today, top - 4, h - PAD_B, 1)
+    for i, r in enumerate(rows):
+        y = top + i * (row_h + gap)
+        body.append(
+            f'<text class="row-label" x="{left - 8}" y="{y + row_h / 2 + 4:.1f}" '
+            f'text-anchor="end">{escape(r["name"])}</text>'
+        )
+        for s in r["spells"]:
+            a, b = x(to_year(s["start"])), x(to_year(s["end"]))
+            w = max(b - a - 2, 1)  # 2px surface gap between adjacent spells
+            end = "now" if s.get("ongoing") else s["end"]
+            tip = (
+                f"{r['name']} · {s['org']} held #1 {s['start']} → {end} "
+                f"({s['days']} days) · {s['model']}"
+            )
+            body.append(
+                f'<rect class="spell c{slot_of(s["org"])}" x="{a:.1f}" y="{y}" '
+                f'width="{w:.1f}" height="{row_h}" rx="3"><title>{escape(tip)}</title></rect>'
+            )
+            if w > 46:
+                body.append(
+                    f'<text class="spell-label" x="{a + 5:.1f}" y="{y + row_h / 2 + 4:.1f}">'
+                    f"{escape(_short(s['org'], int(w / 7)))}</text>"
+                )
+    nx = x(today)
+    body.append(f'<line class="now" x1="{nx:.1f}" x2="{nx:.1f}" y1="{top - 4}" y2="{h - PAD_B}"/>')
+    return _svg(h, body, label)
+
+
+def hbar_chart(rows: list[tuple[str, float, str]], fmt, label: str) -> str:
+    """Single-series horizontal bars: (name, value, tooltip). Value labels at bar ends."""
+    bar_h, gap = 16, 6
+    left = 130
+    top = PAD_T
+    h = top + len(rows) * (bar_h + gap) + 10
+    vmax = max(v for _, v, _ in rows) or 1
+    x = Scale(0, vmax, left, W - PAD_R - 70)
+    body = []
+    for i, (name, v, tip) in enumerate(rows):
+        y = top + i * (bar_h + gap)
+        body.append(
+            f'<text class="row-label" x="{left - 8}" y="{y + bar_h / 2 + 4:.1f}" '
+            f'text-anchor="end">{escape(name)}</text>'
+        )
+        body.append(
+            f'<rect class="bar" x="{left}" y="{y}" width="{max(x(v) - left, 1):.1f}" '
+            f'height="{bar_h}" rx="3"><title>{escape(tip)}</title></rect>'
+        )
+        body.append(
+            f'<text class="tick" x="{max(x(v), left) + 6:.1f}" y="{y + bar_h / 2 + 4:.1f}">'
+            f"{escape(fmt(v))}</text>"
+        )
+    return _svg(h, body, label)
+
+
+def lines_chart(
+    series: dict[str, dict], today: float, *, fmt, log: bool, label: str, x0: float | None = None
+) -> str:
+    """Multi-line chart, one y axis. ``series[name] = {"points": [(t, v)], "slot": int}``.
+
+    Each line is direct-labelled at its end, so identity never rests on colour.
+    """
+    h = 280
+    top, bottom = PAD_T, h - PAD_B
+    right = W - PAD_R - 84
+    pts = [(t, v) for s in series.values() for t, v in s["points"] if v > 0]
+    if x0 is None:
+        x0 = math.floor(min(t for t, _ in pts))
+    pts = [(t, v) for t, v in pts if t >= x0]
+    x1 = max(today, max(t for t, _ in pts))
+    vals = [v for _, v in pts]
+    if log:
+        y0 = 10 ** math.floor(math.log10(min(vals)))
+        y1 = 10 ** math.ceil(math.log10(max(vals)))
+        ticks = [10**e for e in range(round(math.log10(y0)), round(math.log10(y1)) + 1)]
+    else:
+        y0, y1 = 0.0, max(vals) * 1.08
+        step = 10 ** math.floor(math.log10(y1 / 4))
+        while y1 / step > 8:
+            step *= 2
+        ticks = [step * k for k in range(int(y1 / step) + 1)]
+    x = Scale(x0, x1, PAD_L, right)
+    y = Scale(y0, y1, bottom, top, log=log)
+    body = _year_ticks(x, x0, x1, top, bottom, 1)
+    for v in ticks:
+        py = y(v)
+        body.append(f'<line class="grid" x1="{PAD_L}" x2="{right}" y1="{py:.1f}" y2="{py:.1f}"/>')
+        body.append(
+            f'<text class="tick" x="{PAD_L - 6}" y="{py + 4:.1f}" text-anchor="end">'
+            f"{escape(fmt(v))}</text>"
+        )
+    ends = []
+    for name, s in series.items():
+        line = [(t, v) for t, v in s["points"] if v > 0 and t >= x0]
+        if not line:
+            continue
+        d = " ".join(
+            f"{'M' if i == 0 else 'L'}{x(t):.1f},{y(v):.1f}" for i, (t, v) in enumerate(line)
+        )
+        body.append(f'<path class="line c{s["slot"]}" d="{d}"/>')
+        for t, v in line:
+            body.append(
+                f'<circle class="hit" cx="{x(t):.1f}" cy="{y(v):.1f}" r="5">'
+                f"<title>{escape(name)} · {from_year(t)} · {escape(fmt(v))}</title></circle>"
+            )
+        ends.append([y(line[-1][1]), name, s["slot"]])
+    # Nudge end labels apart so they never overlap.
+    ends.sort()
+    for i in range(1, len(ends)):
+        ends[i][0] = max(ends[i][0], ends[i - 1][0] + 13)
+    for py, name, sl in ends:
+        body.append(
+            f'<text class="end-label" x="{right + 6}" y="{py + 4:.1f}">'
+            f'<tspan class="swatch c{sl}">■</tspan> {escape(name)}</text>'
+        )
+    return _svg(h, body, label)
+
+
+def category_scatter(
+    points: list[dict], fit: dict | None, today: float, slot_of, *, fmt, label: str, x0: float
+) -> str:
+    """Log-scale scatter coloured by ``org`` slot, optional fit line over its window."""
+    h = 300
+    top, bottom = PAD_T, h - PAD_B
+    pts = [p for p in points if p["value"] > 0 and to_year(p["date"]) >= x0]
+    x1 = math.ceil(today) + 0.25
+    y0 = 10 ** math.floor(math.log10(min(p["value"] for p in pts)))
+    y1 = 10 ** math.ceil(math.log10(max(p["value"] for p in pts)))
+    x = Scale(x0, x1, PAD_L, W - PAD_R)
+    y = Scale(y0, y1, bottom, top, log=True)
+    body = _year_ticks(x, x0, x1, top, bottom, 1 if x1 - x0 <= 12 else 2)
+    for e in range(round(math.log10(y0)), round(math.log10(y1)) + 1):
+        py = y(10**e)
+        body.append(
+            f'<line class="grid" x1="{PAD_L}" x2="{W - PAD_R}" y1="{py:.1f}" y2="{py:.1f}"/>'
+        )
+        body.append(
+            f'<text class="tick" x="{PAD_L - 6}" y="{py + 4:.1f}" text-anchor="end">'
+            f"{escape(fmt(10**e))}</text>"
+        )
+    if fit:
+        a, b = to_year(fit["window_start"]), to_year(fit["window_end"])
+        body.append(
+            f'<line class="fit" x1="{x(a):.1f}" y1="{y(predict(fit, a)):.1f}" '
+            f'x2="{x(b):.1f}" y2="{y(predict(fit, b)):.1f}"/>'
+        )
+    body += _today_line(x, today, top, bottom)
+    for p in pts:
+        tip = f"{p['model']} · {p['org']} · {p['date']} · {fmt(p['value'])}"
+        body.append(
+            f'<circle class="cat c{slot_of(p["org"])}" cx="{x(to_year(p["date"])):.1f}" '
+            f'cy="{y(p["value"]):.1f}" r="4"><title>{escape(tip)}</title></circle>'
+        )
     return _svg(h, body, label)
