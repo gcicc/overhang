@@ -189,3 +189,18 @@ footer table { font-size: 13px; }
 .chart .winter-label { fill: var(--muted); font-size: 11px; }
 .chart .ms { fill: var(--ink); stroke: var(--panel); stroke-width: 1.5; }
 .chart .ms-first { fill: var(--panel); stroke: var(--ink); stroke-width: 2; }
+
+/* Front page: countdown to the next dated milestone, and recent news. */
+section.next { padding-top: 26px; }
+.next-k { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+.next-title { font-size: 22px; font-weight: 700; margin: 4px 0 2px; }
+.clock { font-size: 44px; font-weight: 300; font-variant-numeric: tabular-nums; color: var(--accent); margin: 2px 0 6px; }
+.clock b { font-weight: 700; }
+ol.after { list-style: none; padding: 0; margin: 14px 0 6px; font-size: 14px; }
+ol.after li { padding: 3px 0; border-top: 1px dotted var(--rule); }
+ol.after .when { color: var(--muted); font-variant-numeric: tabular-nums; margin-right: 8px; }
+.news-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px; }
+.news-col h3 { margin: 0 0 8px; }
+ul.news { list-style: none; padding: 0; margin: 0; }
+ul.news li { padding: 7px 0; border-top: 1px solid var(--rule); line-height: 1.35; }
+nav.toc a.toc-claims { color: var(--accent); font-weight: 600; }

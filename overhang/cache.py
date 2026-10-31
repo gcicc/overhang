@@ -41,6 +41,8 @@ MAX_AGE: dict[str, timedelta] = {
     "filings": timedelta(days=1),
     "quotes": timedelta(days=1),
     "manifold": timedelta(hours=6),
+    # The workflow runs every 6 h, so news is as fresh as the schedule allows.
+    "news": timedelta(hours=5),
     "quotecheck": timedelta(days=7),
 }
 

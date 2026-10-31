@@ -3,7 +3,7 @@ name: overhang
 type: maintain
 category: building
 tier: 02-Maintain
-updated: 2026-10-29
+updated: 2026-10-31
 note: started directly in 02-Maintain per Greg 2026-10-08
 url: https://gcicc.github.io/overhang/
 ---
@@ -11,6 +11,18 @@ url: https://gcicc.github.io/overhang/
 # OVERHANG — next steps
 
 ## Where this stands
+
+**2026-10-31: split into two pages (Greg).** `index.html` now opens with a countdown to the
+next dated AI milestone and Recent news, then Measured, Race, Compute & Silicon, Superhuman,
+History. `claims.html` holds the Ledger, What counts as AGI?, Crowd vs. CEOs and All claims.
+Cross-page `#` links are rewritten at render (`render._cross_links`).
+- Countdown reads `data/curated/upcoming.csv` (5 rows, all quote-verified: Nvidia Q3 FY27 call
+  2026-11-17 22:00 UTC, re:Invent and GTC DC 11-30, NeurIPS 12-08, GTC 2027 03-15). The clock
+  never shows units finer than the row's `precision`. No lab has published a fixed model-release
+  date, so model launches enter only when one does.
+- News: `overhang/news.py`, stdlib XML, 6 feeds (OpenAI, DeepMind, Hugging Face, 3 Google News
+  queries), 7-day window, newest first, deduped, `max_age` 5 h. First cut of SPEC Section 3.
+44 tests pass.
 
 **Slice 1b shipped 2026-10-29 (SPEC "Race, Compute & Silicon").** Two new sections and a
 glossary; History added the same day. 39 tests pass, ruff clean, checked in a browser at 1280 and 390 px.

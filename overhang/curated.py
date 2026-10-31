@@ -187,3 +187,40 @@ def _month_end(year: int, month: int) -> int:
     from datetime import date
 
     return date(year, month + 1, 1).toordinal() - date(year, month, 1).toordinal()
+
+
+UPCOMING_PRECISION = {"minute", "day", "month", "quarter", "year"}
+UPCOMING_KINDS = {"release", "conference", "earnings", "policy"}
+TIME_RE = re.compile(r"^\d{2}:\d{2}$")
+
+
+def load_upcoming() -> list[dict]:
+    """Dated upcoming milestones for the front-page countdown.
+
+    ``precision`` says how finely the date is actually known, and the countdown never
+    shows finer units than that. ``minute`` needs a UTC time; nothing else may have one.
+    """
+    rows = _read("upcoming.csv")
+    seen: set[str] = set()
+    for r in rows:
+        where = f"upcoming.csv[{r.get('id')}]"
+        _require(
+            r, ["id", "date", "precision", "kind", "title", "who", "quote", "source_url"], where
+        )
+        if r["id"] in seen:
+            raise CuratedError(f"{where}: duplicate id")
+        seen.add(r["id"])
+        if not re.match(r"^\d{4}-\d{2}-\d{2}$", r["date"]):
+            raise CuratedError(f"{where}: date must be YYYY-MM-DD, got {r['date']!r}")
+        if r["precision"] not in UPCOMING_PRECISION:
+            raise CuratedError(
+                f"{where}: precision {r['precision']!r} not in {sorted(UPCOMING_PRECISION)}"
+            )
+        if r["kind"] not in UPCOMING_KINDS:
+            raise CuratedError(f"{where}: kind {r['kind']!r} not in {sorted(UPCOMING_KINDS)}")
+        has_time = bool((r.get("time_utc") or "").strip())
+        if has_time and not TIME_RE.match(r["time_utc"]):
+            raise CuratedError(f"{where}: bad time_utc {r['time_utc']!r}")
+        if (r["precision"] == "minute") != has_time:
+            raise CuratedError(f"{where}: minute precision needs time_utc, and only it has one")
+    return sorted(rows, key=lambda r: (r["date"], r.get("time_utc") or ""))

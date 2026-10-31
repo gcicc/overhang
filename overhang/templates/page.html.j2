@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>OVERHANG</title>
+<title>OVERHANG{% if page == 'claims' %} — claims{% endif %}</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Crect width=%2216%22 height=%2216%22 rx=%223%22 fill=%22%23b4462d%22/%3E%3Cpath d=%22M3 12 L8 4 L13 12%22 stroke=%22white%22 stroke-width=%222%22 fill=%22none%22/%3E%3C/svg%3E">
 <meta name="description" content="What has been claimed about AI, against what has been measured. Refreshed on a schedule.">
 <style>{{ styles|safe }}</style>
@@ -11,24 +11,36 @@
 <body>
 <main>
 <header class="mast">
-  <h1>OVERHANG</h1>
+  <h1><a href="index.html" style="color:inherit;text-decoration:none">OVERHANG</a></h1>
   <p class="dek">What has been claimed about AI, against what has been measured.</p>
   <div class="meta">Built {{ p.meta.generated }} UTC · {{ p.counts.claims }} sourced claims · {{ p.counts.superhuman }} superhuman-ledger events · no LLM anywhere in the pipeline</div>
   <nav class="toc">
+{% if page == 'claims' %}
+    <a href="index.html">← News &amp; measured</a>
     <a href="#ledger">The Ledger</a>
+    <a href="#agi">What counts as AGI?</a>
+    <a href="#crowd">Crowd vs. CEOs</a>
+    <a href="#claims">All claims</a>
+{% else %}
+    <a href="#next">Next milestone</a>
+    <a href="#news">News</a>
     <a href="#measured">Measured</a>
     <a href="#race">The Race</a>
     <a href="#silicon">Compute &amp; Silicon</a>
-    <a href="#agi">What counts as AGI?</a>
-    <a href="#crowd">Crowd vs. CEOs</a>
     <a href="#superhuman">Superhuman Ledger</a>
     <a href="#history">History</a>
-    <a href="#claims">All claims</a>
+    <a href="claims.html" class="toc-claims">Claims ledger →</a>
+{% endif %}
     <a href="#sources">Sources</a>
     <a href="#glossary">Glossary</a>
     <a href="https://gcicc.github.io/hangar/" title="Sister site: SpaceX &amp; Tesla range board">Hangar ↗</a>
   </nav>
 </header>
+
+{% if page == 'claims' %}
+<section id="claims-intro">
+  <p class="lede">What has been <em>said</em> about AI: dated predictions, definitions of AGI, and prediction-market odds set against them. What has been <em>measured</em> is on the <a href="index.html#measured">main page</a>.</p>
+</section>
 
 <section id="ledger">
   <h2>The Ledger</h2>
@@ -49,6 +61,122 @@
     {{ p.charts.promise|safe }}
     <p class="cap">The time axis changes scale at 2015 (dotted line): 1945–2015 is compressed so the crowded recent claims stay legible. Undated claims show the dot only. Hover for the claim; click a name for the quote and source.</p>
   </div>
+</section>
+
+<section id="agi">
+  <h2>What counts as AGI?</h2>
+  <p class="lede">There is no single objective definition of AGI. The ones below range from a mathematical formula nobody can compute, to a scored test battery, to a contract that leaves the call to a panel. When someone says AGI has arrived, the first question is which of these they mean; most such claims name none.</p>
+  <div class="tiles">
+    {% for m, label in [('yes', 'Measurable'), ('partly', 'Partly measurable'), ('no', 'Not measurable')] %}
+    <div class="tile"><div class="k">{{ label }}</div><div class="v">{{ p.agi_definitions|selectattr('measurable', 'equalto', m)|list|length }}</div><div class="s">of {{ p.agi_definitions|length }} definitions</div></div>
+    {% endfor %}
+  </div>
+  <div class="tbl-wrap"><table>
+    <tr><th>When</th><th>Definition</th><th>How it would be tested</th><th>Measurable?</th></tr>
+    {% for d in p.agi_definitions %}
+    <tr id="{{ d.id }}">
+      <td class="when">{{ d.date[:7] if d.date|length > 4 else d.date }}</td>
+      <td><strong>{{ d.who }}</strong> <span class="note">{{ d.kind }}</span>
+        <blockquote>“{{ d.quote }}”</blockquote>
+        <div class="note"><a href="{{ d.source_url }}">source</a>
+          {% set q = d.quotecheck %}
+          {% if q %} · <span class="qc {{ 'bad' if q.status in ('not_found', 'partial') else '' }}">quote check: {{ q.status.replace('_', ' ') }}</span>{% endif %}
+          {% if d.public_note %} · {{ d.public_note }}{% endif %}</div>
+      </td>
+      <td class="note">{{ d.how_tested }}</td>
+      <td><span class="badge {{ 'achieved' if d.measurable == 'yes' else 'window_open' if d.measurable == 'partly' else 'passed_unverified' }}">{{ d.measurable }}</span></td>
+    </tr>
+    {% endfor %}
+  </table></div>
+  <p class="note">"Measurable" means the definition names a test that gives a score anyone can rerun. "Partly" means it names what to measure but not how. Quotes are verbatim and re-checked weekly with the claims. Declarations that AGI has arrived, such as <a href="#cu24">Jensen Huang's in September 2026</a>, are in the claims ledger, not here: a declaration is not a definition.</p>
+</section>
+
+<section id="crowd">
+  <h2>Crowd vs. CEOs</h2>
+  <p class="lede">Prediction-market odds that AGI arrives before each year (Manifold), set against the windows lab leaders have given. These are separate markets with their own resolution criteria, and none uses a CEO's definition of AGI. All four share one loose definition and resolve on a moderator's judgement (<a href="#def08">see What counts as AGI?</a>). Read the line as the crowd's rough timing, not as a calibrated distribution.</p>
+  {% if p.crowd %}
+  <div class="panel">{{ p.crowd.chart|safe }}
+    <p class="cap">Observed {{ p.crowd.observed_at }}. Below the line: every dated horizon from the current-claims set, sorted by when it opens and coloured by status.</p>
+  </div>
+  <div class="tbl-wrap"><table>
+    <tr><th>Market</th><th>Probability</th><th class="hide-sm">Volume</th></tr>
+    {% for mk in p.crowd.markets %}
+    <tr><td><a href="{{ mk.url }}">{{ mk.question }}</a></td><td>{{ mk.probability|pct }}</td><td class="hide-sm">{{ '{:,.0f}'.format(mk.volume or 0) }}</td></tr>
+    {% endfor %}
+  </table></div>
+  {% else %}<p class="stale">Manifold data unavailable this build.</p>{% endif %}
+</section>
+
+<section id="claims">
+  <h2>All claims</h2>
+  <p class="lede">Quotes are verbatim from the linked source. Every quote is re-checked weekly against the live page{% if p.quotecheck_at %} (last check {{ p.quotecheck_at }}){% endif %}; a quote that can no longer be found there is flagged, not hidden.{% if p.counts.held %} {{ p.counts.held }} further claim{{ 's are' if p.counts.held != 1 else ' is' }} held off the page until the quote is confirmed at its source.{% endif %}</p>
+  {% for set_name, title in [('current', 'Current: 2020 onward'), ('graveyard', 'Graveyard: historical forecasts')] %}
+  <h3>{{ title }}</h3>
+  <div class="tbl-wrap"><table>
+    <tr><th>Said</th><th>Claim</th><th>Horizon</th><th>Status</th></tr>
+    {% for c in p.claims if c.set == set_name %}
+    <tr id="{{ c.id }}">
+      <td class="when">{{ c.date_said }}</td>
+      <td><strong>{{ c.speaker }}</strong>{% if c.role_org %} <span class="note">{{ c.role_org }}</span>{% endif %}
+        <div>{{ c.claim_summary }}</div>
+        <blockquote>“{{ c.quote }}”</blockquote>
+        <div class="note"><a href="{{ c.source_url }}">source</a> ({{ c.source_type }})
+          {% set q = c.quotecheck %}
+          {% if q %} · <span class="qc {{ 'bad' if q.status in ('not_found', 'partial') else '' }}">quote check: {{ q.status.replace('_', ' ') }}</span>{% endif %}
+          {% if c.public_note %} · {{ c.public_note }}{% endif %}</div>
+      </td>
+      <td class="when">{{ c.horizon or '—' }}</td>
+      <td><span class="badge {{ c.status.status }}">{{ c.status.label }}</span>
+        {% if c.status.evidence %}<div class="note"><a href="#{{ c.status.evidence.id }}">{{ c.status.evidence.date[:4] }}</a>{% if c.status.lag_years is not none %}, {{ '%+.0f'|format(c.status.lag_years) }} yr vs. horizon{% endif %}</div>{% endif %}
+      </td>
+    </tr>
+    {% endfor %}
+  </table></div>
+  {% endfor %}
+</section>
+
+{% else %}
+<section id="next" class="next">
+  {% set u = p.upcoming %}
+  {% if u and u.next %}{% set n = u.next %}
+  <div class="next-k">Next dated AI milestone</div>
+  <div class="next-title">{{ n.title }}</div>
+  <div class="clock" id="clock" data-at="{{ n.at }}" data-precision="{{ n.precision }}">
+    {{ n.date }}{% if n.time_utc %} {{ n.time_utc }} UTC{% endif %}
+  </div>
+  <div class="note">{{ n.who }} · {{ n.kind }} · date known to the {{ n.precision }} · <a href="{{ n.source_url }}">source</a>{% if n.public_note %} · {{ n.public_note }}{% endif %}</div>
+  {% if u.after %}
+  <ol class="after">
+    {% for r in u.after %}<li><span class="when">{{ r.date }}</span> <a href="{{ r.source_url }}">{{ r.title }}</a> <span class="note">{{ r.who }}</span></li>{% endfor %}
+  </ol>
+  {% endif %}
+  <p class="cap">Only milestones with a published date and a source are counted. No lab has posted a fixed date for its next model, so model launches enter this list only once one does. The clock never shows finer units than the date is known to.</p>
+  {% else %}
+  <div class="next-k">Next dated AI milestone</div>
+  <p class="lede">No sourced upcoming date on file. Add a row to <code>data/curated/upcoming.csv</code>.</p>
+  {% endif %}
+</section>
+
+<section id="news">
+  <h2>Recent news</h2>
+  {% set nw = p.news %}
+  {% if nw %}
+  <p class="lede">The last {{ 7 }} days from lab feeds and Google News, newest first, duplicates merged. Selection is by date only; nothing is ranked by a model.{% if nw.errors %} <span class="stale">Feeds that failed this run: {{ nw.errors|join(', ') }}.</span>{% endif %}</p>
+  <div class="news-cols">
+    {% for col in nw.order or nw.columns %}{% set items = nw.columns[col] %}
+    <div class="news-col">
+      <h3>{{ nw.labels[col] }}</h3>
+      {% if items %}
+      <ul class="news">
+        {% for e in items %}<li><a href="{{ e.link }}">{{ e.title }}</a><div class="note">{{ e.source }} · <time datetime="{{ e.published }}">{{ e.published[:10] }}</time></div></li>{% endfor %}
+      </ul>
+      {% else %}<p class="note stale">No items in the last 7 days. This is a feed result, not proof of a quiet week; see Sources.</p>{% endif %}
+    </div>
+    {% endfor %}
+  </div>
+  {% else %}
+  <p class="lede stale">News has not been fetched yet; see Sources.</p>
+  {% endif %}
 </section>
 
 <section id="measured">
@@ -220,50 +348,6 @@
   {% endif %}
 </section>
 
-<section id="agi">
-  <h2>What counts as AGI?</h2>
-  <p class="lede">There is no single objective definition of AGI. The ones below range from a mathematical formula nobody can compute, to a scored test battery, to a contract that leaves the call to a panel. When someone says AGI has arrived, the first question is which of these they mean; most such claims name none.</p>
-  <div class="tiles">
-    {% for m, label in [('yes', 'Measurable'), ('partly', 'Partly measurable'), ('no', 'Not measurable')] %}
-    <div class="tile"><div class="k">{{ label }}</div><div class="v">{{ p.agi_definitions|selectattr('measurable', 'equalto', m)|list|length }}</div><div class="s">of {{ p.agi_definitions|length }} definitions</div></div>
-    {% endfor %}
-  </div>
-  <div class="tbl-wrap"><table>
-    <tr><th>When</th><th>Definition</th><th>How it would be tested</th><th>Measurable?</th></tr>
-    {% for d in p.agi_definitions %}
-    <tr id="{{ d.id }}">
-      <td class="when">{{ d.date[:7] if d.date|length > 4 else d.date }}</td>
-      <td><strong>{{ d.who }}</strong> <span class="note">{{ d.kind }}</span>
-        <blockquote>“{{ d.quote }}”</blockquote>
-        <div class="note"><a href="{{ d.source_url }}">source</a>
-          {% set q = d.quotecheck %}
-          {% if q %} · <span class="qc {{ 'bad' if q.status in ('not_found', 'partial') else '' }}">quote check: {{ q.status.replace('_', ' ') }}</span>{% endif %}
-          {% if d.public_note %} · {{ d.public_note }}{% endif %}</div>
-      </td>
-      <td class="note">{{ d.how_tested }}</td>
-      <td><span class="badge {{ 'achieved' if d.measurable == 'yes' else 'window_open' if d.measurable == 'partly' else 'passed_unverified' }}">{{ d.measurable }}</span></td>
-    </tr>
-    {% endfor %}
-  </table></div>
-  <p class="note">"Measurable" means the definition names a test that gives a score anyone can rerun. "Partly" means it names what to measure but not how. Quotes are verbatim and re-checked weekly with the claims. Declarations that AGI has arrived, such as <a href="#cu24">Jensen Huang's in September 2026</a>, are in the claims ledger, not here: a declaration is not a definition.</p>
-</section>
-
-<section id="crowd">
-  <h2>Crowd vs. CEOs</h2>
-  <p class="lede">Prediction-market odds that AGI arrives before each year (Manifold), set against the windows lab leaders have given. These are separate markets with their own resolution criteria, and none uses a CEO's definition of AGI. All four share one loose definition and resolve on a moderator's judgement (<a href="#def08">see What counts as AGI?</a>). Read the line as the crowd's rough timing, not as a calibrated distribution.</p>
-  {% if p.crowd %}
-  <div class="panel">{{ p.crowd.chart|safe }}
-    <p class="cap">Observed {{ p.crowd.observed_at }}. Below the line: every dated horizon from the current-claims set, sorted by when it opens and coloured by status.</p>
-  </div>
-  <div class="tbl-wrap"><table>
-    <tr><th>Market</th><th>Probability</th><th class="hide-sm">Volume</th></tr>
-    {% for mk in p.crowd.markets %}
-    <tr><td><a href="{{ mk.url }}">{{ mk.question }}</a></td><td>{{ mk.probability|pct }}</td><td class="hide-sm">{{ '{:,.0f}'.format(mk.volume or 0) }}</td></tr>
-    {% endfor %}
-  </table></div>
-  {% else %}<p class="stale">Manifold data unavailable this build.</p>{% endif %}
-</section>
-
 <section id="superhuman">
   <h2>Superhuman Ledger</h2>
   <p class="lede">The first time an AI system matched or beat the best humans, or expert humans, at something. "Superhuman" is often contested, so every row states its criterion and a confidence grade. {{ p.org_split }}</p>
@@ -332,34 +416,7 @@
   </table></div>
 </section>
 
-<section id="claims">
-  <h2>All claims</h2>
-  <p class="lede">Quotes are verbatim from the linked source. Every quote is re-checked weekly against the live page{% if p.quotecheck_at %} (last check {{ p.quotecheck_at }}){% endif %}; a quote that can no longer be found there is flagged, not hidden.{% if p.counts.held %} {{ p.counts.held }} further claim{{ 's are' if p.counts.held != 1 else ' is' }} held off the page until the quote is confirmed at its source.{% endif %}</p>
-  {% for set_name, title in [('current', 'Current: 2020 onward'), ('graveyard', 'Graveyard: historical forecasts')] %}
-  <h3>{{ title }}</h3>
-  <div class="tbl-wrap"><table>
-    <tr><th>Said</th><th>Claim</th><th>Horizon</th><th>Status</th></tr>
-    {% for c in p.claims if c.set == set_name %}
-    <tr id="{{ c.id }}">
-      <td class="when">{{ c.date_said }}</td>
-      <td><strong>{{ c.speaker }}</strong>{% if c.role_org %} <span class="note">{{ c.role_org }}</span>{% endif %}
-        <div>{{ c.claim_summary }}</div>
-        <blockquote>“{{ c.quote }}”</blockquote>
-        <div class="note"><a href="{{ c.source_url }}">source</a> ({{ c.source_type }})
-          {% set q = c.quotecheck %}
-          {% if q %} · <span class="qc {{ 'bad' if q.status in ('not_found', 'partial') else '' }}">quote check: {{ q.status.replace('_', ' ') }}</span>{% endif %}
-          {% if c.public_note %} · {{ c.public_note }}{% endif %}</div>
-      </td>
-      <td class="when">{{ c.horizon or '—' }}</td>
-      <td><span class="badge {{ c.status.status }}">{{ c.status.label }}</span>
-        {% if c.status.evidence %}<div class="note"><a href="#{{ c.status.evidence.id }}">{{ c.status.evidence.date[:4] }}</a>{% if c.status.lag_years is not none %}, {{ '%+.0f'|format(c.status.lag_years) }} yr vs. horizon{% endif %}</div>{% endif %}
-      </td>
-    </tr>
-    {% endfor %}
-  </table></div>
-  {% endfor %}
-</section>
-
+{% endif %}
 <!--GLOSSARY-->
 
 <footer id="sources">
@@ -375,5 +432,34 @@
   <p>Sister site: <a href="https://gcicc.github.io/hangar/">HANGAR</a>, a SpaceX &amp; Tesla range board built the same way.</p>
 </footer>
 </main>
+{% if page != 'claims' %}
+<script>
+/* Countdown to the next dated milestone. Units finer than the date's known precision are
+   not shown: a day-precision date counts whole days, never hours it cannot justify. */
+(function () {
+  var c = document.getElementById("clock");
+  if (!c) return;
+  var at = new Date(c.dataset.at).getTime(), prec = c.dataset.precision;
+  function pad(n) { return String(n).padStart(2, "0"); }
+  function tick() {
+    var ms = at - Date.now();
+    if (ms <= 0) { c.textContent = "now"; return; }
+    var s = Math.floor(ms / 1000), d = Math.floor(s / 86400);
+    if (prec === "minute") {
+      c.innerHTML = "<b>" + d + "</b>d <b>" + pad(Math.floor(s % 86400 / 3600)) + "</b>h <b>" +
+        pad(Math.floor(s % 3600 / 60)) + "</b>m <b>" + pad(s % 60) + "</b>s";
+    } else if (prec === "day") {
+      // The row stays "upcoming" through the end of its day, so count calendar days.
+      var days = Math.max(0, Math.ceil((at - Date.now()) / 86400000) - 1);
+      c.innerHTML = days === 0 ? "<b>today</b>" : "<b>" + days + "</b> day" + (days === 1 ? "" : "s");
+    } else {
+      c.innerHTML = "<b>~" + Math.round(d / 30.44) + "</b> months";
+    }
+  }
+  tick();
+  if (prec === "minute") setInterval(tick, 1000);
+})();
+</script>
+{% endif %}
 </body>
 </html>

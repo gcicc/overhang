@@ -106,7 +106,29 @@ def glossary_section(terms: list[str]) -> str:
     )
 
 
+PAGES = {"main": "index.html", "claims": "claims.html"}
+
+# Sections that live on claims.html. A "#id" link to one of these from the main page (or
+# the reverse) is rewritten to point across pages, so no in-page anchor dangles.
+CLAIMS_IDS = {"ledger", "agi", "crowd", "claims"}
+
+
+def _cross_links(html: str, page: str) -> str:
+    ids = set(re.findall(r'\sid="([^"]+)"', html))
+
+    def fix(m: re.Match) -> str:
+        target = m.group(1)
+        if target in ids:
+            return m.group(0)
+        other = PAGES["main"] if page == "claims" else PAGES["claims"]
+        return f'href="{other}#{target}"'
+
+    return re.sub(r'href="#([^"]+)"', fix, html)
+
+
 def render(payload: dict, out: Path) -> Path:
+    """Write index.html (countdown, news, measured panels) and claims.html (the claims
+    ledger, AGI definitions, crowd vs CEOs) next to ``out``; return ``out``."""
     env = Environment(
         loader=FileSystemLoader(TEMPLATES),
         autoescape=select_autoescape(["html", "j2"]),
@@ -115,10 +137,11 @@ def render(payload: dict, out: Path) -> Path:
     )
     env.filters["days"] = lambda d: "n/a" if d is None else f"{d:.0f} days"
     env.filters["pct"] = lambda v: "n/a" if v is None else f"{v:.0%}"
-    html = env.get_template("page.html.j2").render(
-        p=payload, styles=(TEMPLATES / "styles.css").read_text(encoding="utf-8")
-    )
-    html, used = gloss(html)
-    html = html.replace("<!--GLOSSARY-->", glossary_section(used))
-    out.write_text(html, encoding="utf-8")
+    styles = (TEMPLATES / "styles.css").read_text(encoding="utf-8")
+    for page, name in PAGES.items():
+        html = env.get_template("page.html.j2").render(p=payload, page=page, styles=styles)
+        html, used = gloss(html)
+        html = html.replace("<!--GLOSSARY-->", glossary_section(used))
+        html = _cross_links(html, page)
+        (out.parent / name).write_text(html, encoding="utf-8")
     return out

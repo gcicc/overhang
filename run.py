@@ -22,6 +22,7 @@ from overhang import (
     compute,
     curated,
     filings,
+    news,
     quotecheck,
     race,
     resolve,
@@ -364,6 +365,21 @@ def build_history(today: float, superhuman: list[dict], qc: dict) -> dict:
     }
 
 
+def build_upcoming(now: datetime) -> dict:
+    """Dated milestones still ahead, soonest first. A day-precision row stays "upcoming"
+    through the end of its UTC day; the countdown itself never shows finer units than the
+    row's precision."""
+    rows = []
+    for r in curated.load_upcoming():
+        if r.get("quote_verified") != "yes":
+            continue
+        t = r.get("time_utc") or "23:59"
+        at = datetime.fromisoformat(f"{r['date']}T{t}:00+00:00")
+        if at >= now:
+            rows.append({**r, "at": at.isoformat(timespec="minutes")})
+    return {"next": rows[0] if rows else None, "after": rows[1:6], "total": len(rows)}
+
+
 def build_payload(today_d: date) -> dict:
     today = trend.to_year(today_d.isoformat())
     superhuman = curated.load_superhuman()
@@ -409,6 +425,8 @@ def build_payload(today_d: date) -> dict:
         "race": build_race(today_d),
         "silicon": build_silicon(today_d),
         "status": cache.status_report(),
+        "upcoming": build_upcoming(datetime.now(UTC)),
+        "news": cached("news"),
     }
     mk = cached("manifold")
     if mk:
@@ -432,6 +450,7 @@ def main() -> None:
     definitions = curated.load_agi_definitions()
     history = curated.load_history()
     markets = curated.load_manifold_markets()
+    upcoming = curated.load_upcoming()
 
     if not args.render:
         f = args.force
@@ -446,8 +465,11 @@ def main() -> None:
         cache.refresh("filings", filings.fetch_filings, force=f)
         cache.refresh("quotes", filings.fetch_quotes, force=f)
         cache.refresh("manifold", lambda: sources.fetch_manifold(markets), force=f)
+        cache.refresh("news", news.fetch, force=f)
         cache.refresh(
-            "quotecheck", lambda: quotecheck.fetch(claims + definitions + history), force=f
+            "quotecheck",
+            lambda: quotecheck.fetch(claims + definitions + history + upcoming),
+            force=f,
         )
 
     payload = build_payload(datetime.now(UTC).date())

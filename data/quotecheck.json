@@ -1,6 +1,6 @@
 {
  "data": {
-  "checked_at": "2026-10-29T18:34:40+00:00",
+  "checked_at": "2026-10-31T15:25:22+00:00",
   "results": {
    "cu01": {
     "detail": "",
@@ -298,6 +298,26 @@
     "detail": "",
     "status": "verbatim"
    },
+   "up01": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "up02": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "up03": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "up04": {
+    "detail": "",
+    "status": "verbatim"
+   },
+   "up05": {
+    "detail": "",
+    "status": "verbatim"
+   },
    "w1": {
     "detail": "",
     "status": "verbatim"
@@ -308,5 +328,5 @@
    }
   }
  },
- "fetched_at": "2026-10-29T18:34:40.925491+00:00"
+ "fetched_at": "2026-10-31T15:25:22.982205+00:00"
 }
