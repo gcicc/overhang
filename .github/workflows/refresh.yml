@@ -45,6 +45,6 @@ jobs:
         run: |
           git config user.name "OVERHANG Bot"
           git config user.email "action@github.com"
-          git add docs/index.html data/
+          git add docs/ data/
           git diff --cached --quiet || git commit -m "chore: refresh $(date -u +'%Y-%m-%d %H:%M UTC')"
           git push
