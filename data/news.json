@@ -3,6 +3,48 @@
   "columns": {
    "industry": [
     {
+     "feed": "Google News: chips & capital",
+     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPamtQRzNaTzc2TmRPblhOdEc0XzRTckUxMzVIbjVETW5UcU9za0hhNDZjYldiaGRQZ3dYYUpjUDlXaTNEYzR2ajZuMUJiR1pwMjJLaEExb1YwR1FzeGRJMVdEelBQMjg3NzB4UlpVV3dhMTNxdEVvdXFFcjVvS0ZIcWNPUmh5eFd5UkUtUmZGejc0aWZHVjNISUw5ZF9TMTNXZnZsaHlYcFFTdjItakYzS1JwRTNkT2VIVndF?oc=5",
+     "published": "2026-11-01T16:13+00:00",
+     "source": "TradingView",
+     "title": "AI capex surge pushes Big Tech free cash flow below zero - TradingView"
+    },
+    {
+     "feed": "Google News: chips & capital",
+     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9LczJ5a2lhNEdnVjRxVVRtX0ZkOFlYQldwRlhsM1RnRy1ZZzFReWN0aHk3NGVsZGFDVTVEQjdCaC1IclFTbnZfV2lhRy1uZ0ZzX3hNNEdESjE4Tzc4UGdPSlI4NXE1Wk5OS1pfX1Z1SFpmOWp1eEE?oc=5",
+     "published": "2026-11-01T15:16+00:00",
+     "source": "BigGo Finance",
+     "title": "Nasdaq's 5.3% October Swoon: AI Capex Fears Meet a History of 24% Rebound Years - BigGo Finance"
+    },
+    {
+     "feed": "Google News: policy",
+     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPbm1CLTVZV0gycnh1a0FrYXNxQ3B2ZVlJb3RON29TbWZPRENUWklDamJUS3FERXhuRTNnN0J2LTlvX2taQU9HVzhHUU9tcUJ6SWgzVFhBMTlhRk9LWG5Id0lkcmZpa183dTMyT2xHWFRGNVhoNFRvb3NaUUo3T25YanpESjZ0ODZXaGdqdFk5SQ?oc=5",
+     "published": "2026-11-01T13:37+00:00",
+     "source": "FourWeekMBA",
+     "title": "Anthropic to Watermark 4 Older Claude Models for EU AI Act - FourWeekMBA"
+    },
+    {
+     "feed": "Google News: policy",
+     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNMFhTcC1XX1loX1FBbktrUXhqS1VTX21ubncyQkp2TWpJQ2h1NEcxbk9fQUJLX3pobHlHMXkzT1dPR09uTlpzZDJxOV8wU3k1QWpURnBSSVd4dV9lbjhqVFM2WXQ0cnctV0lhYTc1bXNuaVU0UThyOGRZTEJqVzVGMlNwREVzcDNrSExXRHZjdVNHNVRYb2ln?oc=5",
+     "published": "2026-11-01T12:18+00:00",
+     "source": "Traders Union",
+     "title": "AM Best highlights claims, AI regulation and California homeowners market moves - Traders Union"
+    },
+    {
+     "feed": "Google News: policy",
+     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQaENXbFNnM3RrVTF2NkdhTVlMTE1Ec3FQNTdSQlVIQ2ViY0l2VlFINUV5R2NPU2tTZXluVVhVUHphcC1uSVVjVTVlSzRFbmNOeW1Pd3dTbmdPZEVsTmRMVUs3Vy1kcC00NmJmVzhGeGR2bUhncmFadGhpM0FHVUtqaTRoRnM0TVZMdFdFMHpXUU8?oc=5",
+     "published": "2026-11-01T12:18+00:00",
+     "source": "Traders Union",
+     "title": "U.S. insurance headlines highlight claims costs, AI regulation and California market reopening - Traders Union"
+    },
+    {
+     "feed": "Google News: policy",
+     "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPdTFfc3BRUTZ6SVJhOG9maDM5bV8zUFlQOFB5WlNyRHI2c2RYSVdsQm92bElPanE5S0haWHVsMlRzeERwQjFlNGx5WUk3c2ppbWZxSG84dWRLa0FYdWhtV1o0Uk1xTHdoWTdXNERsRnYtZk1LWk1acjB6cDNqQlVEMUVFQQ?oc=5",
+     "published": "2026-11-01T12:13+00:00",
+     "source": "SFGATE",
+     "title": "The AI policy San Francisco's next school board should adopt - SFGATE"
+    },
+    {
      "feed": "Google News: policy",
      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPOGltYVZ0Qk1VY09pSFVkX2NhOWdQa0xuSHNkXzJKamVKODF4T2dvV3NISS1UTHF5cmpZS3lrWEhEaUkxTWlQX3owQ25sTXF6aWxZSHI3dWpYLUlUMk4xSE82bTYwUVl6MlVQcG1MZG9HNGxpdnNwaGdBZXJTSVBrZWVCOThVelhG?oc=5",
      "published": "2026-10-31T23:35+00:00",
@@ -10,104 +52,62 @@
      "title": "Opinion: U of T\u2019s staff AI policy needs an update - Varsity"
     },
     {
-     "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNcjk3U09keUVnRkpqNGEzVFFidUVzbkR6NndwcHU2T0NSLVpYaWRvbEtpZzNtTWZWRUZQai05MmFpZ25uRnhnQ1pnSHFBRGtvbVhUZk5tM2lQWEoyay1ram9TSmMyVlpLTVlrRmVZbFVqTGVFcHdZSV8zUXFYRWhFdFdHS3dBMWZfS2t6V3hxYmg?oc=5",
-     "published": "2026-10-31T20:21+00:00",
-     "source": "FourWeekMBA",
-     "title": "SpaceX AI Will Watermark Grok Text by Default for EU AI Act - FourWeekMBA"
-    },
-    {
-     "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNUm1JRnd2UG5tYmJ0eUlFQThSa1pTVVBuWGU1eGhINWFQS0hDbnJkdnFhSmR5QWNZMHQ3cWtQb1U3S0R3Y091LWpLOTVicGdqYW8zT1ZtcFVkOEl1V2tCXy0wTXYxcTNwMFlhdVp2TlJ2NWc0NnR1YkhiT001bFE1a2VqS0F5VTdXOXBPbUtiY05wQmNkSmFoeDIzQnFvUng3allz?oc=5",
-     "published": "2026-10-31T19:58+00:00",
-     "source": "Marin Independent Journal",
-     "title": "Dick Spotswood: Congressional candidates weigh in on AI regulation - Marin Independent Journal"
-    },
-    {
-     "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNU2VxcS1qMF9DbnlOOGlOUVAtaTgzVmFaLWJzTEV2M2I0Y1BuTUhhMlIyYUM1ak1jSzMtSzFLZHZlRm9XZkY2X1pIZktyc2w2NnN5aWduMFNUT0t1MmxoamVwY3IxWWlYeUZ0MWFwMWQtWWxxSU03c3dpbktUejNPZ2dTUk5XaG5iVlhYRFE0dUducEhNeHVPNzVOS3E?oc=5",
-     "published": "2026-10-31T13:07+00:00",
-     "source": "iAfrica.com",
-     "title": "South Africans Won\u2019t See Redrafted AI Policy Before March 2027, Official Says - iAfrica.com"
-    },
-    {
-     "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOdUxSTTRqdWlyN1Z1RVpic1NTbk5mN0M4Z1R2dG41QWY1Sm44ZGZfVVhhREdQelRic051VnFrMVdJNkV1NFkyTFY1WjNrN3RuWm1YVzFKV2hMYlFqN0RZX2lCOURtV0xuamlNNmFiNkdsRHQ3ZDh5bVpDelRueVVUT1d4MEdxYkVuekF6c0pVbTU2dG9fVlJ3SUtuVXh5LUt6WG8xN25HMWktWGd2RTlxeVFJXzU?oc=5",
-     "published": "2026-10-31T10:55+00:00",
-     "source": "Bloomberg.com",
-     "title": "AI Policy Fears Grip Stock, Bond Traders With Midterms Days Away - Bloomberg.com"
-    },
-    {
-     "feed": "Google News: chips & capital",
-     "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRl8zQVNGcDIyejlTQXNJOUF6MTJJX181aHR2SmVKdjRnQUJ4U0dwbXY4dzMwc1o4US0weHR4cC04eWtjcnhFQmFEU2d2N0o4aU90Q2l1eExuYWRSanl3ZU1uRC1qdFFaeTlzVVNTUHVGQy1FbjgwWVdCaG51VnNlNUdWU1VIY2VSdWFnazBPVnhUWVhvT3VBell3U3dqR0tLcVE?oc=5",
-     "published": "2026-10-31T04:10+00:00",
-     "source": "Channel Dive",
-     "title": "Google outspends Microsoft in race to expand cloud capacity - Channel Dive"
-    },
-    {
      "feed": "Google News: chips & capital",
      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE02RWZHZnZ3ci1oU0RMd3JSbUdNUmVKQWtUUFYxU0o5LUp0ZklhczBNWkxGUkdBN1VyTXRJVEwtaDhKdTJXVjlVS1MyU1llRUFJUDh6Uzg2LTZOVXJtVFdz?oc=5",
-     "published": "2026-10-31T00:23+00:00",
+     "published": "2026-10-31T20:06+00:00",
      "source": "BigGo Finance",
      "title": "Anthropic\u2019s Growth is Slowing: Is AI Capex Next? | The Weekly Wrap\uff5cThe Real Eisman Playbook - BigGo Finance"
     },
     {
      "feed": "Google News: chips & capital",
-     "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQdEhPMlAwQXhycE9xc2RBaDRKTFVZVUpjOEpKU3JmajdkM2hrcDd6RjhKYlNlbVR2TWw0MC03cmRIRklSVmRaeG5iSTQwVE1SZV9qNHhxVHp0eHZZOEhtOGtmajRjOWJCYTJfR3c2cl93ZVBSeS1BUUdKOWx0d1lXM3c0R3BQMDA3Qjl4d1lyc2RuTzdWOUtKU0RSbE5kNDNPVGpxbTZyeEdNTmJKS3dRaGpqYWxSMDUzZUxHVXRUVW5oc0pzVmEtTy1sQTkwODR0RmFDMXpuZWdjVGVxdWl2bjJKdkRPMFVDa2NWYmM3eFdoNWZucDZESXZRd0NVZEhhdkdIZw?oc=5",
-     "published": "2026-10-30T17:06+00:00",
-     "source": "24/7 Wall St.",
-     "title": "CoreWeave Sinks 11%, Nebius Tumbles 9% as Hyperscaler Spending Jitters Rattle AI Cloud Stocks; Cloudflare Plunges 12%, Snowflake Drops 9% - 24/7 Wall St."
+     "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNNWxBZEs0SGZxLTlXckp5dm5TYklpQV9BTExsWi1ZeUt0Qk1ROEhnZG9sMmdzRkRQckh5YlhzMzNRR3E1S0JxWFVBZFg2Z0VxLVlMMzFUUE9UanpxeFdyYkw1NV9adzVrWjBPckdFNVpaMnEwMlVFN2VmRXF3SmxWTmZ5R19XdUVtRHQ2ZUZ6YzFaNE00d2s1eHdSZkdvVFdkTjNfNk5Gb0lmcU9iRjljTmNGV205UnQxVXR1V2R0S2tTTEhESDZCWjVUYV83MFpOb1ByYmV5N3dJQnVoRDUxQjNVTDBHQVA0dzZZ0gHvAUFVX3lxTFB0aGE0aXJpelVSZ0pCYV91NWx2YXMybm1laXoxT0hwTzFDUnkzaWZFVU5QSDIyai1Yb1FRcjdrZEJzVVhuODMtdzFVcTNESDZwVmZDSmdNelFEZmpjdF9nQVAwcGpUTkhBQVVJRFZWQTBaYm54TVNHMHFMYVp4YjV3YzBiNXc2bkZtUkdDcGVNejFhUlRwbXU0a01kVU00c0hjdEFhaXNGM3I0SG5BRTJMLWlYRFp1QWtNRUd4Y2Q0U0ZodGUyOGZ1bjFhd3VnVFJ3YmRTTkZCNEhxZy1CN3EwX2p4WUFLQkN3V21FZThZ?oc=5",
+     "published": "2026-10-31T03:11+00:00",
+     "source": "ET Datacenters",
+     "title": "Oracle to charge for AI tasks, not seats, as capex nears $95 billion - ET Datacenters"
     },
     {
      "feed": "Google News: chips & capital",
-     "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOWkFSVmF0VHpkajRiOVlUbzdtVVpybXIydm4zM1pad01oV2RsUW1mcFpjUHVMaVJwd2c2X1FTZkZMYlhudkZ6bFVxcWJZSTNGSmNNWGQ4ZmdsbW9xWFplZEliNXotazZabWlSUW9UbFAza1FLR0FDNF9zMFRmMDZYQ1lPbmh1SGNKVDFzaUxvZ3ZkalVqUkZUNXl3YThLMGdUYWh2UmU5THJjR1FMenNncUdQVFdWcktxbzBFaXBVbUxnMVdPSnkxNFRR?oc=5",
-     "published": "2026-10-30T10:36+00:00",
-     "source": "Investing.com",
-     "title": "Higher yields now hurting AI stock bull as bond markets police capex: BofA - Investing.com"
-    },
-    {
-     "feed": "Google News: chips & capital",
-     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQX2ZBTXdKeTh1cjFDSXlBaWtBS0pDa0o2UDU0SF9LZnJqQnpENTVmc0wtV1A4Ni16Rnk4a3BzYWVUeVN1RzI0YVZBR3ByQmNRYTRSSTlQZUJTcE1TaUZ0SWtVU2ktZExoU3hKRjdXN1pVTmlIa00wdmxEMXBZR0FPVnRyY2lXWEJybmw2ekwxTkVubnJxQmQtd0JfSlUwMHNab0FN?oc=5",
-     "published": "2026-10-30T09:11+00:00",
-     "source": "Business Insider",
-     "title": "AI hyperscalers are expected to finish the year spending a whopping $828 billion on capex - Business Insider"
+     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNaEMweVVEWTBhdnlpZlFKY0FXcmFwR1JzcWlJcGh1ZkFRblZ2eTcwWnZUN3k5NUVKNEpScF9yclVHeHVfS3N2alRfYWNtSnI0cklET1d2R1VZd1ZRWFZUNmdsUkc3MWQzUWpvOXh6d21JZlhEYWtnVmtfcGh4dXFSa0dmMzRBQTM4MUlzNnZB?oc=5",
+     "published": "2026-10-30T21:09+00:00",
+     "source": "FourWeekMBA",
+     "title": "Apple Passes Nvidia at $5.03 Trillion as Chip Stocks Slide - FourWeekMBA"
     }
    ],
    "labs": [
+    {
+     "feed": "Google News: labs",
+     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNdlRTSktsR1lfYmNBOURrNzZSbDJRcG55dmhHQ2E3d1JQSXNQMjRrdVpHdTlUcHotNF9UaVdnX0QzRlVONWtPSmsteUtQSTc0cTRxRjVjOXM1WWExcTdkdkJqLTdmc19seXlxYXd3ZGlZejREMTJTeUsxWFVaVHFjemkwQVVZTk0?oc=5",
+     "published": "2026-11-01T17:31+00:00",
+     "source": "WSJ",
+     "title": "The Smartest People in AI Believe This Is the World\u2019s Most Important Chart - WSJ"
+    },
+    {
+     "feed": "Google News: labs",
+     "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNM3pDX0Q5T210LWlQT0xBcDFMRkpfWmJBZUtYdklVR1o0UnVaYWVpNVF4UWNsXzk1NTJRRmRFSUtwcENaenZfcVJFMnpCeFhGMy1fOGpLRTRwR1o5OU8xTTZtcjJ3RnVUU1JFdnZtamZJNWhnMHlBdHdxXzhUMlhIX2Z5c3lEdkR3VWRIQWVGZWUwSFnSAZMBQVVfeXFMTTN6Q19EOU9tdC1pUE9MQXAxTEZKX1piQWVLWHZJVUdaNFJ1WmFlaTVReFFjbF85NTUyUUZkRUlLcHBDWnp2X3FSRTJ6QnhYRjMtXzhqS0U0cEdaOTlPMU02bXIyd0Z1VFNSRXZ2bWpmSTVoZzB5QXR3cV84VDJYSF9meXN5RHZEd1VkSEFlRmVlMEhZ?oc=5",
+     "published": "2026-11-01T12:17+00:00",
+     "source": "Tech My Money",
+     "title": "Gemini 4 Carbon Is Google\u2019s New Frontier Model, Starting With Cyber Defenders - Tech My Money"
+    },
+    {
+     "feed": "Google News: labs",
+     "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOR29pZ2JtcUU2YjZwcUttVFFPdkdWeG56OEpFWjZZeUVVV05qQ3Y1VDdCQlRKRkR5dHRDUjRYbjFwUmN6V0cxYkRpMy1jTkJ4YmZobF9LTGZzRjBHNGctQVRtMzlKcDNaTFU3eXYwSmtleVFXWVhIYkpZSEJka1U1b3U2aWd2QQ?oc=5",
+     "published": "2026-11-01T09:47+00:00",
+     "source": "https://tech-insider.org/",
+     "title": "Gemini 3.1 Pro at $2/$12 Undercuts Claude, GPT [2026] - https://tech-insider.org/"
+    },
+    {
+     "feed": "Google News: labs",
+     "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOZ1Ezd1B5OTJQb1AyR2JxcEJfcktPbTlMX29UeUdfTzJENzVGaC02MFI5YWYwNWY5cGxHVzRtN3A5REdzbUpzV3dUMHhfdXZndzRLN1RwdGhpenRYWEdaeWhQWE1iYV9aLWttNGpNT0hfb25Od0RreXJhR2U0bC1zeW9SenhlcDVpcTFZVm9QMlNkX0FPYVVObklsYUwwa2xVSnJyd1doVUY3aU1taGdITjVnMEY5WXBXM3Bnc29LMEthT0Z1eTBB0gHOAUFVX3lxTE0zV3EzUzhRY0syTFBPd0dpR1lNeTZyME5hYkpsUW1aenZpWjI2eFpzd0VWRDVCazBnZE95Ym1hR084OUlmbFAyTkNvR0YzV3FMNVdCU2ttQWdvQkRVc0NaNWc1cFYtR3BtTU01THc1dDgtSUxIcG1yVkFCRjlXVnlmbXpHSWJHRzlTblp3WDZqLXJtSXpPd2I2NGtURDJRdkxBWXBNRHh1R0MwNDl3NjV5NmtrZUR1aGZkbFhxbzVHSXpmMEJKMkJHT2N0QU5B?oc=5",
+     "published": "2026-11-01T03:36+00:00",
+     "source": "The Indian Express",
+     "title": "What is Gemini 4 Carbon, Google\u2019s new AI model for finding, fixing security flaws? - The Indian Express"
+    },
     {
      "feed": "Google News: labs",
      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxObWRRVDc2NW4xb3Vod21YR3hORTRGNjlONHFUc3ozSWx0SGZ2ZnpGd1NoUnRXSFlXcUoxOUZEcXJHVkhQVHc1ei01VHpaMWJXZUJZVEFjTXpoVm5oMnlaOW9KZ3BPQXBBMzVRaEVva3p3eFMteHFjdnltQmozZnZqNXFDTVVRME9ONXZ5YXdCRDV5U2FiTzFmRmtKa2c3ams?oc=5",
      "published": "2026-10-31T19:24+00:00",
      "source": "The Decoder",
      "title": "Anthropic's watermark rollout leaves a loophole on two older Claude models - The Decoder"
-    },
-    {
-     "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMisgJBVV95cUxQQWNodkI3ZkR6NWhnOU1MTnRjbTBkVHN5T3lyMXRCT2JxU2FRa1Fmc2lkajNteFAyZFNXSlhEd2U0Sm1FVTA1ZDByZldNUUtnZHpPU0dFQThUMi1nUUpXWjV5d3VXSHNFMUpjZE9TLUxZM1R1ZUI4cG9heTZ1TWdtd2JXckZqTThobGZFSTRRS05YaFFZUlU1cUx5dVY4SXowY2lhTTR3OVBBY09SbE5TNDBDbTZiRk5mVllXYUZmUzlxQkRiZEFCVnMxMU5wR09yQlMzUV9RMWEweGxMMjRGT3d4WmpwRHB2VGpsaGg0dTh5TVlfMGJQWWdZaTl3aFZvZjJ3YlE0dEhqamQyOEtKaVlhZk5GUE5QQXQ1ZjVlSnVJbjF4eHhnaGVQSUxqU1hyLVHSAbcCQVVfeXFMUGJURFMtd2N1d040bG5ncWVJYzNLVTFEdC02M2JyUnZIbWI0aWVGa0dTNk5Qd0RNYlNCYWJOUWxMQ1NqUEFpeWRPYzUyRjlnd2F1Ym8wQjZXQkN6eWc4LUNYS2FTQVNaWmdYWEJqYTZhNnQ3UWdLVTBoVDM4NERJOHg4eUFXT0F2Z3NNYTN0clNhc1U3eTJsX3pEUXplYktac3hhZUZ2XzFHNHlXS1BXazdHTEZUN3JDTk9WQWVyeGFPODUzZV9zY05MNGxtV25yR3d2c25TWmxmR2RwRTFITkJ2TW5XV3kyX1JtQnFVYlViY2VfTjUyTXN1TjgyaWVZSlotM2FMQmloU3p6NEdjR3cxZnpJelhnRDR6OXItM0dyUnIzNVF6WDBxdTR2bmoycGw1djJ4Rm8?oc=5",
-     "published": "2026-10-31T17:11+00:00",
-     "source": "Wccftech",
-     "title": "OpenAI Teases GPT-6.1 Astra Amid Relentless Hype Around The Mysterious GPT-6.2 Betelgeuse Model, As Another Evidence Surfaces Showing Kimi K3.1 Pro And GLM-5.3 As Products Of Distillation - Wccftech"
-    },
-    {
-     "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFB2aTNiejdCUW45NDE1Vmp5OWt2VHptYnA5dnlYUHdRczh4Y0lPLVBwV0tyeFhjOXlkN2FqTWFESzFnVVQ1aGVnRWFycDZDSy0xeVFRUURWRmtwZ3JqX0NDc09ZVHd0d1dxTmx6Zm1B?oc=5",
-     "published": "2026-10-31T14:28+00:00",
-     "source": "Mashable",
-     "title": "Where is Gemini 3.5 Pro? The case of the missing AI model. - Mashable"
-    },
-    {
-     "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQX3ZqRkZfWUw5X3dBbVVkUzh3NGVXTXdrOEIwOVRGUHdTeTRaaURSWS1DYVA3aXdUREVFeTM1ZnF0Mm91bzJTb0R6OWR3a0VwaFBPQmFqeVRuQjdrUFZSSFpmbjMzSGZEX2xCeE84c3A2Q3dpRnlEcVZ5MFhLVUE5b0lwUml2eWFacWZDVHJsaVh5VVJMZjZRdmlNSWlkQW1Wa2Rkb3Jn0gGrAUFVX3lxTE9RRnJFaXBvLVJUT0NMMXRtN0JscFBCQTIzRHlQUFdYMjJ2bnZkQ080WGZQYUtqTGNaZTZidWljbFhnNklKVGFaWXBLbXdtV0xkOTlYcnhFOUxMYU1vUnJMclpyR21nYTBLUDh5UURFTy1MbGRUQThiWXNLSVVMWkZJQlpwWTNJQUpGM3dyVGNHZmp6Y0E0R29FaWtkd25sczZ0RktJRTRXcGVkNA?oc=5",
-     "published": "2026-10-31T00:11+00:00",
-     "source": "ABC News - Breaking News, Latest News and Videos",
-     "title": "Anthropic says its AI models hacked 3 organizations on their own during tests - ABC News - Breaking News, Latest News and Videos"
-    },
-    {
-     "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNREVHQUYwbHRTT3U1S2FaWU9LWkhCMXRlN040dndWVzYzNl9qNnlaU0xwRERVMDF5R2VpYk9VWTI1ZWE5LWRBaDBYamMxUFh5YzN2WXRHZXdvYzlEMlNRaDlwUDVFNVE5NXlRbVNZOE0wYWxON2gzc1hjOWgyLVpJSDcyOC0tSkZjWjJzZl9LMm8xWm45YU5mdU5VYkE?oc=5",
-     "published": "2026-10-30T23:56+00:00",
-     "source": "Yahoo Finance",
-     "title": "Anthropic\u2019s Wall Street debut to cast long shadow over private AI stocks - Yahoo Finance"
     },
     {
      "feed": "Hugging Face",
@@ -170,5 +170,5 @@
    "industry"
   ]
  },
- "fetched_at": "2026-11-01T06:21:15.749734+00:00"
+ "fetched_at": "2026-11-01T17:58:01.120751+00:00"
 }
