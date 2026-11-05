@@ -503,6 +503,11 @@
       "derived": false,
       "end": "2026-06-27",
       "value": 11536000000
+     },
+     {
+      "derived": false,
+      "end": "2026-09-26",
+      "value": 13377000000
      }
     ]
    },
@@ -1079,5 +1084,5 @@
   },
   "source_url": "https://www.sec.gov/search-filings/edgar-application-programming-interfaces"
  },
- "fetched_at": "2026-11-04T06:39:19.519306+00:00"
+ "fetched_at": "2026-11-05T06:58:31.213480+00:00"
 }
