@@ -2,7 +2,7 @@
  "data": {
   "series": {
    "ARC-AGI-1": {
-    "generated_at": "2026-10-28T16:04:23.365Z",
+    "generated_at": "2026-11-06T14:32:53.859Z",
     "points": [
      {
       "date": "2023-11-03",
@@ -420,13 +420,13 @@
      },
      {
       "date": "2025-08-07",
-      "model": "Grok 4 (Refine.)",
+      "model": "Grok 4 (Refinement)",
       "org": "J. Berman",
       "value": 0.796
      },
      {
       "date": "2025-08-07",
-      "model": "Grok 4 (Refine.)",
+      "model": "Grok 4 (Refinement)",
       "org": "E. Pang",
       "value": 0.771
      },
@@ -660,7 +660,7 @@
      },
      {
       "date": "2026-02-03",
-      "model": "GPT-5.2 (Refine.)",
+      "model": "GPT-5.2 (Refinement)",
       "org": "Johan Land",
       "value": 0.945
      },
@@ -1773,6 +1773,12 @@
       "model": "DeepSeek V4.1 Flash 1017 (None)",
       "org": "DeepSeek",
       "value": 0.05666666666666667
+     },
+     {
+      "date": "2026-11-05",
+      "model": "Inkling 2 Small (XHigh)",
+      "org": "Thinking Machines",
+      "value": 0.965
      }
     ],
     "reference": [
@@ -1792,7 +1798,7 @@
     "unit": "fraction solved"
    },
    "ARC-AGI-2": {
-    "generated_at": "2026-10-28T16:04:23.366Z",
+    "generated_at": "2026-11-06T14:32:53.860Z",
     "points": [
      {
       "date": "2023-11-03",
@@ -2234,13 +2240,13 @@
      },
      {
       "date": "2025-08-07",
-      "model": "Grok 4 (Refine.)",
+      "model": "Grok 4 (Refinement)",
       "org": "J. Berman",
       "value": 0.2944
      },
      {
       "date": "2025-08-07",
-      "model": "Grok 4 (Refine.)",
+      "model": "Grok 4 (Refinement)",
       "org": "E. Pang",
       "value": 0.26
      },
@@ -2396,7 +2402,7 @@
      },
      {
       "date": "2025-12-04",
-      "model": "Gemini 3 Pro (Refine.)",
+      "model": "Gemini 3 Pro (Refinement)",
       "org": "Poetiq",
       "value": 0.54
      },
@@ -2474,7 +2480,7 @@
      },
      {
       "date": "2026-02-03",
-      "model": "GPT-5.2 (Refine.)",
+      "model": "GPT-5.2 (Refinement)",
       "org": "Johan Land",
       "value": 0.729
      },
@@ -3575,6 +3581,12 @@
       "model": "DeepSeek V4.1 Flash 1017 (None)",
       "org": "DeepSeek",
       "value": 0.020833333333333332
+     },
+     {
+      "date": "2026-11-05",
+      "model": "Inkling 2 Small (XHigh)",
+      "org": "Thinking Machines",
+      "value": 0.8166666666666667
      }
     ],
     "reference": [
@@ -3588,5 +3600,5 @@
   },
   "source_url": "https://arcprize.org/leaderboard"
  },
- "fetched_at": "2026-11-05T06:58:28.980188+00:00"
+ "fetched_at": "2026-11-06T19:30:10.601927+00:00"
 }
