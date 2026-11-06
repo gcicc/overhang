@@ -4,10 +4,59 @@
    "industry": [
     {
      "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNR0RwSmVDRzBPV0xSelhlemZ4dFZXRkVvUm9CQkIzQWcyR2F1aFUzVkhyRGhyRXFEcHZabk9VdGFRSHRQaDNjZmtLN2xqYlhLNzZwNUQwME1ibTJRcnh3ZzNCblkxcXBacGYtZ1NGX0ZEZlBnUmU4NnA0bENUV0I3WXJVRXg4LTJhNEVOZDhCeDhSaXl6VTRPZUVEczlkRG54aVhOT2RmR054bEticldR?oc=5",
-     "published": "2026-11-05T19:50+00:00",
-     "source": "Benzinga",
-     "title": "CrowdStrike Stock Plummets on AI Regulation Fears - Benzinga"
+     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPdXhuenRWNDNXTWlac0xwd2RQS1o2c1V1YUp5eWpiOHMxSnpjRjhGSlRsa1M0bzVGWFpQREpfWEM0am9KTk91VTR0blBHQ0VHVkw0bU9weTB6bVd4eGVsX05FZDN1Y05pMC1XcUp3UjB4aHo3LWQxa0ptMXJ1M3g5WXFiYUpPMEh1Z2g2dEVPUXlPN0RLOEU0OERnRkU5TGxXQ3hNZnpZcEJqYVRtNUE?oc=5",
+     "published": "2026-11-06T06:16+00:00",
+     "source": "CNBC",
+     "title": "Why South Korea\u2019s chip giants could face greater AI regulation risk - CNBC"
+    },
+    {
+     "feed": "Google News: policy",
+     "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPWHZkU3VXdk14TVl3RUdGVjdKUmR5RjFQSVFmdmV3bDB0b0RHblhkbFdvTlVLYlBGME52ckVpWTdJc25SN2lnU3A0MXFCalg5bjZvMWltM2JkYmFNV2xZWDNxUlU3V21DVEdqQk9WMFpnYnNmNHhVVm1nZlRGN2d0MDRXRmxsMUFnMnQtaQ?oc=5",
+     "published": "2026-11-06T04:13+00:00",
+     "source": "Ticker News",
+     "title": "U.S. political shift could reshape the future of AI regulation - Ticker News"
+    },
+    {
+     "feed": "Google News: policy",
+     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9wSDJnT3IzcmJyREtsMjJWZG9MTlJnV2l3OWYxN3EtVHVGQVR5cWVuTnFnSFIzWk9RN0lVZVpNY0xTMDBlaWhTVzlua0xFTlBPcHhjTnRmcDVqUQ?oc=5",
+     "published": "2026-11-06T03:18+00:00",
+     "source": "Japan Wire by Kyodo News",
+     "title": "Nikkei briefly dives over 7% to below 60,000 on AI regulation worries - Japan Wire by Kyodo News"
+    },
+    {
+     "feed": "Google News: policy",
+     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNMlVNSV9pSTVLZFNaeTF5Y1dnb1JsUlhXd2NGSXlwS0g2clJOSEM2Mm1aTXhNeU4yYVBLVUJMNDk0S0hmU0tBMzlWc0JESm5uaktTQzhpMkRxcFplYllEQ1lYeWFYV01aVEthamZvREdMZks1Z1dqaXpEdmtUei1aTmtJVFVKQ3RKUi15anRQaEpEc2xURE5ObV9Ndw?oc=5",
+     "published": "2026-11-06T03:10+00:00",
+     "source": "KTSM 9 News",
+     "title": "Stocks plunge as election results fuel AI regulation fears - KTSM 9 News"
+    },
+    {
+     "feed": "Google News: policy",
+     "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNanprcEJOanNVQWFuYWtlY3RmeXJSMlQ1ZDZaMm5fTDNXMDJsV2FMX2tBcElfb3lOcGlUQmFLVXRUbk11OUM2U2lXNkl0ZF9ydmNEdGFkYmw1T3UxbTVyYUdfOHJaRzJPeDQ2U2c5ejQxM2MwMEk1X2k0Z1BYZXhVVE5zazF0bExIRjdpQVZrRmhjZFhsVUlxOUxOdWN3UVBX?oc=5",
+     "published": "2026-11-06T01:38+00:00",
+     "source": "marketscreener.com",
+     "title": "Japanese Stocks Plummet on AI Regulation Fears - marketscreener.com"
+    },
+    {
+     "feed": "Google News: chips & capital",
+     "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQR3c3czU3RmNkbE5EN195Uk9DMV9zNW92XzNFRlpTUGVhX1V2S2plejNTZDZYZlBsM0hVVHBxb21YWjUxM3JWdEtOY3llZ0x1NGdzRGpPUGlpT3VGeDRjcW04N3lSV3hwZ1M3Ymp2WC1DOFNEU19OZTNFQlQ1dEFuNE5B?oc=5",
+     "published": "2026-11-06T00:05+00:00",
+     "source": "Dr. Robert Castellano's Semiconductor Deep Dive Newsletter",
+     "title": "The Inmates Are Running the Asylum: Wall Street\u2019s AI Capex Contradiction - Dr. Robert Castellano's Semiconductor Deep Dive Newsletter"
+    },
+    {
+     "feed": "Google News: chips & capital",
+     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBwLTlEd1FUWndqcENibndLa2RlMWx4a0JVc1dqNDJ4bEcwUkhCNFVIUVBOY1RER1lGeEdkLWtSNVhVZW9iNXhKY09YOXBFOXNXUkY3M1U4enI0eTZDb1FLT3kzTWd0T3U4MjhlQUU1bDd0bm5Y?oc=5",
+     "published": "2026-11-05T22:59+00:00",
+     "source": "ValueWalk",
+     "title": "Pershing Square Q3 2026 Letter: Seven New Bets In 2026 And A Defense Of Hyperscaler Capex - ValueWalk"
+    },
+    {
+     "feed": "Google News: chips & capital",
+     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQV19fLURaRzFpSkg2NUk4NHBoZDVRN3dmWno3UmJ6NUtwOTJfNi1rbTFVWjhaRk1EZXhhM2lmQTJWWFFSMUhyWUhNb3huTFB4NmZhWUs4bU13cnJ3LWNHWFQ0OV9FdXczWXd0RHltSmlNUjBpYW83V2NVaXI4U3ZNOXBDY0FaYlNnQ3JnLV81RkI2bEdMQkJIR3djaXFLVU1lanZYWGNMRUwwNURlZDhScEh3bFg?oc=5",
+     "published": "2026-11-05T21:42+00:00",
+     "source": "Seeking Alpha",
+     "title": "Microsoft Q3 Earnings: The Only Top AI Hyperscaler Generating Positive FCF (Rating Downgrade) - Seeking Alpha"
     },
     {
      "feed": "Google News: chips & capital",
@@ -17,83 +66,55 @@
      "title": "Goldman Says Tech Giants May Pull AI Capex Forward Into 2027 - FourWeekMBA"
     },
     {
-     "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQQ0Z0bmhXT18yQVVLTllBWG5oSWpZOTdiRHJnVWZXYnJxWk05bzFuaUxkcHkyQWxJeFFhLXAxdmVvM0dZbEkzVjR3RnowalRSeEZRTnhTRUtackhBR1hpWEUtSHp5T0pJa1AxU0hmVUZzbFk3eWY2WHNybUFERm5EcV92NkZXSDN2S0tJdkhEVkQ5aE0?oc=5",
-     "published": "2026-11-05T18:37+00:00",
-     "source": "The Irish Times",
-     "title": "Tech stocks plunge on AI regulation fears - The Irish Times"
-    },
-    {
-     "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9uVkF5Q0RDS3F3LUdUSVY0OWJEVHNZOE9sdHQwT3hoMkZ3V2E0alJHT3Z4WDl0elI3TkJ2cHBrYWJzZWZBbm1ZRm1rM3hId3g2d1J2VnYtVmJEWVk?oc=5",
-     "published": "2026-11-05T18:14+00:00",
-     "source": "www.tokenpost.com",
-     "title": "DuckDuckGo Pitches Schools on Search After Google AI Policy Backlash - www.tokenpost.com"
-    },
-    {
-     "feed": "Google News: chips & capital",
-     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWEMycnVBc3MxVDFJNlJrNXpCakVwWTE2WjJBekgzb2F5ejNHb3c0eGZ0bld3aG1BVkR1ejJZTk1ZNnd4d2JXdGZfNTl1VUFqeVR4ek53ODhXdEpENjdrM1NscUNIbi1YdG9IaHR5YTZmaVB3SEtHcU9UMUt2YTBJRk9NTDRGaks0bXlVdi1WUnhqanFzR0QzNGQzVDYxRlpCdlhCMWlMaG0?oc=5",
-     "published": "2026-11-05T18:11+00:00",
-     "source": "Business Insider",
-     "title": "AI stocks are in free-fall as investors panic over the risk of a data center slowdown - Business Insider"
-    },
-    {
-     "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOVVd2eTdFb00zTUMxNXJKQ00xY3BielBELUNjeEpmUUpiVmVXSzZ4QVpBbWZkSFEyQ3JhQklvdV9WbmdaUTltTjdXdkIzaFh2R2tNc1hLckRTdDV6VU80UUh3NmRUTVhxWGhCNHFYRGZRRlVReTB4Unp6NlV3MnJRak5Fc2tiT0FlRmt0aEx5cF9ySzRHYVF6X3lSSFpGWU9oMy1nYjREd1NkVmhO0gGyAUFVX3lxTE8yLWE3VUl2SXJJWk4wTnZ6V0c2UTFsSWJSNFowTk5wcWxhOG16X0VoUW11REpoZXlSa0NDLVpQSGhVUU9DVkNudndnLUM2YXFzbnpvS2RFc0hFb1psN3FzMUhTMlRVUllEWllPS3JSNDJjdW9JQlNRTl91SE9Kd0pnSVlWU3BwY19rOWw3MGxXaTZadDZRdHNUcFNlLVdCUUZjSG1JNzBsdGEzMzVCM1RFVnc?oc=5",
-     "published": "2026-11-05T17:59+00:00",
-     "source": "The National Law Review",
-     "title": "Blue Wave, New AI Rules? What Democratic Control of Congress Means for AI Regulation - The National Law Review"
-    },
-    {
      "feed": "Google News: chips & capital",
      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxObGM3aF9yVWZDM183V3VMby1TWGRwaTZWS1d2c1NHbFVjRHI2U19OWWJDUVpCYkVYYXFvc0ZXOWtpYVhrV00wNk5sZW8wZUNqS2ljSXRzVmV4RWc3cGliUk1nVU5seC1vVVJ5VG1qVUUweVJZQVNRRlowUUs3aHpLNk05dzNvc2daaElzTzJRVEZrV0JPbEZTTGVBODFKY21nUFlQTWFZdUZidw?oc=5",
      "published": "2026-11-05T16:50+00:00",
      "source": "TradingView",
      "title": "AI Data Center Boom Runs Into a Political Wall - TradingView"
-    },
-    {
-     "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPNER3WGVHMmcwb2QxWjdzWkNNdkhyczFjaTZCenUxeFVyMGJPc1RiNkRBRjRoYXZoc0lUY1M2R3R5TVY0YlRwSFE0QnA2OVlreU01SHlmT25Za0VqUkFOc0ZPQklCVV85YTZycGl6akd6UUZUNWx4MXd5VEUyZkN4R09ZRm40c0lsa2NoYUhpZXFSbVdDcGc?oc=5",
-     "published": "2026-11-05T16:33+00:00",
-     "source": "Yahoo Finance",
-     "title": "US tech stocks plunge on fears of tighter AI regulation by Democrats - Yahoo Finance"
-    },
-    {
-     "feed": "Google News: chips & capital",
-     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPcWtMVFdXRV9rRWFFNFVDdzQzZnNGRlB0NkVpbmdHMXlvZUhlaWtEVnBwN0h1dTBlbmN6aUNaOUp0SGJnbUxIbVlBakU2NmhPLThWcENYc2NVb2V6RjUzckdqZm1Ma3M3X2ZCV01DV0JNemJ3MnpQV0w3V3BhQmRrU2h0bEs5VXB6TFl1VkpjN1JMTWZUSGczNmZzRWxxRXcyaTFaSkZR?oc=5",
-     "published": "2026-11-05T14:34+00:00",
-     "source": "TradingView",
-     "title": "Nvidia Partner Posts Stunning 46% Sales Jump - TradingView"
-    },
-    {
-     "feed": "Google News: chips & capital",
-     "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOeVcxMTZfUTlObldSaTJRMVFzaTdCbDA2VFh1YmpHN3VSdkFwaE1sNno4QXRvdEJrempkcTlXUWYyZmtobW1zWEtHSFdueDNMMHlUUzFiWDVxeDB2T3V1SEJLUzhmRElVTXc1Y05NY08wZUFOYzcxWDRwbHdmemRuZ0QtR1RFeHhHcGlLdHgtMk96Yzh6WExodThYRnRORmdqbTN5NXU3MklDSUp4NDAxUkx3Y2J6LUFIY09FLW5jNUpaNWk2LXc?oc=5",
-     "published": "2026-11-05T11:29+00:00",
-     "source": "TradingView",
-     "title": "AI capex growth is peaking, Citrini says, as mega commitments fade - TradingView"
     }
    ],
    "labs": [
     {
      "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQamdwckRqeXgydFpCeHRHcmdEbGgyRkxMTHJsOFVRSTB5U1JPc1N0eFV3SEhCZ2pid19OSWxZNXNBS05Dd1kzdHNzdlF0cHYzMTBEME5QT2pmcmVRZkRoRXREN21EbkUtdlR3MzZZRkFyekpvT29JUklZZ3BlTHY5aVRnQW9FQXkySWsyUFRmZ01RUXFSVlJWMVpjTkFkUUxoSzRPdFFGX1NMRWpDWGo3SEg5MHBBUTjSAbwBQVVfeXFMT2RBOHJ3dUpHYUtkX3pmVXlYbDZQY3VjZHRsdXgxZmVXZjlSOW1zOFdMSHRhUF9SMWxzdjdqLWludzhocjVkS3plOXZwY0xVSXJUc2h3REg3blVPNno4Y0ZJelM2U3FGc0UtdHEyQ3libWZROWxUXzdTMTRiODJqeVc5QjBKcEh1T2s4Z1Y1ZTBoalFuODdNRjNsOU9wQ3B3MnFWSjJhWGcyX3J3NHVOSTdmWWpBM29ybUJqeHQ?oc=5",
-     "published": "2026-11-05T19:44+00:00",
-     "source": "ABC News - Breaking News, Latest News and Videos",
-     "title": "Anthropic is rapidly accelerating AI development amid slowdown calls, outside research group says - ABC News - Breaking News, Latest News and Videos"
+     "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNX0hUWm1pSGlwRXFmcmVoMTF5cG9Oby1MOHRhanItWkhxZ1FnNHVra2ZoTnZ4dHhJVWtPZW81NEY2Rm9yQnIyU0ttMUlCOU51QlJRTTc5Z3NaOGpHcjVlZ2N0VkljSTlSRzhkb08tV2c2M1JaQXJaUjNJRGlDQzVtcnB2VU45MTRvUTY5S3BUenBJenA5Q19oWkNYN3Zsbk91VElIeWE3VUJlcVEybV9VZjFUSVlkOUdGU1VOZjJ6ckk4OWNiUnR6WDVqeEhoTnVZY0E?oc=5",
+     "published": "2026-11-06T06:36+00:00",
+     "source": "Gulf Business",
+     "title": "OpenAI launches GPT-6 Cyber with \u2018Critical\u2019 cybersecurity rating, uncovers 81 Firefox vulnerabilities - Gulf Business"
     },
     {
      "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNWlBDY1FLZFpqMUZCMUhoei01dVBWTl9fM1IyME9qOFFhNGhUc2Vmd3pINm1aTnE0WEc2SkExTXpFYmtSZ05QQnJYVjdNLVBHRURsSVJBajRMN1V1X2c5QnYtb0VhMDZaZjgzYkFGUloybG1zM3UwUm1fMUh5ZFExWDZaMFowNTA?oc=5",
-     "published": "2026-11-05T19:41+00:00",
-     "source": "The Independent",
-     "title": "Anthropic is rapidly accelerating AI development amid call to slowdown, group says - The Independent"
+     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1RVDlxZzlkaF9JRGpvZlByTDBKUUtjenMxdmxLWkQ0MlVpZHloTXFJWTdjdkpjMEZrRGF4bHNxS3hHQ3FibUdISk04Nlg1SUlkOG1vc25KYThuaVlUdDRzM1J2dXVkeTZnSWc?oc=5",
+     "published": "2026-11-06T05:23+00:00",
+     "source": "Kottke.org",
+     "title": "Anthropic has new rules for its Opus 5.5 model to \u201csteer it ... - Kottke.org"
     },
     {
      "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4xVVJKTHo2TmpQR0JqdTY0amdhX0ptMVdjWnFRaDlvanFxVkZwUDduMXduSWVUajJaVmJpVjBDWHZlOHpXc0kwSUNzTmR6RndUUUhYZTBRMFQ5a2Y3N09GRllhUWFfQml1?oc=5",
-     "published": "2026-11-05T19:39+00:00",
-     "source": "Axios",
-     "title": "OpenAI's new cyber model found ways to attack nearly 1000 Linux flaws - Axios"
+     "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOdklxdXJkbXQyVkRGc0Z2aTNhYVpnRU1GaDFRaUJMekg1Ymx2QVNIUWlhMlNaRkk1RlUxT1VsSktQaklvZVlfdHhEbm9GcTM0T2k3d0pXR0wzb3E1R2ppWnlLbzJOYVF1OXU2cVU0UjhUcWVQbUhQMWtOb2ttZF9YRFhPNzhNeFdvNXF4b3Bhb2hiZlhzc0dFckNZd0tBdVE?oc=5",
+     "published": "2026-11-06T05:05+00:00",
+     "source": "Realnoe vremya",
+     "title": "New MacBook, Presley heirs' lawsuit against Anthropic, AI bubble: technology news - Realnoe vremya"
+    },
+    {
+     "feed": "Google News: labs",
+     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQWXdmMHBJVXhyMWV3b1Juajd5VWVsUjk2Snl1Z1ZKc0NSN1liVmRqdWtldGxOeXZKWmloWC0tbURrOS1XU1gtaVVpemhZbzVXZl9UUEhkZXBPQi1US253NEMtNWtfM1d5NjNDZ1VDaGNVTVpJeXR4SWVYMlh0bG5WNzN0T2llcVhEZlBOajJR?oc=5",
+     "published": "2026-11-06T00:08+00:00",
+     "source": "FourWeekMBA",
+     "title": "METR: Anthropic Likely Improving Models at 2x Its Old Rate - FourWeekMBA"
+    },
+    {
+     "feed": "Google News: labs",
+     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNcHZmY2QwRDJVWWFjaXpFRnF0U3M5YVpuRlNTMGZYRFVSQ2o0bVNPM1JLQ3JFVjNiVEprbkZGbm9vMHVTYkh1ekVybFNZWXNydkxYcG1LZzhfbzk5RlFlSHJ2UFhHMlhrUENIOGNZRy11VUxId2hZbEJLUEFkQlBYS3BmY1dGVHc0ZVZpd2Z1UDJ1cUxCb2ZqekJnNHZ3RzBWb2VyTWVSTGM3LTlVV3ZLYmMtVnBIbHY1SjA4?oc=5",
+     "published": "2026-11-05T23:37+00:00",
+     "source": "MarketScale",
+     "title": "OpenAI launches GPT-6 Cyber, which found 81 high-severity Firefox flaws - MarketScale"
+    },
+    {
+     "feed": "OpenAI",
+     "link": "https://openai.com/index/cultfit-builds-with-codex",
+     "published": "2026-11-05T20:00+00:00",
+     "source": "OpenAI",
+     "title": "Cult.fit builds operational muscle with Codex"
     },
     {
      "feed": "Hugging Face",
@@ -101,20 +122,6 @@
      "published": "2026-11-05T19:35+00:00",
      "source": "Hugging Face",
      "title": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation"
-    },
-    {
-     "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQdUlwVjFGWDNxSTg2dVVfRjA4bmJkcUVjMUtobXpBV00xU2FqWEpQNUxrM0JmejZiTTBnX3NfUTBCMWIzbkVpc1NjMFdSbDJ3eWgzODQzVU1uRXJpRThTWTdfQmM2Wjh1WkZaUDFseURTTFdTSVVmRDJUdnFYam1Db1c0bWhlTmNLSi1FTmFzTGt3TTNkU1E?oc=5",
-     "published": "2026-11-05T19:06+00:00",
-     "source": "TechCrunch",
-     "title": "OpenAI released a new cybersecurity model. Is that enough? - TechCrunch"
-    },
-    {
-     "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNMGdBZmd5QzZyU2xDSU9Jd1N3ZFZjMC1odkgzWjhFbkdNMUdyNG9nVzV4TTBXVUhYckhBc1pJWEMzU3UyYjlnbXlMZTFRYjRaXzJTbmVPZGRmR3BPMHE1X0pIb19kYUZFTzVWeTdQN0U0TmI1TDZqMkktLUJKNjdYQXVLWGNxSG5BRDJGS21kVTNXVll1Q1REc0xySHMwWlpzajdqa2tBVWNsWHMwQWVqbWFGY1pDWV9B?oc=5",
-     "published": "2026-11-05T18:53+00:00",
-     "source": "Reuters",
-     "title": "Anthropic's models improving nearly twice as fast with help from AI, study finds - Reuters"
     },
     {
      "feed": "Google DeepMind",
@@ -125,6 +132,13 @@
     },
     {
      "feed": "OpenAI",
+     "link": "https://openai.com/index/australian-universities-ai-native-graduates",
+     "published": "2026-11-05T17:00+00:00",
+     "source": "OpenAI",
+     "title": "Australian universities are creating AI-native graduates"
+    },
+    {
+     "feed": "OpenAI",
      "link": "https://openai.com/index/introducing-gpt-6-cyber",
      "published": "2026-11-05T09:00+00:00",
      "source": "OpenAI",
@@ -132,31 +146,17 @@
     },
     {
      "feed": "OpenAI",
+     "link": "https://openai.com/index/merge-builds-with-openai",
+     "published": "2026-11-05T08:00+00:00",
+     "source": "OpenAI",
+     "title": "Merge builds product and business tools with OpenAI technology"
+    },
+    {
+     "feed": "OpenAI",
      "link": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
      "published": "2026-11-05T02:00+00:00",
      "source": "OpenAI",
      "title": "Setting a new standard for responsible AI infrastructure"
-    },
-    {
-     "feed": "Hugging Face",
-     "link": "https://huggingface.co/blog/phonon-tts",
-     "published": "2026-11-05T00:00+00:00",
-     "source": "Hugging Face",
-     "title": "A Closer Look at Phonon TTS. Launching High-Quality On-Device Speech That Tops the Benchmarks."
-    },
-    {
-     "feed": "Hugging Face",
-     "link": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor",
-     "published": "2026-11-04T17:50+00:00",
-     "source": "Hugging Face",
-     "title": "Dharma Field Extractor: Any Document In, Structured Fields in JSON Out"
-    },
-    {
-     "feed": "OpenAI",
-     "link": "https://openai.com/index/openai-to-acquire-pierre",
-     "published": "2026-11-04T14:30+00:00",
-     "source": "OpenAI",
-     "title": "OpenAI to acquire Pierre Computer Company, Inc."
     }
    ]
   },
@@ -170,5 +170,5 @@
    "industry"
   ]
  },
- "fetched_at": "2026-11-05T20:04:15.462586+00:00"
+ "fetched_at": "2026-11-06T06:58:07.030631+00:00"
 }
