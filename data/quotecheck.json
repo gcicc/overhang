@@ -1,6 +1,6 @@
 {
  "data": {
-  "checked_at": "2026-10-31T15:25:22+00:00",
+  "checked_at": "2026-11-07T21:59:47+00:00",
   "results": {
    "cu01": {
     "detail": "",
@@ -107,8 +107,8 @@
     "status": "verbatim"
    },
    "def03": {
-    "detail": "",
-    "status": "verbatim"
+    "detail": "HTTPError",
+    "status": "fetch_failed"
    },
    "def04": {
     "detail": "",
@@ -123,8 +123,8 @@
     "status": "verbatim"
    },
    "def07": {
-    "detail": "",
-    "status": "verbatim"
+    "detail": "HTTPError",
+    "status": "fetch_failed"
    },
    "def08": {
     "detail": "",
@@ -255,8 +255,8 @@
     "status": "verbatim"
    },
    "h13": {
-    "detail": "",
-    "status": "verbatim"
+    "detail": "HTTPError",
+    "status": "fetch_failed"
    },
    "h14": {
     "detail": "",
@@ -271,8 +271,8 @@
     "status": "verbatim"
    },
    "h17": {
-    "detail": "",
-    "status": "verbatim"
+    "detail": "HTTPError",
+    "status": "fetch_failed"
    },
    "h18": {
     "detail": "",
@@ -328,5 +328,5 @@
    }
   }
  },
- "fetched_at": "2026-10-31T15:25:22.982205+00:00"
+ "fetched_at": "2026-11-07T21:59:47.534221+00:00"
 }

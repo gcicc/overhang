@@ -731,6 +731,12 @@
       "value": 0.712280701754386
      },
      {
+      "date": "2026-10-23",
+      "model": "kimi-k3.1-pro-together_max",
+      "org": "Moonshot",
+      "value": 0.7824561403508772
+     },
+     {
       "date": "2026-10-26",
       "model": "gpt-6.1-terra_max",
       "org": "OpenAI",
@@ -2710,6 +2716,12 @@
       "value": 0.9318181818181818
      },
      {
+      "date": "2026-10-23",
+      "model": "kimi-k3.1-pro-together_max",
+      "org": "Moonshot",
+      "value": 0.9419191919191919
+     },
+     {
       "date": "2026-10-26",
       "model": "gpt-6.1-terra_max",
       "org": "OpenAI",
@@ -3240,5 +3252,5 @@
   },
   "source_url": "https://epoch.ai/benchmarks"
  },
- "fetched_at": "2026-11-06T19:30:10.710095+00:00"
+ "fetched_at": "2026-11-07T21:58:09.225565+00:00"
 }

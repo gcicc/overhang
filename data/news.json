@@ -3,6 +3,27 @@
   "columns": {
    "industry": [
     {
+     "feed": "Google News: chips & capital",
+     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQaG1jSXl5MkpNVzY4b1JITmF0MFZNTTlVdTF2by13aXRMSzBNR0F2bGNBRnRweXh5eWNkSFJkSGgwSTdqamk4c2RrQ1hvWlZpNDdVQktzNEVMUnNxUnV4Z3JFLW1rMDJZQ3Y4cnhWdUwtNWVMTFZ0Q1c3RGpleVZWM3RnVG5qeGtrNFdXbTMxSENnLUxHdUE?oc=5",
+     "published": "2026-11-07T17:37+00:00",
+     "source": "https://tech-insider.org/",
+     "title": "AI Boom Long-Term Winners: 4 Stocks, $800B Capex [2026] - https://tech-insider.org/"
+    },
+    {
+     "feed": "Google News: policy",
+     "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE15MElTT3BPMmhhTUp5QTlaVDVpejIxQm4tZVlQQTNTS3ZPQzF2V3N6WFVHb1FzdTNaeW02WnNRaHBJbmVwRW5Zck90UTNKNXpLcVcyVXF5VDJrWHhscVUtSGlCd1kxRlNvRE5DSUxPZHd6VUFMenBKSA?oc=5",
+     "published": "2026-11-07T13:54+00:00",
+     "source": "Jacobin",
+     "title": "In Finland, the Left Can Lead on Fair AI Policy - Jacobin"
+    },
+    {
+     "feed": "Google News: policy",
+     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPTWpGNEh5dXFLVVRVSGk3c3A2LW1NNUV5WEtIMDdwUHNGODVZVXZCWktHNjFMWXpVVS1JZTl4SnVrTHNXMlVJRjdrTkJ2a19MQUNzSEVGWjJTbDQzbVR6bnhQUWk2cGEtT0xNVkcxRlpBWmRtWWVydzU5Z3JMUlZJUnBsdmRxWXJFMzBr?oc=5",
+     "published": "2026-11-07T13:30+00:00",
+     "source": "CNBC",
+     "title": "Democrat shaping AI policy bought chip stocks despite backing congressional trading ban - CNBC"
+    },
+    {
      "feed": "Google News: policy",
      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQcXRzVW1ydzVjY0lWLUhvc1ExVWtHenFjbVVsem1RSkluMlNvYXl0RFcyb2FMV1d4dHhHWXZaV1g2am1YR09ZVE9XcURzWUh6VF9UMlI0M25ES2l1eTJ6WEVEODEyZGV1TG9kQVcxdzhKYnAtSEF1TS1BcDVibW16YkxsNzZUbDRCblF0a0ExUmE?oc=5",
      "published": "2026-11-07T04:24+00:00",
@@ -18,24 +39,10 @@
     },
     {
      "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxONjdDVldLWnRXdWdNNVpJMV9aTjY1cUN3YU9ORTlnbXNBTDNaczd3M1ZPR2g1Uk10NWZLbWFnQi0xWGh1OWRzNThVZjF5aVBTWU1BaFNudFF5R1VFVWQ2emx3eTlVSFJuTUo4T3NfN3RlZzVUMHUzQXRCdllzYzZiclMwSE5sV3h2aXp5VVlUcC1EcnBnMkc5ZDlOUV9QVjBFWmtR?oc=5",
-     "published": "2026-11-06T22:56+00:00",
-     "source": "GovTech",
-     "title": "North Carolina Schools Seek Clarification on Google's AI Policy - GovTech"
-    },
-    {
-     "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOSEt6R0FseWsyTjE4S3lOUlpxWTd2b2JvZmx2amZ3SmNHMk1mSEV5REFWNDB1RWx3Y1JJbTJscXZ0VXRnc1FuM0JmTlJMaExQajd3VkFyUVROQ1c2a1Nhb2RYaDBURU1PZEFqSnlOMHB4c1pJc21mSnlCekZJMmNUUV9ZdHVNQnVJZG9Nck1tenBkaFVYR1lDRDRMWXpsYjZsUFp2eVowckRFVXRoMW84bGFBRVMwLUlOdHFNazFveGNSZmtkdzBRek5ialRWTkpQbTRCdElWd0hOd01GbVVLNU9n?oc=5",
-     "published": "2026-11-06T22:45+00:00",
-     "source": "Facebook",
-     "title": "DW News. . Concerns that newly elected US leaders will increase AI regulation sparked a multi-trillion dollar market sell-off, wiping out billions in tech valuations and rattling investors. The sharp decline has renewed debate over the future of the AI boom and w - Facebook"
-    },
-    {
-     "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE55bFRQeGZjRE5xdThFOFJTenZfVkhSRzNWSDVpMUdiWi1yRnFIRXVhZ3ZWVlFXZHJKUFVoMkc5OVdlR2N0Y2FWWVhOT1VvZW1hZjg3WHFYUUxIOFU?oc=5",
-     "published": "2026-11-06T22:36+00:00",
-     "source": "Fox Business",
-     "title": "Democrat control of Congress raises AI regulation concerns - Fox Business"
+     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOQ3BGbU9fZWw0SGs0NGw4Umo1ODk4bVlpUTgtVFFoZ2tCdVJ3VEVsdDBkY0U3bzlZQVc5QTVWQm9vbk9hbGVVX2VHTTVTOWxnWHhwVDJRTm9KYldTV1RGNkxNWWlldHJ5bV9Wakg1cF9LRGJSdUxrSTVBMzZZY0VhNmphYktMWlNyMVlkQ3JPS3BFR0s3Q3BTc0ZNdEtmbnVWMTdja1otakQ3LWlkY1N3OEJiS3E?oc=5",
+     "published": "2026-11-06T23:14+00:00",
+     "source": "WP Intelligence",
+     "title": "Briefing Recap | AI in the new Washington: What changes? - WP Intelligence"
     },
     {
      "feed": "Google News: chips & capital",
@@ -64,29 +71,22 @@
      "published": "2026-11-06T12:15+00:00",
      "source": "24/7 Wall St.",
      "title": "Alphabet is The Best Positioned Hyperscaler for This Blue Wave AI-Energy Regulation Shift - 24/7 Wall St."
-    },
-    {
-     "feed": "Google News: chips & capital",
-     "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQR3c3czU3RmNkbE5EN195Uk9DMV9zNW92XzNFRlpTUGVhX1V2S2plejNTZDZYZlBsM0hVVHBxb21YWjUxM3JWdEtOY3llZ0x1NGdzRGpPUGlpT3VGeDRjcW04N3lSV3hwZ1M3Ymp2WC1DOFNEU19OZTNFQlQ1dEFuNE5B?oc=5",
-     "published": "2026-11-06T00:05+00:00",
-     "source": "Dr. Robert Castellano's Semiconductor Deep Dive Newsletter",
-     "title": "The Inmates Are Running the Asylum: Wall Street\u2019s AI Capex Contradiction - Dr. Robert Castellano's Semiconductor Deep Dive Newsletter"
     }
    ],
    "labs": [
+    {
+     "feed": "Google News: labs",
+     "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPOXl6Tl9IM0RqMlIyRkFoNTZ4Mmxud1RqY0FVd25RZFRXV0doUFZzRWZmRFA4c3p0RlBBUl9qZGxZNHB1VzAxdFZLdzFwVzBJdTZ3ampHQzl5QWFLX3JUeExWUzlPT25ydkRqUy12X1B6ZWs4ZnBNV0NYcE5jMmhLVW9zMmo1bWk0RGN6NERhYWo0dDM2WWJrdE10bzRDal9Ca0E?oc=5",
+     "published": "2026-11-07T15:30+00:00",
+     "source": "How-To Geek",
+     "title": "Out of all Google's Gemini models, this is the one I can't stop reaching for - How-To Geek"
+    },
     {
      "feed": "Google News: labs",
      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOUDI1amhrbGRrZThtSTNTYjNXTVVRT0pRZmJSQ0c0NGpnblh0SFpjS1ZLUXhzX2xYUWp5N3lVU2lnc0ZmR281Vl82QTNsQWdqcEN3d2ZXZllwWGFnNDBOb0F1eHNfb1Nrb3NkdWswcHREbnlUTnRYY29DN3lDd0R1MXZzNy1wckVpWDFOTWpvdw?oc=5",
      "published": "2026-11-07T12:38+00:00",
      "source": "shattered.io",
      "title": "Claude vs Gemini: 59 vs 58 on Index, $4/$20 [2026] - shattered.io"
-    },
-    {
-     "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNTnFDeXdUaGRRY3FzRWFMbVpRbFBrVXVhOHNDWDRMaFQ1T1kzclBENEtWa3R5UDBDQktzb3Z3N0FYUjJsejBwZUY5eURuejdvaFg4eXJrSndRLWdvTGtDcVdwOFdXeHZlVWo4eXJDc3ZGWlg0aTZwak1ySWwtS3hkSzNmdVR3MEhGXzdGRDRjV3dpMzVTOFhDX0o1Z3FBSDBqamfSAacBQVVfeXFMTzVVZEpXZk9NbHhzV241am1weGozclJlMUV6WFd1VFFQSnhoLXhibFlnVnNQaGRsUm5QNjFtT2F4ZXdQUk9BN0VCbHgweEUySVhkMjRHZDROSmRoem1FUGwzTXVVd2wxZWkycDdWZld1RW5JaFJJd0tQMkx2VlkwNG9wS3Z6blByVkFpLV9lbEhjMjNSTDdoQzROTDhPbnlGbTdlRHJIUE0?oc=5",
-     "published": "2026-11-07T08:03+00:00",
-     "source": "ABC News - Breaking News, Latest News and Videos",
-     "title": "Exclusive: Anthropic CEO calls for stronger regulation of AI - ABC News - Breaking News, Latest News and Videos"
     },
     {
      "feed": "Google News: labs",
@@ -170,5 +170,5 @@
    "industry"
   ]
  },
- "fetched_at": "2026-11-07T13:15:02.739545+00:00"
+ "fetched_at": "2026-11-07T21:58:15.820294+00:00"
 }
