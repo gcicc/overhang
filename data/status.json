@@ -1,67 +1,67 @@
 {
  "arc": {
-  "last_attempt": "2026-11-08T06:16:42.215557+00:00",
+  "last_attempt": "2026-11-08T13:39:48.196440+00:00",
   "last_error": null,
   "last_success": "2026-11-07T21:58:09.108115+00:00"
  },
  "epoch_bench": {
-  "last_attempt": "2026-11-08T06:16:42.216937+00:00",
+  "last_attempt": "2026-11-08T13:39:48.197420+00:00",
   "last_error": null,
   "last_error_at": "2026-10-29T16:22:28.121123+00:00",
   "last_success": "2026-11-07T21:58:09.229053+00:00"
  },
  "epoch_compute": {
-  "last_attempt": "2026-11-08T06:16:42.213431+00:00",
+  "last_attempt": "2026-11-08T13:39:48.194823+00:00",
   "last_error": null,
   "last_success": "2026-11-07T21:58:08.554619+00:00"
  },
  "epoch_datacenters": {
-  "last_attempt": "2026-11-08T06:16:42.220255+00:00",
+  "last_attempt": "2026-11-08T13:39:48.199707+00:00",
   "last_error": null,
   "last_success": "2026-11-07T21:58:09.630955+00:00"
  },
  "epoch_hardware": {
-  "last_attempt": "2026-11-08T06:16:42.217500+00:00",
+  "last_attempt": "2026-11-08T13:39:48.197830+00:00",
   "last_error": null,
   "last_success": "2026-11-07T21:58:09.297319+00:00"
  },
  "epoch_notable": {
-  "last_attempt": "2026-11-08T06:16:42.218909+00:00",
+  "last_attempt": "2026-11-08T13:39:48.198789+00:00",
   "last_error": null,
   "last_success": "2026-11-07T21:58:09.559265+00:00"
  },
  "filings": {
-  "last_attempt": "2026-11-08T06:16:42.221038+00:00",
+  "last_attempt": "2026-11-08T13:39:48.200172+00:00",
   "last_error": null,
   "last_success": "2026-11-07T21:58:12.115531+00:00"
  },
  "frontiermath": {
-  "last_attempt": "2026-11-08T06:16:42.214120+00:00",
+  "last_attempt": "2026-11-08T13:39:48.195438+00:00",
   "last_error": null,
   "last_success": "2026-11-07T21:58:08.701432+00:00"
  },
  "manifold": {
-  "last_attempt": "2026-11-08T06:16:42.915676+00:00",
+  "last_attempt": "2026-11-08T13:39:48.860460+00:00",
   "last_error": null,
-  "last_success": "2026-11-08T06:16:42.915694+00:00"
+  "last_success": "2026-11-08T13:39:48.860463+00:00"
  },
  "metr": {
-  "last_attempt": "2026-11-08T06:16:42.212597+00:00",
+  "last_attempt": "2026-11-08T13:39:48.194306+00:00",
   "last_error": null,
   "last_success": "2026-11-07T21:58:08.415579+00:00"
  },
  "news": {
-  "last_attempt": "2026-11-08T06:16:44.564844+00:00",
+  "last_attempt": "2026-11-08T13:39:50.519073+00:00",
   "last_error": null,
-  "last_success": "2026-11-08T06:16:44.564849+00:00"
+  "last_success": "2026-11-08T13:39:50.519076+00:00"
  },
  "quotecheck": {
-  "last_attempt": "2026-11-08T06:16:44.565366+00:00",
+  "last_attempt": "2026-11-08T13:39:50.519539+00:00",
   "last_error": null,
   "last_success": "2026-11-07T21:59:47.535186+00:00"
  },
  "quotes": {
-  "last_attempt": "2026-11-08T06:16:42.222530+00:00",
+  "last_attempt": "2026-11-08T13:39:48.201177+00:00",
   "last_error": null,
   "last_success": "2026-11-07T21:58:13.179089+00:00"
  }

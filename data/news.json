@@ -3,11 +3,25 @@
   "columns": {
    "industry": [
     {
+     "feed": "Google News: policy",
+     "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQT0dNYWF5X0x6U29kWmMzS1ZnalBUMHdKVWxMdVlsbW9YbEhwWWxjeDI3cGNwejNOWnhSMFkyUFVBMlF6Y1hUTDF2QjJYSmhmd1hmNmlnR2ZWWThaUFlFbmZEU203ZjNsUUE2TDdPdGc0QzZEMUhFM0gyUFZMNENKS0Nlc3FLdlRkU3AzNGJQOUtQTnh5WXBjdXRlTS1HcHhacnfSAZ4BQVVfeXFMT0RXYWxmdkt5REVFdjlUZ3hLUkNfcDBZR0hOY0U4aVlYY2Zaak8tT1AwalZ4OC15bV9ET3NvWnlJLUY0QlhldTZTaENydGZRdHNJb0J0cVo1aDc1RWY0NWNLYlVVLVd3STVJYzc1eHJDNlRvdDBDZjlrUjVONllqdThNWHJuU1UxUFljRVRfNmtxVjN0S2M0V0cxTmJELXc?oc=5",
+     "published": "2026-11-08T11:08+00:00",
+     "source": "The News International",
+     "title": "2026 US midterms likely to reshape cybersecurity, AI policy - The News International"
+    },
+    {
      "feed": "Google News: chips & capital",
      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQaG1jSXl5MkpNVzY4b1JITmF0MFZNTTlVdTF2by13aXRMSzBNR0F2bGNBRnRweXh5eWNkSFJkSGgwSTdqamk4c2RrQ1hvWlZpNDdVQktzNEVMUnNxUnV4Z3JFLW1rMDJZQ3Y4cnhWdUwtNWVMTFZ0Q1c3RGpleVZWM3RnVG5qeGtrNFdXbTMxSENnLUxHdUE?oc=5",
      "published": "2026-11-07T17:37+00:00",
      "source": "https://tech-insider.org/",
      "title": "AI Boom: 4 Long-Term Winners, $800B Capex [2026] - https://tech-insider.org/"
+    },
+    {
+     "feed": "Google News: chips & capital",
+     "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNQ2ZDQkRWWGZaNVdBV1UwS0FEY0RvVVJqUFUxNXd2eHpWM1haeXltLUNpaXB2TW5kcHlJRFo0WFNOQWZFaGNDZ2p3WlcwZjhPVndrYkQwWVAxR0tVVnotaFdDNnZHT1IxZ1BJVHJXZXFpVG5ROUlMcGZoR29iczhkOGM4VG9UMEVWWHJoUEY5TlBCN0RiTEotLTFWNVdFZHZpUmVBOHBuYWVaN0xYMEJzSkgtSno4WHhuc2x4TmpMUkV5bHJDaTNqVHFKalBIMl9pZ01MSjF2a0hpczUtYjMxUHk1OGt0VUxxbHRuaHZ3Nkt4ekRLTl9YZzVQX04wYjFUS25wLUZwWUJwTFU?oc=5",
+     "published": "2026-11-07T16:50+00:00",
+     "source": "Stocktwits",
+     "title": "Microsoft, Meta And Google Just Silenced AI Spending Critics In One Earnings Night As Big Tech Capex Swells To $725B - Stocktwits"
     },
     {
      "feed": "Google News: policy",
@@ -38,13 +52,6 @@
      "title": "3 Data Center REIT Stocks Retail Investors Are Watching After AI Policy Fears - Yahoo Finance"
     },
     {
-     "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBKZmV3WUYxZGpoaXRxVERIUDNNN1g4OHdzMXJHZTMzY3ZvZXgwaTZsd2xOOUtOc0pHMlE2eDRUbHlMajctamtuVkZVa2JzQnlkY1pqaEp3SGY?oc=5",
-     "published": "2026-11-07T00:50+00:00",
-     "source": "Cryptonews.net",
-     "title": "Bitcoin holds $75K as AI regulation fears see KOSPI halted after 8% crash - Cryptonews.net"
-    },
-    {
      "feed": "Google News: chips & capital",
      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5lei1ZNndKVVBtdkkxSEVOY0plTDhaZ0k5b3JjeWJJTW1DSVRfWnY0NFBNN3R2cndXMC1IbURybTNrX0JubTc3TWxvTjhWRHpBNVVPR3ZiWnhxbjA?oc=5",
      "published": "2026-11-06T16:07+00:00",
@@ -64,50 +71,43 @@
      "published": "2026-11-06T13:47+00:00",
      "source": "Seeking Alpha",
      "title": "AI Bubble Burst: The 'House Of Cards' Is Collapsing - Seeking Alpha"
-    },
-    {
-     "feed": "Google News: chips & capital",
-     "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQX3BINDNCb0cybThTT09uSzdTeGZONjVXVDNwNGx4MXVBZ0d5UEllT2d0bG1Oa2E5aEhjYnBvc2ZHaVdrY0JJa0lzVEFfT2sxWlNCNXZseTZmNWwxdHBfUTY5V3hqYmNpcFlVbF9id0ZMUE9KNnpUUGpDcTZjQklYbjNPQWwxREdkNDJDdzN2bnVFakxoaXRzTDhsQ0FvNUN3amZnMDZkUUZ1YjgxQmRJWWp5SVZESmJYWmg0bERFekpuVS1YTDVQRDFuZjg4dw?oc=5",
-     "published": "2026-11-06T12:15+00:00",
-     "source": "24/7 Wall St.",
-     "title": "Alphabet is The Best Positioned Hyperscaler for This Blue Wave AI-Energy Regulation Shift - 24/7 Wall St."
     }
    ],
    "labs": [
     {
      "feed": "Google News: labs",
+     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPUWpuT3RUZHJNZGJja2dIaHZUZVh4azdMUzdHSzFoejB1MmVfY0VGcnllS1hZY3h5d0oyRGZ0a0YyZF8zVjg4NnFMaHhXX0pyZEJ5U3E4YkRNbFRzMkRCc1MwdkVXNWk4ZHQ4SFBqZldoMGExN3JvS1hWUzdDX3ZmTnlDUmM3d1h0THoySnVJbVRxdlp1MkE?oc=5",
+     "published": "2026-11-08T12:52+00:00",
+     "source": "https://tech-insider.org/",
+     "title": "Gemini vs ChatGPT: $19.99 vs $20, Plan by Plan [2026] - https://tech-insider.org/"
+    },
+    {
+     "feed": "Google News: labs",
+     "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOcHotSTRNTTJBSHRDMDctWlMtc3o1UkZScVh6Y2JfdXhnVkl6cVJTOHhVVzRKN29CRVVQRGFFZDM4UHVGSjF6aURWRDdhQzRzd2RJSXBJOHRTZjlmNTVFME9YZnZ2X21vNnQtbFVVYU16eFA3LTduWHVlWGZPS0RoUi1oX0dOMnk3a3c5OVJ1RUVGRGVpcUxzekxzbXg5dUhvUmJ2OUxKcGtIcE1aNHFNWk9rV2lwZEVlUXI4MUF3ZDN0NzNuclpPSS1nelYzMmwz?oc=5",
+     "published": "2026-11-08T11:00+00:00",
+     "source": "XDA",
+     "title": "I replaced Gemini and ChatGPT on my phone with my gaming PC\u2019s 26B model, and the app that does it is free - XDA"
+    },
+    {
+     "feed": "Google News: labs",
+     "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOeXF1VGVQVjJDRHZHX0xxdU1HcTdDY005TGktN2szcVFsMExUWXRTWjA2SlpGY1dqVzJiWVJWN3VDSUdTaUlyVlFEdDFlZ24yWkd3WV9aMzFEWXpxTDMzSUNPQTZkVS1TaUt5LTZBdVhWNzlOazJqQjh4YXdQWnZUVVdicVZBajBYSm5PbFRCZnBKNXBIM0l0NU00WlVMVUN3WjB0LVR1Y0dUTk8xMU9OZVF6R2RiWm5kNDBuWm5oZ1BXbE9TWmUzbmF0cTVfejZSSzlIZENQOVlmVmVrNkF4NlV3?oc=5",
+     "published": "2026-11-08T09:09+00:00",
+     "source": "Quantum Zeitgeist",
+     "title": "An AI system running an Anthropic model settled an almost 20-year-old conjecture with implications for \u201cQuantum Speedup\u201d - Quantum Zeitgeist"
+    },
+    {
+     "feed": "Google News: labs",
+     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQSTlCaWFyZEVlOEhiSWV3QnNuTEhabzJWUUJLMXZRdUtPZU13UW5yUnFNd1lsNV9RZk1pd3Q4QWJJRi1rTi1kc3liOUhrNGREOU9uYjRrTkZQaGRZMEtLTjBiNFNlZlNnNkJxdEx5WFBTRjJfdmotQ3RfQlk1SzM0MXF6LV84bGdRMjRsejB5ZUNNZDYyVlg0?oc=5",
+     "published": "2026-11-08T08:53+00:00",
+     "source": "PPC Land",
+     "title": "Hamburg regulator uses OpenAI model to draft letters as complaints rise 62% - PPC Land"
+    },
+    {
+     "feed": "Google News: labs",
      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQeVdnaHRxRkpDU3B6MUlQcDVId21EMUNWOHgxOEtUNGIzTG1peGl3ZUpvOFBoNVVTWXFpNlFDdG9LRHdHUUF6LUNVNDRwTG5NbDhzMzJHYWN0aGNJRFdLMmhaV2QtUXBYcnZmX3RzbWNKXzNLNEZWQm9kTHZKQ09hMUZsbEw5U0FCRjFKY29yS1pQSUZGTG1xbWpIMHpTWHk2N25ybi0zel9UN2FYbHdJMFA1UFVXdzdfLXBBS0pIQQ?oc=5",
      "published": "2026-11-08T04:24+00:00",
-     "source": "KSL",
-     "title": "Anthropic rapidly accelerating AI development amid slowdown calls, research group says - KSL"
-    },
-    {
-     "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9GMXhJZ2kwTmdKc3NxNDZNZFN0UU9vVnNuX2I0NW85NVRTa00yWFBvRkJ3alRJVjBvYkVDaU1zT2J4Y21Ua1U4WlRkbUw3UTVLYk5BU1QtRmVGcmZ1VVhmcWtBT2RZMlhyRGIzNnpsaVJmeW5fM1E?oc=5",
-     "published": "2026-11-07T22:55+00:00",
-     "source": "BigGo Finance",
-     "title": "Anthropic's Model Progress Has Doubled in Speed, AI-Assisted Research Likely the Main Driver - BigGo Finance"
-    },
-    {
-     "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPOXl6Tl9IM0RqMlIyRkFoNTZ4Mmxud1RqY0FVd25RZFRXV0doUFZzRWZmRFA4c3p0RlBBUl9qZGxZNHB1VzAxdFZLdzFwVzBJdTZ3ampHQzl5QWFLX3JUeExWUzlPT25ydkRqUy12X1B6ZWs4ZnBNV0NYcE5jMmhLVW9zMmo1bWk0RGN6NERhYWo0dDM2WWJrdE10bzRDal9Ca0E?oc=5",
-     "published": "2026-11-07T15:30+00:00",
-     "source": "How-To Geek",
-     "title": "Out of all Google's Gemini models, this is the one I can't stop reaching for - How-To Geek"
-    },
-    {
-     "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOUjY3ZVl4cGhqU2g0bHNONllTZWZmalAzWUdyY0tvVTI4M2RTZDVOWGtUcnhxRUtwNjZrRTZrcFZqYWh0S2ktUy13YkpBeDNJVzBGc1JMYmFOMldiWi0wZ0w2NDkxbWQ2dUMxcGNfTmE2VnE2NzA0NEhuanUtMV8xTXFKakVQYzQ?oc=5",
-     "published": "2026-11-07T12:47+00:00",
-     "source": "The Motley Fool",
-     "title": "Better IPO to Buy: Anthropic vs. SpaceX - The Motley Fool"
-    },
-    {
-     "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOUDI1amhrbGRrZThtSTNTYjNXTVVRT0pRZmJSQ0c0NGpnblh0SFpjS1ZLUXhzX2xYUWp5N3lVU2lnc0ZmR281Vl82QTNsQWdqcEN3d2ZXZllwWGFnNDBOb0F1eHNfb1Nrb3NkdWswcHREbnlUTnRYY29DN3lDd0R1MXZzNy1wckVpWDFOTWpvdw?oc=5",
-     "published": "2026-11-07T12:38+00:00",
-     "source": "shattered.io",
-     "title": "Claude vs Gemini: 59 vs 58 on Index, $4/$20 [2026] - shattered.io"
+     "source": "KSL News",
+     "title": "Anthropic rapidly accelerating AI development amid slowdown calls, research group says - KSL News"
     },
     {
      "feed": "Hugging Face",
@@ -170,5 +170,5 @@
    "industry"
   ]
  },
- "fetched_at": "2026-11-08T06:16:44.564283+00:00"
+ "fetched_at": "2026-11-08T13:39:50.518688+00:00"
 }
