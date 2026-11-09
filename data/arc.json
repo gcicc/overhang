@@ -2,7 +2,7 @@
  "data": {
   "series": {
    "ARC-AGI-1": {
-    "generated_at": "2026-11-06T14:32:53.859Z",
+    "generated_at": "2026-11-09T15:06:07.766Z",
     "points": [
      {
       "date": "2023-11-03",
@@ -1779,6 +1779,36 @@
       "model": "Inkling 2 Small (XHigh)",
       "org": "Thinking Machines",
       "value": 0.965
+     },
+     {
+      "date": "2026-11-09",
+      "model": "Claude Fable 5.2 (Max)",
+      "org": "Anthropic",
+      "value": 0.975
+     },
+     {
+      "date": "2026-11-09",
+      "model": "Claude Fable 5.2 (XHigh)",
+      "org": "Anthropic",
+      "value": 0.985
+     },
+     {
+      "date": "2026-11-09",
+      "model": "Claude Fable 5.2 (High)",
+      "org": "Anthropic",
+      "value": 0.975
+     },
+     {
+      "date": "2026-11-09",
+      "model": "Claude Fable 5.2 (Medium)",
+      "org": "Anthropic",
+      "value": 0.975
+     },
+     {
+      "date": "2026-11-09",
+      "model": "Claude Fable 5.2 (Low)",
+      "org": "Anthropic",
+      "value": 0.945
      }
     ],
     "reference": [
@@ -1798,7 +1828,7 @@
     "unit": "fraction solved"
    },
    "ARC-AGI-2": {
-    "generated_at": "2026-11-06T14:32:53.860Z",
+    "generated_at": "2026-11-09T15:06:07.767Z",
     "points": [
      {
       "date": "2023-11-03",
@@ -3587,6 +3617,36 @@
       "model": "Inkling 2 Small (XHigh)",
       "org": "Thinking Machines",
       "value": 0.8166666666666667
+     },
+     {
+      "date": "2026-11-09",
+      "model": "Claude Fable 5.2 (Max)",
+      "org": "Anthropic",
+      "value": 0.925
+     },
+     {
+      "date": "2026-11-09",
+      "model": "Claude Fable 5.2 (XHigh)",
+      "org": "Anthropic",
+      "value": 0.9375
+     },
+     {
+      "date": "2026-11-09",
+      "model": "Claude Fable 5.2 (High)",
+      "org": "Anthropic",
+      "value": 0.9041666666666667
+     },
+     {
+      "date": "2026-11-09",
+      "model": "Claude Fable 5.2 (Medium)",
+      "org": "Anthropic",
+      "value": 0.8958333333333334
+     },
+     {
+      "date": "2026-11-09",
+      "model": "Claude Fable 5.2 (Low)",
+      "org": "Anthropic",
+      "value": 0.8666666666666667
      }
     ],
     "reference": [
@@ -3600,5 +3660,5 @@
   },
   "source_url": "https://arcprize.org/leaderboard"
  },
- "fetched_at": "2026-11-08T22:14:44.685262+00:00"
+ "fetched_at": "2026-11-09T22:29:17.744766+00:00"
 }

@@ -741,6 +741,12 @@
       "model": "gpt-6.1-terra_max",
       "org": "OpenAI",
       "value": 0.9087719298245615
+     },
+     {
+      "date": "2026-11-09",
+      "model": "claude-fable-5-2_max",
+      "org": "Anthropic",
+      "value": 0.9508771929824561
      }
     ]
    },
@@ -2738,6 +2744,12 @@
       "model": "doubao-seed-evolving_high",
       "org": "ByteDance",
       "value": 0.9311868686868687
+     },
+     {
+      "date": "2026-11-09",
+      "model": "claude-fable-5-2_max",
+      "org": "Anthropic",
+      "value": 0.9387626262626263
      }
     ]
    },
@@ -3252,5 +3264,5 @@
   },
   "source_url": "https://epoch.ai/benchmarks"
  },
- "fetched_at": "2026-11-08T22:14:44.924416+00:00"
+ "fetched_at": "2026-11-09T22:29:17.839683+00:00"
 }
