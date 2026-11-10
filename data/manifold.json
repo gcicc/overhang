@@ -38,16 +38,16 @@
     "id": "YvayfreXRtBvubSPKgmm",
     "kind": "agi_before",
     "note": "Will we get AGI before 2032?",
-    "probability": 0.5892730116810444,
+    "probability": 0.631577408857526,
     "question": "Will we get AGI before 2032?",
     "resolved": false,
     "url": "https://manifold.markets/RemNi/will-we-get-agi-before-2032",
-    "volume": 68042.94609838366,
+    "volume": 68179.9604915601,
     "year": 2032
    }
   ],
-  "observed_at": "2026-11-09T22:29:19+00:00",
+  "observed_at": "2026-11-10T07:28:04+00:00",
   "source_url": "https://manifold.markets/"
  },
- "fetched_at": "2026-11-09T22:29:19.933549+00:00"
+ "fetched_at": "2026-11-10T07:28:04.105394+00:00"
 }
