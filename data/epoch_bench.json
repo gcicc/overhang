@@ -743,6 +743,12 @@
       "value": 0.9087719298245615
      },
      {
+      "date": "2026-10-28",
+      "model": "gemini-4-carbon_high",
+      "org": "Google DeepMind",
+      "value": 0.9052631578947369
+     },
+     {
       "date": "2026-11-09",
       "model": "claude-fable-5-2_max",
       "org": "Anthropic",
@@ -2734,6 +2740,12 @@
       "value": 0.9431818181818182
      },
      {
+      "date": "2026-10-28",
+      "model": "gemini-4-carbon_high",
+      "org": "Google DeepMind",
+      "value": 0.9652777777777778
+     },
+     {
       "date": "2026-10-29",
       "model": "mistral-large-4-0-oss_high",
       "org": "Mistral AI",
@@ -3264,5 +3276,5 @@
   },
   "source_url": "https://epoch.ai/benchmarks"
  },
- "fetched_at": "2026-11-09T22:29:17.839683+00:00"
+ "fetched_at": "2026-11-11T06:41:28.050383+00:00"
 }
