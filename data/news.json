@@ -3,6 +3,34 @@
   "columns": {
    "industry": [
     {
+     "feed": "Google News: policy",
+     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQYWZOV2s2M3B3a01SMmdVNmdwWndUNkFkOXlmcjExRjRPTFBDQ3BGMlhYSXU3dk5LUGp2RDc5bTctVVl1WW5IRTVtUV9NVkszcjRxd3Z6eHVSM0hZQkl5ejhpQUtTVVhLTXlXRHhQWXpOXzdDUUoyTFF5RWxHckU5VjZBcU51R1dKdV9XMXpuSE5zWS00RDVBcFVmMXNGY1pweVJLdG9BcXJPTnpDVFV6N0lR?oc=5",
+     "published": "2026-11-12T04:55+00:00",
+     "source": "Columbia Daily Spectator",
+     "title": "Students, faculty express confusion over new Barnard AI policy - Columbia Daily Spectator"
+    },
+    {
+     "feed": "Google News: policy",
+     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBOMFNJTGtXcjhQT3BpdkpGaTZFN2xfVGd3R1lCc2QxdWNLTmo3YVBnMlVhNUZ4NE85U2U1UkdxZkYwWWxHak5CZkZFbUtZR2hyVThENnZXWGEzNzdrOWJ5dUR2RVJYNWhjMktfNkNZSEU5eUxs?oc=5",
+     "published": "2026-11-12T01:05+00:00",
+     "source": "Ticker News",
+     "title": "\u2018A massive power grab\u2019: AI regulation concerns - Ticker News"
+    },
+    {
+     "feed": "Google News: policy",
+     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5wNWxhcG02amNGc0owTHZmTmpfTVV6MmJBTEc0QXV3LWVzSWU2OHY4ODRPcTdLa0R0NExQX0tCMHgzblFjSF80WHRLSmRHYzZlWlk2cWp5R2ljZnpnc3JNZzhTcVlMRWpxVHF2cQ?oc=5",
+     "published": "2026-11-11T20:55+00:00",
+     "source": "IAPP",
+     "title": "Inside Greece's new AI Act framework - IAPP"
+    },
+    {
+     "feed": "Google News: policy",
+     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPYzU3SjRqc0ZlM0RwWEpHUUJpS0h5MDZmbDMyTjV3aHFlaVFhNzFZSFNqSVlOemFGdGdaRFBXUUpfRktPeW56cG1ZSGFaVHd4QWh2T2d4RDlsVjFjOVdQcDgwM3pRNFRWNXdQT0tTUmhMNzlHUUR5dmt1TGstTHVKd3RYRlotaTU1LWE4N2VyMTNPTEZQM3pn?oc=5",
+     "published": "2026-11-11T20:07+00:00",
+     "source": "NeoTeo",
+     "title": "ISO 42001 and EU AI Act compliance: what it covers - NeoTeo"
+    },
+    {
      "feed": "Google News: chips & capital",
      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNQkhhbmFQbHVBcjhrMkphNGNUX2JGcGRhbHVZTWtuUmU0aG82UmpJQkZQTkdmOUkyWGxLSnRDR2NzS2FiMVB0V0o5bDRPdlpEYzN4SXJkZmJCVjRjZE9USzZlRW9XY1VCYkw5YTRwdXQ5YW14VFdST3J3SDJ4OC1ubVZwWnhFQndmbV9tV1pKWFVwYnlzbXczVmVpQWVaTC1EU0RYOVlmMEJieVpPNXpNRHhqR2tmSE00Q0k3cVdFczVSV1VQcV92WktoRkJYdw?oc=5",
      "published": "2026-11-11T18:36+00:00",
@@ -12,16 +40,9 @@
     {
      "feed": "Google News: policy",
      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPb1ZlN0VGUnJGU1JnR3g1dEJad215YTFSVXdkemtzUGVmbHRfMVZoQ2hQdWs2bV82WF9Tc3JUM1hGRmt5cndlektpVTBubl9XeGxxMEhRdkpPSG5WM1lMTXRraDhZYjZndi1XZ0hPMWZTRWRnQ01heTRwRWJraEQ3d21CREU5NVRKM2Z6SURreXc4WHRDMmNRSEpxaWU?oc=5",
-     "published": "2026-11-11T17:50+00:00",
+     "published": "2026-11-11T17:43+00:00",
      "source": "Detroit Free Press",
      "title": "Network TV is regulated. AI isn't. Why? - Detroit Free Press"
-    },
-    {
-     "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5wNWxhcG02amNGc0owTHZmTmpfTVV6MmJBTEc0QXV3LWVzSWU2OHY4ODRPcTdLa0R0NExQX0tCMHgzblFjSF80WHRLSmRHYzZlWlk2cWp5R2ljZnpnc3JNZzhTcVlMRWpxVHF2cQ?oc=5",
-     "published": "2026-11-11T16:49+00:00",
-     "source": "IAPP",
-     "title": "Inside Greece's new AI Act framework - IAPP"
     },
     {
      "feed": "Google News: chips & capital",
@@ -32,17 +53,17 @@
     },
     {
      "feed": "Google News: chips & capital",
+     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9NMUdBMUhjOU5zbG1QY09WWDRfanA1dUs2TTktQ21rYjdIUmVzVkM1TmFrc0dVQUx2M1ZBdDNTRV9EdXN2RG42ZEdaOFhnTDF2Ty05RUZoOEJYeHd3YVVsS1JVa1VQdjk4aDYwWUNKYkJYZXRs?oc=5",
+     "published": "2026-11-11T14:18+00:00",
+     "source": "Hedge Fund Alpha",
+     "title": "Fear Or Fundamentals \u2013 Unpacking AI - Hedge Fund Alpha"
+    },
+    {
+     "feed": "Google News: chips & capital",
      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE4walNUNmNTYjVMUFlzMUVhbk9ESHZOdFppaTB4RUJORWFvNnNwa1d2UEp1SkNZNGx3eWNzd2xYUmlJcXo5RmtPNjYxNEFCRVh4bUxaWVVsMGcyRkl3clRQZmJ5TlU5RmgyemU3UTZmTGxTZUpEeTQybGN3UTQ?oc=5",
      "published": "2026-11-11T12:25+00:00",
      "source": "CNBC",
      "title": "Baird downgrades Nvidia on CEO Huang worries, AI uncertainty - CNBC"
-    },
-    {
-     "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1EckJnbEVnMWM0c250U2k1UkVjRWV4R2hNOUVIUTBGR1RMUF9mazlidUh6aVE2LTdjR0VxZDhycE1CRkp1TVBGNG9LWEl2bWsyMEIwY0ZkbjNNaDIzUGYzZUt3?oc=5",
-     "published": "2026-11-11T11:30+00:00",
-     "source": "Phoronix",
-     "title": "FreeBSD Working To Establish An AI Policy After Polling Developers - Phoronix"
     },
     {
      "feed": "Google News: chips & capital",
@@ -50,64 +71,50 @@
      "published": "2026-11-11T10:12+00:00",
      "source": "MarketPulse",
      "title": "Nvidia (NVDA) Q3 earnings preview: AI spending risks and governance concerns threaten major uptrend - MarketPulse"
-    },
-    {
-     "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQUGVtMXk5SmxSRnBTRlVDeFlZMURtaTg5U1c0U1NwWjVKQ255cTBpUmtSZGh2T0FoZUtmT1MxZzQ5RVRmelp2LUlray1zMDBXaW9HdURNaW1JVE9wM3hTYWdZdGJTWkFBbFIxbVE0OFRlOGs5aFVtSVk0czRnM3RCLWp2ay0xOG5QbjMtblZ4N2NxNHhNd1c1ZWF0X0ZPb1dlRHc4TUF6Z3M3Ulg4SVRhNzRnQzJNd0xW?oc=5",
-     "published": "2026-11-11T06:55+00:00",
-     "source": "Moomoo",
-     "title": "Tighter AI Regulation Becomes an \u201cUnexpected Windfall\u201d? Deutsche Bank Raises SpaceX\u2019s 2028 Performance Forecast: Potential to Profit from Scarcity of Computing Power - Moomoo"
-    },
-    {
-     "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNYXlEYTRNS3ZWZHVqYzBZMU03VkdTa3F3MmRMdHJDajBpVE81VlcwVi01c2RzZUo3VXhLZzhZb3hvYXJSTE1WVkZBMTFGWHZXNmRHdmJWVjhCd3k4MVozV2ZoMl9iNUljek5NMUtYMG1WUk54U3lCZWd2R1R3VEVVR0xvRjFKNVI2azd6X2pyNUc1MkxWaGhORGhXUTZEY0dsQVJ0cHdfR1RqSExBZ1QyZ2dUTQ?oc=5",
-     "published": "2026-11-11T02:20+00:00",
-     "source": "Hogan Lovells Cadwalader",
-     "title": "PATIENT AI Act targets FDA, reimbursement gaps for AI-enabled health technology - Hogan Lovells Cadwalader"
-    },
-    {
-     "feed": "Google News: chips & capital",
-     "link": "https://news.google.com/rss/articles/CBMizwJBVV95cUxNYXhTOVV3bTN1MHI5WkVoZ1F4MmEtX1dPa0p2cXhPbmZVckRSeENLMDBWcTZnYk5FbmNxT2FqT1dmcWJZUEZBUTBNSHhIQ2g0aW03RFg4ajhvNjllcW9CZU9OTVkwOWlYY29mbHVkcFZ5NjVaZ1lBRlFpTE1jbmZFZENnQUY4dmtzUHFZcFBzVVpVMGZTZVV3YVZlZXhnS1NMbjE0YlA0Y3l2dWtGN0ZoOUp0alZqZVNSQTJzeWl3SU1Bc0RwWEV1Z2stNVIxME53aWVnQ1hQR2F6Q1Y0TWZjSThISThJWU5NOTZrN1ZLWTlHdmhydi1WZVlDcVBETVdFRWIteElIRElrcWFKTU1PS1lYZHZrNGNVcDVSbmhKbms1SFVBc1lKdzVhQmlEbl92YlVHc3RBek16UTlfdGhXZk4xRjRTOHhxM296Z1ZfNA?oc=5",
-     "published": "2026-11-10T23:34+00:00",
-     "source": "The Globe and Mail",
-     "title": "Hyperscalers Are Projected to Spend $1.3 Trillion on Capex in 2027. Here's the 1 Industrial Stock That Gets Paid Before a Single AI Token Is Sold. - The Globe and Mail"
     }
    ],
    "labs": [
     {
      "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNMWlleThMNkxsdHJYd3dPY3JaU2FsQVVDaTNSNzhIVFotLTM1ZVpHaXBfcnJkMTA4N3gxdVFwSUM3d2lRTjgtdU9MMWc4NnJQUTZNWHYzbTExdjFOSGw0Ujc1aUNrcXE0eG9SeHNEbXNhUmVjWXpBZXYzQndsYnJCOHd1cmwwb3ZNbHZ1eW52aWw0am1yOHRrS2t2bFFmWnFl?oc=5",
-     "published": "2026-11-11T19:30+00:00",
-     "source": "shattered.io",
-     "title": "Gemini 4 Carbon: 6.5M Lean Proof Lines Verify Signal [2026] - shattered.io"
+     "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOdkJ2ZTVmMHUtdkQzYXNwUUkzZjlMUVpNRkpRVFNndXFiSW1IdmFMOEJ3bzR0Rnp2RlZPUmtTV19uTDVxdjdIbEpZRnJlbmpzcXlObUx6Smx2LVhuUkg2QjhNbGhzVmtMTDhBQ1l0V2JWem9YT3pKY0c1VmM1T0lTM19xdXdON2o2b0k2TFFHSUZTNjBjd2toOGlRYWUtRXVkYlE?oc=5",
+     "published": "2026-11-12T04:33+00:00",
+     "source": "CMSWire",
+     "title": "Parloa Joins OpenAI Alpha Model Testing Program - CMSWire"
     },
     {
      "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNYUY2ZGRza09MalY3bjVUUkFaSTNfaDJZcmhxSFhtOWJFX0NudExIVTB6MlFmQjQxMmJFcUU1OG50VE1sblVldklfbmhmbHRFQnA4d2VlQmJMZXpRdlhOLWZkR1hYWDNIUk5KaGxRZGtjZHVXdWpiMlpzcWVvaDFPOXRvXzNmNjhMTlUxQlNQWDlYOEF2b2hyYzBJTzJ2VU5XZ2FhX1ZmVm4?oc=5",
-     "published": "2026-11-11T19:27+00:00",
-     "source": "Channel Dive",
-     "title": "Cognizant splits 68,000 staff into Claude, OpenAI and Gemini units - Channel Dive"
-    },
-    {
-     "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNSUkwM0VlVzJ0bktHVWNReTBqb29sMy13UGppSVpqdW9Kei01RHlFMnBTWk1vZ3p1YVBtbDl4eURfT1ZmWGxtVk1RQWJnM0pLQ3pGTVBqdVhpM2xCWFI0eUdNQk5oUWxSeGUxNU4za1Q3ejl6bmQ3QUdQM0h5ODhOODNqQUZ1YUJ4RDRRVg?oc=5",
-     "published": "2026-11-11T18:34+00:00",
-     "source": "PYMNTS.com",
-     "title": "OpenAI Revenue Hits $10 Billion As Losses Mount - PYMNTS.com"
-    },
-    {
-     "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPTGVFa0w0cmk4aTZOc0dVWnc5bm5lSzRZOE9aQldlcTZZUGc4MGNNWGlTbDFJYUlibHJoQ2xpOEdrUFpPODBQOGluNUhVQWxvY2ZuWE84TVN3NVJza04xVXlBcW1kVkl1WjZMM2RxREktM2Z3bVVqbTBkUnJuTy0tRl9KSkxuT2pzY0Zib1dKV24?oc=5",
-     "published": "2026-11-11T18:22+00:00",
-     "source": "blog.google",
-     "title": "Gemini Decisions API: Fast, calibrated multimodal decisions - blog.google"
-    },
-    {
-     "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNRWk4aHJ6dlBrb2g2aVVXMXpGSFZ1TUVod3lfS3ExYndhY2NIUDZIbGw4MHhFYzJqSGlSa19xREZEdXM2Y3Jya05lMzFzTEdsbEZ6djV4b3JLNW9oQk10a05rVnZlQ2tsV0s5S2xDdUxyM3I4TGNuZ3FUWTh3LVVDa0JzR0tQNFoxNzBDRVg2RHNCdGNFbXJtWnY3NVlYN1NMaTNFaS1Cak93SHEyNG1iYzRqZkFCUnlhczhXNjVrVUtqRmc3Ql9BS2tfakd4aWs?oc=5",
-     "published": "2026-11-11T16:30+00:00",
+     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNSGJUSThZcHo0dy1rYmlqQ3cwOHVWWGkxdmlGUnNMdWItMjNnVHI2UE94eHFlTW1CcnN5MWU2b2lvYVRyXzNnRHQtSUF0LWw2TkNfSjlmVVAtZWV4RFRKbFk5XzlFYzFWNUlDaG1VbDdfZnNvdGo3OU85cmJKeUdSM3NMVG43UkZpWEJRaGptenZsZUM4ck1jbTFZcGdheEN2VnBTQw?oc=5",
+     "published": "2026-11-12T01:22+00:00",
      "source": "SiliconANGLE",
-     "title": "Google DeepMind releases new advanced robotics AI model and next-generation gene prediction model - SiliconANGLE"
+     "title": "Google enters the decision model market with Gemini Decisions API - SiliconANGLE"
+    },
+    {
+     "feed": "Google News: labs",
+     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOMWFqMldhdkNxd1lUQWlpaWV3cXdHRVVIT083bXhkTjlJNWVGR3BPT19uSWtHVjVlUXYtaWpYRG1haXpES0VGalM4QVdSTzdZak05MTNUZm5acGVLZmhpR05zVHhfMVVuRWQzU2xsNDYzR1FfM0k3TE1HX0ZqZV8zWGpZblN1Nmlqc2dtSTQ0T01uQS1CVThDaW96akRGN1VuR3dTS20yYW51WGx4Y3NteEZZdw?oc=5",
+     "published": "2026-11-12T01:20+00:00",
+     "source": "Bloomberg.com",
+     "title": "Anthropic IPO Lockup Risks Triggering AI Correction, Selby Says - Bloomberg.com"
+    },
+    {
+     "feed": "OpenAI",
+     "link": "https://openai.com/index/gilbert-tobin-sam-nickless",
+     "published": "2026-11-12T00:00+00:00",
+     "source": "OpenAI",
+     "title": "Gilbert + Tobin rethinks the business of law with AI"
+    },
+    {
+     "feed": "Google News: labs",
+     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxORzc3ajNMRmhlX3BPM2ZFOG0tWWlQdUk1TnQtNjh0TzJSU2V3VzR5RnBuUTB3aDRMd25QckJSajdmLVJSbG9GRlZpQi1WbG9wQnRlVkFVbGVhbmJyS0xrRG1BcFlLQVFpSkpsYWFIY3VRbmpQcGFRejhxV2ZwS0lRSi1MdEsxMnBRUFFEU0NmSllDX0xzdGNVYlZCOUJuVXI5Z2RLZG5kNGt1QmtPalZrRg?oc=5",
+     "published": "2026-11-11T23:03+00:00",
+     "source": "VentureBeat",
+     "title": "Google\u2019s Gemini Decision 1 model scores up to 1,000 questions in one API call - VentureBeat"
+    },
+    {
+     "feed": "Google News: labs",
+     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5TZzIwSmlQN1djZUxZTmFucWlUeFZneHVrVlVncV9LTlBzeTVxTnRWcW5aUGlIbjJQOWhzWjVyQkZqcmRIZVZOUTNreWFRbkFNeE1uQTRJcWhIakx2dlM3N0xQdExMQ014MkVXdtIBfEFVX3lxTE1hYzVnMlAyU1RLVW5XVHpPVHRzMHFRLUhPaUh4bnNzaFA5dlV5OWtiTEhrUF9aWHdlY2pTMTVXMGJnYnJESEdXNmxCazhzZTREWWI0VkRVRlY3aXlUSTMtdmdVZGIta3NvLWthc29RNmNvWVhZTW85QkNfcTA?oc=5",
+     "published": "2026-11-11T22:51+00:00",
+     "source": "FactSet Insight",
+     "title": "Anthropic IPO: A Risk Perspective - FactSet Insight"
     },
     {
      "feed": "Google DeepMind",
@@ -150,13 +157,6 @@
      "published": "2026-11-10T16:03+00:00",
      "source": "Google DeepMind",
      "title": "Gemini 4 Carbon is now available"
-    },
-    {
-     "feed": "Google DeepMind",
-     "link": "https://deepmind.google/blog/introducing-alphaproof-code/",
-     "published": "2026-11-10T12:02+00:00",
-     "source": "Google DeepMind",
-     "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth"
     }
    ]
   },
@@ -170,5 +170,5 @@
    "industry"
   ]
  },
- "fetched_at": "2026-11-11T19:42:04.818656+00:00"
+ "fetched_at": "2026-11-12T07:22:19.128673+00:00"
 }
