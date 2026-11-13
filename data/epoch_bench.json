@@ -695,12 +695,6 @@
       "value": 0.9368421052631579
      },
      {
-      "date": "2026-09-30",
-      "model": "gemini-4-argon_high",
-      "org": "Google DeepMind",
-      "value": 0.8596491228070176
-     },
-     {
       "date": "2026-10-06",
       "model": "mistral-large-4-0_high",
       "org": "Mistral AI",
@@ -717,6 +711,12 @@
       "model": "muse-wonder-1.0_max",
       "org": "Meta AI",
       "value": 0.8210526315789474
+     },
+     {
+      "date": "2026-10-13",
+      "model": "gemini-4-argon_high",
+      "org": "Google DeepMind",
+      "value": 0.8596491228070176
      },
      {
       "date": "2026-10-15",
@@ -743,16 +743,16 @@
       "value": 0.9087719298245615
      },
      {
-      "date": "2026-10-28",
-      "model": "gemini-4-carbon_high",
-      "org": "Google DeepMind",
-      "value": 0.9052631578947369
-     },
-     {
       "date": "2026-11-09",
       "model": "claude-fable-5-2_max",
       "org": "Anthropic",
       "value": 0.9508771929824561
+     },
+     {
+      "date": "2026-11-10",
+      "model": "gemini-4-carbon_high",
+      "org": "Google DeepMind",
+      "value": 0.9052631578947369
      }
     ]
    },
@@ -2375,6 +2375,12 @@
      },
      {
       "date": "2026-06-09",
+      "model": "claude-fable-5-fallback_max",
+      "org": "Anthropic",
+      "value": 0.9387626262626263
+     },
+     {
+      "date": "2026-06-09",
       "model": "claude-fable-5_low",
       "org": "Anthropic",
       "value": 0.7878787878787878
@@ -2686,6 +2692,12 @@
       "value": 0.9059343434343434
      },
      {
+      "date": "2026-09-22",
+      "model": "claude-opus-5-5-fallback_max",
+      "org": "Anthropic",
+      "value": 0.9406565656565656
+     },
+     {
       "date": "2026-09-28",
       "model": "claude-sonnet-5-5_max",
       "org": "Anthropic",
@@ -2698,12 +2710,6 @@
       "value": 0.9539141414141414
      },
      {
-      "date": "2026-09-30",
-      "model": "gemini-4-argon_high",
-      "org": "Google DeepMind",
-      "value": 0.9640151515151515
-     },
-     {
       "date": "2026-10-06",
       "model": "mistral-large-4-0_high",
       "org": "Mistral AI",
@@ -2714,6 +2720,12 @@
       "model": "claude-haiku-5-5_max",
       "org": "Anthropic",
       "value": 0.8964646464646465
+     },
+     {
+      "date": "2026-10-13",
+      "model": "gemini-4-argon_high",
+      "org": "Google DeepMind",
+      "value": 0.9640151515151515
      },
      {
       "date": "2026-10-15",
@@ -2740,12 +2752,6 @@
       "value": 0.9431818181818182
      },
      {
-      "date": "2026-10-28",
-      "model": "gemini-4-carbon_high",
-      "org": "Google DeepMind",
-      "value": 0.9652777777777778
-     },
-     {
       "date": "2026-10-29",
       "model": "mistral-large-4-0-oss_high",
       "org": "Mistral AI",
@@ -2762,6 +2768,18 @@
       "model": "claude-fable-5-2_max",
       "org": "Anthropic",
       "value": 0.9387626262626263
+     },
+     {
+      "date": "2026-11-09",
+      "model": "claude-fable-5-2-fallback_max",
+      "org": "Anthropic",
+      "value": 0.9602272727272727
+     },
+     {
+      "date": "2026-11-10",
+      "model": "gemini-4-carbon_high",
+      "org": "Google DeepMind",
+      "value": 0.9652777777777778
      }
     ]
    },
@@ -3276,5 +3294,5 @@
   },
   "source_url": "https://epoch.ai/benchmarks"
  },
- "fetched_at": "2026-11-12T07:22:14.713732+00:00"
+ "fetched_at": "2026-11-13T19:50:59.648583+00:00"
 }
