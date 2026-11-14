@@ -439,7 +439,7 @@
     "site": "AWS Berwick"
    },
    {
-    "date": "2022-07-01",
+    "date": "2022-06-01",
     "h100e": 0.0,
     "site": "AWS New Albany"
    },
@@ -464,7 +464,7 @@
     "site": "AWS New Albany"
    },
    {
-    "date": "2024-07-23",
+    "date": "2024-05-01",
     "h100e": 0.0,
     "site": "Alibaba Zhangbei"
    },
@@ -1134,7 +1134,7 @@
     "site": "DayOne Kempas"
    },
    {
-    "date": "2023-10-01",
+    "date": "2023-06-01",
     "h100e": 0.0,
     "site": "DayOne Nusajaya"
    },
@@ -1459,7 +1459,7 @@
     "site": "Google Fort Wayne"
    },
    {
-    "date": "2024-01-01",
+    "date": "2023-12-01",
     "h100e": 0.0,
     "site": "Google Kansas City East"
    },
@@ -1519,7 +1519,7 @@
     "site": "Google Lancaster"
    },
    {
-    "date": "2023-07-01",
+    "date": "2023-06-01",
     "h100e": 0.0,
     "site": "Google Lincoln"
    },
@@ -1539,7 +1539,7 @@
     "site": "Google Lincoln"
    },
    {
-    "date": "2023-07-01",
+    "date": "2023-08-01",
     "h100e": 0.0,
     "site": "Google Mesa"
    },
@@ -1564,7 +1564,7 @@
     "site": "Google Mesa"
    },
    {
-    "date": "2023-11-28",
+    "date": "2023-04-01",
     "h100e": 0.0,
     "site": "Google Midlothian"
    },
@@ -1754,6 +1754,11 @@
     "site": "Google Red Oak"
    },
    {
+    "date": "2019-03-18",
+    "h100e": 0.0,
+    "site": "Google Storey County"
+   },
+   {
     "date": "2023-08-30",
     "h100e": 35219.807983830215,
     "site": "Google Storey County"
@@ -1784,7 +1789,7 @@
     "site": "Google Storey County"
    },
    {
-    "date": "2023-05-21",
+    "date": "2023-03-01",
     "h100e": 0.0,
     "site": "Google The Dalles"
    },
@@ -1864,7 +1869,7 @@
     "site": "Huawei Horinger"
    },
    {
-    "date": "2023-01-01",
+    "date": "2022-12-01",
     "h100e": 0.0,
     "site": "Huawei Wuhu"
    },
@@ -1964,7 +1969,7 @@
     "site": "Meta Bowling Green"
    },
    {
-    "date": "2024-04-01",
+    "date": "2024-05-01",
     "h100e": 0.0,
     "site": "Meta Cheyenne"
    },
@@ -1989,7 +1994,7 @@
     "site": "Meta Cheyenne"
    },
    {
-    "date": "2023-10-01",
+    "date": "2023-08-01",
     "h100e": 0.0,
     "site": "Meta Eagle Mountain"
    },
@@ -2229,7 +2234,7 @@
     "site": "Meta Prometheus"
    },
    {
-    "date": "2024-05-01",
+    "date": "2024-02-01",
     "h100e": 0.0,
     "site": "Meta Rosemount"
    },
@@ -2929,7 +2934,7 @@
     "site": "QTS Eagle Mountain"
    },
    {
-    "date": "2023-10-01",
+    "date": "2023-09-01",
     "h100e": 0.0,
     "site": "QTS Richmond 1"
    },
@@ -3134,7 +3139,7 @@
     "site": "Stream Phoenix"
    },
    {
-    "date": "2024-03-15",
+    "date": "2024-03-25",
     "h100e": 0.0,
     "site": "VNET Bayin Ulanqab"
    },
@@ -3245,5 +3250,5 @@
    }
   ]
  },
- "fetched_at": "2026-11-07T21:58:09.627818+00:00"
+ "fetched_at": "2026-11-14T22:35:26.706494+00:00"
 }
