@@ -4,6 +4,20 @@
    "industry": [
     {
      "feed": "Google News: policy",
+     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNQUF2TjYyb1R6ZEJRSVB2UmdQM2d5TEdYenBEWm1LMWVNUHdzcnRkY250c3lwTXd0WW1TNWJETGoyZEdkQ3dHaS1KVUF6QzNpZ3FtWUpNcDg2UU9OWV9kenUxNjBvd19OdFpJM0lLQ0sySUwwRXhleXVVdDNteTB3VzBKclFSZmYweWNUYmFSVTAtMTFBQ2pJbTNNQmhvMWhwV0x5QmRqQQ?oc=5",
+     "published": "2026-11-15T00:12+00:00",
+     "source": "The Guardian",
+     "title": "Art \u2018must not be sacrificed on the altar of corporate profit\u2019, Liberal senator says as AI policy debate rages - The Guardian"
+    },
+    {
+     "feed": "Google News: policy",
+     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNU0dNT3J5NVdVcGVCUWpIcTlQLTFOazhzUDNpeDlpMk1BYzBLOEZERXd2aHJSTU90Q1ludE44YTV6RVhXekE4aFh4TTJERHo2a29KTURnblIyOURYbXBXNUlGVEY3VzBreTREUDQ0YjVodmZBeEhFaGFxd0Zzd1l1amc4R2dfMFhFeDhr?oc=5",
+     "published": "2026-11-14T22:27+00:00",
+     "source": "The Hoya",
+     "title": "Pe\u00f1alver, GU Technology Researchers Champion AI Regulation - The Hoya"
+    },
+    {
+     "feed": "Google News: policy",
      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBmakwwMmVzeWIzVk5TQjJISHg0NW55aVBIeVM3ZW9aVllNcHB3OUZxWWktTjVxeFZMWnBDSnZNWG93MkRidTlTaVJjTWlsQTAzTlJwUjdNUHJQR1RteFBR?oc=5",
      "published": "2026-11-14T16:06+00:00",
      "source": "Phoronix",
@@ -22,27 +36,6 @@
      "published": "2026-11-14T12:35+00:00",
      "source": "Voice of Nigeria",
      "title": "Ex-Minister Calls for Media Literacy, Ethical AI Regulation - Voice of Nigeria"
-    },
-    {
-     "feed": "Google News: chips & capital",
-     "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNT3hwVjdSaHdrTXNkdFNDMGgwVkJFSWNSTXQ5QkFjUnRNTlUwZU1aYXhNeTVTcGZNdWIwQWVQXzZVUW5NUUdVV1doNWFHSlBMWDZHVGpKWUJDek01dUNYQXJPUWhFTzhDWHhZS2RxRGZOSzZjVHRsOUNKOGRhRGQ3Mk9zTHROSFBacW5IMW1aMUVvLVMzNWtlTzRnTEpGaFVtTGtxMU1COFlSVzVRR1QyVk1fLXdlQWFSZmxaMlNRTkxKVUxnX2tsTFY0cy1sWkNMbTUxdi1oVnUtT2ZDWF9v0gHjAUFVX3lxTE51T2JCYzdWZjdPU2h5ZUFDTm4zYWRMMXJtWHkxNHdXRlQ2RFc5U1lDWXFXTVdWcGtyLTNIR0p0YjFsLXpEQ2VXbnprMXFMMUxNeldLVHdNaXQ5S0MzZnM4U3ZWZ2VxSEI4N21BM0ZUU0E1VzYtZzQxZDNFZVBmOGpFV2pRMUcxaVZwVW9yMGdYUU0yMlJkd3M1SzRHc2RjOU56NXFTbUUwRHhSQ3JTTGFBMUp5REd5cWJFZ2J3NTJlMVpwYVlFb3dWTTFjQUU1RnFYaEJnUGt6OXRldlBieWRLV3RR?oc=5",
-     "published": "2026-11-14T03:44+00:00",
-     "source": "ET Datacenters",
-     "title": "Hyperscalers commit billions to next-gen AI data centers - ET Datacenters"
-    },
-    {
-     "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPbE5NdkdMdUh1MkIwcGtIY2RkOVlTb1M1RjJtbk5EX2sySjdWWlVMMTNzZTZaUjY4dU9jcWdNeXJ4Rnhwazh2djR1SnBpdmdBM2kzY2ZHRkticXV4R0hsMDZWRWRiaE9tMWNnSEcyVFdzdkxpQXlGT2RoUExFX3hsQVlMOFJUMEVGNG9QSlZ0NWNVdFM1a0tKV1pyTmFUc1h6NXA5V0ZOaXYwRmxnWnZXdE1IY29KTTg?oc=5",
-     "published": "2026-11-14T02:22+00:00",
-     "source": "CBA National Magazine",
-     "title": "Why Canada needs AI regulation in criminal justice - CBA National Magazine"
-    },
-    {
-     "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQc1JMZEtOU3dXUGJTRDZQUEdnMHR1djBCRlJGNGNUUTUyRHlVU0xRVW9YSnJ0RUJrWlBXU05fLTlTZG9STDRHV3ZTcE51R3Zha1VDdThDQnozYWltTEozamdYLXprc2tRenVxd3VfS3JoeWF6V2lZTVNUWXFMSHJEcVEyV2Jzak9raU5LbTZLY3h2RlFUbWJ3dDV0VDVJZXhYRG01LVh4b1lsUTI4?oc=5",
-     "published": "2026-11-14T00:13+00:00",
-     "source": "Hoodline",
-     "title": "Harris County AI Policy Update Pulled From Agenda - Hoodline"
     },
     {
      "feed": "Google News: chips & capital",
@@ -71,9 +64,30 @@
      "published": "2026-11-13T11:16+00:00",
      "source": "FourWeekMBA",
      "title": "Goldman: S&P 500 to 8,700 on Cheap Hyperscaler Valuations - FourWeekMBA"
+    },
+    {
+     "feed": "Google News: chips & capital",
+     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBwNlJFYVVIOWFlR2t6cW1DNTR6ZUN2X3VRa0hxVmRQbTZVb19oMjg3bmhwbVhfR3VLVm05ZFBBR19xbW1xSFU2VDZyTVlPQ2R3SHBHQVZYZGoxSUJwWHBIaWdZejJneXM0TEp0d0Zyb0hyenFmdmc?oc=5",
+     "published": "2026-11-13T10:35+00:00",
+     "source": "BigGo Finance",
+     "title": "Gigabyte Sees AI Server Orders Stretching to End-2027, 2027 Capex to Hit NT$4 Billion - BigGo Finance"
     }
    ],
    "labs": [
+    {
+     "feed": "Google News: labs",
+     "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOZGNzeTNKaGVxdEdkU0tabTdqTTV3d1F3QWxCZWVZanFpSDJkVi11LWZ4dmFIZHF5WGdLX2YzODFZUS1pbmwxUldHRzUzSV9TaWtiMER1N1ZHNkt2WnFrZ1NpbjdvU1VFam1XLW1KZHU5SGtkRmFXa09mand0azE0TGx5M1hRUHJURlBTVEhXVDdmWFE1ZDRFbVZoZVJ5SVlyNmc?oc=5",
+     "published": "2026-11-15T05:11+00:00",
+     "source": "shattered.io",
+     "title": "Antigravity /teamwork Puts 3 Gemini 4 Models on Science - shattered.io"
+    },
+    {
+     "feed": "Google News: labs",
+     "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQc0RCaDFRSml1TkxBN09Ed3pkZDhDNDAzYThkdktlU3lVMy1IblZSb0dyRkw2TjNCTFF0c0dha25JdlZNNzh1OWlrTzI5T2dOUEtGSHdWNDVMTlMyZm5BS3lGQXNtTnN3Wm82OUtMOGVHX2FsOUhBZHRGQlVKQXJrMTZtM2xHTWQ2VmVnRlhhd0RTamJiWEZabWc1TVFZTk1ieDdDQ3ZxTmxJVy1kczNnUWM0UVpEVVFZWmgtM1RhVXpyMGdKN0ZpY3I4SzZIR0RJd2JMdmY5S1Q2VTFYTFVTUG1zcmE?oc=5",
+     "published": "2026-11-14T19:16+00:00",
+     "source": "The Decoder",
+     "title": "OpenAI reassigns robotics researchers to other teams as general-purpose models might make specialized robotics AI unnecessary - The Decoder"
+    },
     {
      "feed": "Google News: labs",
      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNY0NuYzZvQnRuaWZOTGtNYWpDQlN3VFljSExRa3k3ZDEzTm5BdEQ1Y1gwbmdMZXU2bjIwU2xmN3htejZpR3I3Zmcxd2RJVnZHZWY1aWFNTm9BTHhRN2dlanB3MldDOUJnQ2VnZmtMNkktOVJOLUgwLWhKcnpkQU5WRnR5VDRrNUFxak1ZNHdOWFlSR3BUYjBsOXZzUFRzcUdhUDZCMDRpVmtjblk?oc=5",
@@ -90,24 +104,10 @@
     },
     {
      "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQc0RCaDFRSml1TkxBN09Ed3pkZDhDNDAzYThkdktlU3lVMy1IblZSb0dyRkw2TjNCTFF0c0dha25JdlZNNzh1OWlrTzI5T2dOUEtGSHdWNDVMTlMyZm5BS3lGQXNtTnN3Wm82OUtMOGVHX2FsOUhBZHRGQlVKQXJrMTZtM2xHTWQ2VmVnRlhhd0RTamJiWEZabWc1TVFZTk1ieDdDQ3ZxTmxJVy1kczNnUWM0UVpEVVFZWmgtM1RhVXpyMGdKN0ZpY3I4SzZIR0RJd2JMdmY5S1Q2VTFYTFVTUG1zcmE?oc=5",
-     "published": "2026-11-14T11:45+00:00",
-     "source": "The Decoder",
-     "title": "OpenAI reassigns robotics researchers to other teams as general-purpose models might make specialized robotics AI unnecessary - The Decoder"
-    },
-    {
-     "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQSWhmb2VKWjlndW5RMmRLOTljekpuSDk3R3Q4dlBFWlN2ZmpoMmx2cm9uS2hjaHAyRFEtbnpab0dndm94ZmYyZlM4MVlSOW1BWVNUeUxWcENXUzhWYXpjZm9UaVBtOWhDT0pZd2FhUHY3Mi1lWkd2aC1hNGY0NWE2NUY0aEpwdDUxbTlvUkQ4U21QbVJFSXp2SjE5MG5yaTlrOWpjSkh4Rm54RlVINE5oelVfdHkycm5raWpmY3o1QjdyaVgxd0VDWEktclZJRzlqTmhhbmpB?oc=5",
-     "published": "2026-11-14T11:25+00:00",
-     "source": "The Decoder",
-     "title": "Anthropic can already retrain Mythos with \"a fraction of the compute originally needed,\" says former researcher Coxon - The Decoder"
-    },
-    {
-     "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOc2d0VmU0UHVrQlVvWElsNFVGTlhKcDc2YVR0SGxqM2dBUXlvSGpLZTNrbUhDTVhiLU0yU1lUamJ2MFpNc3V0SUxlY2xkc3dKemkxel9zbEVXaTVoVHhMdUliUERkZUNKQ2pvSnNKeUh3WDBXdkw1dVBQM09pMjBlSXdoc3JUOVpxZTZYZkphSVFzeDV5MkN5SGpLN0E3bmZVcnJtRThzNDJYSGNzSi1qUEdXUDZWYzRrbHY1RkVqeTA5WWxadzdTcE9USjMxVkZLU3p2cGZMODJpU1V5SDlBTDFyWUNnWXZpbGF1aEotVlFsMkU?oc=5",
-     "published": "2026-11-13T21:16+00:00",
-     "source": "The Register",
-     "title": "Chinese AI labs are training models on Nvidia's Blackwell despite export controls, says ex-OpenAI engineer - The Register"
+     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQX3ZqRkZfWUw5X3dBbVVkUzh3NGVXTXdrOEIwOVRGUHdTeTRaaURSWS1DYVA3aXdUREVFeTM1ZnF0Mm91bzJTb0R6OWR3a0VwaFBPQmFqeVRuQjdrUFZSSFpmbjMzSGZEX2xCeE84c3A2Q3dpRnlEcVZ5MFhLVUE5b0lwUml2eWFacWZDVHJsaVh5VVJMZjZRdmlNSWlkQW1Wa2Rkb3Jn0gGrAUFVX3lxTE9RRnJFaXBvLVJUT0NMMXRtN0JscFBCQTIzRHlQUFdYMjJ2bnZkQ080WGZQYUtqTGNaZTZidWljbFhnNklKVGFaWXBLbXdtV0xkOTlYcnhFOUxMYU1vUnJMclpyR21nYTBLUDh5UURFTy1MbGRUQThiWXNLSVVMWkZJQlpwWTNJQUpGM3dyVGNHZmp6Y0E0R29FaWtkd25sczZ0RktJRTRXcGVkNA?oc=5",
+     "published": "2026-11-14T13:38+00:00",
+     "source": "ABC News - Breaking News, Latest News and Videos",
+     "title": "Anthropic says its AI models hacked 3 organizations on their own during tests - ABC News - Breaking News, Latest News and Videos"
     },
     {
      "feed": "Hugging Face",
@@ -170,5 +170,5 @@
    "industry"
   ]
  },
- "fetched_at": "2026-11-14T18:15:17.139775+00:00"
+ "fetched_at": "2026-11-15T06:46:28.396459+00:00"
 }
