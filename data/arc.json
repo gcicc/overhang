@@ -2,7 +2,7 @@
  "data": {
   "series": {
    "ARC-AGI-1": {
-    "generated_at": "2026-11-10T18:05:11.493Z",
+    "generated_at": "2026-11-16T14:59:50.977Z",
     "points": [
      {
       "date": "2023-11-03",
@@ -1775,6 +1775,30 @@
       "value": 0.05666666666666667
      },
      {
+      "date": "2026-10-19",
+      "model": "Mercury 3 Preview (High)",
+      "org": "Inception",
+      "value": 0.885
+     },
+     {
+      "date": "2026-10-19",
+      "model": "Mercury 3 Preview (Medium)",
+      "org": "Inception",
+      "value": 0.8466666666666666
+     },
+     {
+      "date": "2026-10-19",
+      "model": "Mercury 3 Preview (Low)",
+      "org": "Inception",
+      "value": 0.8066666666666665
+     },
+     {
+      "date": "2026-10-19",
+      "model": "Mercury 3 Preview (Instant)",
+      "org": "Inception",
+      "value": 0.10666666666666666
+     },
+     {
       "date": "2026-11-05",
       "model": "Inkling 2 Small (XHigh)",
       "org": "Thinking Machines",
@@ -1846,7 +1870,7 @@
     "unit": "fraction solved"
    },
    "ARC-AGI-2": {
-    "generated_at": "2026-11-10T18:05:11.494Z",
+    "generated_at": "2026-11-16T14:59:50.978Z",
     "points": [
      {
       "date": "2023-11-03",
@@ -3631,6 +3655,30 @@
       "value": 0.020833333333333332
      },
      {
+      "date": "2026-10-19",
+      "model": "Mercury 3 Preview (High)",
+      "org": "Inception",
+      "value": 0.6180555555555555
+     },
+     {
+      "date": "2026-10-19",
+      "model": "Mercury 3 Preview (Medium)",
+      "org": "Inception",
+      "value": 0.4180555555555555
+     },
+     {
+      "date": "2026-10-19",
+      "model": "Mercury 3 Preview (Low)",
+      "org": "Inception",
+      "value": 0.40972222222222227
+     },
+     {
+      "date": "2026-10-19",
+      "model": "Mercury 3 Preview (Instant)",
+      "org": "Inception",
+      "value": 0.0125
+     },
+     {
       "date": "2026-11-05",
       "model": "Inkling 2 Small (XHigh)",
       "org": "Thinking Machines",
@@ -3696,5 +3744,5 @@
   },
   "source_url": "https://arcprize.org/leaderboard"
  },
- "fetched_at": "2026-11-16T06:44:47.870300+00:00"
+ "fetched_at": "2026-11-17T08:04:25.634888+00:00"
 }
