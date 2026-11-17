@@ -1,113 +1,14 @@
 {
  "data": {
   "columns": {
-   "industry": [
-    {
-     "feed": "Google News: chips & capital",
-     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9EMi14OTFUeTJKb3FiMmZQTDQwd0RFNnFYVGVlcTRqd21yaTJpU19jRDdPMkNoampoYU50SzBBUVZwZUNPNk5UelozcUkzSHZkcmxyLUphSk92WDA?oc=5",
-     "published": "2026-11-17T07:16+00:00",
-     "source": "www.tokenpost.com",
-     "title": "SemiAnalysis Cuts AI Accelerator Capex Forecast by 40% for 2030 - www.tokenpost.com"
-    },
-    {
-     "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOQUdZQzA4QVM4c3ppczNYc0tSTndkTmd6UWxzbnV0VGduV1JrV2lxSWxxd2ZZZTdJcVUzQk0tUzg4c25QUzJJajg1XzFRdEpJMXhTcnRndHZxNXJiUm94a0NlWVpvRnNQTHVncmhZdEwzaWVNc0RQX2RiTzlUUlFhcExOMzNSSERvcFRYLTIwZGVZaE16aE02RmdpWE1iQQ?oc=5",
-     "published": "2026-11-17T05:01+00:00",
-     "source": "University of Pennsylvania Almanac",
-     "title": "One Step Ahead: Think Before You Share\u2014and Before You Let AI Act - University of Pennsylvania Almanac"
-    },
-    {
-     "feed": "Google News: chips & capital",
-     "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1SM1A3S3IzQ0FyYlpvdDBGajBVUk1ud0NUcTFUcXFJWWNjRUdaWlZiMVYyblUzUEpfODVwSkRoUWRDM3ItcTg5Qk1GclNycFlxd2t3cjk2QlA?oc=5",
-     "published": "2026-11-17T00:20+00:00",
-     "source": "Longbridge",
-     "title": "$NVIDIA(NVDA.US)Nvidia: The AI Sell-Off Doesn\u2019t Add UpThe\u2026 - Longbridge"
-    },
-    {
-     "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOTVVDaFBQRVQ3eERyTVVtbGFXQ0I0cWl1U1d1SmJlOTdFVFlQa2RxSzJmS0dmUm5hYkgteWI2TjZlVk9PSjhHMWdOYndPX2ZhbjRyWEFEVndjSnE0WkFNNEVMXzdLMzlCdjZfalVUbG1ueEtNNnBNeXV5TlN0YjF1NHJkLXc4dw?oc=5",
-     "published": "2026-11-16T23:06+00:00",
-     "source": "Urban Acres",
-     "title": "Goa AI Policy 2026 Targets 50,000 Certified Professionals - Urban Acres"
-    },
-    {
-     "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOeFdCb0pjY1JSaURYTXBrSWo0UThKRDBOZEpiRlE5eDA4NXBlUjVOTVpGb0MxYV91eGtfWXhjZ3RsZ29EOWFpZnpmMkVuNmF5cVVDX1lVWUdPSjJfaTlHdy02U0piYWlJNmZMZTBfM1MzcUNTczZab0ZHcWhqcWw4NDZqQy1USUotM0t5RzRUZ0N6TUJLZFNv?oc=5",
-     "published": "2026-11-16T20:02+00:00",
-     "source": "Wynne Progress",
-     "title": "Cross County School Board to consider budget, AI policy tonight - Wynne Progress"
-    },
-    {
-     "feed": "Google News: chips & capital",
-     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPcUhoTTV5dHN5MkpnWERmVlVNX3cwTDZhWTZ1Z1NzaTB5d2t5ZDBnUEx0VjBGZUhmZ0ZiMV80djhnS2xvWE8xNjRkSTRNSl9zVlV5eEoxVFM2dlNoclFBY2RoS2VZb3FkSV93MUtTcklIUkx6U3lqYy1PY2oxNDJhaDVfOUxSdkI1bmJWUXFFYw?oc=5",
-     "published": "2026-11-16T19:00+00:00",
-     "source": "Yahoo Finance Australia",
-     "title": "AI Spending Accelerates: 3 Hyperscaler Stocks for Strong 2027 Returns - Yahoo Finance Australia"
-    },
-    {
-     "feed": "Google News: chips & capital",
-     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE90NjZnV0lZdlIxb0x6TjJkU3hGUF8wMlRwbFAwTG1zaHdUaDZHQmRLbTNXR3hRQmlrbkh3OG05UzhseUVpdm50Skc2TXktVU52dUdfMWZBVzRZdjg?oc=5",
-     "published": "2026-11-16T18:08+00:00",
-     "source": "BigGo Finance",
-     "title": "Nvidia Is Building Its Own Competition: Gil Luria Says CoreWeave Is a \"Special Purpose Vehicle\" With Negative Carry - BigGo Finance"
-    },
-    {
-     "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPMVlJbzJ1b0wzT0pCMDdndUxnMjVod2NtemdiMGRraDc0T1RzVkFGOTR1Tl9CejdzYnp1WS14elpOMkdrQVZ3c2NGRmx2QjdjQVNrVG1WYklQcnd4bUU2N2VsTlFmWl9JWXdCUmpOdXA0RkdBSWFJMmc2TzVXcjgtN084eWRaMWF2ZWFud0M4NUxPM21TVjNB?oc=5",
-     "published": "2026-11-16T17:22+00:00",
-     "source": "SmartBrief",
-     "title": "Students want a say in AI policy. Utah is giving them one. - SmartBrief"
-    },
-    {
-     "feed": "Google News: chips & capital",
-     "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNSHlVS0UtZ1dSOVFzSGdUZXlZMXZRSlZVRmg3Y1FqNDlZV0d5Zm5hc0VDeExVcU1RS0ZLdFVVb2dZbFVkcmJQUUJ1cUZiYXUyOHNLZTlxNWYwZW8xaWRTOHRFdFZjUFo0ZDhwUE9fZmNXQUY3TmN5NE5FTmlxTVN3Vm1sTTFCTWpDa2VKa1BGNWgzTW9H?oc=5",
-     "published": "2026-11-16T16:31+00:00",
-     "source": "Invezz",
-     "title": "Why Micron and Sandisk stocks are falling on Monday? - Invezz"
-    },
-    {
-     "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNZzVhcjQ2OHFtZFFVVTJBWEZTWDFWbnNsT3pNU0FFYm9fSlBYZzI5dkp6UWlibkttV1lTTkpVMVZkbEVab0xqQTZFRVBHTWVDSnVCOVVmMmlfb2s4d0NhOV9FUThjNDZqcXQtM3VYZzNzczVkUzRCbjE4cHZVbkFpQ3JRYm5GQllPcklqQXVtZkZMRGRCSmVPUENad1daWmh5UkgtOXdMckNkUWhxOHMzSWFvSHd5NE9iNmtQSUJiUlBFLTFTUEMtYTQ4cTlVLXpmMmVvVVBsc3hGTlVtc1c0TmhQSWVYMlVWSHZWVHVhMmctSy12VURZ0gH-AUFVX3lxTFBmSldaXzQxUUNzNl9wUkNLNDQ2NkJhVzF5UUxYdDdzNjNMUzlnV1FDSW9uNWFlLXh2U1Fqb09NNGdRTzEwTUppZlBiX2Exdlp5T2MtYkk3M1pmY1ZSNEFkcFhvY2NoV1JwM1c4c1FmRmJhUk1Nb1ZVaVBCOEhVZS1FTWh3cDlPRFNlNk80NXJZSEVnRkNqdVhuNEZYcURRcWllbHF3NHp6OG1IbF9wdjl5SDVGVkZkclpOenBLOUs2V1A0bG9kWU1OYTRHbnRDRzNDRXU4S1hBcXRfQ3FEZk5vdk5SZHZZYmtoeHFNbVlwakFrMnBLSHRSYkpBTnZR?oc=5",
-     "published": "2026-11-16T16:11+00:00",
-     "source": "The Hindu",
-     "title": "A.P. govt. approves Robotics and Physical AI Policy 2026\u201336 aimed at total ecosystem for State - The Hindu"
-    }
-   ],
+   "industry": [],
    "labs": [
     {
-     "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE15VTVSZWFIYS1KcVM2MnVXeWtqUDJoemp3ZnZ3QjRKX050dnhzcDZLLUh5N1RZVEFkcTBfbjl6VklMTmJlS2swQnFuSUw5d3N1RXJN?oc=5",
-     "published": "2026-11-17T08:01+00:00",
-     "source": "eu.36kr.com",
-     "title": "Google\u2019s New Gemini AI Model Imminent: Netizens Joke \u201cWill It Traverse the Entire Periodic Table of Elements?\u201d - eu.36kr.com"
-    },
-    {
-     "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQRE1GTDZsNjlRM3BlOWRPeUZPZGNqUGUtb1dwVVVQZTBLUHJ6S3Z0djRnRXlzRHBQVVQwd2VxUzRTX216b0xxQ0RCRTdIQm5GODBaR3hiN3o4ZnlKY3k0X3ZNemxIYjlWdlVTMUVzSDg1QjJVOFlYOHR0dmJmVERUZlhHMzdLWDRkeFFGZ3Ztc24yS2U1RzcyYjBBMGFhdXZkRVNGelB5c1p1RjdLMkxmTE9ENVpIWUYtLVNtOHVJVWFPaU1GYXRfUg?oc=5",
-     "published": "2026-11-17T07:00+00:00",
-     "source": "The Washington Post",
-     "title": "California sues OpenAI, arguing it tested models without adequate safeguards - The Washington Post"
-    },
-    {
-     "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPQnZjTVZxdlFzeTdiWkxONUFTQ2lCVng2SzN3TnJudU5kdWs4bHozYmlSZTdNYTJYUGRYY2F4NURaanhYMU56bDc2ZHk5a1JmVFRiMXdjQlAyd0ttdDZ6UTAtUEprYlQ2RlkydkNQZ0hiUnAxLTY0ZHNzYmJ4X293T185TUt6cGZGWVQw?oc=5",
-     "published": "2026-11-17T06:46+00:00",
-     "source": "Help Net Security",
-     "title": "Anthropic vulnerability disclosure deadline drops to 30 days for serious bugs - Help Net Security"
-    },
-    {
-     "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQenk4Z25CSEcyNHRVUjk0R2dzajVtSHlxR1MzQVYwaTdfUlZoR1J5WTltem9CTWJGbTRDaTRPeldNWWtuNGotU3BUbmR2UUxJWnFET1pyd0pPODk4bl9EdURGMlRUNjZtc3B0Z2VaM1VpM2lCMnItUjBDSVdTR2xCODcybmtIdU9lQXIySDhaUmdVUDZCcms1N0Z4ZlNpMzVjZVpHMHA3amRDem42OXR1ekhhMlo5RUF3dnY0V1p1VFM3a1lWcjhyY1NqVm9HYUU?oc=5",
-     "published": "2026-11-17T06:09+00:00",
-     "source": "The Washington Post",
-     "title": "California sues OpenAI, seeking court-ordered changes after the Hugging Face hack - The Washington Post"
-    },
-    {
-     "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOTGt3bERLTGVHSm5qa3FkaVpYT0lUY0U1SFI5bExEWUY0SW1vNUljcnVtMHZBcHktTjRTTWd1cUtlU1g4UTUtRjJxczJnQ1c0YjBGSnBMSVFEOGE3VXp2czNfVElNSERGdTg3VlFZYTdCUGVic0RNUHN2NGJ5MHJGQm5qTWVZSEpWUnBtNGtLOGtBbHRMU1ZRTUFmNWRkRUk1ODRZS0syQnF5UQ?oc=5",
-     "published": "2026-11-17T05:03+00:00",
-     "source": "The Information",
-     "title": "OpenAI\u2019s Astra Is a Boon to Robotics, Says Nvidia Robotics Chief Deepu Talla - The Information"
+     "feed": "OpenAI",
+     "link": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+     "published": "2026-11-17T17:45+00:00",
+     "source": "OpenAI",
+     "title": "Introducing GPT-6.2 Astra and Sol"
     },
     {
      "feed": "OpenAI",
@@ -118,31 +19,24 @@
     },
     {
      "feed": "OpenAI",
+     "link": "https://openai.com/index/introducing-openai-for-chile",
+     "published": "2026-11-17T00:00+00:00",
+     "source": "OpenAI",
+     "title": "Introducing OpenAI for Chile"
+    },
+    {
+     "feed": "OpenAI",
+     "link": "https://openai.com/index/astra-law-6-2",
+     "published": "2026-11-17T00:00+00:00",
+     "source": "OpenAI",
+     "title": "Astra for Law leads in legal intelligence"
+    },
+    {
+     "feed": "OpenAI",
      "link": "https://openai.com/index/expanding-chatgpt-for-academic-researchers",
      "published": "2026-11-16T17:00+00:00",
      "source": "OpenAI",
      "title": "Broadening access to AI for scientists"
-    },
-    {
-     "feed": "OpenAI",
-     "link": "https://openai.com/index/strengthening-online-child-safety",
-     "published": "2026-11-16T17:00+00:00",
-     "source": "OpenAI",
-     "title": "Strengthening the fight against online child sexual abuse with new tools and support"
-    },
-    {
-     "feed": "OpenAI",
-     "link": "https://openai.com/index/science-at-the-frontier",
-     "published": "2026-11-16T12:00+00:00",
-     "source": "OpenAI",
-     "title": "Science at the Frontier: How scientists use ChatGPT"
-    },
-    {
-     "feed": "OpenAI",
-     "link": "https://openai.com/business/customer-stories/revolut",
-     "published": "2026-11-16T09:30+00:00",
-     "source": "OpenAI",
-     "title": "How Revolut raises ambition without lowering the bar"
     },
     {
      "feed": "Hugging Face",
@@ -157,10 +51,49 @@
      "published": "2026-11-13T18:00+00:00",
      "source": "Hugging Face",
      "title": "Build a Robot Pick-and-Place Simulation with SimReady Assets"
+    },
+    {
+     "feed": "Hugging Face",
+     "link": "https://huggingface.co/blog/allenai/xybench",
+     "published": "2026-11-13T17:02+00:00",
+     "source": "Hugging Face",
+     "title": "XYBench: Helping with the problem behind the question"
+    },
+    {
+     "feed": "Hugging Face",
+     "link": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+     "published": "2026-11-13T14:05+00:00",
+     "source": "Hugging Face",
+     "title": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem"
+    },
+    {
+     "feed": "Hugging Face",
+     "link": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+     "published": "2026-11-12T19:07+00:00",
+     "source": "Hugging Face",
+     "title": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B"
+    },
+    {
+     "feed": "Google DeepMind",
+     "link": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+     "published": "2026-11-12T18:00+00:00",
+     "source": "Google DeepMind",
+     "title": "Introducing Gemini 4 Hydrogen"
+    },
+    {
+     "feed": "Google DeepMind",
+     "link": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+     "published": "2026-11-11T15:00+00:00",
+     "source": "Google DeepMind",
+     "title": "AlphaGenome 2: Deciphering how cells read DNA to better understand disease"
     }
    ]
   },
-  "errors": [],
+  "errors": [
+   "Google News: labs: HTTPError",
+   "Google News: chips & capital: HTTPError",
+   "Google News: policy: HTTPError"
+  ],
   "labels": {
    "industry": "Chips, capital & policy",
    "labs": "From the labs"
@@ -170,5 +103,5 @@
    "industry"
   ]
  },
- "fetched_at": "2026-11-17T08:04:35.565698+00:00"
+ "fetched_at": "2026-11-17T21:04:39.635205+00:00"
 }
