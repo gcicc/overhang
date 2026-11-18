@@ -753,6 +753,18 @@
       "model": "gemini-4-carbon_high",
       "org": "Google DeepMind",
       "value": 0.9052631578947369
+     },
+     {
+      "date": "2026-11-12",
+      "model": "gemini-4-hydrogen_xhigh",
+      "org": "Google DeepMind",
+      "value": 0.8807017543859649
+     },
+     {
+      "date": "2026-11-17",
+      "model": "gpt-6.2-astra_max",
+      "org": "OpenAI",
+      "value": 0.9263157894736842
      }
     ]
    },
@@ -2780,6 +2792,18 @@
       "model": "gemini-4-carbon_high",
       "org": "Google DeepMind",
       "value": 0.9652777777777778
+     },
+     {
+      "date": "2026-11-12",
+      "model": "gemini-4-hydrogen_xhigh",
+      "org": "Google DeepMind",
+      "value": 0.9678030303030303
+     },
+     {
+      "date": "2026-11-17",
+      "model": "gpt-6.2-astra_max",
+      "org": "OpenAI",
+      "value": 0.9684343434343434
      }
     ]
    },
@@ -3294,5 +3318,5 @@
   },
   "source_url": "https://epoch.ai/benchmarks"
  },
- "fetched_at": "2026-11-17T08:04:25.768451+00:00"
+ "fetched_at": "2026-11-18T20:40:21.817370+00:00"
 }
