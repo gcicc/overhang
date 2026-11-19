@@ -4,38 +4,59 @@
    "industry": [
     {
      "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZ3Fmc0RDaU5DRTAxdE5qLVJERWRVMVZpSDF5QkFXdVIxMlF0OVFGNnc3MVlZTHRnUEVoWTZEblY3V0NnU1RESndLWjlIdE5RUXhfcXBEZ1pZUkQzWmRSc09BSDB4eDJTWERvUzZQODE0OEctSTlvNF90bTJhSW9PRjR5SzhmTE05ZDJzU3BPLWQ0Sy1Kd1VwVUZBX3JnQQ?oc=5",
-     "published": "2026-11-19T07:31+00:00",
-     "source": "CDO Magazine",
-     "title": "BRIDGE AI Act Would Bring Private-Sector AI Expertise Into CISA - CDO Magazine"
+     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9zejlIX2pJMG1Zb1dmUzFCNUxTdGYzTDA3UFplQW9BVXVqTmhpYWRRcmxDa3pHX2tCRjQ5bWlCZ28yTExhel9IcFV4TjRRN3NCUjF4MmVTMnZlYjA?oc=5",
+     "published": "2026-11-19T19:48+00:00",
+     "source": "Fox Business",
+     "title": "Newsom pitches new AI regulation bill - Fox Business"
     },
     {
      "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNMWhrTFMwSFlWTE0weklwT055a2RyRlVqMFdBS181T2VxbFoxUDNqN0pGRE53Wnk3dkFyazFwR3FMRXI1aU9iS3pUY0lkTm9pOUNFNzA5TFpVc2VJVzR2XzRBSEZSNTU5SEE0NDgwSWlLTm9XMjJ2TzFWdlAxMDdfd0lRZw?oc=5",
-     "published": "2026-11-19T06:55+00:00",
-     "source": "Ratopati",
-     "title": "US Opposes Global AI Regulation, Citing Competition Concerns - Ratopati"
+     "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPVWtpRVU3Ymo5WmJFRnpRSzVqcEJkemdoZ01GeENUU1Riazg3NmNndGpJZGFobmE2NzY4WlZEdGpwRjVfUThmemhUQ3JST1BYcUtuNWFsTk5jVWhjZHVSeEZfYU9yeS02dmJzcUxQbFV6T2JWYlc5OFJPcl9MaWJ0amhsdWtUTEMzWC1uMHE4OEpzbXAxcXJ3UmhtbGNNbnpz?oc=5",
+     "published": "2026-11-19T19:43+00:00",
+     "source": "Hoodline",
+     "title": "Austin ISD Adopts First-Ever AI Policy After Weeks of Parent Pressure - Hoodline"
+    },
+    {
+     "feed": "Google News: chips & capital",
+     "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNaDZtVkF6d3EzSEk5ak1QYUJCLXdmM01RclFmeGRfSnhibnRNWGlPTm9hQW5rclBJTmFNNDZ0dmZpVlVkZWZyWUFjbmZ6Q2d6MnJic2ZiWlNPTC1KNi1QLTZaQlF5UGd4YndOd1JDdnl2bkFlM0xpaUhOT3JieUdOVHV2SDA0MmdCdktxajlvaS1NUG51WG5zWnN2VlJLbWFUZFR4TW9Ta3lfQmc?oc=5",
+     "published": "2026-11-19T19:30+00:00",
+     "source": "Futuriom",
+     "title": "CTP Quarterly Update: How Leading Enterprises Benefit from AI - Futuriom"
     },
     {
      "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQMjJUemhUT21jcUI0blVyamt6RTBTczRuRFhRQ2I3bUI0WnlfclNqaHFIWEI2VzR2QkFHQ1laSkhrWDRRWEY3dTJNVmtLV2FoQTNlM2hpamZVV0REQ1UySWxrSHM4ZnNUZnRLUloxeGpkS3I5MXFPTmItQ2lGNmF4b09WbEFkekRBZUZnQzVEZWprdw?oc=5",
-     "published": "2026-11-19T06:25+00:00",
-     "source": "Traders Union",
-     "title": "U.S. Democrats push AI regulation agenda beyond data centres - Traders Union"
+     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPdDJ2cm5vQ1Z3amZuSE9ITFF5OHlLeTRucnNNQmEtM0J5M2FCdHZCZlpnblBoTEJDS0Z4OS0xem5uSDFUVXk4Wk13Y3FKendWR0FCVjlmdHNPdW13VHduYllxYXR2cEh0d1FtdENNR1FrOUNYXzcteU9ZTW1ibVpvZ0NVeWdfRVVHVUczai13?oc=5",
+     "published": "2026-11-19T19:22+00:00",
+     "source": "FourWeekMBA",
+     "title": "AUDIT AI Act: 4 Senators Want AI SPVs and Leases Disclosed - FourWeekMBA"
     },
     {
      "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOSE1aVDBFa3N2enZRZGo4X0o3akdoUkJOaU04c0JodXJ6Tk9NOFBLeFI5WUxuYV90eDdsSDJLVGJOU1BFMUJITFdjMDgzclVzVHNiUXU1ZVJZdjNaWnkxQXJ0c0JqcmV1X2c2OGFJa0ZNck9POS15WnktTE8xV2FGM2hGZkxWT0RBQkxYZEFNVDVBYnBrZGlHYllvalpBYk9uZlM1S1VfZzMzbFZ6d05vY1laZGZ0ajNE?oc=5",
-     "published": "2026-11-19T06:19+00:00",
-     "source": "marketscreener.com",
-     "title": "Trump says he opposes 'globalist' AI regulation during APEC Summit - marketscreener.com"
+     "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPNEdZRXlUcjhBN29qNUJYTi14SDdTbWEwdkYtemFqd0x4ZWpJaHF0YXkzbVZSSWQ1Z1NVcWw3cFhEXzctX0stRzFnNFpDZU9kRl9JR21vdERxZUtFRWFwTlRoV0pNVTFkMzNJLTdvWFg1WGtSQlJJMmxiYjkycU5mOFJwcjBhYlA5cWE4N1BONzlxMWJQM0RTUGgyNmxyQjZPcS14bGpYYUh0MFRPcTNBeWFkUkM0RXR6UnNoekFwZHBYREdQRU0zb2FYS1RZMk5oa2xwSlQ0ZVg5ZUxKVXZ3R2wzYTVWSHdwV0lBYnpKS3pLMzFBLXFwbEdzQ2k?oc=5",
+     "published": "2026-11-19T19:08+00:00",
+     "source": "MLQ.ai",
+     "title": "Bipartisan House trio outlines the SAFE AI Act, which would require frontier labs to file safety frameworks and pass government-overseen evaluations - MLQ.ai"
     },
     {
      "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBQSmZnZ1ktSVE3UEc4ZHFXX21PNjEwTWF4b1RrZTBKYjFrVDBVazlybWVHbUw1aGtQd3luaFlwLXZOUDB0YlJKRGlDdzZ0Mm5qanlRQkcyVzF2WVJJVnN5aEhLbXhmeWtRZndVdENoa21NNWMxXzNmMnNOVVozT3c?oc=5",
-     "published": "2026-11-19T06:00+00:00",
-     "source": "The Austin Chronicle",
-     "title": "AISD Writes AI Policy Into the Books - The Austin Chronicle"
+     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOdmNtSVdmQTJ3RFJQNFlfcWwtVnV6T3B5bjhTcVA1bXJuVG9WX0I5Rld3VmhaQ0VkZFNFc0c3RlduNjZiYldFTnZuSFlaWHprQzRUbkZ0dlhrdVlxN3RoVEhqTUNjZTNWc1BMYVVJYy1MVVU1ZnFrMElzX3E4bzNpM00wSXZtWFJaY0o5aGpR?oc=5",
+     "published": "2026-11-19T18:41+00:00",
+     "source": "FourWeekMBA",
+     "title": "Bipartisan SAFE AI Act Outline Lists 14 Rules for AI Labs - FourWeekMBA"
+    },
+    {
+     "feed": "Google News: chips & capital",
+     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1qWlU0VE9pZk4yLWFaYl9sVUhxeGQtcnNfNDdyOVQybnVlYTlQT0x5VkJoQWdmSWFNb0NqVnI2M0tWUzFiT2ZxRzcxV1pmSjBZM2ZBWVczNDVqYXRxTzNuWlJ2X3JRWGx4blMwTldsSzEwWXQ5?oc=5",
+     "published": "2026-11-19T14:23+00:00",
+     "source": "Funds Global MENA",
+     "title": "Fear or Fundamentals \u2013 Unpacking AI - Funds Global MENA"
+    },
+    {
+     "feed": "Google News: chips & capital",
+     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE01eXdYdkRGc0hqbHViZm95ZkgxQ2FRelhBZ3NONlRCSGhRV1ppMGZUVE55bldveTJRVlRHSVdqNV94Y0xqc1NfWGtFS3J6cC15ZEh3cGFSUURFcUEybFZLbFBxQVdVTzV6M2xhemUyeE03S2Z6SkE?oc=5",
+     "published": "2026-11-19T09:36+00:00",
+     "source": "BigGo Finance",
+     "title": "BMI Chief Economist: Fed Rate Hikes May Stop at 4.5%, AI Capex to Hit $1.4 Trillion Next Year - BigGo Finance"
     },
     {
      "feed": "Google News: chips & capital",
@@ -46,68 +67,54 @@
     },
     {
      "feed": "Google News: chips & capital",
-     "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5ENGhwYU1hZVBPRWdDMFE1VFpmZENTQ0JYQXp3bzZDai14WkVEZ2lnbm9GQnZNdm1qTzZ0LVVSUGZOUS0wRTlISGJvMDdrbUdZMzRTSS01OXhCc0NkMTFnYkMweWxEbEMxUUFXdlZ2LVFUYWY2d0hNUEN3?oc=5",
-     "published": "2026-11-18T17:08+00:00",
-     "source": "Seeking Alpha",
-     "title": "Nvidia Is AI, And AI Is The Market (NASDAQ:NVDA) - Seeking Alpha"
-    },
-    {
-     "feed": "Google News: chips & capital",
-     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFA4bGp0ZTEtQll2T1k4LUEtcWxlcHlPQk1rc1NZX1FTQ1hFWGl5enkzWDg3VmpkakNUTWFTMHJEVU9UTlkwZXJOblNSQW1PU3VweDRScldIZ29xa1pvZF9lOUZHWTVpSGM1cU9ZY2U5RWtIcFN3clE?oc=5",
-     "published": "2026-11-18T13:35+00:00",
+     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFA3M1E1RGRsbjBGRWNJWnBJRDhkY3o3OTB1dTlKSGdiRW00UFBCeVNzLU43OG9WUUhOay1NWXFmRzlFQjhrQ0dDNjFqWDktMThOMTJuVUpQWHlrSWpQTXVB?oc=5",
+     "published": "2026-11-18T21:46+00:00",
      "source": "BigGo Finance",
-     "title": "Fitch Warns of AI Investment Return Gap: $1 Trillion in Capex Won't Be Covered by $500 Billion in Revenue - BigGo Finance"
-    },
-    {
-     "feed": "Google News: chips & capital",
-     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQbmk3WVdRajJLZVJuNE1PangtTlNiUFI3dHMtZUh6MHYyb0s1WDdGck44b1NxUm1oYUpTTXlsNVp2TTNnVjR5RG5tNWhLdmRKWVdzOHplWmhQaGtHVUxpTExLNTZaTXFIS1EzWVBsZ0FySW1kdl9ROUREUEYwbk9WMl9IR2l0Mnl4d0xNbVB3U1hTZTBNYXB6LTducU8yQkFWQ0s3T3lzUVY?oc=5",
-     "published": "2026-11-18T12:42+00:00",
-     "source": "24/7 Wall St.",
-     "title": "Fund Managers Are Cutting Tech at the Fastest Pace Since 2006 - 24/7 Wall St."
-    },
-    {
-     "feed": "Google News: chips & capital",
-     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQeVRCT2g1R3QzV21DM1hUcDlwOUl2bjVCV01ZMXdZYUVpdXN0cHhTVjAzMXlXUmdYRV9paWY5ek9nYWwyUkFpLVR4TzRSVGFOQ3RlYnFzalJqZW1zLW9JWTdwY2JmX3lWcGtmam1CQ2tDRTQ2R2VTUXlGcldIZFJ1RW5nYWlTT2dMYlE?oc=5",
-     "published": "2026-11-18T09:31+00:00",
-     "source": "FourWeekMBA",
-     "title": "Tencent Capex Hit 39% of Sales and It Swung to Net Debt - FourWeekMBA"
+     "title": "Gavin Baker on Nvidia, SpaceX, AI Stocks & the Next $10B Business\uff5cSourcery - BigGo Finance"
     }
    ],
    "labs": [
     {
      "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNMURRdzNRajdzWlZkc3VwNmtLbGlXUzFMVFFDWkZudUtBVzh0ZnlVVWVFZjctWVlhQlFBYWZfdEFrd3VWaXJQa3g2NU9xb2ItcHdaenFKXy1TMzVwbjdqbHpmTFFiN211NmV5WVc1Vk90aEVlZkVjVzFia29SNzlyTElwc1JHZ2Y3UjhFSDZvMjFEVGFLUl9VOXBQTzViQmVFSG9HV2FuV1h1YVVnaTlyQy0yZHhxSEVjYjhaRHlB?oc=5",
-     "published": "2026-11-19T05:16+00:00",
-     "source": "Digital Trends",
-     "title": "Google releases Gemini 4 Neon AI model, rivals Claude Opus 5.5 and GPT-6.2 Sol - Digital Trends"
+     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE85QjZKQjdBNHVER1JVNGg2eU5zbWY0cVB3OW1wZl8zYUFXb0htTkxZeWdxckFWelpZV19ibGJCTkc1eExPdHNfRXBVSF9vVVNRZzBXUmFyQkVzaHNvZkJONF8zVlZHa3pJX2c?oc=5",
+     "published": "2026-11-19T19:33+00:00",
+     "source": "Built In",
+     "title": "10 Frontier AI Labs to Know - Built In"
     },
     {
      "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNN2tHUWtySlNwcXE4MXdQYTFOV2dQQ2RmTkM5Zi13ZmNMQWFVSmFsbmxBeXFyMWJwWURZSWJxZ1o0OUFnZlFWN3cwdVFtUzdwSXIxakNaUDBZeXNfWS1TaUFON2ZpSkRmbmJac0M5SFVyT0tBeXZLc2tfbFN1S3c1enBVcHc?oc=5",
-     "published": "2026-11-19T05:00+00:00",
-     "source": "Financial Times",
-     "title": "Anthropic\u2019s AI advances trigger new safety fears on eve of IPO - Financial Times"
+     "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOcEYyaG02djBJUlplWEZZZlNWNlM5QVV6YmdQRzIwbVNCZFhyQ05nSGRkc1JTc24zcDZtOTI1bjBvRkRfMlRVNVFQUGVPbDdMMnJCTXVyRzQ1QWFVVmRKdjByZkJCZXdYNkZMZjZWSkhzME5tUVlvOGR2VnM4V19oQmhXT3dqVmU4MWFCT0ljM2FvdWh3YWxQQVZ1MXhGenFQd1VhTjY3dXVWVWtEWF9qTExjY3JNQmhYZXZwa3NxNmp1Q0lNcGY0cWVRZl84Nm1JNTlmWUU3QTAybGpLYUVHcA?oc=5",
+     "published": "2026-11-19T19:13+00:00",
+     "source": "Yahoo Finance",
+     "title": "All about Anthropic: AI sentiment, company leadership, IPO pricing, and the future of its business model - Yahoo Finance"
     },
     {
      "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOck13Y3MxRnlOTUw2ekdkZ0tBbWc3Tld3dk9TWFRJSGNZYVBBODI0TUphdzVfbzlSOTNCZ1AzdVc4VEVtYjFJajdmRGxHc2pDSzM4dEVqWjBSdFJtY243MVotUWVsS1p2aVZIRUZjYzAyamF4bE5yTzNueVNfMGNzbXpQNUZsblJHUVJxbDhSVlNJcVFfTl8xUVdVZkp2eUR5OVBGR243N2ZjTFFKdU9hMVFhVWZ1WThscWU1RVNRTUFZRTlPdTRmMnpXZ2lHbTBGOU1hOA?oc=5",
-     "published": "2026-11-19T02:55+00:00",
-     "source": "SiliconANGLE",
-     "title": "Google's latest midtier model Gemini 4 Neon is three times faster than Carbon and wins on some metrics - SiliconANGLE"
+     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQRFlfNGllOGNsLW5lWGp5dlc2OU0xNUxGY3B5WTFBVXpkQjdkeVZkV2NtTG54WkRCQ3I1TmwzVXc2cHJNUXIzRGY0U1ZKd2ptWjJVSGJfWGNTS3pSYk1TdXZObXVZYUV2UDMzdHV3QlJaVFJVckp5YnJYbmg3YVBaRzF0MTBXcERyTUUtMUpSMA?oc=5",
+     "published": "2026-11-19T18:16+00:00",
+     "source": "FedScoop",
+     "title": "Claude, ChatGPT, Gemini, and Grok produced viable terror plans in test, per GAO - FedScoop"
     },
     {
      "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE54Ty1FTnJCbFZmMWpmTEdlWXRidVRRN0dPeEQzNmNMVjFFeFBIaGtxekE2eS1FdEFDcXBiaDBDSnlCMy1FbGEyYWFacDBmX0U0M3Qtbjk1QUZXUDdhSEh4a1N6S1U0UQ?oc=5",
-     "published": "2026-11-19T00:46+00:00",
-     "source": "The New Stack",
-     "title": "Google\u2019s Gemini 4 Neon tripled its coding score without changing the model - The New Stack"
+     "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOblRncnY3TTZKYzF3bnA5b1BHZm40YzJHcmdTdFJBcDZLb01oWjJRYjYwWW5qMEozRFZoNjQwU2lyeXItVGcyRmtSVjY4aHBzS1FSNTNLbGlteTZIdzlycUVBTXN3OEhTVWJ4RHdBcFQySEFINW40djd5WjJ4Z3ZPOS1PejVtcGlrV2JzQUc4UEZ1VVBq?oc=5",
+     "published": "2026-11-19T18:09+00:00",
+     "source": "TechCrunch",
+     "title": "Google gives Gemini the ability to use your Mac for you - TechCrunch"
     },
     {
      "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOS1ZjWGY0QTNQeDhqM2lfazJKT2FVWXRPNkk0VzIwRnJOWFdpQmJvdGRSU0I5WTRXblE2NVZIV1RlYVlZMnpvSFJOUzhvZEFhYlRRaXdCTUl1OWdyeFZIcjQzZU5yMmJQZXNXUFpDTkRNMlBEV19QR1NnRTU1OUppaG16LU8?oc=5",
-     "published": "2026-11-19T00:15+00:00",
-     "source": "CalMatters",
-     "title": "Newsom touts an AI kill switch to halt dangerous OpenAI, Anthropic releases - CalMatters"
+     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNdGVHSkRUSWNwMTBxUVhkZHNIYkYyYlk5b3FoSW15V1B2LUdPMlFxSnlnUTRaYkpid25aQUdvNDlRUDlvOFdXdkVENWw5Q0RPWEZwLTVxRTFzbTRNQnprTHhJZDNDTjI5Q1p6OGdDdVNKV240RDIwS0xfUGxwZ19vMGlHU1pmUlVMWHZ3?oc=5",
+     "published": "2026-11-19T17:35+00:00",
+     "source": "MobiHealthNews",
+     "title": "Tennr, OpenAI to test AI agents for prior authorization - MobiHealthNews"
+    },
+    {
+     "feed": "OpenAI",
+     "link": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+     "published": "2026-11-19T08:00+00:00",
+     "source": "OpenAI",
+     "title": "How OpenAI\u2019s Performance Factory keeps ChatGPT fast"
     },
     {
      "feed": "Google DeepMind",
@@ -150,13 +157,6 @@
      "published": "2026-11-18T10:00+00:00",
      "source": "OpenAI",
      "title": "The Silent Consensus"
-    },
-    {
-     "feed": "OpenAI",
-     "link": "https://openai.com/index/research-acceleration-jagged-frontier",
-     "published": "2026-11-18T08:00+00:00",
-     "source": "OpenAI",
-     "title": "Research acceleration: The jagged frontier"
     }
    ]
   },
@@ -170,5 +170,5 @@
    "industry"
   ]
  },
- "fetched_at": "2026-11-19T07:40:23.854163+00:00"
+ "fetched_at": "2026-11-19T20:46:12.588023+00:00"
 }
