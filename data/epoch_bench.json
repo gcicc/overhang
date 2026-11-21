@@ -765,6 +765,12 @@
       "model": "gpt-6.2-astra_max",
       "org": "OpenAI",
       "value": 0.9263157894736842
+     },
+     {
+      "date": "2026-11-18",
+      "model": "gemini-4-neon_xhigh",
+      "org": "Google DeepMind",
+      "value": 0.9122807017543859
      }
     ]
    },
@@ -2804,6 +2810,12 @@
       "model": "gpt-6.2-astra_max",
       "org": "OpenAI",
       "value": 0.9684343434343434
+     },
+     {
+      "date": "2026-11-18",
+      "model": "gemini-4-neon_xhigh",
+      "org": "Google DeepMind",
+      "value": 0.9627525252525253
      }
     ]
    },
@@ -3318,5 +3330,5 @@
   },
   "source_url": "https://epoch.ai/benchmarks"
  },
- "fetched_at": "2026-11-19T20:46:07.970221+00:00"
+ "fetched_at": "2026-11-21T07:22:41.284112+00:00"
 }

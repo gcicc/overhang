@@ -2,7 +2,7 @@
  "data": {
   "series": {
    "ARC-AGI-1": {
-    "generated_at": "2026-11-17T15:19:25.020Z",
+    "generated_at": "2026-11-20T16:14:09.211Z",
     "points": [
      {
       "date": "2023-11-03",
@@ -51,12 +51,6 @@
       "model": "o3-mini (Medium)",
       "org": "OpenAI",
       "value": 0.2233
-     },
-     {
-      "date": "2025-01-31",
-      "model": "o3-mini (High)",
-      "org": "OpenAI",
-      "value": 0.345
      },
      {
       "date": "2025-02-19",
@@ -1853,6 +1847,30 @@
       "value": 0.855
      },
      {
+      "date": "2026-11-12",
+      "model": "Gemini 4 Hydrogen (XHigh)",
+      "org": "Google",
+      "value": 0.985
+     },
+     {
+      "date": "2026-11-12",
+      "model": "Gemini 4 Hydrogen (High)",
+      "org": "Google",
+      "value": 0.985
+     },
+     {
+      "date": "2026-11-12",
+      "model": "Gemini 4 Hydrogen (Medium)",
+      "org": "Google",
+      "value": 0.955
+     },
+     {
+      "date": "2026-11-12",
+      "model": "Gemini 4 Hydrogen (Low)",
+      "org": "Google",
+      "value": 0.87
+     },
+     {
       "date": "2026-11-17",
       "model": "GPT-6.2 Astra (Max)",
       "org": "OpenAI",
@@ -1911,6 +1929,12 @@
       "model": "GPT-6.2 Sol (Low)",
       "org": "OpenAI",
       "value": 0.84
+     },
+     {
+      "date": "2026-11-20",
+      "model": "Inkling 2 Mini (XHigh)",
+      "org": "Thinking Machines",
+      "value": 0.845
      }
     ],
     "reference": [
@@ -1930,7 +1954,7 @@
     "unit": "fraction solved"
    },
    "ARC-AGI-2": {
-    "generated_at": "2026-11-17T15:19:25.021Z",
+    "generated_at": "2026-11-20T16:14:09.211Z",
     "points": [
      {
       "date": "2023-11-03",
@@ -1993,12 +2017,6 @@
       "value": 0.0208
      },
      {
-      "date": "2025-01-31",
-      "model": "o3-mini (High)",
-      "org": "OpenAI",
-      "value": 0.0299
-     },
-     {
       "date": "2025-02-02",
       "model": "Gemini 2.0 Flash",
       "org": "Google",
@@ -2027,12 +2045,6 @@
       "model": "Gemini 2.5 Pro (Preview)",
       "org": "Google",
       "value": 0.0375
-     },
-     {
-      "date": "2025-02-19",
-      "model": "Gemini 2.5 Pro (Preview, Thinking 1K)",
-      "org": "Google",
-      "value": 0.0344
      },
      {
       "date": "2025-02-24",
@@ -2950,7 +2962,7 @@
       "date": "2026-07-09",
       "model": "GPT-5.6 Terra (Max)",
       "org": "OpenAI",
-      "value": 0.839
+      "value": 0.825
      },
      {
       "date": "2026-07-09",
@@ -3793,6 +3805,30 @@
       "value": 0.49583333333333335
      },
      {
+      "date": "2026-11-12",
+      "model": "Gemini 4 Hydrogen (XHigh)",
+      "org": "Google",
+      "value": 0.925
+     },
+     {
+      "date": "2026-11-12",
+      "model": "Gemini 4 Hydrogen (High)",
+      "org": "Google",
+      "value": 0.9
+     },
+     {
+      "date": "2026-11-12",
+      "model": "Gemini 4 Hydrogen (Medium)",
+      "org": "Google",
+      "value": 0.8916666666666667
+     },
+     {
+      "date": "2026-11-12",
+      "model": "Gemini 4 Hydrogen (Low)",
+      "org": "Google",
+      "value": 0.6583333333333333
+     },
+     {
       "date": "2026-11-17",
       "model": "GPT-6.2 Astra (Max)",
       "org": "OpenAI",
@@ -3851,6 +3887,12 @@
       "model": "GPT-6.2 Sol (Low)",
       "org": "OpenAI",
       "value": 0.5791666666666667
+     },
+     {
+      "date": "2026-11-20",
+      "model": "Inkling 2 Mini (XHigh)",
+      "org": "Thinking Machines",
+      "value": 0.4930555555555555
      }
     ],
     "reference": [
@@ -3864,5 +3906,5 @@
   },
   "source_url": "https://arcprize.org/leaderboard"
  },
- "fetched_at": "2026-11-19T20:46:07.598686+00:00"
+ "fetched_at": "2026-11-21T07:22:41.201931+00:00"
 }
