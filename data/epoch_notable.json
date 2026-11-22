@@ -3677,6 +3677,13 @@
     "value": 3.85e+24
    },
    {
+    "date": "2026-04-22",
+    "model": "MiMo-V2.5",
+    "org": "Xiaomi Corp",
+    "sector": "industry",
+    "value": 4.32e+24
+   },
+   {
     "date": "2026-04-23",
     "model": "MiMo-V2.5-Pro",
     "org": "Xiaomi Corp",
@@ -3801,12 +3808,26 @@
     "org": "Microsoft",
     "sector": "industry",
     "value": 2.4e+25
+   },
+   {
+    "date": "2026-11-04",
+    "model": "Ripple-65B Preview",
+    "org": "Ricursive Intelligence",
+    "sector": "industry",
+    "value": 4.83717e+24
+   },
+   {
+    "date": "2026-11-05",
+    "model": "Inkling 2 Small",
+    "org": "Thinking Machines",
+    "sector": "industry",
+    "value": 2.13418e+23
    }
   ],
-  "rows_total": 1092,
-  "rows_without_compute": 549,
+  "rows_total": 1102,
+  "rows_without_compute": 556,
   "source_url": "https://epoch.ai/data/notable-ai-models",
   "unit": "FLOP"
  },
- "fetched_at": "2026-11-14T22:35:26.594136+00:00"
+ "fetched_at": "2026-11-22T07:02:50.268991+00:00"
 }

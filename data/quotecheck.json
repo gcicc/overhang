@@ -1,6 +1,6 @@
 {
  "data": {
-  "checked_at": "2026-11-14T22:37:04+00:00",
+  "checked_at": "2026-11-22T07:04:26+00:00",
   "results": {
    "cu01": {
     "detail": "",
@@ -63,8 +63,8 @@
     "status": "verbatim"
    },
    "cu16": {
-    "detail": "HTTPError",
-    "status": "fetch_failed"
+    "detail": "",
+    "status": "verbatim"
    },
    "cu17": {
     "detail": "",
@@ -107,8 +107,8 @@
     "status": "verbatim"
    },
    "def03": {
-    "detail": "HTTPError",
-    "status": "fetch_failed"
+    "detail": "",
+    "status": "verbatim"
    },
    "def04": {
     "detail": "",
@@ -123,8 +123,8 @@
     "status": "verbatim"
    },
    "def07": {
-    "detail": "HTTPError",
-    "status": "fetch_failed"
+    "detail": "",
+    "status": "verbatim"
    },
    "def08": {
     "detail": "",
@@ -227,8 +227,8 @@
     "status": "verbatim"
    },
    "h06": {
-    "detail": "",
-    "status": "verbatim"
+    "detail": "ConnectionError",
+    "status": "fetch_failed"
    },
    "h07": {
     "detail": "",
@@ -255,8 +255,8 @@
     "status": "verbatim"
    },
    "h13": {
-    "detail": "HTTPError",
-    "status": "fetch_failed"
+    "detail": "",
+    "status": "verbatim"
    },
    "h14": {
     "detail": "",
@@ -271,8 +271,8 @@
     "status": "verbatim"
    },
    "h17": {
-    "detail": "HTTPError",
-    "status": "fetch_failed"
+    "detail": "",
+    "status": "verbatim"
    },
    "h18": {
     "detail": "",
@@ -283,8 +283,8 @@
     "status": "verbatim"
    },
    "h20": {
-    "detail": "",
-    "status": "verbatim"
+    "detail": "HTTPError",
+    "status": "fetch_failed"
    },
    "h21": {
     "detail": "",
@@ -328,5 +328,5 @@
    }
   }
  },
- "fetched_at": "2026-11-14T22:37:04.093207+00:00"
+ "fetched_at": "2026-11-22T07:04:26.574187+00:00"
 }
