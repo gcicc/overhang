@@ -4,10 +4,31 @@
    "industry": [
     {
      "feed": "Google News: policy",
+     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQelJDNXNhNldVMzJfMnJYUWZFZ0RFSmNxVEpNZlRiSVZPN0ttZHZ3aGRtUVRVUlE0TTBGTFJrMEdmTi1wdG1DZldyZV92U0NKRDZuZmpFY3dhRzJJMGhScTVEVEk3alFTSU1WeWhRSzNhOHFLVDI3WkctMFNNa0E3WnFtWVJLdlh6X1dIU0paT3NVLVJGcGFVQnFFTFNmVG1sXzBBY19BOHY2UjFOQU5OUVpR?oc=5",
+     "published": "2026-11-23T01:16+00:00",
+     "source": "PYMNTS.com",
+     "title": "Governors Want States to Have a Voice in Regulating AI - PYMNTS.com"
+    },
+    {
+     "feed": "Google News: policy",
+     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFA5ZWhIZE1heEE5eEFibzY5S0ZJTmdJWEZYT2FZUGhtYndScnhETk96MUgwMDhIeURqb0xseTdfNXBoNDJpNnNjbjU2TUt0d0ZsM2s3Nkdxa3gwMld5UnNiTXhacWNlVE9OQ2MxclRzRQ?oc=5",
+     "published": "2026-11-23T00:04+00:00",
+     "source": "Snopes",
+     "title": "Does new Etsy policy allow AI training on artists' work? - Snopes"
+    },
+    {
+     "feed": "Google News: policy",
      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNSjZLandHNDJKcTM5WWhtaGlHQ1lwUGJqVTIwN0JEMlhqcXgybnk0UU1laXJLcURHU0cyTEQ3MGFBMThyM3Qwc202UzVfRkEwRTRNRFpmWnl1cm1VTHJiMndzbEdGR0FRRzQzNmE5WGhRczVpQXg4TXBTRFZqZDQ3LVoyV0toeDd0NVJjWTdKY05UYTZWOGRXM1E3eDNTMDBDUjJRdG9QWQ?oc=5",
-     "published": "2026-11-22T19:06+00:00",
+     "published": "2026-11-22T20:00+00:00",
      "source": "The Washington Post",
      "title": "Opinion | America\u2019s AI policy has a chip-size hole in it - The Washington Post"
+    },
+    {
+     "feed": "Google News: policy",
+     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQOHlXbF9lVDVaRjEyU2NNUFV6WURYSlhNM2F6SDdNUjduMlRST1BzbUI3SnR4blc5ejI4a1FFR0lEazVtSk1SMkc2cE54U2FCa1ZnejJZX1ZKUXJLeHBZaTJ3anV2UnRJRllLeHRNcTRZYVEyT1lyMnRqdF9nNldSVzlYeGJQa1RNbnlJQjVn?oc=5",
+     "published": "2026-11-22T20:00+00:00",
+     "source": "Observatorio Blockchain",
+     "title": "Libreboot gives up: its anti-AI policy lasts only a month - Observatorio Blockchain"
     },
     {
      "feed": "Google News: policy",
@@ -24,25 +45,11 @@
      "title": "World ETF Sheds 3.3% as SEC Scrutiny of Nvidia Sharpens Doubts Over AI Capex - ad-hoc-news.de"
     },
     {
-     "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNZUdqT3llV2xJa29mM04xSnRyb3RPd2dxcy1KcmlHSGRMeUZScmlPbHo1S0Nia0FfS3hubC1wb004TF9JV2ZSTWdyQzZ0NElsZ2ZwZTZ2NDZ1WUUtX0xoMExmTkF1cmJXa0dxSXJPQU8wQlEtMDhBbktOcjdncHhYRkllVkxKSmR4Y0VETDl0RE5UXzlJa2JVNQ?oc=5",
-     "published": "2026-11-22T03:02+00:00",
-     "source": "Global Advisory Experts",
-     "title": "Automated Lending Romania: 2026 Compliance Guide to GDPR and the AI Act - Global Advisory Experts"
-    },
-    {
-     "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOTzdZWHpMYnk0N1VDVVJveFVIWm4tMm4zZWd0NmEzSEhOT3NYcVJGeU1Nci1BNGhpZUxkeWUzb1VoNktEMG5OemhVRm1OSVY1WUF6b1JBSldDNHVYZG9wNmRzbU5idHpkbjFuek5hRldaaW8weWM5V3FFZ0tvVW1ITnI1czlUSjNjenhsZ3E2YUI0RzA4aGFB?oc=5",
-     "published": "2026-11-22T01:47+00:00",
-     "source": "Eurasia Review",
-     "title": "The Cloud Is Back, Who Lets The AI Act Again? \u2013 Analysis - Eurasia Review"
-    },
-    {
-     "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxONkZyNFhpWWtBQWw3LTlPR1dvSTZyOXc1Q0ZTTnhLWkwzdjZvLTFZMlZWLXFKQmcyX1otTWp5aFVIa2RfanlRYmJhaDhnTERSOVdKTllNWGp4VmlRaTBKNGE5X0pPbkZ5MV93aXRBS2VFdWtkVkpROEhsV1ZLZnhwb21RZ2otQmZYbklWcl9RYXBPenZnM1BvUGV2bGJxX3hBYmlMUXB0cE41RlVBbng2WUxabGw2RjZGOHdJd094NNIBvwFBVV95cUxONkZyNFhpWWtBQWw3LTlPR1dvSTZyOXc1Q0ZTTnhLWkwzdjZvLTFZMlZWLXFKQmcyX1otTWp5aFVIa2RfanlRYmJhaDhnTERSOVdKTllNWGp4VmlRaTBKNGE5X0pPbkZ5MV93aXRBS2VFdWtkVkpROEhsV1ZLZnhwb21RZ2otQmZYbklWcl9RYXBPenZnM1BvUGV2bGJxX3hBYmlMUXB0cE41RlVBbng2WUxabGw2RjZGOHdJd094NA?oc=5",
-     "published": "2026-11-21T20:23+00:00",
-     "source": "A News",
-     "title": "London protest calls for stricter AI regulation amid growing safety concerns - A News"
+     "feed": "Google News: chips & capital",
+     "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQYjBQOC1ONFB0LW1yY2tWVFBuTmptTXkzNWFEXzNNcVpXaDYxQU1kYVg1WjJQM0pvT1ZTeDh2bnlZMzhheG83d0tXVHgxbU1MZi0yQTZwTEtMSEZZTlJIeDZHMFRHVXNUdWs1ZDR0djZsbFdOcEMyaU54V0ZWdC16eEozRGZJdWgyaVlWNlJTaFhQVG1KRXFqRzZKVFVudjVMVGpERVBsdmk2cjk2T3V4MTBxWEFITWtEZWxBdlpZUDRiQ2Y0bFFUY1JVZUlCSXN4V1A2RnZTdmowSDY5VFZJS3BpODlwU3FxalI2QnYyTzFCY2pwM2xhR3I5TVZDRHlaQ2lyaGQzZXI?oc=5",
+     "published": "2026-11-22T07:01+00:00",
+     "source": "The Australian",
+     "title": "The AI trade was already cracking: Anthropic just lit the fuse - The Australian"
     },
     {
      "feed": "Google News: chips & capital",
@@ -50,13 +57,6 @@
      "published": "2026-11-21T12:49+00:00",
      "source": "TradingKey",
      "title": "CoreWeave Stock Forecast: Can AI Demand Justify CRWV\u2019s Debt and Capex? - TradingKey"
-    },
-    {
-     "feed": "Google News: chips & capital",
-     "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPX1dwdDRtU2w0Q2dSWW1ESHk4dFhKMThjOS1nc2dQSFpnbm1NUl9UOWMzVjFBZndoQU8ydUczYUdDRG1VdWRHaWpLb2RZMUEwcHRET0ZjNEk0NUFuRnJBci1KZGJ5Y1hmb181bXA5U213QkFQWjRXNnFIR2cyU2kxanFxTkZhWXlBQ3FYTEw0RGxvYVQ1aktNVVdhdXR3amxMX3g1S25HRDVFVXJRa2RLdGlGSk9yczNFT01YTklSdFhtb1RLcUhGeXJOdDdBdG40cGFDOFktTWZfbjRnM3pDQ2NFVW13dWVoY1lrazVZazBkTGxYRVpSYjBFY280aVJ4cEJPTTZB?oc=5",
-     "published": "2026-11-21T12:14+00:00",
-     "source": "Stocktwits",
-     "title": "SKHY Stock Slips Premarket After Korean Memory Giant Reveals $38B Expansion Plan Amid AI Hyperscaler Capex Frenzy - Stocktwits"
     },
     {
      "feed": "Google News: chips & capital",
@@ -76,38 +76,45 @@
    "labs": [
     {
      "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE96Sm1EaVlsMHctNGtBMDBYdVRreWpySVdVS1RhSVZCUzk3enZHQmlIS3lWY2Rmajh2Q3RNZWU2RDEwc3ZEX2tONEpsbEN6RXowZk1ySVdaWXVVR09jX21aelV6UQ?oc=5",
-     "published": "2026-11-22T19:07+00:00",
+     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9JYWNyMjZMSEJTbGNrb1JmTXkyckJ2MDlBNDQwa1FGeU00TlROOXBsRXhLTlJ3YzdsLU9sQV9QN3RFbWdYeUY0cEZHY2NFNGxjc2NRaDNNWkY3QldtWGFZNTRkeG0wS01xWnFHdXI3dkxsNzFmZVE?oc=5",
+     "published": "2026-11-23T05:55+00:00",
+     "source": "BigGo Finance",
+     "title": "OpenAI's Voice Model Breaks Into Construction and Shipbuilding Site Interpretation... HiLocal Reaches 1,500 Sites - BigGo Finance"
+    },
+    {
+     "feed": "Google News: labs",
+     "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNZk5Fd3ZEa0xGeHExZTFuRlFUSVhNZTkyUDdDXzFLaGphaEpjR2xBRUo4ZUFPa3N4LWp0RTlfZDc0MG9hbDhOZWczTWQ5d25MenVEOTJtekY2Q185THZPY0paR3RlaGw3c0otMWZ3eHRWVDNTNUItYkdkdUxCSFQ0LTk1TFlrUlJ1SUlEOTN1eFlFX0dSN1VIOVk3eDlJY3Z5enlIRTJWaDhWSTAyYU1QeE1ZX0R4SDM1QmhRMEt5TXdqUGZTSnlLYmZxcGVNVEh4eGZXQjhhRnh0S3RxX0cyYzQwONIB6AFBVV95cUxPQ2JZLTAwWmwtOWl0a2JaOGFrckFqaGpIbW5hV1ZFX2NLUkstLS1qemVDbUxjV2hETC05X2hwRkx2NzZEeDV0RUkwX3FjRHEybF82VFpHeVRFakhvSDRJdllOajRtVzI5Ull0ekJkbVV6LXI1UHJRd003RDdxUFZROEgzUmZsV0FZaHcwOUlaYlNyRHk4SjB1VE1USHpVTDN5TGpOcll2T1lROUFzWl9zREl1R2ZQOXdOcW9peWtKSlJza21vUXdXWFpLSDcwcGw5X1JvTnVVSGtSb3JXZHN0U3RUZnNISUVS?oc=5",
+     "published": "2026-11-23T05:50+00:00",
+     "source": "ET Enterprise AI",
+     "title": "OpenAI chief scientist proposes industrywide limits on AI model development - ET Enterprise AI"
+    },
+    {
+     "feed": "Google News: labs",
+     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOdmhmeEgxSkU1V2V3QmEtdlJ5RUR2U1FZVm5lajNFT1h3cUJnUW1XQUZRSUNLYnV6QkFFNWhMR0ZtbEtRSDRvQXJ3dThFRWFYMUlfbTNFUkFMN3JwTWVHbC11MjB5LUNia3JVMUxjWUtGV0dSa3V4V1JIMHNMdGpzd2JkOGotTnpRbmh5cHBSQ213NFhwOWs4MVZ4YzBKZ3FsUlRpVzFsMHNQS3VKTXVmRDRvS3dWWGhO?oc=5",
+     "published": "2026-11-23T04:26+00:00",
+     "source": "Reuters",
+     "title": "California AG Bonta filed lawsuit against OpenAI over model security, public safety - Reuters"
+    },
+    {
+     "feed": "Google News: labs",
+     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQcXd1T2tIdDF2Rm02WEtmZDhHU1pNcXpJcmRvN2lSd2dMWDNyRExCOFRoRVRHMlNrTnJNR3hhWG1pRVJxdVhHUGdFQzhSYkItVnY2bzBCNWRaTjNURldXRzlENjJlWktwLXA0U0dDRnZINy16ZHJ4UkUxYTh5UkdlZVdfRmpTWU05MHdVUXo0S2lYcGdlM29YbUpSQUVMVTIwSkNPbUdzdXlvVHBjeXRzWTZFNVM?oc=5",
+     "published": "2026-11-23T01:25+00:00",
+     "source": "TechCrunch",
+     "title": "How Notable Capital, GIC, and Baillie Gifford bet big on Anthropic before its IPO - TechCrunch"
+    },
+    {
+     "feed": "Google News: labs",
+     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNNHJReVVubi02Q2RndEN6bkdHU0pvNVNSZVdLQ1NSNmgzZnE4LWphU3ByODZrNTRFNlBfT19vUFdLRzdXal9Nc19tZFhqbTRnLWZhN3dUSksyazhDZ2JMX05OVFROVXZLRGpfZTlfWGRYQzhtQzVKUVRYcWZVRDBwNUpGZ0M1dUtaQ3VzUnoxbGRaUzdGZTJHY0dFTnlHWkdBZUNCVlBMczZwT2dkQU5xSm9B?oc=5",
+     "published": "2026-11-23T00:30+00:00",
+     "source": "American Banker",
+     "title": "Anthropic\u2019s business model is creating a new kind of debt \u2014 comprehension debt - American Banker"
+    },
+    {
+     "feed": "OpenAI",
+     "link": "https://openai.com/index/perplexity-and-intelligence",
+     "published": "2026-11-22T00:00+00:00",
      "source": "OpenAI",
-     "title": "Perplexity and Intelligence - OpenAI"
-    },
-    {
-     "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNallnWWJZMV9QbmJHelJ2anp6MmdiUVNQZnJiNExZQnNmN2YwT3VyYVBYcENKX183bUxjQXlOdzdUelpjdzBrLXB4ZzFkbDJ6RWNRek9vbWdpSGNJU1JOOUlDaERIbUpRSnRkOHVxY2JjSl82WFlfX014ZHM1VDN1MFlTalcxd3pNU0p5QzZXQnFGZDdmNmxHZXFYbVA1RE8ySjNlc2dUQ2dmX1MtYUtYazM0eEk?oc=5",
-     "published": "2026-11-22T09:41+00:00",
-     "source": "The Decoder",
-     "title": "GPT-6.2 Astra and Sol get to the point faster but score lower on transparency than Claude - The Decoder"
-    },
-    {
-     "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE55YjU4NWNqRl9xMlk5bVYxaVpjRHdWeVhPT2lfejBQNzI0Z25McV95QWxqa2pFZFRXVWc5UHR6UTlXaFhCcXlCSzZIX2NQeWZGRUxtSHR2WmJPWGNVUEVXcU5qUG5abnc?oc=5",
-     "published": "2026-11-22T07:10+00:00",
-     "source": "CTech",
-     "title": "\"I would not be surprised if Anthropic's market cap reached $5 trillion in the not-too-distant future\" - CTech"
-    },
-    {
-     "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOSWVfSWVYY1k5TWw3TWJ5WGYyWExnNDM2Wmp4eWs1LXk4S2IwYkt2NVBYeXpRZEM3Q2NERHd0RllEcU0wV2t2M3BPNG5Xbm9xbU5MMEtIVnFEZFA2ZWtiQjg3VFFMRmc5OXZiRnUzYVkzUkhidmFRM24wZ01INno2ek9TTEZOT25QQ2x4azZodw?oc=5",
-     "published": "2026-11-22T05:16+00:00",
-     "source": "Yahoo Tech",
-     "title": "Google releases Gemini 4 Neon AI model, rivals Claude Opus 5.5 and GPT-6.2 Sol - Yahoo Tech"
-    },
-    {
-     "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQU3lkS2VOWU1vclhfMk44Smk4QlotQUxDaUZxWW9JRkNtS0FIUC1rWnZuSXFqdktMaXROMjVxRWM1UkVMY0Nfbjk5YmhMQTR4LTFrUU5xUEFYdDZPQnU4UGR0YjhERnRVWXd2RGwya05ZSGotdDFPN0RfWDhrZFhzRVN6bWdIdjVrRC1reWlISVUtaGdQanRBTVh3ZlBhVVlLSGd2WlI0SQ?oc=5",
-     "published": "2026-11-22T00:23+00:00",
-     "source": "Startup Fortune",
-     "title": "Microsoft puts OpenAI's GPT-6.2 Sol in Copilot worldwide as MAI models push in - Startup Fortune"
+     "title": "Perplexity and Intelligence"
     },
     {
      "feed": "OpenAI",
@@ -150,13 +157,6 @@
      "published": "2026-11-19T08:00+00:00",
      "source": "OpenAI",
      "title": "How OpenAI\u2019s Performance Factory keeps ChatGPT fast"
-    },
-    {
-     "feed": "OpenAI",
-     "link": "https://openai.com/business/learn/deploying-daybreak-red",
-     "published": "2026-11-19T00:00+00:00",
-     "source": "OpenAI",
-     "title": "Deploying Daybreak Red"
     }
    ]
   },
@@ -170,5 +170,5 @@
    "industry"
   ]
  },
- "fetched_at": "2026-11-22T19:49:16.849801+00:00"
+ "fetched_at": "2026-11-23T07:51:02.629448+00:00"
 }
