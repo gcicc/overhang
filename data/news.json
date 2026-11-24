@@ -4,110 +4,131 @@
    "industry": [
     {
      "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPN1ZjUExEcXJYOFJzQW1mOFpsTE90Um9Vdk9heGVUV211NjRyUGp4UTJWRWhDSHNia04ycDNhcTJhbldfVlluRE9vQW1CTFBBZlRlVl9BRGNaVi1Bbk9Cai1sLU5PcDBJTF96V0dDSHVCZFA2b1paNjJLZHdDN24yZFI5STRoYmItS1pzU2h3VG4yMGwzM2c?oc=5",
-     "published": "2026-11-24T07:38+00:00",
+     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNVnE0elJJXzZ1cEh0elRETEtPSHdramFXNVpaaEwyRXBDN2RUdEhtNFVZZ0hFeGUwTXpKMWJ0a3ZlUTVyeGF6dWoxQ1pCdkVzTl91NlRYdFp1RHdrLW9PelA4czZnMGs0eDc1V3V6VmxqWHliYmo1b1lCZGJ4NU1UQjV6a0xSX1pBcTFKZTlubkdTemFlOEdn?oc=5",
+     "published": "2026-11-24T21:11+00:00",
+     "source": "Yahoo Finance",
+     "title": "AI Regulation Could Put BILL Stock In Focus - Yahoo Finance"
+    },
+    {
+     "feed": "Google News: chips & capital",
+     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9rNjZFb3pxYzM0MllRVHZGZlgwMGhqTXFJSjdvbDR5S0gxS0hzb2l2VTgxd1VWYmtuLXhVeUtlVG53all1ZE5zYXdwbWxyQURtUXBuRmNyYTREaUl4MHo3NmVrUmJsbmdtV1h3b3dPUkNybTdQbXc?oc=5",
+     "published": "2026-11-24T20:35+00:00",
+     "source": "BigGo Finance",
+     "title": "Wall Street Sees Big Tech AI Capex Hitting $1.4 Trillion Next Year; Samsung, SK Hynix Memory Boom Expected to Extend - BigGo Finance"
+    },
+    {
+     "feed": "Google News: policy",
+     "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQZV9kVUMtUTBBV3FLMjhVdTNxNnlXZjRyanJYbHhLMklub2FsQnFRMzdmXzBkX1dSVkl2bnltdjZQNHRJcVdNWHRJM3ZWVGU2Y1RGd1N4WkJpVm8tMDJiLWIza0QwdGVfNHdWUWFxcTNEU3JabGxIZnEyaEtVUVQzWGh3N1BtQQ?oc=5",
+     "published": "2026-11-24T19:58+00:00",
+     "source": "New University",
+     "title": "Reaffirming the New University\u2019s AI policy - New University"
+    },
+    {
+     "feed": "Google News: chips & capital",
+     "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxONDNoRXFCcUVNYTZSc0w2aDZVZUtMNHdWZGVCd3VnSGVTYS03NVpCZ2tkVGhDOUVjeFU2eHpoT0pjd25ZWDlseEVhWnVrSTVpeldMWDFBTFdRYnZDSTlGYko3c2duNzVGdW9rVGxDUngydVN6YkVXNFlJUk5rdG8ybnhYZW5OUVQ2OE1FMmt2REdrdXNvcG5hMURIQ3Z2a2l0MnJXdmpZYmtwUENfRnBsODNNUVJjYWluLWpMaTFtV2RpYTM0czV1Ujc4YllyNHNwR3Y2b2ROT21PLVhtNW1oNF9rRE4?oc=5",
+     "published": "2026-11-24T19:18+00:00",
+     "source": "TIKR.com",
+     "title": "OpenAI\u2019s Greg Brockman: \u201cThe World Is Not Building Enough Compute.\u201d Wall Street Just Stopped Raising Capex Forecasts - TIKR.com"
+    },
+    {
+     "feed": "Google News: policy",
+     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNMG1QU0lxTVd0R3d6MVFXamRiR184WnlVUmRnc3NNTWxSbWRrVXhocmlHaEpaWTY3U3BpTEhDUExXaE90NHdfSkdvWE45eW1RNHVCWXIwc012aVNlaDhCSm9wc0Uwb1IxdEtCUWo2aW44UXR4Z2xNOWNaMDBRUDR3VlRNU3NqRDBRcGZHSm0xdGxjQXRSTVJvX0tOeGllVzBrbUhSRA?oc=5",
+     "published": "2026-11-24T17:28+00:00",
+     "source": "BankInfoSecurity",
+     "title": "EU AI Act: What Changes Now vs. What Starts in 2026 - BankInfoSecurity"
+    },
+    {
+     "feed": "Google News: policy",
+     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNdUVmWUJXNFJTclhUa3V5eXZPTzJjb0FIa1B1Q0UzYnRWVUlSdHctNUxJTDdLaHE2X3NDN0YtaGRrT2NQVWlCU21scWplZVNFWjJNZDhybUFwbXBxUTlYbUtFWFFmQmd6MEY2REZhanBUSHFUSXdpdE03a05zNGtNM3JJMVBTT2d3cVJpR1JPRGV4LXlJT3NTRUd2ZFladEhDNTBTSVZRSVJxenZfblIxc3pOUXBNUQ?oc=5",
+     "published": "2026-11-24T16:33+00:00",
+     "source": "New Hampshire Public Radio",
+     "title": "Hassan says AI regulation, investigating tech outages will be top priorities in January - New Hampshire Public Radio"
+    },
+    {
+     "feed": "Google News: chips & capital",
+     "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNeHNjX1hwNXhaRFZXUVpoYjRnclNYVzdaTnVtbkV0SXF3VjhsLWpZcXJwNXVlaHdDTktNbElmQ1dieHRGVnNDTDc5R0pobkR5aFZKOVpySlpRTTN3eUVWbjFUQ2xEYnZoS041NWZHdGlhNnVfbmx0T1VoNTJVRDhPcU91UDNvQ2hDd0NGSWVQb19WVTNscUtYZjdWclBnQWIwYmp6YklZRkpDdnJFcFVpX25IbHg5M1JpS3JCUHNEM240TnM2YXYwajhiOWdHWDNVOHc?oc=5",
+     "published": "2026-11-24T15:58+00:00",
+     "source": "TradingKey",
+     "title": "Micron Stock Price Forecast: Citi Says Market Overestimates Impact of AI Investment Slowdown, Shares Still Poised to Return to $784 - TradingKey"
+    },
+    {
+     "feed": "Google News: policy",
+     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOM2xQMEthRW5SQ3p1TUY1eVVPYU84T0l0T2d0XzFRdnloRThPdUVFWHNqcEhLSXpLM3JJYUkwUlhsZDJSbTdsRlNRNjNZclZmYXFHU0UtNzVRS3dRMjdqcTNSMG13Z2dxMmliN0trWUlpNkp5UjhaMldUSHNNcjZybnNCdFdDSEx6QXJXV1RKZw?oc=5",
+     "published": "2026-11-24T15:58+00:00",
      "source": "Global Advisory Experts",
-     "title": "EU AI Act Healthcare Netherlands: 2026 Hospital Guide - Global Advisory Experts"
+     "title": "AI Act Transparency Italy: Inspection Pack Guide - Global Advisory Experts"
     },
     {
-     "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQNzJWVWl2N04zQ0czU0lScWlTNWpSZFFlWC02cXVOdlEweFZlcjRSSGFuY0RGWHpGTFRSby1vWlRmckdiWDg1NHZhQzNmeW9ZeUE3OGVPeURvZXl6enZpSUxWT3NYeGFEZzNxS1RINUNNNUxVZGRNNnM3cERvb01fRjZsNmlpSVVaOGdpNnFNZmF1QWxxeGFCanMwODE3RU9BNXpad0tpVVNIenVjbGhQTGV3?oc=5",
-     "published": "2026-11-24T05:05+00:00",
-     "source": "The Tufts Daily",
-     "title": "Tufts Democrats, students across Massachusetts lobby for AI regulation - The Tufts Daily"
-    },
-    {
-     "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNdmNSZUs4RVBfajI0RWIzSXJyUFZiSUF2N0RnbGNmcE1rU2hEMGs5eWNtazB2VDhJcHc5YXlfa3pJZkxBNlpwNXZMQ3hXRDNaeXc3cTdzX1dBZ0tEX3lXRFhoQmZONkZVVFRNUWlvU05qZWNXWXR2STNLZm5oSzB0blJrZmFjYjY1bWwwekFuSUZTZ3M4dDRneFB0Z3laYWdfNFU1eTQ2blM?oc=5",
-     "published": "2026-11-24T00:13+00:00",
-     "source": "GovTech",
-     "title": "Governors Call for Increased, Aligned AI Policy Regulation - GovTech"
-    },
-    {
-     "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFA3UHpzRkxYMlhvSmRJc1ZOSFB3b2Q4SFZHNjhQeWRIX2ZtaFZRdWc5bG1OSDBwMEV1YnVrcUlJUlhzY1R0b2ZFR0FSUVltbFpwRVh4OEpvRHcxNmlabXZEdWhSUDRuYkJWRlpid0dtQldITnNV?oc=5",
-     "published": "2026-11-23T23:06+00:00",
-     "source": "WRAL",
-     "title": "Etsy revises AI policy in response to seller concerns - WRAL"
-    },
-    {
-     "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPOVRodHFMZDJBdnFjWV9jeDJvU0dMMkFxdWd0ZlpwV1lXd3NvWC05N1kxUmRiMkNfc3pmWDQ0UXhXQWFoQl84eTVxTERFRUtUcU9kWG94MHV5UmFpVGYzMG9jUk9sRE04RUpiM1FPZTlLa0NJUmcxS3huUU9HZnpjNDBaeHlUeXBGX2E0cTRJcXlmNlNQQmszWmtUZm5NZUt5ZllPQlJoazdPMHM3X2Yxc3AxVzVWb1BXUXQxYUpqaXFRdnYtYXNaRGNZUGh2SVF6bTFwY0VqRkhSQTRqVDFwM19iTHgxQQ?oc=5",
-     "published": "2026-11-23T23:00+00:00",
-     "source": "Rome Sentinel",
-     "title": "Oneida County adopts AI policy to protect data, guide government use - Rome Sentinel"
+     "feed": "Google News: chips & capital",
+     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPdTNzS0lnSkNMdVpjUUQ3M1VOa2ZrWVBOS3Nyakw2UGpFNlhjcTVub2RDa1dpclZTVmNIU1RkLTFtcDVrdVlSTGtjR0JnQUxGRTB3WmVQY2xnRjlUZUUzdDIwcnV3NDBnSmpQWTRIS1VqOUV1RkNQVVdLQTV4NjNUQVg5eE1jdnZHNEF5VmQ5N1VTMzctZ0FpLXkyMUUxQXJROFRQV19CaHZPRnRLd1FXQTRxN3RJZw?oc=5",
+     "published": "2026-11-24T15:04+00:00",
+     "source": "TradingView",
+     "title": "Wells Fargo: Fed now drives markets as AI capex peaks - TradingView"
     },
     {
      "feed": "Google News: chips & capital",
      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBsUWpJU0FsUVUydjJrNXAyUkJOSDNNOWZLam94aW1OWVdwZURfZHQzcnJ1SXdWYjJSS3JPTUhpT1RJSGZ0bVhCSGROWk43SGVNOG1VS0gwSTBXeUZ1aV9V?oc=5",
-     "published": "2026-11-23T21:17+00:00",
-     "source": "finance.biggo.com",
-     "title": "Jensen Back, AI Trade on - Industrial Deep Dive with Steve Tusa | The Real Eisman Playbook Ep 85 - finance.biggo.com"
-    },
-    {
-     "feed": "Google News: chips & capital",
-     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQUDV2azZBTzc3bG40ejg2SGlUTHRZeGItYXpXRG1tYjVxUFV1NERZeU9wN2wzcEwyTnZESkx2cy11aFc4UkIyRzhCV1BYSXhacWxIdm4zQVJsTGFlemFLTE10a1dFMElRQkpmNWVzWVVKYlRWOXRfQXVrbWJsanJHd2kwMnFmMU56TFVad2tmeXpFM1hvSV9EV0xSUWJONWFWeDhhTA?oc=5",
-     "published": "2026-11-23T20:55+00:00",
-     "source": "StoneX",
-     "title": "Nvidia Sell-Off Puts AI CapEx Funding and Treasury Yields in Focus - StoneX"
-    },
-    {
-     "feed": "Google News: chips & capital",
-     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1Ca1czZjUyNldDRFEtMWlHM2VZUVdWS1EwTEdpUmNKRXZVSnVQc0t6WnJ0ZEVxeHBkVFRDbDVUOWppQk96QUVpc0FSdUJYT1E2WE9xY0lTVm05cU0?oc=5",
-     "published": "2026-11-23T14:08+00:00",
+     "published": "2026-11-24T12:32+00:00",
      "source": "BigGo Finance",
-     "title": "Boockvar Says AI Capex Peaks in 2027 \u2014 and the Fed Can't Cut Rates to Rescue It - BigGo Finance"
-    },
-    {
-     "feed": "Google News: chips & capital",
-     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQaFBkQTNnVGpzY1lTLVZqTWVHb3BxUWJJZW4wbTZHWFVyN01XOExSY0ZOSXFlM1dTUDBWNmFzNGpmeWF0SkxSeHg1SGo1V3lZZDRwZWNEQzVyV0wzeWJPRE5kYWNVeGdCeTdnenhZQ0JjSXZiQXZsN2Z3SDZBVS1FT0hmb3pjQUZ4VjdkdjZScTY?oc=5",
-     "published": "2026-11-23T13:41+00:00",
-     "source": "Traders Union",
-     "title": "U.S. AI suppliers face pressure as hyperscaler spending growth slows - Traders Union"
-    },
-    {
-     "feed": "Google News: chips & capital",
-     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9tX3lKNzhUM0lmSUd6c2xRYkRyT3hLYkVVckVNb1psaEpjWkY5N182NVVzNVdyZ1NpS0I1a2Z5bG9GRExtcnZhRWozdkpjVU80Rlp3N1hFTm0zazA3dUNV?oc=5",
-     "published": "2026-11-23T13:25+00:00",
-     "source": "finance.biggo.com",
-     "title": "The Fed Can't Save The Market From A Crash\uff5cRiskReversal Media - finance.biggo.com"
+     "title": "Jensen Back, AI Trade on - Industrial Deep Dive with Steve Tusa | The Real Eisman Playbook Ep 85 - BigGo Finance"
     }
    ],
    "labs": [
     {
      "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1VYXRmUWVWY29pV2JVdWQ1bk1qemFVVW1KaGZ3TzBUUXV0b2lEVFVtTE0yQmt2OUlWY1ZMNmM2N1lLZHBKa0NjeWdtX1V4OWpnNkVSeUdaY0tpam1iTHd1N2dCZTdObE1yRndMNHdPRVpZRkVJVFE?oc=5",
-     "published": "2026-11-24T09:35+00:00",
-     "source": "BigGo Finance",
-     "title": "Gemini's hidden feature: Long-press the model switcher to summon the periodic table of elements - BigGo Finance"
+     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNekltRmYwR2l5VG1sMi1pRXhPM1RDTndLVG5LYzkyazZRV1BreF9SRFNGUmIta1FtQy1VM1B4M2hjOVByNWhPYkZMNU1SMHB2Ni1Ed2RFcjBiN2loelcyLVI3ZHMyMUp2Q04tckR5ZTdmUmZwaFdPUEZ3MWR6eFJXQVpKdGlvY3M1WnRyN1RjMjlSN3dWZGRPUWk5Z0EzQldWbnJyaUw2ZVdzWUprQVRMcGNCUnE5cEpKc0tMXw?oc=5",
+     "published": "2026-11-24T22:08+00:00",
+     "source": "Fortune",
+     "title": "OpenAI chief scientist thinks \u2018perplexity\u2019 might be the key to coordinating an AI slowdown - Fortune"
     },
     {
      "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNaWEtdlp4ZFBsaUpfZVZsTW9BeTRLYmRFSXcyT1RFbFZzcmp5OGtQRy1ob2I2Q1FET2ZJbG9ha1BtSlpJaVd5UVFMZFZXX2F4OE52QmEwRko0bDhLendUOXdpWVpZZGhCcDRYNGZhVzBDdWtpWTBXOU5reDB0ZkU1ZURrQXptREdqMXNwbGNySWdwcEN5aDNFazVQTXc5TGc?oc=5",
-     "published": "2026-11-24T09:03+00:00",
-     "source": "Bloomberg.com",
-     "title": "Anthropic Faces New Pressures From Public Investors After Successful IPO - Bloomberg.com"
+     "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOaUdETW1TNzZiLWl5Z2lOUkhpRmtFMGNxY2dRVV9URkpQX3RVRGpVZGk5Q055WEY4elV1X2VHWlVCYzZTQUMydEk4YThidXZUOUh4dlBZVmpfZ21jaTZIeVRQaEFmdFN5MDNkNDhhYU5qdTJEN3ZQeGRXNG5NS215c3hxa2hFbEFjWW1DVE93UXFkdw?oc=5",
+     "published": "2026-11-24T21:03+00:00",
+     "source": "OpenAI",
+     "title": "GPT-6 models demonstrate intrinsic protein-design capabilities - OpenAI"
     },
     {
      "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPbXhLVDdPSnR1VWs3dHBPaS1yZmdSWWoxNzdaNGxkOGtnUUVvaU01MDlJNUwwUEhaSUdkYmVEakgweU1EZmkzRGZvUWFzVkNObTZiQXZCVkpPWmp6cjVZR3JzeUp1dy1OV18yMzdzWjIxOHlKWTk4UHNGWW1RelhjVDVlekZqU1NCZ1JQLXpqZGVSdlk2dDBOeU5qcjd2RVlFMlNjNTd3?oc=5",
-     "published": "2026-11-24T08:17+00:00",
-     "source": "Bitcoin Foundation",
-     "title": "GPT-6.2 Astra: Price and Performance vs Gemini - Bitcoin Foundation"
+     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE8yeXUwa3YySklIbVFfcjRZOVo3Q3dDV0JqSklTOEMzYmxYNmdGT24wVWNXMlBZS2dERGV6Q0huVm5pQlRWRXNlUDZYem9EcXVHNmtvZllxT1lwUDlLM1BmOTFjbmpPdmFs?oc=5",
+     "published": "2026-11-24T19:46+00:00",
+     "source": "OpenAI",
+     "title": "How iFood scales coding agents across 15,000 repositories - OpenAI"
     },
     {
      "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQT1dEWjlSWWt5OXA1WUNBZ0VZbVVCSHNIc0N6SXlmeElkdlJacVZKZTYzWU5yZjJtTmRoYW9BTTB4VVVUcEpSTjdPMk1IMHhGTS1ibG9Sak1XU2tvQWVFX1NuVWgwOTVJVFh0TWZQZmROQk5JSjlGZ1dhSkZTa1JpZldwczZSZUczbld5UGNiNXQwMnA0X09zbWZQblh6ZnZ2VTE0amVUZGd5VW1NZmdmQ21NMDdFWld4aDdVa1Q5LTNDNllwal90cDRMMnlBa1pFWVcwVmdzY0ZmRTh5?oc=5",
-     "published": "2026-11-24T08:10+00:00",
-     "source": "PCWorld",
-     "title": "Stop paying for AI one model at a time: get GPT, Claude, Gemini, and 50+ more for $27.97 for Black Friday - PCWorld"
+     "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPcmRtVHRPNFZhdHVJaUpTWG02ZDAtOE1wSmxkeTZnVHhpWW9UWjlJcHlUeThHdTFkQVBSdkJPY2J5SVE0QUJGcTZBZFZxTTJXLWpKMkprVWxoU2F5M1VWZ1pVUC0tU0lqQ0oxUzhzTUVVLVQ5T2JWZXJnSExGOVh3M1RjY0J6WHFTM2VjZ0tqeFRsSlRsNmNNcjRYR2RnbDhiZjhjWFA0Z2tvcE9WeUZ0dmFONUJRX21DeW1qRmFnSmxJNE1xUHQxcFM1dFd3cFFQcHdIcjFOZU9wQ1dr?oc=5",
+     "published": "2026-11-24T19:03+00:00",
+     "source": "Sequoia Capital",
+     "title": "OpenAI\u2019s Noam Brown: Why Game Theory Didn\u2019t Lead to General Intelligence (Live at No Limit Finals) - Sequoia Capital"
     },
     {
      "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPZU0wUUtOY0pVT0pfYzJGaE1pY003d3NrYzdjaHY3T2dzQkRXeXB4cnJPemstN3RyLXZBSnUxb2hfMTVxeUg0SDVNTEp2dlJ0dXVZM2gxdEFUQndqR2E4RTlQZ1NZU1M5cUlZbGREMDhPcDZfcDJWMklCcUMyeEN1bTNuSkJzN0NKRG90RC13dTZEMzFObk0weTBHN0UtQUR3NGE3QVpwQWVXUjJlbFJXVVd6Z3FpTWhpeHlxdVl5bG1nTVl2Tlh4cFhmeGdoQzFzeTJyRnNXbXJmWXhDRk84?oc=5",
-     "published": "2026-11-24T07:46+00:00",
-     "source": "Industrial Cyber",
-     "title": "Mythos changes the clock: What Anthropic\u2019s cyber-capable AI models mean for OT, critical infrastructure security - Industrial Cyber"
+     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQNkE3YU1IenBxWVlaRGFFeXBDaU1FeEZrYS14S3dOcFNfbWhLOGRBRmpveXA1bnNVakFOdThSeGRzaGtnN1dFWGNpZmR1b1F0TDZ5eTZlbmNRNnlnU01yNEw2dmZ2OW1fM2sya05CclFCSWpJVnMzRHZ3MUw0b1pXWGRnUlVtMERP?oc=5",
+     "published": "2026-11-24T18:22+00:00",
+     "source": "Quartz",
+     "title": "Anthropic and OpenAI employees warn their best AI models are too unsafe to release - Quartz"
+    },
+    {
+     "feed": "Hugging Face",
+     "link": "https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance",
+     "published": "2026-11-24T16:34+00:00",
+     "source": "Hugging Face",
+     "title": "Microduck Obstacle Avoidance: A Sim2Real Workflow with Isaac Lab and Newton"
+    },
+    {
+     "feed": "OpenAI",
+     "link": "https://openai.com/index/searching-for-distant-planets-with-astra",
+     "published": "2026-11-24T11:00+00:00",
+     "source": "OpenAI",
+     "title": "Searching for distant planets with Astra"
+    },
+    {
+     "feed": "OpenAI",
+     "link": "https://openai.com/business/customer-stories/intentful-dots",
+     "published": "2026-11-24T00:00+00:00",
+     "source": "OpenAI",
+     "title": "How Intentful uses dots to make more time for growth"
     },
     {
      "feed": "OpenAI",
@@ -136,27 +157,6 @@
      "published": "2026-11-23T08:00+00:00",
      "source": "OpenAI",
      "title": "Connected intelligence for in-house legal"
-    },
-    {
-     "feed": "OpenAI",
-     "link": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
-     "published": "2026-11-23T08:00+00:00",
-     "source": "OpenAI",
-     "title": "Richpanel helps companies automate 50% of support in 30 days"
-    },
-    {
-     "feed": "Hugging Face",
-     "link": "https://huggingface.co/blog/agentic-evals",
-     "published": "2026-11-23T00:00+00:00",
-     "source": "Hugging Face",
-     "title": "How to build and maintain an agentic evaluation"
-    },
-    {
-     "feed": "OpenAI",
-     "link": "https://openai.com/index/perplexity-and-intelligence",
-     "published": "2026-11-22T00:00+00:00",
-     "source": "OpenAI",
-     "title": "Perplexity and Intelligence"
     }
    ]
   },
@@ -170,5 +170,5 @@
    "industry"
   ]
  },
- "fetched_at": "2026-11-24T10:03:31.899631+00:00"
+ "fetched_at": "2026-11-24T22:34:24.493137+00:00"
 }
