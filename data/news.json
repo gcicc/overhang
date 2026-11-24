@@ -4,6 +4,27 @@
    "industry": [
     {
      "feed": "Google News: policy",
+     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPN1ZjUExEcXJYOFJzQW1mOFpsTE90Um9Vdk9heGVUV211NjRyUGp4UTJWRWhDSHNia04ycDNhcTJhbldfVlluRE9vQW1CTFBBZlRlVl9BRGNaVi1Bbk9Cai1sLU5PcDBJTF96V0dDSHVCZFA2b1paNjJLZHdDN24yZFI5STRoYmItS1pzU2h3VG4yMGwzM2c?oc=5",
+     "published": "2026-11-24T07:38+00:00",
+     "source": "Global Advisory Experts",
+     "title": "EU AI Act Healthcare Netherlands: 2026 Hospital Guide - Global Advisory Experts"
+    },
+    {
+     "feed": "Google News: policy",
+     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQNzJWVWl2N04zQ0czU0lScWlTNWpSZFFlWC02cXVOdlEweFZlcjRSSGFuY0RGWHpGTFRSby1vWlRmckdiWDg1NHZhQzNmeW9ZeUE3OGVPeURvZXl6enZpSUxWT3NYeGFEZzNxS1RINUNNNUxVZGRNNnM3cERvb01fRjZsNmlpSVVaOGdpNnFNZmF1QWxxeGFCanMwODE3RU9BNXpad0tpVVNIenVjbGhQTGV3?oc=5",
+     "published": "2026-11-24T05:05+00:00",
+     "source": "The Tufts Daily",
+     "title": "Tufts Democrats, students across Massachusetts lobby for AI regulation - The Tufts Daily"
+    },
+    {
+     "feed": "Google News: policy",
+     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNdmNSZUs4RVBfajI0RWIzSXJyUFZiSUF2N0RnbGNmcE1rU2hEMGs5eWNtazB2VDhJcHc5YXlfa3pJZkxBNlpwNXZMQ3hXRDNaeXc3cTdzX1dBZ0tEX3lXRFhoQmZONkZVVFRNUWlvU05qZWNXWXR2STNLZm5oSzB0blJrZmFjYjY1bWwwekFuSUZTZ3M4dDRneFB0Z3laYWdfNFU1eTQ2blM?oc=5",
+     "published": "2026-11-24T00:13+00:00",
+     "source": "GovTech",
+     "title": "Governors Call for Increased, Aligned AI Policy Regulation - GovTech"
+    },
+    {
+     "feed": "Google News: policy",
      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFA3UHpzRkxYMlhvSmRJc1ZOSFB3b2Q4SFZHNjhQeWRIX2ZtaFZRdWc5bG1OSDBwMEV1YnVrcUlJUlhzY1R0b2ZFR0FSUVltbFpwRVh4OEpvRHcxNmlabXZEdWhSUDRuYkJWRlpid0dtQldITnNV?oc=5",
      "published": "2026-11-23T23:06+00:00",
      "source": "WRAL",
@@ -17,11 +38,11 @@
      "title": "Oneida County adopts AI policy to protect data, guide government use - Rome Sentinel"
     },
     {
-     "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQUnQwVkgxQURiWnVUZ0dsVC1wWlRaNGhQQ21nVGNETzhHWDNNYjR2Q0VKMzNMU0gyRHNjS2IzeExTakg2eWxqVzMxQWRTZEdLaTktRklOeTl6NEJKZTNpRVFRekl3VmRRSTZUQWZSV0ZVdjBzZEtNUUsxZ1ZYbG9zMjVhVmNYenBrYmh6VTNhZVBoY3p3a2hCWlFnNmxKVGd1dFc4V29sOV91NFBrU2g5ZGJ4ODk?oc=5",
-     "published": "2026-11-23T21:36+00:00",
-     "source": "Hogan Lovells Cadwalader",
-     "title": "The Data Chronicles | After the ballot: How the Midterms could reset U.S. AI policy - Hogan Lovells Cadwalader"
+     "feed": "Google News: chips & capital",
+     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBsUWpJU0FsUVUydjJrNXAyUkJOSDNNOWZLam94aW1OWVdwZURfZHQzcnJ1SXdWYjJSS3JPTUhpT1RJSGZ0bVhCSGROWk43SGVNOG1VS0gwSTBXeUZ1aV9V?oc=5",
+     "published": "2026-11-23T21:17+00:00",
+     "source": "finance.biggo.com",
+     "title": "Jensen Back, AI Trade on - Industrial Deep Dive with Steve Tusa | The Real Eisman Playbook Ep 85 - finance.biggo.com"
     },
     {
      "feed": "Google News: chips & capital",
@@ -29,20 +50,6 @@
      "published": "2026-11-23T20:55+00:00",
      "source": "StoneX",
      "title": "Nvidia Sell-Off Puts AI CapEx Funding and Treasury Yields in Focus - StoneX"
-    },
-    {
-     "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNbDV1SEVPX1BldmR6bllrR3V0dzVBODZIbDd2aTNtVk9rUnZ1Z1EtLWtoaVBKa042RUJCQnFoYTQ0VGtYRTBCSkxzYVdoT1hCMFAyZlhEbmpUNWp4eGs1aWphWlFHNkJOd1lHbzA1a1plUk9DQk42cHZ3UEdoSl9WS2JxSnB0V2JfODhxT1pBYXhtQ25SOHpmeFFubWRFZw?oc=5",
-     "published": "2026-11-23T20:11+00:00",
-     "source": "Abridged \u2013 PBS KVIE",
-     "title": "A human being wrote this. Abridged by PBS KVIE shares its AI policy - Abridged \u2013 PBS KVIE"
-    },
-    {
-     "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPQ0ZrZ2R1WlJ3MV9DQm9JZC1zYzJEMWNrSTNJODd1cHFqNGhGR042bDl5YjlJZ0pqSmlzdktCMFUwYUZnakpTWlhNY3gyYzVmSzllbzJ1UnBZdEx0TmN3THFEMnhiOUoyaVhpZ05UbDkyc1haXy1IVDJQY3U5UThwTEh2XzhQMUljakJpUjl0bEZ0SW9SUmFqcG54TWJBMVVUUDRsN3RWb29QeUw1NFA0cFNOUkJSVkJqZjB6RmFPN1N4UXc5QTlhekc4ZTNlY1U4TVZVNk5BeXhQZVR6?oc=5",
-     "published": "2026-11-23T18:45+00:00",
-     "source": "Reed Smith LLP",
-     "title": "EN 18286: A quietly important piece of the AI Act compliance puzzle - Reed Smith LLP"
     },
     {
      "feed": "Google News: chips & capital",
@@ -60,54 +67,47 @@
     },
     {
      "feed": "Google News: chips & capital",
-     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE8xYmJpek5LQmRmOHN1ODRLYnQtVzJWd0dVbUNmalprdFlZTUtBT2pjSlplQ09ZQWJzTDlGUFR4eFlGNWhfeEJzMzhQZ3FMZ3lWTjBVN1NWVzhzYlFmc3pEX2xPUQ?oc=5",
-     "published": "2026-11-23T12:22+00:00",
-     "source": "Axios",
-     "title": "AI's spending slowdown - Axios"
-    },
-    {
-     "feed": "Google News: chips & capital",
-     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNR3c3UFV6dVNLQ0VaRVJoNkktMDdpVDA3QUsyMV9JaHRvSWZRQ1pQNm5zeXRic1VjZGEzX1NQZmh0dGE5aThURWxFQU5NMS1OU1h2UzFsc3lpZ0x5T1RvX2ZiZ1hUR2RTbzU2MHZodThPV0ZFcnplZEpaQktHTldIcUdqNENuUV82ZkdSVGFaX1pRWGhPOEgtcDdNQ3ZlRXMtRjlrR3J0S19qU1hrbktzUzBVOVdyNmRCZjIxYWQyeUhzdw?oc=5",
-     "published": "2026-11-23T10:10+00:00",
-     "source": "TNGlobal",
-     "title": "Malaysia tech sector faces rising derating risks despite resilient semiconductor upcycle - TNGlobal"
+     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9tX3lKNzhUM0lmSUd6c2xRYkRyT3hLYkVVckVNb1psaEpjWkY5N182NVVzNVdyZ1NpS0I1a2Z5bG9GRExtcnZhRWozdkpjVU80Rlp3N1hFTm0zazA3dUNV?oc=5",
+     "published": "2026-11-23T13:25+00:00",
+     "source": "finance.biggo.com",
+     "title": "The Fed Can't Save The Market From A Crash\uff5cRiskReversal Media - finance.biggo.com"
     }
    ],
    "labs": [
     {
      "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQWE8wbGYyUEpoWWVUaXVFMlZDV3ZreWJLS1BHdnEzdlBHN2NEMWk4TGFuOEhoeHJIZ0xvbHBKOWdHNmxBT3JQa2labHJjc3Z1cTA1WHhqZUEzRUZoYlZyYVM2eU1PVlR1QldrOC1sdDFLTWtzMUxxSTRQMFBNVUxVSlpjRmVTVjEwbnJ6MUtRTjl4SVBMVzlfY2l5Z1I3NldhV3c?oc=5",
-     "published": "2026-11-23T22:50+00:00",
-     "source": "Yahoo Finance",
-     "title": "Chamath Says Microsoft \u201cClearly Is Going to Need to Have a Frontier Model.\u201d Nadella Is Betting It Won\u2019t - Yahoo Finance"
+     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1VYXRmUWVWY29pV2JVdWQ1bk1qemFVVW1KaGZ3TzBUUXV0b2lEVFVtTE0yQmt2OUlWY1ZMNmM2N1lLZHBKa0NjeWdtX1V4OWpnNkVSeUdaY0tpam1iTHd1N2dCZTdObE1yRndMNHdPRVpZRkVJVFE?oc=5",
+     "published": "2026-11-24T09:35+00:00",
+     "source": "BigGo Finance",
+     "title": "Gemini's hidden feature: Long-press the model switcher to summon the periodic table of elements - BigGo Finance"
     },
     {
      "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPb0pELTVieEVteWV5TWE5cU80T1M4MmNHVmxQVjNmb0tkQ3diUHRFSTg0X1NJTnhEMGZHcS1CaFZfRHUyeWUyQ0RSMWVOa2drMEY0VG1Ba3puU0FmamtxdzF3dFFLaXl0TGloeVIteHFxMkNiRlFLMU5Yc0FUeDNvVzJZS0lLS2t1TWo5Tmk1RWJjMGlHQ2Q2eXlwc1NRU0lXNEFxODVLZ1FmQm4xLUR0QWFoRTRTS1FqSE5FRGVfUzNPaFZGUlNJREtSb0ZjUQ?oc=5",
-     "published": "2026-11-23T22:45+00:00",
-     "source": "Reuters",
-     "title": "EXCLUSIVE: Some US banks tighten AI-agent controls on concern about models escaping safeguards - Reuters"
+     "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNaWEtdlp4ZFBsaUpfZVZsTW9BeTRLYmRFSXcyT1RFbFZzcmp5OGtQRy1ob2I2Q1FET2ZJbG9ha1BtSlpJaVd5UVFMZFZXX2F4OE52QmEwRko0bDhLendUOXdpWVpZZGhCcDRYNGZhVzBDdWtpWTBXOU5reDB0ZkU1ZURrQXptREdqMXNwbGNySWdwcEN5aDNFazVQTXc5TGc?oc=5",
+     "published": "2026-11-24T09:03+00:00",
+     "source": "Bloomberg.com",
+     "title": "Anthropic Faces New Pressures From Public Investors After Successful IPO - Bloomberg.com"
     },
     {
      "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQdHlMalVqVFZXTWVIMmdLZDVFLUYtZUk3aW5uTEJQUEhRdFdUUlVreGJ2SmlQM2FVOWtORkNDakc4bU8xUHVkUUR0dnZYcDJ5MldYWXNRNk1zSGxpUXZJTmszUnQ1RWdub3RRRkNCOUMtRTJzTm5OUHBfazlYS2RlbTQwWGVnVDVuVnp0Um5UaTE2MmxGLURvU1dtNGNsWU1IOWY1OC1fZDhfVFp4WHhKSkFjdw?oc=5",
-     "published": "2026-11-23T21:56+00:00",
-     "source": "PYMNTS.com",
-     "title": "OpenAI Pitches Perplexity Score to Set AI Safety Limits - PYMNTS.com"
+     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPbXhLVDdPSnR1VWs3dHBPaS1yZmdSWWoxNzdaNGxkOGtnUUVvaU01MDlJNUwwUEhaSUdkYmVEakgweU1EZmkzRGZvUWFzVkNObTZiQXZCVkpPWmp6cjVZR3JzeUp1dy1OV18yMzdzWjIxOHlKWTk4UHNGWW1RelhjVDVlekZqU1NCZ1JQLXpqZGVSdlk2dDBOeU5qcjd2RVlFMlNjNTd3?oc=5",
+     "published": "2026-11-24T08:17+00:00",
+     "source": "Bitcoin Foundation",
+     "title": "GPT-6.2 Astra: Price and Performance vs Gemini - Bitcoin Foundation"
     },
     {
      "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOZnBUTGhDYjFyNUJEVDFOZzNJa296QlpKaTRqYk1iVTZ1ZlhpUGZWTUNBQW13U09PYm5hRFZyZGQ4WC1PYmRPa1VfeDhwLUdpaUUwV1ZYRzVhRzNWU0M1NW9JVGFhYUdIUGVVQlJWYXl0bnh0cUJOT2N5S1o5cEtyR1ZhS3JtVXVLU0ktWEdLZS0yVnMwRGdhVWhReUQyLUVaTkJQaXhuRGo?oc=5",
-     "published": "2026-11-23T21:51+00:00",
-     "source": "9to5Mac",
-     "title": "ChatGPT expands GPT-6.2 Sol as OpenAI sets retirement date for two models - 9to5Mac"
+     "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQT1dEWjlSWWt5OXA1WUNBZ0VZbVVCSHNIc0N6SXlmeElkdlJacVZKZTYzWU5yZjJtTmRoYW9BTTB4VVVUcEpSTjdPMk1IMHhGTS1ibG9Sak1XU2tvQWVFX1NuVWgwOTVJVFh0TWZQZmROQk5JSjlGZ1dhSkZTa1JpZldwczZSZUczbld5UGNiNXQwMnA0X09zbWZQblh6ZnZ2VTE0amVUZGd5VW1NZmdmQ21NMDdFWld4aDdVa1Q5LTNDNllwal90cDRMMnlBa1pFWVcwVmdzY0ZmRTh5?oc=5",
+     "published": "2026-11-24T08:10+00:00",
+     "source": "PCWorld",
+     "title": "Stop paying for AI one model at a time: get GPT, Claude, Gemini, and 50+ more for $27.97 for Black Friday - PCWorld"
     },
     {
      "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBUcnY0VmNlb0toaDRaVFlNSnRxRjRiR190aWpQbm1DLW1UbXVBUHVvc1lmbXlJdTd1RW5vN2ppWkd4bmo0c1gxU29DZkRQcmczMGhIVkt0NnNRcTFQbzZqdzlxd3lRTzFGVnZ2TW9aY1JiZw?oc=5",
-     "published": "2026-11-23T21:27+00:00",
-     "source": "Crypto Briefing",
-     "title": "VentureBeat bug-fix test finds Anthropic\u2019s top Claude model costs triple for similar results - Crypto Briefing"
+     "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPZU0wUUtOY0pVT0pfYzJGaE1pY003d3NrYzdjaHY3T2dzQkRXeXB4cnJPemstN3RyLXZBSnUxb2hfMTVxeUg0SDVNTEp2dlJ0dXVZM2gxdEFUQndqR2E4RTlQZ1NZU1M5cUlZbGREMDhPcDZfcDJWMklCcUMyeEN1bTNuSkJzN0NKRG90RC13dTZEMzFObk0weTBHN0UtQUR3NGE3QVpwQWVXUjJlbFJXVVd6Z3FpTWhpeHlxdVl5bG1nTVl2Tlh4cFhmeGdoQzFzeTJyRnNXbXJmWXhDRk84?oc=5",
+     "published": "2026-11-24T07:46+00:00",
+     "source": "Industrial Cyber",
+     "title": "Mythos changes the clock: What Anthropic\u2019s cyber-capable AI models mean for OT, critical infrastructure security - Industrial Cyber"
     },
     {
      "feed": "OpenAI",
@@ -170,5 +170,5 @@
    "industry"
   ]
  },
- "fetched_at": "2026-11-24T00:01:16.624135+00:00"
+ "fetched_at": "2026-11-24T10:03:31.899631+00:00"
 }
