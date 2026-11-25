@@ -761,6 +761,12 @@
       "value": 0.8807017543859649
      },
      {
+      "date": "2026-11-16",
+      "model": "qwen4-max_xhigh",
+      "org": "Alibaba",
+      "value": 0.7859649122807018
+     },
+     {
       "date": "2026-11-17",
       "model": "gpt-6.2-astra_max",
       "org": "OpenAI",
@@ -3336,5 +3342,5 @@
   },
   "source_url": "https://epoch.ai/benchmarks"
  },
- "fetched_at": "2026-11-24T00:01:12.795501+00:00"
+ "fetched_at": "2026-11-25T08:48:08.528845+00:00"
 }

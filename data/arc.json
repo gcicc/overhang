@@ -2,7 +2,7 @@
  "data": {
   "series": {
    "ARC-AGI-1": {
-    "generated_at": "2026-11-20T16:14:09.211Z",
+    "generated_at": "2026-11-24T14:51:18.628Z",
     "points": [
      {
       "date": "2023-11-03",
@@ -1931,6 +1931,24 @@
       "value": 0.84
      },
      {
+      "date": "2026-11-18",
+      "model": "Gemini 4 Neon (High)",
+      "org": "Google",
+      "value": 0.965
+     },
+     {
+      "date": "2026-11-18",
+      "model": "Gemini 4 Neon (Medium)",
+      "org": "Google",
+      "value": 0.985
+     },
+     {
+      "date": "2026-11-18",
+      "model": "Gemini 4 Neon (Low)",
+      "org": "Google",
+      "value": 0.985
+     },
+     {
       "date": "2026-11-20",
       "model": "Inkling 2 Mini (XHigh)",
       "org": "Thinking Machines",
@@ -1954,7 +1972,7 @@
     "unit": "fraction solved"
    },
    "ARC-AGI-2": {
-    "generated_at": "2026-11-20T16:14:09.211Z",
+    "generated_at": "2026-11-24T14:51:18.628Z",
     "points": [
      {
       "date": "2023-11-03",
@@ -3889,6 +3907,24 @@
       "value": 0.5791666666666667
      },
      {
+      "date": "2026-11-18",
+      "model": "Gemini 4 Neon (High)",
+      "org": "Google",
+      "value": 0.9083333333333333
+     },
+     {
+      "date": "2026-11-18",
+      "model": "Gemini 4 Neon (Medium)",
+      "org": "Google",
+      "value": 0.9375
+     },
+     {
+      "date": "2026-11-18",
+      "model": "Gemini 4 Neon (Low)",
+      "org": "Google",
+      "value": 0.9375
+     },
+     {
       "date": "2026-11-20",
       "model": "Inkling 2 Mini (XHigh)",
       "org": "Thinking Machines",
@@ -3906,5 +3942,5 @@
   },
   "source_url": "https://arcprize.org/leaderboard"
  },
- "fetched_at": "2026-11-24T00:01:12.640447+00:00"
+ "fetched_at": "2026-11-25T08:48:08.418184+00:00"
 }
