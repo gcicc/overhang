@@ -2828,6 +2828,12 @@
       "model": "gemini-4-neon_xhigh",
       "org": "Google DeepMind",
       "value": 0.9627525252525253
+     },
+     {
+      "date": "2026-11-20",
+      "model": "inkling-2-mini_xhigh",
+      "org": "Thinking Machines",
+      "value": 0.8680555555555556
      }
     ]
    },
@@ -3342,5 +3348,5 @@
   },
   "source_url": "https://epoch.ai/benchmarks"
  },
- "fetched_at": "2026-11-25T08:48:08.528845+00:00"
+ "fetched_at": "2026-11-26T21:41:42.592779+00:00"
 }
