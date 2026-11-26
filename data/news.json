@@ -4,6 +4,41 @@
    "industry": [
     {
      "feed": "Google News: policy",
+     "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQODJaNmNrbFFWVXlTcnRleFNMd0FfV2dZV3JiMXI1TE90SUtWZE8yQnZaRUF3YzBwT1p0TkJZZmE3R29Vajg2UUVrRGt0ZVVCcUpmb25JNDFwUi01ZWJyYUlOY0dpRlJhZVZYRDI1VEVBR0dVcVBPRldINkVlN1poM21zRXRGdjJ6cTd3QzVBbGRHUHdNekFySk5FaU1pTmtnY0hVbHYteklLZW5xZ2d4R3UtdnNoYWMyX1NEcWt3Rk9nalJQbFpUQ3FOZWZkS1dvX0o0THo4aWM?oc=5",
+     "published": "2026-11-26T06:33+00:00",
+     "source": "EU Reporter",
+     "title": "AI Act/Nudifier ban: 81 MEPs demand enforcement from day one as nudifier ban kicks in next week - EU Reporter"
+    },
+    {
+     "feed": "Google News: chips & capital",
+     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOSTNYTTZ1N1VZSUpCMHUzWVJrMnN5M2NJQjlLTllwaGdjZ3pDZnJTNWlZbEs3OExGOXhCeVlDczRLaGFEaDJ5dklMbUl1TGllTmpZd09ZMnFsS0xhR1ZaYTQwUDU0eG5pZi1VSk1oS3RibGJvMWJ3R1g2V2U5VnBKMjh6UmVWM1RNQ3RiUnhjRjhmV1FVWUtMQ01vU2poVXhfbDFsYkRSMDdkdFJMdWxmYm42STByb2NSdHFEMUlR?oc=5",
+     "published": "2026-11-26T06:00+00:00",
+     "source": "KLSE Screener",
+     "title": "Cover Story 1: AI boom or bubble? Investors confront risks versus rewards - KLSE Screener"
+    },
+    {
+     "feed": "Google News: chips & capital",
+     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQOURJUDRXb3NrLWc4T09RSktHSlUzMU82WHN2b3BuV0R5cHRpWThjOG5abnVaclJzaVdXZHVrNk5LaUNiSlgxV3g5MmtwQzB5REpMVk1TLTJ6MGdBQUtRY2lYSjBSX2U1bDdmazFFb2U1blBpVkpibkl4UVJFZ2pxZjhNVGUwU1hLc2l0S1BPaw?oc=5",
+     "published": "2026-11-26T04:24+00:00",
+     "source": "Pluang",
+     "title": "Hyperscaler capex rises, AI stocks fall as inve... - Pluang"
+    },
+    {
+     "feed": "Google News: policy",
+     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQR1lRNmtGX3Q4SmF0WWk0Qk96aEozS2Z6eFItSENYMUtMQVROSF9XOTFiNDU3M0tGNlZWb09BdUhsUENlWnlicm92bU5ob2plSGM4T2RYczRRX09ZdVNObUlNQ3huNE5OVVFTVjhkTnJSTHBpLUppWmhUc2NzbG12WGI1cVR0b1NaNHc?oc=5",
+     "published": "2026-11-26T02:12+00:00",
+     "source": "Global Advisory Experts",
+     "title": "EU AI Act Germany: Costs, Timeline and Owner Plan - Global Advisory Experts"
+    },
+    {
+     "feed": "Google News: policy",
+     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQdWZFX2xCNldiN05mWG9CM3NnZzhrYXhna25vU2t3d2tVaVVYSk9tc1lTaUd1SHgwRGw0eG1NVWxHTHdXUURJRm1LT2g0WGRaTVF5V2pjbFVFYXAwQlBrbzNsb0RSd2VCNTd6bmEtM2hidm8zTTZtM3lESld3RGsxZTZ5MHNJYU1qaXZZ?oc=5",
+     "published": "2026-11-26T00:28+00:00",
+     "source": "WSAW",
+     "title": "Green Bay developing an AI policy for public art - WSAW"
+    },
+    {
+     "feed": "Google News: policy",
      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxORnlCNHJ3czBWVF9ZZjZ2TVBpYXAzNElLZ3ltcTVpX0VxSEJQcDFKdllnLTBSMWNYVHp1MDc1THM2dTJLLTdzNTc5c0g2MkR3X1EyUW4ybGFUUXpNT29Fb2ZFMmNYajRjcUI2UEh2MHktNTIzMDkwb1huTlFGOEUtYjdsb2RTcWNVcmc?oc=5",
      "published": "2026-11-25T18:23+00:00",
      "source": "The Guardian",
@@ -17,32 +52,11 @@
      "title": "AI Regulation by Industry? OpenAI Proposes Common Limits - Gotrade"
     },
     {
-     "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQeGl1aU50aE9NMVNOcDN2U2YtSmlVV3ZCX3lwOGc1X1U2ZGtvLW4zNklWM2kxc2tXM3RNVWx2d2dZZWI3QW9NWkRUNXdaZFpERHI4eEFiYkJyaVpfTVdkb01tNExkS2lZVWx2TnM4Vmtpcms4Q19ldUlxYTVNV3ZIbEtXaWFxZklaOFV3RzJHMTFCR2RPWTNNcFVfVjJTc3EycjJBZ1ZJNFotb2NBZVZITnFLNmhqeFlPUjVsaVhxbmVIcURFWXZjeGRES3liRVJYclFaWEIxajdxRjlVZFlxTHhiN0FzVVBMUm1JTnRQT3ozczRqR0xsb29Dem4wd9IBgwJBVV95cUxQc0RLa2pVOU9NZzVRZDNzeWs3VG5FczJULW11WU9HdE4xVkpMbC1rYXhFNXdpUlJBaGpleWcxWGVxWjM2RkpjZEt2X3FZaldkZ2ltcE9TV3RSUkd3LUh5X184Tk1VaEd1ODNVWEw5S2FoeGtJcW56SkUxbkE3SW4xeVlNZklONWp6Y1BDZ0M1eHFWS01ieHl5cUdFYTFsQ3d0QWM0TWhpV1RHS0lTeTNMTFV1eTBiUGctNHhGd2hlWW8xNkhaVFFiUHlyZnlWY3IyMkhzV2R2X2x5bTNWcGhFUFVLSUZydHZvcUwzSEs5RlNLQ3c0ZGdhUGNQdTJybDR2QWVv?oc=5",
-     "published": "2026-11-25T15:20+00:00",
-     "source": "The Economic Times",
-     "title": "AI regulation papers in final stages, to be released shortly: MeitY secretary S Krishnan - The Economic Times"
-    },
-    {
-     "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQWXFqQzBtb2lsSFlmR21EY3RkZXhrQlhSUXJNZ3Q5dTF2Q2thbkFGR0xlWXp6eFZvTk1pNmpjS292QlJob0xSNUdwS29adVlUV3RMbkg5R1NVR3hqYXI4eVRhbUE2ZWVDQUlVMEt3c2NhV1RJR1JkWG1fWG5vQUh3T2tCbno3dklmRTh6LVUyVGlrN3BEYlFsWE1Gczc?oc=5",
-     "published": "2026-11-25T14:50+00:00",
-     "source": "UrduPoint",
-     "title": "APIGA Pakistan trains 22 fellows in internet governance, AI policy and cybersecurity - UrduPoint"
-    },
-    {
-     "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPMGVFYklIZHRxcU5aZFprR2NvaTNOUmREb0hmUnpMRGdqX0E3VVVfSlhXcUtXR2o0Vm81X3FmYU5Dc0RESFhQellZNnVtYXc4Z2dLc1BpeDRkbGJ2dGJ1cFhHYVY2aHF4Uk1GNWVCOVVjS21CaEFTbXJDWV9pTTlVUlotcWgyVmZYSXJEcUZmTnNuODRBQ3ZfUw?oc=5",
-     "published": "2026-11-25T14:19+00:00",
-     "source": "Healthcare IT News",
-     "title": "When it comes AI regulation, the public has an important voice - Healthcare IT News"
-    },
-    {
      "feed": "Google News: chips & capital",
-     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQMDZkVDVsY0NXaXhuVWphV3ZrOFZSSHlYREdiSlNPaU5SLWM1OEZKaE1KYkJNZE5uUkFFc1BHdnNxSFVBdDRSSVFFUHhKUDhUWGNRS1NKWGJqTTN5dXN6Zk43dmFGcVA4Y1ZDNkdROUcxdjdkRk5rTlJ4dEtXVDVSZ1BZRV90Z21rN3dTVlJuX1M1TXp4WTVoZS1WU1ZTVk9XQVVhRVJ3Y3BmdGZlOXJPSw?oc=5",
-     "published": "2026-11-25T12:28+00:00",
-     "source": "Investment Week",
-     "title": "Why managers are sticking with AI despite tech sell-off and market volatility - Investment Week"
+     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNcVViRFVLYTVUUHczVThoRXh0amxxbUtsVzN2TEdpSVNFdVdwc053bzAxUFN4S19yOUd0VUFZZmRiZTFoWkhubTliSDRLeXZUeDU2NktWN2ZlTU5ZMU1oXzdDQmxMajI3ZDU4UmtjSHlnZEhReUM4OFd2RFVMOVpkdVhsX2lKbjU4di1OT0RjbkU1Ylk3NmpQUERuN1BTSjNscms5RndWN3I?oc=5",
+     "published": "2026-11-25T08:46+00:00",
+     "source": "CXOToday.com",
+     "title": "From Chip Shortage to Glut: New Research Cuts Forecasts for AI Compute and Capex - CXOToday.com"
     },
     {
      "feed": "Google News: chips & capital",
@@ -53,54 +67,54 @@
     },
     {
      "feed": "Google News: chips & capital",
-     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQSWNNU0pCb1Nwc2ItR3RvczVYRGg2Q2dLMmRTV2NPNTZCeUdma2RfQjB4X3o2empscEgzMWNnZDhQbHRqMUpWZExjcFBTMHNfZnhsRU5Sci1DRTZOWWNQaXY0OW14a3FUYTdrWTE0ZGhtbVl3dlpaZEJoT2NJZl9aWVJ6dnJNUDZSc2EtRnY2ODBVdGNKWGlzQ2x1SEU2NmxPOThaVXQzUGhvcDNHSE05Sw?oc=5",
-     "published": "2026-11-25T06:52+00:00",
-     "source": "CXOToday.com",
-     "title": "From Chip Shortage to Glut: New Research Cuts Forecasts for AI Compute and Capex - CXOToday.com"
-    },
-    {
-     "feed": "Google News: chips & capital",
      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOVXlnYWt2VGxNWlR6SEFSY1hZTnlqZ0E0Y0lkRUdXYmlDNzBFQ0dkMmtnakM4Z2ZGcXBZOUVTQTdGc3JEWTNRZ1pTaDdxNEp2ZzVUeU1GVVBUNGk5bXpfdl9laUpvam9JamY1dFRZSFk5emhJcElJbktoSDF4Z3FNWi1ablJraEJySDhUUDlucHc5cDJkVS1EdjdnYUkxM2F2RWJpUGplZUpYM2V6MzFCYkpaVTVDYjBKQ1hfREVJSmJmdEE?oc=5",
      "published": "2026-11-25T01:04+00:00",
      "source": "https://www.indiagazette.com/",
      "title": "AI spending slowdown could hit memory companies as Goldman Sachs flags 2028 risks - https://www.indiagazette.com/"
-    },
-    {
-     "feed": "Google News: chips & capital",
-     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9rNjZFb3pxYzM0MllRVHZGZlgwMGhqTXFJSjdvbDR5S0gxS0hzb2l2VTgxd1VWYmtuLXhVeUtlVG53all1ZE5zYXdwbWxyQURtUXBuRmNyYTREaUl4MHo3NmVrUmJsbmdtV1h3b3dPUkNybTdQbXc?oc=5",
-     "published": "2026-11-24T20:35+00:00",
-     "source": "BigGo Finance",
-     "title": "Wall Street Sees Big Tech AI Capex Hitting $1.4 Trillion Next Year; Samsung, SK Hynix Memory Boom Expected to Extend - BigGo Finance"
     }
    ],
    "labs": [
     {
      "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNR1k0UDhWeHY4NEdmaXpBdFpGYVRwQ0w1VkJYMEFGb3FEaEtmdkVqRy1SVGh6TTB6T1BpMzB3d0VjZUE4Qk41UUlrWE1xay0zNklVNUF3SU1nVFNyd2QxOVg1bjZuRGg3WGtaYkQ1QW9ndXNjQ21xcEhaWDBJOGRTd0FUd0V3a3p4RjEzcG91RGxBa0xfRm1aaWh2am9RUy12SEViaGZ3aFBPZ1A1dXpxVWpaUjRJOTJZSXdtcDFFTzVWWmJzNnhIb05kemlQOHJMT216cXZ0Q1BXakE4SWRTMw?oc=5",
-     "published": "2026-11-25T21:01+00:00",
-     "source": "WKEF",
-     "title": "AI company employees warn internal models are too powerful to safely release: report - WKEF"
+     "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNcDFWREk2bHBFdlNkU1VOZWhIQy1DN29sRktibHNBc2l3al9VOFNzc25ZaDZBODlZT3RISDdKRm0yT3ZxZGJZaVNyazVrLWx1d0sybWlQam90dk82dEZJcjZ5WVh5OFNJbHFzUF93ZXJHS3pXVzJrWHIyOTVlY1hQd0ZkcGNwaW9NaUxwbjJSU0xMeDJpXzAxMUM0QVg5VEI4aXAxbUNRWlQza2d2OGVGWnBadXFzcGpPVVQyM2t4WlBSS2htSkE?oc=5",
+     "published": "2026-11-26T07:35+00:00",
+     "source": "WTVB",
+     "title": "Exclusive-US chip curbs, distillation crackdown threaten Chinese AI model development, sources say - WTVB"
     },
     {
      "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNQWZET3dOcDNPZ1c3bnhSaGh6SkdXeGItdEl0dUNmbzVVZlhhSV8wZ1p0OTN5RDlfUXRZV3NMSXNnV2FxYXdVRWY5UnJZZ2FxbkVXNlFkWFFabHNfRTl2ZXJ5ZFVRd0prUkE0OFRYYktyVGNBemZkSGJZbXUzOVljaEtBdEhIT2Vydkhab2h1cFc0NDJyNVZMb29BQ3U2bUh3N2NETVpyenBmVVpRclBCWnpscjUwUQ?oc=5",
-     "published": "2026-11-25T20:03+00:00",
-     "source": "TechCrunch",
-     "title": "OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work - TechCrunch"
+     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5CajJfOWt0dlBXTU8tdThTNGIzNzNPUTc4Xzd6MGsyaTNDUWg1b1RoUC1RZmpTaURPMnVfWEpiUk9SVGFXMUpvRmhtUDRFaldSOEdqUFhGa2hpZjdneTdncm1IcVZwMFp3T09fcVFDTllnT2ZBUVE?oc=5",
+     "published": "2026-11-26T07:35+00:00",
+     "source": "BigGo Finance",
+     "title": "OpenAI and Anthropic Weigh Halting Release of Their Most Powerful Models as Internal Tests Reveal Repeated \"Overreach\" - BigGo Finance"
     },
     {
      "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQYUpCVnRsTUZodmZXMnpjbmtQT0lSM2VhdHI3elpLdG5CazQ2TjlzcHdiMExjX3J6NTJTcUNfLXNZVW4xUk9uV3FXS0xCRGxfY3VST2tHUFJYaUhkaFFfS1FVR2hTbVFDa0QxaE1ERWh2aWk3QjZnbzFHY052Zk1JTWVyWDF2QzRXRGtJQ0ZTbUJSNmVHM25BTU9mQzUzbHZMU0I2RVBRaVJZcUN2X3VGdGVFMlYyVEtBTHE0?oc=5",
-     "published": "2026-11-25T19:44+00:00",
-     "source": "TechCrunch",
-     "title": "Anthropic\u2019s Dario Amodei calls accusations of surrendering human control to AI \u2018absurd\u2019 - TechCrunch"
+     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQ3I1OHMxeFlhc2cxYWdfOVk2NW9vY2ptUG1LOTVwcXFxYi1hSWFkdGl6a2FrbFMxaVZBUGtfSGEwdjRERmRHclN2ekhudWYxc2RUWnlYMjFlaVA2MFZBcklMMzdaajJ2ajlnd0hpUWIydVpmcV9vUGFQUW9NTjNIemJMN2FIenBEbW1IZ1kwWXFrYVQ3QzM0Y1B0RHUybGtHUVBOZg?oc=5",
+     "published": "2026-11-26T05:15+00:00",
+     "source": "shattered.io",
+     "title": "GPT-6.2 Astra Price: $8/$40 per 1M Tokens vs Gemini - shattered.io"
+    },
+    {
+     "feed": "Hugging Face",
+     "link": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
+     "published": "2026-11-26T05:05+00:00",
+     "source": "Hugging Face",
+     "title": "Building on Nemotron 3.5 Parse: Open Data, Fine-Tuning, and Faster Inference"
     },
     {
      "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1wRXhqeU5pS1lCLVUtdmpCanpUek0tZ3doTmVxeFFzSm9adTVzVkpsZlp1QjNQRExYcnNmcE9pNmZRY0hVaWljbTd4WWRxdnhITDZ2Q3VYeDUzSmtHeU5rd2xEZXNjdmRQTWdIN1c1eDJMc2N4b0RTdDlB?oc=5",
-     "published": "2026-11-25T19:29+00:00",
-     "source": "The Next Web",
-     "title": "OpenAI is testing a way to shield business prompts while its models run - The Next Web"
+     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOOHd3N1hoSXExQkhfZ3Rhel9DVFFfMHRBZEVtQXJSd1pLRXBibVFfUVJ4YlVIYlczblJZZ2lyc1NPZjZvZFUxNERxSEY4VEdEZjZXYTh0bDlxaDhGNnR6QlJkQlEtUzFIU1JDOUFOSVdXZV9XSjVzcHlfaFNlc1RscVNkaFR4R1dVWks3NEs2QjExZW5JVV9icUZXellrSzh1ZXZTSlN5amppZEJkVHlDekpZR2ZzdjBldUl3OG5PMEw?oc=5",
+     "published": "2026-11-26T01:04+00:00",
+     "source": "EdTech Innovation Hub",
+     "title": "OpenAI\u2019s MedChemBench tests GPT models on drug research decisions | ETIH EdTech News - EdTech Innovation Hub"
+    },
+    {
+     "feed": "Google News: labs",
+     "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1NUmJpZ09QLUZLUUw4R2RqXzBoMWhkTlotUXBva1ZRNW1YNHhSbFNXcjgzR25wNzJ3VzZ5SEJzVXhoMUZxbnpHV1U4YXprUnA0eW9ac1JGSkFIV19iX3J3aGJqUHM1eFpLMlVHNkFOaTZORjVhNFVIblJB?oc=5",
+     "published": "2026-11-26T00:05+00:00",
+     "source": "SemiAnalysis",
+     "title": "Evaluating Recent Model Releases on GDPx - SemiAnalysis"
     },
     {
      "feed": "Hugging Face",
@@ -108,13 +122,6 @@
      "published": "2026-11-25T18:52+00:00",
      "source": "Hugging Face",
      "title": "Where scientists draw the line on AI agents"
-    },
-    {
-     "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMivAJBVV95cUxNdFp1d1RzeDR2SmVZRG5ZcUY4Z195RUF4LXNGY0tsVUFuY2padTFCR1VZVEFBRVNzZXFVQ3FiaklRckE4ZEVoWkF3T1p4MUgzb2RQVnVhVnpBbklHcW4wcUxWVUNQOXk4cTRJd2w1RTRZVFdXcGJBMjBhbVBSdS1OUFhhOEVTZV9MRzNUWnJaOHpWREw1MkFzSGFaREVYSGU1dGtlRWdJcTRndjZtUlg3QXZTeE1FcWdMNXVhNmViUElha0ltaVNCNHBiSDVINmpQTFJ2YUtCQWNiUU15emNZNndXOUZwcTNHYlVPMllrZGh2NVFGckNORGdFY3V1Y3F3NDlNcmRpT1R4NUZLR1VYVTBOMWs1cUpZVlVxbzdmc2hnRFE4MEc0T2xnUUVIVTZhUUNlY2dpb3c2UGdw0gHCAkFVX3lxTFBhTktSbEZpS2lnSnBQVkVFZktKekJxMUZmUEVSa1dYUlhNOVhxT2tGWHBnX1RhQXUycHFGMHVfc0tjUkM2QjRPbjdrUFVqWWtwUWhzVEdwdThFUXp4MjZXa19HUFV4TjRSb0lrVUZLWU53NHdZM3JFTVg0ZDBqdzdBS1g5b0JfSlQxWlo0U0xrdXNqU1dYVi0yX3NzWUN5NGRpUnFzLWR4SkFlQkc2TlJmVi1ldVlNY1JKUWM4RkhCbThLOU9BbEJqdmNtSFB1a1FheGNsMVlxM0Z2aW1ZeWNUbHk5RmtKRlBGcUtSYjluYjJhWGRLZ2s1eU9XaUR4MVI0dW1qblZWN0pFT3FpY01hSi1jYzROQmJIdzRnanJoN2VESElwdUQ2Q1VxbW8wc2tubnR1aU1ZaWw1WkZKNWZUYVE?oc=5",
-     "published": "2026-11-25T16:43+00:00",
-     "source": "The Times of India",
-     "title": "Anthropic and OpenAI researchers fear their unreleased AI models are too powerful to ever release; warns: - The Times of India"
     },
     {
      "feed": "Hugging Face",
@@ -129,13 +136,6 @@
      "published": "2026-11-25T00:00+00:00",
      "source": "Hugging Face",
      "title": "Hill-climbing Inkling 2 Mini inference on one RTX PRO 6000"
-    },
-    {
-     "feed": "Hugging Face",
-     "link": "https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance",
-     "published": "2026-11-24T16:34+00:00",
-     "source": "Hugging Face",
-     "title": "Microduck Obstacle Avoidance: A Sim2Real Workflow with Isaac Lab and Newton"
     },
     {
      "feed": "Google DeepMind",
@@ -170,5 +170,5 @@
    "industry"
   ]
  },
- "fetched_at": "2026-11-25T21:49:03.515295+00:00"
+ "fetched_at": "2026-11-26T08:34:33.046505+00:00"
 }

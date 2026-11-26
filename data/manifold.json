@@ -16,22 +16,22 @@
     "id": "HQObM8ZeuU0YQ3HUdGZ2",
     "kind": "agi_before",
     "note": "Will we get AGI before 2028?",
-    "probability": 0.2948712702876537,
+    "probability": 0.3046293732352654,
     "question": "Will we get AGI before 2028?",
     "resolved": false,
     "url": "https://manifold.markets/RemNi/will-we-get-agi-before-2028-ff560f9e9346",
-    "volume": 180997.3776744543,
+    "volume": 181010.3776744543,
     "year": 2028
    },
    {
     "id": "hh2bXhwKDTioZ7KtGKfC",
     "kind": "agi_before",
     "note": "Will we get AGI before 2030?",
-    "probability": 0.5200000000000001,
+    "probability": 0.517460497582656,
     "question": "Will we get AGI before 2030?",
     "resolved": false,
     "url": "https://manifold.markets/RemNi/will-we-get-agi-before-2030",
-    "volume": 144109.21914070693,
+    "volume": 144114.21914070693,
     "year": 2030
    },
    {
@@ -46,8 +46,8 @@
     "year": 2032
    }
   ],
-  "observed_at": "2026-11-25T21:49:01+00:00",
+  "observed_at": "2026-11-26T08:34:31+00:00",
   "source_url": "https://manifold.markets/"
  },
- "fetched_at": "2026-11-25T21:49:01.942329+00:00"
+ "fetched_at": "2026-11-26T08:34:31.346278+00:00"
 }
