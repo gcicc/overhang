@@ -3,111 +3,118 @@
   "columns": {
    "industry": [
     {
-     "feed": "Google News: chips & capital",
-     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPVzZwbDRLZWxHbFVTVEpNbDdiM0h6SmRKVS1MblZXbHFwT1J4U3lhSEhZbklRMjBfZ2FIbzdqcEhvVVFKNWQwdjhRb2NSeGhpRDV1eGcxQ3NPZkxFeWxaMVZESkYtM0tZN0U5cGNGMGx3WVVQY2N2dUxNWU5nQXJrQXhnMmFjTm1wbURLR1pHNno4c2xwSUl3?oc=5",
-     "published": "2026-11-27T04:49+00:00",
+     "feed": "Google News: policy",
+     "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQMDNfY2pRT3JyRldIdnNQN2NpV0xmc3dkMGdwUFFJcWozVlg3TFREclE0ckFaMEZSUlpCZGVZQVV5OHZuWnpzSEoya1ZqNDA1SnRZS3R6cVFZc1BTN2pfY0dqVjdtU08weERYT01MdG5pMFp3QVpDVVBrelBoWE12VHk2dUN6bWNlU1dZal9LNUs1cXkyaDRLVlZKbnVDR3YybFE?oc=5",
+     "published": "2026-11-27T18:42+00:00",
+     "source": "The Globe and Mail",
+     "title": "Opinion: Trump\u2019s role in reinstalling Jensen Huang signals AI regulation in U.S. is a non-starter - The Globe and Mail"
+    },
+    {
+     "feed": "Google News: policy",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOSFZyXzMyYzJ6NGxiWjVtU2d6bWtxTmMtbXFGQ3BKdEFXMGdCQnBsU2pqYUpTUlp5X1h4aGZIV3RBODlwdTNVQlg0SjU3VDkzQmZnS2lBam8zcUNCWnp0eV9BV2l6a1g2VG51NWpUbFlOZkJuakR1clR0V2tvNGdjTkRUMjFob0VGYU1heG5WR0Y1cmthZ2J6U0ctMEt6R3FKeUVSS3psZ2VjV3hpZGcxZDRTRkNiMnh6Ym1UeXVQSQ?oc=5",
+     "published": "2026-11-27T17:50+00:00",
+     "source": "Business Review",
+     "title": "Building Trustworthy AI Datasets in Europe: What the EU AI Act Asks of Training Data - Business Review"
+    },
+    {
+     "feed": "Google News: policy",
+     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPWTBWVWZFRVNySTBaYk00dTZXdUgzTjJBUjRWM2xobWtwc3lpTlVXWkhwbXdYR1BMdDVPLWZyVEh6ZGp5X2RjRjVTbUtYNnRkMWFISm5pRGo1UjRYcVJPQzZUWUx0QnlSNmYwN0NuRTNfc20tN3hPRFdWWTFfbDJyV3pBWVRJUzFsSm1xUlRn?oc=5",
+     "published": "2026-11-27T17:15+00:00",
      "source": "shattered.io",
-     "title": "AI Bubble Bear Market: Tech 20% Off Highs, Nvidia 9x - shattered.io"
+     "title": "AI Regulation Is Evolving: 4 Governance Questions - shattered.io"
     },
     {
      "feed": "Google News: chips & capital",
-     "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNaEpPZzJXdWZGekJuTVJaclVjbm9oaUJZZ1U2aVJzenZyVU4yM081TzdQZUoxTXhydldqV0l4ZzItZzBCR3lkZm1hcFEtTFo1bmVvbnphdnAybUpKTDFRYlpuZUpNNjNjb0UzaUUwMmJtTjQ4X1lpeGotbzZtdjRkYzNvZGluN2ZSWWU4dXBySnZ0Umt2d0FDY0JKdUZLVjdZdXE4VHdDSWIwNmF5ZnFVUnV6YUZtXzA1dmxLMzVTTlYteTZQalhpZUdiN1BCX2prVTQ3SEthZW05RUpSajBYOFMyUQ?oc=5",
-     "published": "2026-11-27T02:30+00:00",
-     "source": "TradingKey",
-     "title": "AI Debt Risks Mount: Why Borrowing by Meta, Alphabet, Microsoft and Oracle Worries Investors - TradingKey"
+     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQNGZQQ0c2MEdQbDd0WGUxUlBsVXhuTS1EOVlMMV9acXB0QTdBeW5ZVm5fV090VWwyN2VMZ0RQNS1sN2N1MVhCUzlfT0ptOUNjdUF3dzlmb19YUi03dkUyNnl1WFVTTDF4U3d3eUdYVC1jUDYzYjdjQTlya0I5S0dOSm1yMHN6SVBCbmE2ZmlYOGRBbEo2c0UxTmdZNkg?oc=5",
+     "published": "2026-11-27T16:18+00:00",
+     "source": "Seeking Alpha",
+     "title": "Nvidia Corporation: Strategic AI Technology Front-Runner (NASDAQ:NVDA) - Seeking Alpha"
     },
     {
      "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOM3BFYmFiTFIyU3dNbGJCNnhZTnRESTdJdEpKYVl2Uy16dExFTWloWEp4b19yU3hvZlJkRkx1U0xpaDFJYUV4Z1ZBM2Jsd1VzZTdZNTFleTFfVFdNS1FYZU9ZbG1XTHhERVRGcmJheDFjdFVJT2Z5Y0hhUkYwVVJPQTFvNmNkaERidVhYYXpxaHhVOGZiQVFqQmlsTHVqUk1TcVhHTA?oc=5",
-     "published": "2026-11-27T01:44+00:00",
-     "source": "Global Advisory Experts",
-     "title": "Is Spain Subject to the EU AI Act? A Cost and Action Plan - Global Advisory Experts"
+     "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPamMxM0dhQ3VxR19iQ0JZVjdqMVlyclNReUdmT0lCSmdjTDRGeHVCOHRGZERoTVFWNkRFa0xhYmxJWkNiWGdObmRoT0FhQ0ZhMlBpaWpOeVdyMFozOVZOMTR2eDhxbnFyODQ3QWxSdTRLLXJjVGZsd2ltSFBHUml0YXNpY29oZWZRakNwbUp1XzFfSkdQTFl2Ng?oc=5",
+     "published": "2026-11-27T15:11+00:00",
+     "source": "Gadget Review",
+     "title": "Etsy Clarified Its AI Policy. Some Sellers Are Still Closing Shop. - Gadget Review"
+    },
+    {
+     "feed": "Google News: chips & capital",
+     "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOR1ZJZlljaHdDZVFSMVlmanM0SV9PTjk0ZFlOc1FCZnNJSDVZUGRaVENxLXBIVkFhRjIteUdoRHVoWHJKQzEzTWRJQzZyREJGWE1kRkpOWWtyU1V2SmxuQTRuMUZSVnAtdDJBS1VvQTRkWEN6STlCMXg2YkZmNEx4aFloQkZUREhVQW05ZVYtOF9NZ1BLRTNfLTJVdGJpY3JrYU53S0g0RXNySUNGZmxmUUtCMmI1LUVYMDNxWmtJYl9obDRQamxvd1E5MDhjRWlyLXo0REJIeFp0SW9SRy1aVE9Jc0RJTGY2bmc?oc=5",
+     "published": "2026-11-27T14:14+00:00",
+     "source": "The Globe and Mail",
+     "title": "Can Microsoft Stock Sustain Margins as AI Data Center Spending Climbs? - The Globe and Mail"
+    },
+    {
+     "feed": "Google News: chips & capital",
+     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFA5M2VrWEdIdmpTYkN1eVF3LVZybFVwdHV3dnlKUWtlQjNaZllvTHFSQU93b1BTS0ZJTkpSQUkxenRNNE9rdEstcUNaVW1SWWRIYmwzU0tYN1loT2Z3R0VlcGRB?oc=5",
+     "published": "2026-11-27T12:14+00:00",
+     "source": "BigGo Finance",
+     "title": "[\u667a\u90a6 Q3 2026 Earnings Call] Accton Q3 Revenue Surges 26% to NT$120.74B as AI Switch Sales More Than Double; 1.6T Shipments Begin - BigGo Finance"
     },
     {
      "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPOWkzbTEwWlpPMmk4aE5YUENKeGJabm1iYTlpNWdCdXl3YzhuZGVQdVA1RUVzeGJGR1Y5TU55R095dnBFWFRJTV9xLWJIWDRDQnFPOEgtemdVdTBiRUFKTzlYZjBNZkxnbTllbkhLZExMQVdrbXUyMkRCaU9INnNaazU2bTEyQWlQUk5pOVdOX0RNdk5iemp2dS1n?oc=5",
-     "published": "2026-11-27T01:18+00:00",
-     "source": "IT Brief Australia",
-     "title": "Your staff are already using AI. Your AI policy should start there - IT Brief Australia"
+     "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQSEFUdUVCMHppdjhQd2V2TTZ5RVZtQng1Z2dXQkdXdUp6ZkxQd2dqN0d1ZnEtMUpsVzdYcjhrRnZtVGtab1MzcjlvQmN2ejQzYWEyRm9FWWVtWE10c0FGR0lwY21rbmgwQzg3RHFLSzR0emdmU0UyelNpY0hUUUxwU0tYb1VMNnJmQzNRUA?oc=5",
+     "published": "2026-11-27T12:04+00:00",
+     "source": "TechRadar",
+     "title": "AI regulation is still evolving. Governance cannot wait - TechRadar"
     },
     {
      "feed": "Google News: chips & capital",
      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE82a01DUHNCbGVoR3dxYWlCa2c3ZXNUdVFkVmV2MkFYWV9kVExUeDhFRWthMUJhOG1qOElLZjAzV3I2SFlwbk5LbFF1ZHpxV2gzSjZyVFo5N3hVc21YSzV1d0F0enFpd0c2?oc=5",
-     "published": "2026-11-26T22:49+00:00",
+     "published": "2026-11-27T07:15+00:00",
      "source": "BeInCrypto",
      "title": "Apple Stock Defies AI Selloff: Is It the Market's Safe Haven? - BeInCrypto"
     },
     {
-     "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE11ekNmRGpmOUsxUUlUTERLeFhsVlQ1d1BfcnFReWUwLW45WHMyTmdKeGRGUThadG44ZG5CajdsU2R5YVd5Q2l0Ym81RVllWkw3N0owckIxOTl6UVVUZjh3T243b0ZMLTg1VEhiN192bTYyUVU?oc=5",
-     "published": "2026-11-26T17:45+00:00",
-     "source": "DNE Africa",
-     "title": "South Africa AI policy: new redraft due 30 Nov amid job risk - DNE Africa"
-    },
-    {
-     "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBQRV9rbU15SXZtNzdLOXVFTWprVlhRem5RT0liTWdCWVU3LXNBNDVkRkhFeUZLYlRXTnNJQ1hLSWRzVHY4YS1tTVZlQWpoOFRwZFhsb0R1Rzd3Tm9JZXY3QkxZY2Nldw?oc=5",
-     "published": "2026-11-26T17:26+00:00",
-     "source": "The Jewish Link",
-     "title": "Clarifying The Link\u2019s AI Policy - The Jewish Link"
-    },
-    {
      "feed": "Google News: chips & capital",
-     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPYmhEZnlORDJXeXhSNS1XeXdNZW9IcVVJQnlBeU0wVVZMNXhQbnhWYjBpT1Y4N2V1SjlGRG9INkFtUUd3RVJLOHFhbUhramwyTjZEa1RSLVZ0eGc5QUlxVnk3bVZ6VHdKUUQ5UE45UjNMd29MV0JYNy1qTVdXTXBDODEtNDMyM09fSDd6TEhWZm5Wc2FkYzhZbkY1eGlmdldkUWxn?oc=5",
-     "published": "2026-11-26T16:11+00:00",
-     "source": "Intellectia AI",
-     "title": "Magnificent Seven Stocks After the AI Sell-Off: 2026 Guide - Intellectia AI"
-    },
-    {
-     "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5xWkFvcEtCWlVtdVJlZDFNcWs2bjBGYmVFVlJxZElUcnhFdzNvRWpNZkFZaXpXQnVTTVhCV2lwVUFPRHI1NlFkV24yRnlCSlnSAVhBVV95cUxQUVRmNXhtaU1BTl9iT1NEY21xZGtzckhiTDhOQ3M3YWdkZXIzZkdWRE42bUp1VDhHSS1XS1c5Z3ZhT05mMUc2WHIzRm5CYW13aG5rTkJYWnk5?oc=5",
-     "published": "2026-11-26T16:01+00:00",
-     "source": "Law360 Canada",
-     "title": "U.S. decision shows importance of written AI policy, guidance for law firms - Law360 Canada"
-    },
-    {
-     "feed": "Google News: chips & capital",
-     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPNXI2ZHFBcjBOY2VTTTR5cWhjd0VHYUlmd3pJNjdIZkNKR1pKcEFESzBaM1NlcHRpQ1lnQy1SX3ozbDNMWkl3aTJReHl2NWlHdWd5WkZpWkNON2NBRVRSWENYZzBxOGhqbWNyd2Z0bjlHVnlVQ2FZcWc5aG1OQmZyNHFCdWxXRFpIWF9DSW9YZ3J0RktTajhvSkdEYUZjN2NyV3JfT1lQeDFleFZzN2lSX243VXdOZFVv?oc=5",
-     "published": "2026-11-26T11:06+00:00",
-     "source": "TradingView",
-     "title": "Nvidia, AMD and Micron Stocks Plunge as AI Selloff Deepens - TradingView"
+     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPVzZwbDRLZWxHbFVTVEpNbDdiM0h6SmRKVS1MblZXbHFwT1J4U3lhSEhZbklRMjBfZ2FIbzdqcEhvVVFKNWQwdjhRb2NSeGhpRDV1eGcxQ3NPZkxFeWxaMVZESkYtM0tZN0U5cGNGMGx3WVVQY2N2dUxNWU5nQXJrQXhnMmFjTm1wbURLR1pHNno4c2xwSUl3?oc=5",
+     "published": "2026-11-27T04:49+00:00",
+     "source": "shattered.io",
+     "title": "Tech Stocks 20% Off Highs, Nvidia at 9x Earnings - shattered.io"
     }
    ],
    "labs": [
     {
      "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOMkZOVGpNbTJJRlpCYTA4eHFzQXo5NHJ2RTdnRk5Hc3dzV29pX2ZSV1BLN2kxbGNfY2xnbjZvcUVDVVVCd05UUEx0U0JJeUh6bzFMMmI4dGhCNlFxQlQweF9Pazgyd2dPLTNYYlV3XzNOWU16YmdJRnpEamhzdlQ2S0d1WW0tUF9UZWxkeWl0VzVabVRKbzk1Zms0anVxLXZxcmdETy1UTHNZXzNTZEdpUTdjVQ?oc=5",
-     "published": "2026-11-27T00:34+00:00",
-     "source": "EdTech Innovation Hub",
-     "title": "OpenAI chief scientist proposes shared limits on frontier AI development - EdTech Innovation Hub"
+     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9yWUY1RHhiVTNNWEhSRC01MDVMOWtZeXptY3p3b0FTYXpKSGdZN2NXSmVfT3k3LXBva3JYMXBkNkpkcGlfRHNRdGxsdTBMeFFnRUQ1eHREQ3BzblU?oc=5",
+     "published": "2026-11-27T17:56+00:00",
+     "source": "www.tokenpost.com",
+     "title": "Google\u2019s Gemini 3.8 Flash Matches Frontier Models in Chemistry Test - www.tokenpost.com"
     },
     {
      "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5wWHRaNGxvR0VqazBjZHVqd1VmS3FvNXJjUjJqcUlibTJ3Vm9iaTcxM3hIbl9DNXV1WjFrUVpaYnFOejVBMlBvOEYwelZicENyd3FIZnB1NktsODRFdFc3Z2FaVm9DNHZkc2hSNWpuWlUxcWZfbE5Xdk5fTjVZdw?oc=5",
-     "published": "2026-11-26T23:06+00:00",
-     "source": "Crypto Briefing",
-     "title": "Anthropic study finds AI models still hold cyberattack knowledge after unlearning - Crypto Briefing"
+     "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNRXpyRGJ6aGhLcHlFbGMwZUVnbWhWd1NIQ25TTW54LUtXbHJ5dlI5clhmOGFsc2x2TjBaTGQ2cEhPSHh1ZWl4S09rNFBWeEUxOWhBZkl4c2F2dExEaHJOQkFyT240RFVJZUJPRm1nOGtvUC1UQ3huNFVFTllTNUpKN2ZwZFpfS0VOZjczdGZqZnU1VjRjM2V0eG5B?oc=5",
+     "published": "2026-11-27T17:40+00:00",
+     "source": "CryptoSlate",
+     "title": "Google\u2019s lightweight Gemini matched two top models on a chemistry test - CryptoSlate"
     },
     {
      "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFAzek92NzAzcGI2MFVSRHVBZEM0UHhJZGUxVnFtWHAzVVpaY0JSbDk1QTg0UGZxLTFXVktJY0QtdGM0VFNFM1FvcGdpdzR2MzYwSTY0RkFVMUtJUm9iVWZFQUI3dk03dExSM185ag?oc=5",
-     "published": "2026-11-26T22:40+00:00",
-     "source": "OrcaRouter",
-     "title": "Gemini 4 Neon: The Model Behind Paid Tasks in Gemini - OrcaRouter"
+     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB0RlBkZnFjVlMzTWlLRjk2OURVOW1Ta1lTcko0OTZnSllfNTYzMjdTbHFTX2dzNTlTclhTWlZNN3M0Q3IwX01MLV82ZG5kY0x6eGZrNFJ0OWZ6ejQ?oc=5",
+     "published": "2026-11-27T15:20+00:00",
+     "source": "www.tokenpost.com",
+     "title": "Anthropic Limits Claude on Frontier AI Model-Development Requests - www.tokenpost.com"
     },
     {
      "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPUDFPbWRIYVkyc2tWOEFpbW9tTTNOME9JLU5nRnBibVF4Yko3QXRuYVU2OHZzN1UzdDljSk9jMkNhaU1GQ1RhMXBPSVRodHlQWVRyWlJuMFBSLXg5T0Z4dnVCQTJYbXF1Z3F0amhhcFlQYUFibnRONG5Va0l5RG5uVDRQLXduWmRZV1ZaU1JPVWJVeEViOGFQNDJodDY?oc=5",
-     "published": "2026-11-26T22:00+00:00",
-     "source": "Breakingviews",
-     "title": "The curious case of the AI dog that hasn\u2019t barked - Breakingviews"
+     "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOSklIcWtIRjVGLWZ5bXdnWlEwSjVMQi1zZXBDcnF3Q0V4VUZKczdlNDRmV0dOd2xScFY5Nm9ScGc2b2tINVlIUGJFdUVTTzY4c2lDSnNRUUR2NTIzZkVoR3p3ZmJKV3p0OHFfdWdrTU41N0ttVllIV21yX1ZBdTlaU085TmIyOXZaWGVUTWpMTFQ1MmlSa3g2Tnh6Z3dmRUxMTlBhQjJRUmhvekhJXzRuSXBTM0lKWG4xX3h2R2plMmRLMlBzU25jUlR0WndkTGJqV09UZjBCWDBMNEN6MFl3UnNIdlBYNk43UlpXd0VfVlp1ZmM?oc=5",
+     "published": "2026-11-27T13:30+00:00",
+     "source": "TIKR.com",
+     "title": "Chinese Open Models Are \u201con the Permanent Decline,\u201d Predicts Top VC. That\u2019s Good News for Anthropic - TIKR.com"
     },
     {
      "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBRazlJTWJzeEdJUGdiUHJKQzRNY29BdHpiamZIRkRuUC1CTVFVLXBtWWNfN2RUVnpSdFNNUDB1NnVPMzJUb2E4cF9xem5qV0hRTlB0Mzd5NnlQbUR1bExKWXRlSGxURGpx?oc=5",
-     "published": "2026-11-26T18:28+00:00",
-     "source": "Substack",
-     "title": "Singularity Unlocked - Substack"
+     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQX3ZqRkZfWUw5X3dBbVVkUzh3NGVXTXdrOEIwOVRGUHdTeTRaaURSWS1DYVA3aXdUREVFeTM1ZnF0Mm91bzJTb0R6OWR3a0VwaFBPQmFqeVRuQjdrUFZSSFpmbjMzSGZEX2xCeE84c3A2Q3dpRnlEcVZ5MFhLVUE5b0lwUml2eWFacWZDVHJsaVh5VVJMZjZRdmlNSWlkQW1Wa2Rkb3Jn0gGrAUFVX3lxTE9RRnJFaXBvLVJUT0NMMXRtN0JscFBCQTIzRHlQUFdYMjJ2bnZkQ080WGZQYUtqTGNaZTZidWljbFhnNklKVGFaWXBLbXdtV0xkOTlYcnhFOUxMYU1vUnJMclpyR21nYTBLUDh5UURFTy1MbGRUQThiWXNLSVVMWkZJQlpwWTNJQUpGM3dyVGNHZmp6Y0E0R29FaWtkd25sczZ0RktJRTRXcGVkNA?oc=5",
+     "published": "2026-11-27T10:54+00:00",
+     "source": "ABC News - Breaking News, Latest News and Videos",
+     "title": "Anthropic says its AI models hacked 3 organizations on their own during tests - ABC News - Breaking News, Latest News and Videos"
+    },
+    {
+     "feed": "Hugging Face",
+     "link": "https://huggingface.co/blog/video-trainium3",
+     "published": "2026-11-27T00:00+00:00",
+     "source": "Hugging Face",
+     "title": "Taking Trainium3 to the Track: Generating Videos with LTX-2.5"
     },
     {
      "feed": "Hugging Face",
@@ -138,13 +145,6 @@
      "title": "Where scientists draw the line on AI agents"
     },
     {
-     "feed": "Hugging Face",
-     "link": "https://huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga",
-     "published": "2026-11-25T10:22+00:00",
-     "source": "Hugging Face",
-     "title": "An Indic Voice Agent with CUGA"
-    },
-    {
      "feed": "Google DeepMind",
      "link": "https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity/",
      "published": "2026-11-24T13:07+00:00",
@@ -170,5 +170,5 @@
    "industry"
   ]
  },
- "fetched_at": "2026-11-27T08:45:55.520990+00:00"
+ "fetched_at": "2026-11-27T21:26:44.453130+00:00"
 }
