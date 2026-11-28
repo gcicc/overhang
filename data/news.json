@@ -4,6 +4,34 @@
    "industry": [
     {
      "feed": "Google News: policy",
+     "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNeHg2T09iaURrWGVzdFFYWkVvNHpLZFRocVNPNHBxQURWVmpiLWZzR3NZRnlwamdWNzJCWVRrWHV0bWR5eFdUZDd1LVdrMC1xZjNXQlREaUVrUGFwZ0xXQm1DYkZBelNTUjVsdEJGRXVMQlpoVm1kb1IxWV9tN2l0SjBxMGtVTloyQk54MEc3R01jNHBZS0M3WURYVmJpREtKSmc?oc=5",
+     "published": "2026-11-27T22:57+00:00",
+     "source": "LAmag",
+     "title": "LAUSD Blocks Google\u2019s AI Overview Despite New AI Policy - LAmag"
+    },
+    {
+     "feed": "Google News: policy",
+     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9McWhDaTI5Q2E5Rm50bVVDZVpXanMxM0JDUkEtbklnRFRNRGJaV1ZIU2NobEViM0xIaTF5OG0tU1B6SWtua2p3aWpycEFYQ1p6dVR6OE9PbXhOM3M?oc=5",
+     "published": "2026-11-27T22:08+00:00",
+     "source": "BigGo Finance",
+     "title": "GNOME's AI Policy Was Retracted After Red Hat Warned It Would Push Partners to KDE, Broady Robertson Says - BigGo Finance"
+    },
+    {
+     "feed": "Google News: chips & capital",
+     "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNaEpPZzJXdWZGekJuTVJaclVjbm9oaUJZZ1U2aVJzenZyVU4yM081TzdQZUoxTXhydldqV0l4ZzItZzBCR3lkZm1hcFEtTFo1bmVvbnphdnAybUpKTDFRYlpuZUpNNjNjb0UzaUUwMmJtTjQ4X1lpeGotbzZtdjRkYzNvZGluN2ZSWWU4dXBySnZ0Umt2d0FDY0JKdUZLVjdZdXE4VHdDSWIwNmF5ZnFVUnV6YUZtXzA1dmxLMzVTTlYteTZQalhpZUdiN1BCX2prVTQ3SEthZW05RUpSajBYOFMyUQ?oc=5",
+     "published": "2026-11-27T20:06+00:00",
+     "source": "TradingKey",
+     "title": "AI Debt Risks Mount: Why Borrowing by Meta, Alphabet, Microsoft and Oracle Worries Investors - TradingKey"
+    },
+    {
+     "feed": "Google News: policy",
+     "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNbzB2SU1tR0RNLTVXaE5sdC10Rm9xbXF1QTVYMG9seHpram1oaW1FVlI1TTAxX3Nvam05VTkyajJGOXUzT1VDMFJOdHJPNzlHYjNNTk5JMGVONWhBVkJPSVZ1dFRkSXUwbG03Ri1VR0FVTnhkeFJTSXR5S1JoUDBVQVlvV3VEaTNRNkdPVnVtLXF0bG1HWE83UTBKRDY5WV9hLWNhc3RDWFRxQWduLTJQVVBoMlAtbFlnTG9JQmRvWEFYUFNHMkFvbEFwY3VqdDU0LTd2dzJVNHRoQWQw?oc=5",
+     "published": "2026-11-27T18:59+00:00",
+     "source": "Legal 500",
+     "title": "Global AI Regulation: EU AI Act, U.S., UK, China, And Key Compliance Risks For Companies - Legal 500"
+    },
+    {
+     "feed": "Google News: policy",
      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQMDNfY2pRT3JyRldIdnNQN2NpV0xmc3dkMGdwUFFJcWozVlg3TFREclE0ckFaMEZSUlpCZGVZQVV5OHZuWnpzSEoya1ZqNDA1SnRZS3R6cVFZc1BTN2pfY0dqVjdtU08weERYT01MdG5pMFp3QVpDVVBrelBoWE12VHk2dUN6bWNlU1dZal9LNUs1cXkyaDRLVlZKbnVDR3YybFE?oc=5",
      "published": "2026-11-27T18:42+00:00",
      "source": "The Globe and Mail",
@@ -17,32 +45,11 @@
      "title": "Building Trustworthy AI Datasets in Europe: What the EU AI Act Asks of Training Data - Business Review"
     },
     {
-     "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPWTBWVWZFRVNySTBaYk00dTZXdUgzTjJBUjRWM2xobWtwc3lpTlVXWkhwbXdYR1BMdDVPLWZyVEh6ZGp5X2RjRjVTbUtYNnRkMWFISm5pRGo1UjRYcVJPQzZUWUx0QnlSNmYwN0NuRTNfc20tN3hPRFdWWTFfbDJyV3pBWVRJUzFsSm1xUlRn?oc=5",
-     "published": "2026-11-27T17:15+00:00",
-     "source": "shattered.io",
-     "title": "AI Regulation Is Evolving: 4 Governance Questions - shattered.io"
-    },
-    {
      "feed": "Google News: chips & capital",
      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQNGZQQ0c2MEdQbDd0WGUxUlBsVXhuTS1EOVlMMV9acXB0QTdBeW5ZVm5fV090VWwyN2VMZ0RQNS1sN2N1MVhCUzlfT0ptOUNjdUF3dzlmb19YUi03dkUyNnl1WFVTTDF4U3d3eUdYVC1jUDYzYjdjQTlya0I5S0dOSm1yMHN6SVBCbmE2ZmlYOGRBbEo2c0UxTmdZNkg?oc=5",
      "published": "2026-11-27T16:18+00:00",
      "source": "Seeking Alpha",
      "title": "Nvidia Corporation: Strategic AI Technology Front-Runner (NASDAQ:NVDA) - Seeking Alpha"
-    },
-    {
-     "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPamMxM0dhQ3VxR19iQ0JZVjdqMVlyclNReUdmT0lCSmdjTDRGeHVCOHRGZERoTVFWNkRFa0xhYmxJWkNiWGdObmRoT0FhQ0ZhMlBpaWpOeVdyMFozOVZOMTR2eDhxbnFyODQ3QWxSdTRLLXJjVGZsd2ltSFBHUml0YXNpY29oZWZRakNwbUp1XzFfSkdQTFl2Ng?oc=5",
-     "published": "2026-11-27T15:11+00:00",
-     "source": "Gadget Review",
-     "title": "Etsy Clarified Its AI Policy. Some Sellers Are Still Closing Shop. - Gadget Review"
-    },
-    {
-     "feed": "Google News: chips & capital",
-     "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOR1ZJZlljaHdDZVFSMVlmanM0SV9PTjk0ZFlOc1FCZnNJSDVZUGRaVENxLXBIVkFhRjIteUdoRHVoWHJKQzEzTWRJQzZyREJGWE1kRkpOWWtyU1V2SmxuQTRuMUZSVnAtdDJBS1VvQTRkWEN6STlCMXg2YkZmNEx4aFloQkZUREhVQW05ZVYtOF9NZ1BLRTNfLTJVdGJpY3JrYU53S0g0RXNySUNGZmxmUUtCMmI1LUVYMDNxWmtJYl9obDRQamxvd1E5MDhjRWlyLXo0REJIeFp0SW9SRy1aVE9Jc0RJTGY2bmc?oc=5",
-     "published": "2026-11-27T14:14+00:00",
-     "source": "The Globe and Mail",
-     "title": "Can Microsoft Stock Sustain Margins as AI Data Center Spending Climbs? - The Globe and Mail"
     },
     {
      "feed": "Google News: chips & capital",
@@ -52,11 +59,11 @@
      "title": "[\u667a\u90a6 Q3 2026 Earnings Call] Accton Q3 Revenue Surges 26% to NT$120.74B as AI Switch Sales More Than Double; 1.6T Shipments Begin - BigGo Finance"
     },
     {
-     "feed": "Google News: policy",
-     "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQSEFUdUVCMHppdjhQd2V2TTZ5RVZtQng1Z2dXQkdXdUp6ZkxQd2dqN0d1ZnEtMUpsVzdYcjhrRnZtVGtab1MzcjlvQmN2ejQzYWEyRm9FWWVtWE10c0FGR0lwY21rbmgwQzg3RHFLSzR0emdmU0UyelNpY0hUUUxwU0tYb1VMNnJmQzNRUA?oc=5",
-     "published": "2026-11-27T12:04+00:00",
-     "source": "TechRadar",
-     "title": "AI regulation is still evolving. Governance cannot wait - TechRadar"
+     "feed": "Google News: chips & capital",
+     "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNUThqVU9lTUxka2gyRG9kZkNIOEl1cDNjTGRCNkU5cV9VZEVEdmE5S2xOTU9TS0l3ejZodlA1Y0wtX2dTSmVJbXVDQnZMWXdSSnNoV2tWc0t1cDI5cWZxS1RvRjE1cTRwUGVhQ0Zhd3h0QnlaRG94WDZ1MXVvUURZRjlDVU5CQ1lCUEZaVXVlSmljNDRrRTZTU25lVF9jZVJhRjJGR0djRjhqRDNWdVVHSkFiN192aEY1MTJiblhZWHl0UFk?oc=5",
+     "published": "2026-11-27T12:03+00:00",
+     "source": "TradingView",
+     "title": "Can Microsoft Stock Sustain Margins as AI Data Center Spending Climbs? - TradingView"
     },
     {
      "feed": "Google News: chips & capital",
@@ -64,22 +71,15 @@
      "published": "2026-11-27T07:15+00:00",
      "source": "BeInCrypto",
      "title": "Apple Stock Defies AI Selloff: Is It the Market's Safe Haven? - BeInCrypto"
-    },
-    {
-     "feed": "Google News: chips & capital",
-     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPVzZwbDRLZWxHbFVTVEpNbDdiM0h6SmRKVS1MblZXbHFwT1J4U3lhSEhZbklRMjBfZ2FIbzdqcEhvVVFKNWQwdjhRb2NSeGhpRDV1eGcxQ3NPZkxFeWxaMVZESkYtM0tZN0U5cGNGMGx3WVVQY2N2dUxNWU5nQXJrQXhnMmFjTm1wbURLR1pHNno4c2xwSUl3?oc=5",
-     "published": "2026-11-27T04:49+00:00",
-     "source": "shattered.io",
-     "title": "Tech Stocks 20% Off Highs, Nvidia at 9x Earnings - shattered.io"
     }
    ],
    "labs": [
     {
      "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9yWUY1RHhiVTNNWEhSRC01MDVMOWtZeXptY3p3b0FTYXpKSGdZN2NXSmVfT3k3LXBva3JYMXBkNkpkcGlfRHNRdGxsdTBMeFFnRUQ1eHREQ3BzblU?oc=5",
-     "published": "2026-11-27T17:56+00:00",
-     "source": "www.tokenpost.com",
-     "title": "Google\u2019s Gemini 3.8 Flash Matches Frontier Models in Chemistry Test - www.tokenpost.com"
+     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1LMmRlenhRVksydDl4MkNNb2Q2YnNlMjAxOWZndUxIaEFjcmhZUVdOWm41UFppamFGcmJwNTBBcE80RVZ5MzVVWkZqWjdaMmJJWkdpTGhZcHdpX1lMYUZuMDNtVHdnOWJkbDk4al9wRmJKc0d5TlE?oc=5",
+     "published": "2026-11-28T02:25+00:00",
+     "source": "BigGo Finance",
+     "title": "Claude Accused of Covertly Sabotaging AI Research: Lowering Learning Rates, Tampering with Scores; Anthropic Admits Training-Stage Limits on Model R&D Capabilities - BigGo Finance"
     },
     {
      "feed": "Google News: labs",
@@ -90,24 +90,24 @@
     },
     {
      "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB0RlBkZnFjVlMzTWlLRjk2OURVOW1Ta1lTcko0OTZnSllfNTYzMjdTbHFTX2dzNTlTclhTWlZNN3M0Q3IwX01MLV82ZG5kY0x6eGZrNFJ0OWZ6ejQ?oc=5",
-     "published": "2026-11-27T15:20+00:00",
-     "source": "www.tokenpost.com",
-     "title": "Anthropic Limits Claude on Frontier AI Model-Development Requests - www.tokenpost.com"
+     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPY3IwUHJvQ0VSYmE2bWJxcHVGSzNSWDByaUxtWU1NVW9pclUtb3hZWlk1d0d0dEljMTZoYWZrNzB2ZnRBamVaX2x3SjZMNThKY3pibHl2N25vd0tqcmJFdjNnT2xmNFY2ZkdnUDdKbnVEVm5EM3VKeWUwYXVYNDdOX2hURm0xUVdWVGh5SWJYeEFtSWFfQUMyamVqSE1XNjlBOXRGOWJpTVhVdw?oc=5",
+     "published": "2026-11-27T15:33+00:00",
+     "source": "KuCoin",
+     "title": "Anthropic Limits Frontier Model Research Requests in Claude System Cards - KuCoin"
     },
     {
      "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOSklIcWtIRjVGLWZ5bXdnWlEwSjVMQi1zZXBDcnF3Q0V4VUZKczdlNDRmV0dOd2xScFY5Nm9ScGc2b2tINVlIUGJFdUVTTzY4c2lDSnNRUUR2NTIzZkVoR3p3ZmJKV3p0OHFfdWdrTU41N0ttVllIV21yX1ZBdTlaU085TmIyOXZaWGVUTWpMTFQ1MmlSa3g2Tnh6Z3dmRUxMTlBhQjJRUmhvekhJXzRuSXBTM0lKWG4xX3h2R2plMmRLMlBzU25jUlR0WndkTGJqV09UZjBCWDBMNEN6MFl3UnNIdlBYNk43UlpXd0VfVlp1ZmM?oc=5",
-     "published": "2026-11-27T13:30+00:00",
-     "source": "TIKR.com",
-     "title": "Chinese Open Models Are \u201con the Permanent Decline,\u201d Predicts Top VC. That\u2019s Good News for Anthropic - TIKR.com"
+     "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQY0Y0UUNqRVpWdGl0VUQ3S0VzSFhtQWVhcGN4MlFiY1NqTE1CZUt1QXI5amFDZ25MRlBnd2ZuY3FxTzFlSWFHTHFwRTcyVFVuYTFCb2dBejVOYkhFcHBIaHhwcGd3ZVVTcVNIMS1GSzYwV1lybWItTi1VWXR2aFc2NTU4U3FTcjZ6SEc4bg?oc=5",
+     "published": "2026-11-27T11:56+00:00",
+     "source": "Latin Times",
+     "title": "OpenAI's chief scientist wants AI labs to adopt a shared mathematical speed limit - Latin Times"
     },
     {
      "feed": "Google News: labs",
-     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQX3ZqRkZfWUw5X3dBbVVkUzh3NGVXTXdrOEIwOVRGUHdTeTRaaURSWS1DYVA3aXdUREVFeTM1ZnF0Mm91bzJTb0R6OWR3a0VwaFBPQmFqeVRuQjdrUFZSSFpmbjMzSGZEX2xCeE84c3A2Q3dpRnlEcVZ5MFhLVUE5b0lwUml2eWFacWZDVHJsaVh5VVJMZjZRdmlNSWlkQW1Wa2Rkb3Jn0gGrAUFVX3lxTE9RRnJFaXBvLVJUT0NMMXRtN0JscFBCQTIzRHlQUFdYMjJ2bnZkQ080WGZQYUtqTGNaZTZidWljbFhnNklKVGFaWXBLbXdtV0xkOTlYcnhFOUxMYU1vUnJMclpyR21nYTBLUDh5UURFTy1MbGRUQThiWXNLSVVMWkZJQlpwWTNJQUpGM3dyVGNHZmp6Y0E0R29FaWtkd25sczZ0RktJRTRXcGVkNA?oc=5",
-     "published": "2026-11-27T10:54+00:00",
-     "source": "ABC News - Breaking News, Latest News and Videos",
-     "title": "Anthropic says its AI models hacked 3 organizations on their own during tests - ABC News - Breaking News, Latest News and Videos"
+     "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9BVUdGWHktT0w0aHRxTlJUVzM2NUxUQXItRjF0dGlUc0hCWkRtbExsaVZjSEFVR2lwbVlieXFsRTBFYXhRUTVrT2p2YTJycGFMdExF?oc=5",
+     "published": "2026-11-27T11:01+00:00",
+     "source": "36Kr",
+     "title": "Why Generic AI Limits Don\u2019t Work: OpenAI vs Anthropic Restrictions Explained - 36Kr"
     },
     {
      "feed": "Hugging Face",
@@ -170,5 +170,5 @@
    "industry"
   ]
  },
- "fetched_at": "2026-11-27T21:26:44.453130+00:00"
+ "fetched_at": "2026-11-28T08:00:16.533248+00:00"
 }
